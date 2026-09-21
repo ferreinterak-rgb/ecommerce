@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Top Half Saw Blade - Black -->
+  <path d="M 50 10 A 40 40 0 0 1 90 50 L 70 50 A 20 20 0 0 0 50 30 L 50 10 Z" fill="#111111" />
+  <path d="M 10 50 L 0 50 L 12 35 L 20 40 L 25 25 L 35 32 L 42 18 L 50 25 L 50 10 A 40 40 0 0 0 10 50 Z" fill="#111111" />
+  <!-- Bottom Half Saw Blade - Brand Orange -->
+  <path d="M 90 50 L 100 50 L 88 65 L 80 60 L 75 75 L 65 68 L 58 82 L 50 75 L 50 90 A 40 40 0 0 0 90 50 Z" fill="#f48f25" />
+  <path d="M 50 90 A 40 40 0 0 1 10 50 L 30 50 A 20 20 0 0 0 50 70 L 50 90 Z" fill="#f48f25" />
+  <!-- Inner Circle hole -->
+  <circle cx="50" cy="50" r="14" fill="#ffffff" />
+</svg>

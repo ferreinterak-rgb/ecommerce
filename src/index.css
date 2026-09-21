@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Modern UI Kit Pill Buttons */
+  .btn-pill-orange {
+    @apply bg-[#f48f25] hover:bg-[#e07d18] text-black font-extrabold text-xs sm:text-sm px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all transform active:scale-95 flex items-center justify-center gap-2 tracking-wide uppercase;
+  }
+
+  .btn-pill-dark {
+    @apply bg-[#111111] hover:bg-[#f48f25] text-white hover:text-black font-extrabold text-xs sm:text-sm px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all transform active:scale-95 flex items-center justify-center gap-2 tracking-wide uppercase;
+  }
+
+  .btn-pill-light {
+    @apply bg-[#f4f5f7] hover:bg-gray-200 text-slate-800 font-bold text-xs sm:text-sm px-5 py-2.5 rounded-full transition-all flex items-center justify-center gap-2;
+  }
+
+  /* Embedded Search Input Pill */
+  .input-search-embedded {
+    @apply bg-[#f4f5f7] border border-gray-200 focus-within:border-[#f48f25] focus-within:ring-2 focus-within:ring-[#f48f25]/20 rounded-full pl-5 pr-1.5 py-1.5 flex items-center transition-all;
+  }
+
+  /* Glassmorphism White Card */
+  .glass-card-modern {
+    @apply bg-white/95 backdrop-blur-md border border-gray-100/90 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+}
+
+/* Keyframe Animations for Animated Gradient Backgrounds & Floating Products */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes floatProduct {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-14px) scale(1.02);
+  }
+}
+
+.animate-gradient-shift {
+  background-size: 200% 200% !important;
+  animation: gradientShift 10s ease infinite;
+}
+
+.animate-float-product {
+  animation: floatProduct 5s ease-in-out infinite;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f48f25;
+}
