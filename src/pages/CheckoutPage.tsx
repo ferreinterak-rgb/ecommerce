@@ -42,6 +42,7 @@ export const CheckoutPage: React.FC = () => {
   const [couponMessage, setCouponMessage] = useState<string | null>(null);
   const [processing, setProcessing] = useState(false);
   const [completedOrderNumber, setCompletedOrderNumber] = useState<string | null>(null);
+  const [checkoutError, setCheckoutError] = useState<string | null>(null);
 
   if (cart.length === 0 && !completedOrderNumber) {
     return (
@@ -65,6 +66,7 @@ export const CheckoutPage: React.FC = () => {
   const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setProcessing(true);
+    setCheckoutError(null);
 
     try {
       const orderItems = cart.map(item => ({
@@ -77,34 +79,40 @@ export const CheckoutPage: React.FC = () => {
         subtotal: (item.product.discount_price ?? item.product.price) * item.quantity
       }));
 
-      const created = await orderService.createOrder({
-        customer_name: customerName,
-        customer_email: customerEmail,
-        customer_phone: customerPhone,
-        shipping_address: shippingAddress,
-        payment_method: paymentMethod,
-        status: 'pending',
-        subtotal,
-        discount: discountAmount,
-        tax: taxAmount,
-        shipping_cost: shippingCost,
-        total,
-        items: orderItems,
-        notes: shippingAddress.notes
-      });
+      const created = await orderService.createOrder(
+        {
+          customer_name: customerName,
+          customer_email: customerEmail,
+          customer_phone: customerPhone,
+          shipping_address: shippingAddress,
+          payment_method: paymentMethod,
+          status: 'pending',
+          subtotal,
+          discount: discountAmount,
+          tax: taxAmount,
+          shipping_cost: shippingCost,
+          total,
+          items: orderItems,
+          notes: shippingAddress.notes
+        },
+        appliedCoupon?.code
+      );
 
       await activityLogService.logAction(
         'Nuevo Pedido Creado',
         'Pedido',
         created.order_number,
-        `Monto total: ${formatPrice(created.total)} USD via ${paymentMethod}`,
+        `Monto total: ${formatPrice(created.total)} COP via ${paymentMethod}`,
         customerName
       );
 
       setCompletedOrderNumber(created.order_number);
       clearCart();
-    } catch (err) {
+    } catch (err: any) {
       console.error('Error placing order', err);
+      setCheckoutError(
+        err.message || 'Ocurrió un error al procesar la orden. Por favor verifica las existencias o intenta nuevamente.'
+      );
     } finally {
       setProcessing(false);
     }
@@ -149,6 +157,16 @@ export const CheckoutPage: React.FC = () => {
         <h1 className="text-3xl font-black text-slate-900 tracking-tight">Finalizar Compra</h1>
         <p className="text-xs text-gray-500 mt-1">Completa los datos de envío y pago seguro para procesar tu orden.</p>
       </div>
+
+      {checkoutError && (
+        <div className="p-4 bg-red-50 border border-red-200 rounded-2xl flex items-center gap-3 text-red-700 text-xs font-semibold animate-shake">
+          <div className="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center shrink-0 text-red-600 font-black">!</div>
+          <div className="flex-1">
+            <span className="font-bold block">No se pudo procesar la compra:</span>
+            <span>{checkoutError}</span>
+          </div>
+        </div>
+      )}
 
       <form onSubmit={handleFormSubmit} className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         

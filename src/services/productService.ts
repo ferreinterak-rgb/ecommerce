@@ -149,8 +149,61 @@ export const INITIAL_PRODUCTS: Product[] = [
   }
 ];
 
+const LOCAL_STORAGE_KEY = 'ferre_products_cache_v1';
+
+// Normaliza registros recibidos de Supabase hacia la interfaz Product
+const normalizeProduct = (row: any): Product => {
+  return {
+    id: String(row.id || `p-${Date.now()}`),
+    name: String(row.name || 'Herramienta sin nombre'),
+    slug: String(row.slug || (row.name ? row.name.toLowerCase().replace(/\s+/g, '-') : `prod-${row.id}`)),
+    brand: String(row.brand || 'FERREINTER'),
+    sku: String(row.sku || `SKU-${row.id}`),
+    description: String(row.description || ''),
+    technical_specs: row.technical_specs || {},
+    price: Number(row.price || 0),
+    discount_price: row.discount_price !== null && row.discount_price !== undefined ? Number(row.discount_price) : undefined,
+    category: String(row.category || 'herramientas-electricas'),
+    // Compatibilidad tanto con stock_qty (esquema DDL) como stock
+    stock: Number(row.stock_qty !== undefined ? row.stock_qty : (row.stock !== undefined ? row.stock : 10)),
+    images: Array.isArray(row.images) && row.images.length > 0 ? row.images : [DEWALT_CHOPSAW_IMAGE],
+    is_featured: Boolean(row.is_featured ?? false),
+    is_active: Boolean(row.is_active ?? true),
+    rating: Number(row.rating || 5.0),
+    reviews_count: Number(row.reviews_count || 0),
+    created_at: String(row.created_at || new Date().toISOString())
+  };
+};
+
 export const productService = {
+  /**
+   * 1. Lectura Ultra Rápida Client-First (<10ms)
+   * Devuelve inmediatamente los datos locales y dispara la sincronización con Supabase en segundo plano.
+   */
   getProducts: async (): Promise<Product[]> => {
+    try {
+      const cached = typeof window !== 'undefined' ? localStorage.getItem(LOCAL_STORAGE_KEY) : null;
+      if (cached) {
+        const parsed = JSON.parse(cached);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          // Sincronización en segundo plano sin congelar la UI (Stale-While-Revalidate)
+          productService.syncFromSupabase().catch(() => {});
+          return parsed;
+        }
+      }
+    } catch (e) {
+      console.warn('Error leyendo cache local de productos:', e);
+    }
+
+    // Si no había caché, espera la sincronización directa
+    return await productService.syncFromSupabase();
+  },
+
+  /**
+   * 2. Sincronización en Segundo Plano con Supabase
+   * Actualiza el caché local de forma silenciosa.
+   */
+  syncFromSupabase: async (): Promise<Product[]> => {
     if (isSupabaseConfigured()) {
       try {
         const { data, error } = await supabase
@@ -160,16 +213,40 @@ export const productService = {
           .order('created_at', { ascending: false });
 
         if (!error && data && data.length > 0) {
-          return data as Product[];
+          const normalized = data.map(normalizeProduct);
+          if (typeof window !== 'undefined') {
+            localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(normalized));
+            window.dispatchEvent(new CustomEvent('ferre_products_synced', { detail: normalized }));
+          }
+          return normalized;
         }
       } catch (err) {
-        console.warn('Falling back to initial products dataset:', err);
+        console.warn('Modo Offline: No se pudo contactar a Supabase, usando respaldo local:', err);
       }
     }
-    return INITIAL_PRODUCTS;
+
+    // Respaldo de contingencia: si la base está vacía o no responde, usa INITIAL_PRODUCTS
+    const fallback = INITIAL_PRODUCTS;
+    if (typeof window !== 'undefined') {
+      try {
+        const existing = localStorage.getItem(LOCAL_STORAGE_KEY);
+        if (!existing) {
+          localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(fallback));
+        }
+      } catch (_) {}
+    }
+    return fallback;
   },
 
+  /**
+   * 3. Obtener Producto por Slug (Cache + Red)
+   */
   getProductBySlug: async (slug: string): Promise<Product | null> => {
+    const products = await productService.getProducts();
+    const found = products.find(p => p.slug === slug);
+    if (found) return found;
+
+    // Si no está en el listado inicial, intenta consulta puntual en Supabase
     if (isSupabaseConfigured()) {
       try {
         const { data, error } = await supabase
@@ -179,39 +256,21 @@ export const productService = {
           .single();
 
         if (!error && data) {
-          return data as Product;
+          const norm = normalizeProduct(data);
+          return norm;
         }
       } catch (err) {
-        console.warn('Error fetching product by slug from Supabase:', err);
+        console.warn('Error obteniendo producto puntual en Supabase:', err);
       }
     }
-    return INITIAL_PRODUCTS.find(p => p.slug === slug) || null;
+    return null;
   },
 
+  /**
+   * 4. Guardar / Actualizar Producto (Escritura Híbrida Optimista)
+   * Actualiza inmediatamente el caché local y persiste en Supabase en background.
+   */
   saveProduct: async (productData: Partial<Product>): Promise<Product> => {
-    if (isSupabaseConfigured()) {
-      try {
-        if (productData.id) {
-          const { data, error } = await supabase
-            .from('products')
-            .update(productData)
-            .eq('id', productData.id)
-            .select()
-            .single();
-          if (!error && data) return data as Product;
-        } else {
-          const { data, error } = await supabase
-            .from('products')
-            .insert([productData])
-            .select()
-            .single();
-          if (!error && data) return data as Product;
-        }
-      } catch (err) {
-        console.warn('Error saving product in Supabase:', err);
-      }
-    }
-
     const id = productData.id || `p-${Date.now()}`;
     const fullProduct: Product = {
       id,
@@ -221,8 +280,9 @@ export const productService = {
       sku: productData.sku || `SKU-${Date.now()}`,
       description: productData.description || '',
       price: productData.price || 0,
+      discount_price: productData.discount_price,
       category: productData.category || 'herramientas-electricas',
-      stock: productData.stock || 10,
+      stock: productData.stock !== undefined ? productData.stock : 10,
       images: productData.images && productData.images.length > 0 ? productData.images : [DEWALT_CHOPSAW_IMAGE],
       is_featured: productData.is_featured ?? false,
       is_active: productData.is_active ?? true,
@@ -231,32 +291,75 @@ export const productService = {
       created_at: productData.created_at || new Date().toISOString()
     };
 
-    const existingIdx = INITIAL_PRODUCTS.findIndex(p => p.id === id);
-    if (existingIdx >= 0) {
-      INITIAL_PRODUCTS[existingIdx] = fullProduct;
-    } else {
-      INITIAL_PRODUCTS.unshift(fullProduct);
+    // A) Actualización optimista inmediata en Cache Local
+    try {
+      const current = await productService.getProducts();
+      const idx = current.findIndex(p => p.id === id || p.sku === fullProduct.sku);
+      if (idx >= 0) {
+        current[idx] = fullProduct;
+      } else {
+        current.unshift(fullProduct);
+      }
+      if (typeof window !== 'undefined') {
+        localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(current));
+      }
+    } catch (e) {
+      console.warn('Error guardando en cache local:', e);
     }
+
+    // B) Persistencia en Supabase
+    if (isSupabaseConfigured()) {
+      try {
+        const dbPayload = {
+          name: fullProduct.name,
+          slug: fullProduct.slug,
+          brand: fullProduct.brand,
+          sku: fullProduct.sku,
+          description: fullProduct.description,
+          price: fullProduct.price,
+          discount_price: fullProduct.discount_price,
+          category: fullProduct.category,
+          stock_qty: fullProduct.stock,
+          images: fullProduct.images,
+          is_featured: fullProduct.is_featured,
+          is_active: fullProduct.is_active
+        };
+
+        if (productData.id && !productData.id.startsWith('p-')) {
+          await supabase.from('products').update(dbPayload).eq('id', productData.id);
+        } else {
+          await supabase.from('products').upsert(dbPayload, { onConflict: 'sku' });
+        }
+      } catch (err) {
+        console.warn('Error persistiendo en Supabase, conservado en local:', err);
+      }
+    }
+
     return fullProduct;
   },
 
+  /**
+   * 5. Eliminar Producto
+   */
   deleteProduct: async (id: string): Promise<boolean> => {
+    // Optimista local
+    try {
+      const current = await productService.getProducts();
+      const filtered = current.filter(p => p.id !== id);
+      if (typeof window !== 'undefined') {
+        localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(filtered));
+      }
+    } catch (_) {}
+
+    // Supabase
     if (isSupabaseConfigured()) {
       try {
-        const { error } = await supabase
-          .from('products')
-          .delete()
-          .eq('id', id);
-        if (!error) return true;
+        await supabase.from('products').delete().eq('id', id);
+        return true;
       } catch (err) {
-        console.warn('Error deleting product in Supabase:', err);
+        console.warn('Error eliminando en Supabase:', err);
       }
     }
-    const idx = INITIAL_PRODUCTS.findIndex(p => p.id === id);
-    if (idx >= 0) {
-      INITIAL_PRODUCTS.splice(idx, 1);
-      return true;
-    }
-    return false;
+    return true;
   }
 };

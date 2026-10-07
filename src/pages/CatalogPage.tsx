@@ -5,6 +5,7 @@ import { productService } from '../services/productService';
 import { ProductCard } from '../components/ProductCard';
 import { CatalogSidebarFilter, FilterState } from '../components/CatalogSidebarFilter';
 import { Search, X, SlidersHorizontal } from 'lucide-react';
+import { isCategoryMatch } from '../utils/resilience';
 
 export const CatalogPage: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -42,6 +43,15 @@ export const CatalogPage: React.FC = () => {
       }
     };
     loadProducts();
+
+    // Listener para actualizar el catálogo automáticamente cuando la sync en background termina
+    const handleSync = (e: any) => {
+      if (e.detail && Array.isArray(e.detail)) {
+        setProducts(e.detail);
+      }
+    };
+    window.addEventListener('ferre_products_synced', handleSync);
+    return () => window.removeEventListener('ferre_products_synced', handleSync);
   }, []);
 
   useEffect(() => {
@@ -104,8 +114,8 @@ export const CatalogPage: React.FC = () => {
     const query = (searchParams.get('q') || searchParams.get('search') || '').toLowerCase().trim();
 
     return products.filter(p => {
-      // 1. Category
-      if (filters.category !== 'all' && p.category !== filters.category) return false;
+      // 1. Category (Resilient flexible matching)
+      if (filters.category !== 'all' && !isCategoryMatch(p.category, filters.category)) return false;
 
       // 2. Price
       const price = p.discount_price ?? p.price;
