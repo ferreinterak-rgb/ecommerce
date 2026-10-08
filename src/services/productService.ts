@@ -387,5 +387,132 @@ export const productService = {
       }
     }
     return true;
+  },
+
+  /**
+   * 6. Importación Masiva de Productos (Upsert Masivo)
+   * Procesa listas de productos, actualiza el estado local e inserta/actualiza en Supabase
+   */
+  bulkUpsertProducts: async (
+    items: Partial<Product>[],
+    onProgress?: (processed: number, total: number) => void
+  ): Promise<{ successCount: number; errorCount: number; errors: string[] }> => {
+    let successCount = 0;
+    let errorCount = 0;
+    const errors: string[] = [];
+
+    // Cargar productos actuales para reconciliar
+    const existing = await productService.getProducts();
+    const updatedMap = new Map<string, Product>();
+    existing.forEach(p => updatedMap.set(p.sku.toUpperCase(), p));
+
+    const preparedProducts: Product[] = [];
+    const dbPayloads: any[] = [];
+
+    for (let i = 0; i < items.length; i++) {
+      const item = items[i];
+      try {
+        const cleanSku = (item.sku || `SKU-${Date.now()}-${i}`).trim().toUpperCase();
+        const existingProd = updatedMap.get(cleanSku);
+
+        const cleanSlug = item.slug || (
+          (item.name || 'producto')
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/(^-|-$)+/g, '') + '-' + cleanSku.toLowerCase()
+        );
+
+        const fullProduct: Product = {
+          id: existingProd?.id || `p-${Date.now()}-${i}`,
+          sku: cleanSku,
+          name: item.name || existingProd?.name || 'Producto Sin Nombre',
+          slug: existingProd?.slug || cleanSlug,
+          brand: item.brand || existingProd?.brand || 'FERREINTER',
+          category: item.category || existingProd?.category || 'herrajes-carpinteria',
+          price: Number(item.price) || existingProd?.price || 0,
+          wholesale_price: item.wholesale_price !== undefined ? Number(item.wholesale_price) : existingProd?.wholesale_price,
+          discount_price: item.discount_price !== undefined ? Number(item.discount_price) : existingProd?.discount_price,
+          stock: item.stock !== undefined ? Number(item.stock) : (existingProd?.stock ?? 100),
+          stock_warehouse: item.stock_warehouse !== undefined ? Number(item.stock_warehouse) : (existingProd?.stock_warehouse ?? 50),
+          stock_store: item.stock_store !== undefined ? Number(item.stock_store) : (existingProd?.stock_store ?? 50),
+          stock_online: item.stock_online !== undefined ? Number(item.stock_online) : (existingProd?.stock_online ?? 0),
+          dimensions: item.dimensions || existingProd?.dimensions,
+          materials: item.materials || existingProd?.materials,
+          warranty: item.warranty || existingProd?.warranty || '1 año directo de fábrica',
+          description: item.description || existingProd?.description || '',
+          inventory_status: (item.stock ?? existingProd?.stock ?? 0) > 0 ? 'Disponible' : 'Agotado',
+          images: (item.images && item.images.length > 0)
+            ? item.images
+            : (existingProd?.images && existingProd.images.length > 0 ? existingProd.images : [DEWALT_CHOPSAW_IMAGE]),
+          is_featured: item.is_featured ?? existingProd?.is_featured ?? false,
+          is_active: item.is_active ?? existingProd?.is_active ?? true,
+          rating: existingProd?.rating || 5,
+          reviews_count: existingProd?.reviews_count || 0,
+          created_at: existingProd?.created_at || new Date().toISOString()
+        };
+
+        updatedMap.set(cleanSku, fullProduct);
+        preparedProducts.push(fullProduct);
+
+        dbPayloads.push({
+          sku: fullProduct.sku,
+          name: fullProduct.name,
+          slug: fullProduct.slug,
+          brand: fullProduct.brand,
+          category: fullProduct.category,
+          price: fullProduct.price,
+          wholesale_price: fullProduct.wholesale_price,
+          discount_price: fullProduct.discount_price,
+          stock_qty: fullProduct.stock,
+          stock_warehouse: fullProduct.stock_warehouse,
+          stock_store: fullProduct.stock_store,
+          stock_online: fullProduct.stock_online,
+          dimensions: fullProduct.dimensions,
+          materials: fullProduct.materials,
+          warranty: fullProduct.warranty,
+          description: fullProduct.description,
+          inventory_status: fullProduct.inventory_status,
+          images: fullProduct.images,
+          is_featured: fullProduct.is_featured,
+          is_active: fullProduct.is_active
+        });
+
+        successCount++;
+      } catch (err: any) {
+        errorCount++;
+        errors.push(`Fila ${i + 1} (${items[i].sku || 'Sin SKU'}): ${err?.message || err}`);
+      }
+
+      if (onProgress && (i % 10 === 0 || i === items.length - 1)) {
+        onProgress(i + 1, items.length);
+      }
+    }
+
+    // Actualizar localmente
+    const finalProductList = Array.from(updatedMap.values());
+    if (typeof window !== 'undefined') {
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(finalProductList));
+      window.dispatchEvent(new CustomEvent('ferre_products_synced', { detail: finalProductList }));
+    }
+
+    // Persistir en Supabase en lotes de 50
+    if (isSupabaseConfigured() && dbPayloads.length > 0) {
+      const BATCH_SIZE = 50;
+      for (let b = 0; b < dbPayloads.length; b += BATCH_SIZE) {
+        const batch = dbPayloads.slice(b, b + BATCH_SIZE);
+        try {
+          const { error } = await supabase.from('products').upsert(batch, { onConflict: 'sku' });
+          if (error) {
+            console.warn(`Error en lote Supabase (${b} a ${b + batch.length}):`, error);
+          }
+        } catch (dbErr: any) {
+          console.warn(`Excepción en lote Supabase:`, dbErr);
+        }
+      }
+    }
+
+    return { successCount, errorCount, errors };
   }
 };

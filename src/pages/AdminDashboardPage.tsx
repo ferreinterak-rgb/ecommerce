@@ -13,8 +13,10 @@ import { productService } from '../services/productService';
 import { orderService } from '../services/orderService';
 import { appointmentService } from '../services/appointmentService';
 import { activityLogService } from '../services/activityLogService';
-import { Package, Plus, Trash2, Edit, ShieldAlert, CheckCircle2 } from 'lucide-react';
+import { Package, Plus, Trash2, Edit, ShieldAlert, CheckCircle2, Download, Upload, FileSpreadsheet, FileText, Search } from 'lucide-react';
 import { useCurrency } from '../context/CurrencyContext';
+import { BulkImportModal } from '../components/admin/BulkImportModal';
+import { exportProductsToExcel, exportProductsToCSV, downloadImportTemplateExcel } from '../utils/excelService';
 
 export const AdminDashboardPage: React.FC = () => {
   const { user, isCollaborator } = useAuth();
@@ -27,9 +29,11 @@ export const AdminDashboardPage: React.FC = () => {
   const [orders, setOrders] = useState<Order[]>([]);
   const [appointmentsCount, setAppointmentsCount] = useState<number>(0);
   const [loading, setLoading] = useState(true);
+  const [productSearchQuery, setProductSearchQuery] = useState('');
 
   // Modals
   const [isProductModalOpen, setIsProductModalOpen] = useState(false);
+  const [isBulkImportOpen, setIsBulkImportOpen] = useState(false);
   const [editingProduct, setEditingProduct] = useState<Product | null>(null);
   const [selectedOrder, setSelectedOrder] = useState<Order | null>(null);
 
@@ -140,21 +144,89 @@ export const AdminDashboardPage: React.FC = () => {
 
         {activeTab === 'products' && (
           <div className="space-y-6 animate-fadeIn">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            {/* Header & Primary Actions */}
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
               <div>
                 <h2 className="text-2xl font-black text-slate-900 tracking-tight">Gestión de Inventario & Productos</h2>
-                <p className="text-xs text-gray-500 mt-1">Crea, edita o elimina productos del catálogo comercial.</p>
+                <p className="text-xs text-gray-500 mt-1">Crea, edita o importa y exporta masivamente tu catálogo comercial.</p>
               </div>
 
-              <button
-                onClick={() => {
-                  setEditingProduct(null);
-                  setIsProductModalOpen(true);
-                }}
-                className="px-5 py-3 rounded-xl bg-[#f48f25] text-black font-extrabold text-xs hover:bg-[#d97706] flex items-center gap-2 shadow-md shadow-[#f48f25]/30 self-start sm:self-auto"
-              >
-                <Plus className="w-4 h-4 stroke-[3]" /> Registrar Nuevo Producto
-              </button>
+              {/* Botonera de Acciones Masivas y Registro */}
+              <div className="flex flex-wrap items-center gap-2.5">
+                <button
+                  onClick={() => setIsBulkImportOpen(true)}
+                  className="px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-black text-white font-bold text-xs flex items-center gap-2 shadow-sm transition-colors"
+                  title="Cargar productos masivamente desde Excel o CSV"
+                >
+                  <Upload className="w-4 h-4 text-[#f48f25]" />
+                  <span>Importar Masivo</span>
+                </button>
+
+                <button
+                  onClick={() => exportProductsToExcel(products)}
+                  className="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center gap-2 shadow-sm transition-colors"
+                  title="Descargar todo el inventario en formato Excel"
+                >
+                  <FileSpreadsheet className="w-4 h-4" />
+                  <span>Exportar Excel</span>
+                </button>
+
+                <button
+                  onClick={() => exportProductsToCSV(products)}
+                  className="px-3.5 py-2.5 rounded-xl bg-white hover:bg-gray-100 text-slate-700 border border-gray-200 font-bold text-xs flex items-center gap-1.5 shadow-sm transition-colors"
+                  title="Descargar en formato CSV plano"
+                >
+                  <FileText className="w-4 h-4 text-gray-500" />
+                  <span>CSV</span>
+                </button>
+
+                <button
+                  onClick={downloadImportTemplateExcel}
+                  className="px-3.5 py-2.5 rounded-xl bg-white hover:bg-gray-100 text-slate-700 border border-gray-200 font-bold text-xs flex items-center gap-1.5 shadow-sm transition-colors"
+                  title="Descargar plantilla de Excel con formato y ejemplos"
+                >
+                  <Download className="w-4 h-4 text-[#f48f25]" />
+                  <span>Plantilla</span>
+                </button>
+
+                <button
+                  onClick={() => {
+                    setEditingProduct(null);
+                    setIsProductModalOpen(true);
+                  }}
+                  className="px-5 py-2.5 rounded-xl bg-[#f48f25] text-black font-extrabold text-xs hover:bg-[#d97706] flex items-center gap-2 shadow-md shadow-[#f48f25]/30 transition-colors"
+                >
+                  <Plus className="w-4 h-4 stroke-[3]" /> Nuevo Producto
+                </button>
+              </div>
+            </div>
+
+            {/* Barra de Búsqueda Rápida en Inventario */}
+            <div className="bg-[#f8f7f5] p-3.5 rounded-2xl border border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+              <div className="relative w-full sm:w-96">
+                <input
+                  type="text"
+                  placeholder="Buscar por SKU, Nombre, Marca o Categoría..."
+                  value={productSearchQuery}
+                  onChange={(e) => setProductSearchQuery(e.target.value)}
+                  className="w-full bg-white text-slate-900 placeholder-gray-400 text-xs rounded-xl pl-9 pr-4 py-2 border border-gray-200 focus:outline-none focus:border-[#f48f25] shadow-sm"
+                />
+                <Search className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
+                {productSearchQuery && (
+                  <button
+                    onClick={() => setProductSearchQuery('')}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-black font-bold"
+                  >
+                    ×
+                  </button>
+                )}
+              </div>
+
+              <div className="text-gray-500 font-medium">
+                Mostrando <strong className="text-slate-900">
+                  {products.filter(p => !productSearchQuery || p.name.toLowerCase().includes(productSearchQuery.toLowerCase()) || p.sku.toLowerCase().includes(productSearchQuery.toLowerCase()) || p.brand.toLowerCase().includes(productSearchQuery.toLowerCase()) || p.category.toLowerCase().includes(productSearchQuery.toLowerCase())).length}
+                </strong> de <strong className="text-slate-900">{products.length}</strong> productos
+              </div>
             </div>
 
             {/* Products Table */}
@@ -174,7 +246,9 @@ export const AdminDashboardPage: React.FC = () => {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-100">
-                  {products.map((p) => (
+                  {products
+                    .filter(p => !productSearchQuery || p.name.toLowerCase().includes(productSearchQuery.toLowerCase()) || p.sku.toLowerCase().includes(productSearchQuery.toLowerCase()) || p.brand.toLowerCase().includes(productSearchQuery.toLowerCase()) || p.category.toLowerCase().includes(productSearchQuery.toLowerCase()))
+                    .map((p) => (
                     <tr key={p.id} className="hover:bg-gray-50/80 transition-colors">
                       <td className="p-3.5 flex items-center gap-3">
                         <div className="relative group shrink-0">
@@ -287,6 +361,17 @@ export const AdminDashboardPage: React.FC = () => {
         order={selectedOrder}
         onClose={() => setSelectedOrder(null)}
         onUpdateStatus={handleUpdateOrderStatus}
+      />
+
+      {/* Bulk Import Modal */}
+      <BulkImportModal
+        isOpen={isBulkImportOpen}
+        onClose={() => setIsBulkImportOpen(false)}
+        onSuccess={() => {
+          setIsBulkImportOpen(false);
+          loadData();
+        }}
+        existingProducts={products}
       />
 
     </div>
