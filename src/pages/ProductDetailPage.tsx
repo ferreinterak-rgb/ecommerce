@@ -89,7 +89,7 @@ export const ProductDetailPage: React.FC = () => {
     : ['Acero Inox 304', 'Acero Zincado', 'Negro Mate'];
 
   const sizeOptions = product.dimensions
-    ? [product.dimensions, '4X3 Pulgadas', 'Standard'].slice(0, 4)
+    ? [product.dimensions, '4X3 Pulgadas', 'Estándar'].slice(0, 4)
     : ['35MM', '2 Pulgadas', '3 Pulgadas', '4X3'];
 
   return (
@@ -98,9 +98,9 @@ export const ProductDetailPage: React.FC = () => {
         
         {/* Breadcrumb estilo minimalista idéntico a la imagen de referencia */}
         <nav className="text-xs text-gray-400 flex items-center gap-2">
-          <Link to="/" className="hover:text-black transition-colors">Home Page</Link>
+          <Link to="/" className="hover:text-black transition-colors">Inicio</Link>
           <span>&gt;</span>
-          <Link to="/catalog" className="hover:text-black transition-colors">Catalog</Link>
+          <Link to="/catalog" className="hover:text-black transition-colors">Catálogo</Link>
           <span>&gt;</span>
           <span className="text-slate-800 font-medium">{product.name}</span>
         </nav>
@@ -172,7 +172,7 @@ export const ProductDetailPage: React.FC = () => {
             {/* Descripción */}
             <div>
               <h3 className="text-xs font-semibold text-slate-900 uppercase tracking-wider mb-2">
-                Description:
+                Descripción:
               </h3>
               <p className="text-xs text-gray-500 leading-relaxed">
                 {product.description || 'Diseñado con estándares de alta durabilidad y rendimiento profesional para carpintería, cerrajería y proyectos industriales.'}
@@ -206,10 +206,10 @@ export const ProductDetailPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Selector de Medida / Tamaño (Size) */}
+            {/* Selector de Medida / Tamaño */}
             <div>
               <h3 className="text-xs font-semibold text-slate-900 uppercase tracking-wider mb-2.5">
-                Size / Medida:
+                Medida / Dimensión:
               </h3>
               <div className="flex flex-wrap gap-2">
                 {sizeOptions.map((size) => {
@@ -233,7 +233,7 @@ export const ProductDetailPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Fila de Controles: Selector de Cantidad + Botón Negro "Add To Cart" */}
+            {/* Fila de Controles: Selector de Cantidad + Botón Negro "Agregar al Carrito" */}
             <div className="flex items-center gap-3 pt-3">
               
               {/* Selector de Cantidad en forma de píldora gris (#f4f4f4) */}
@@ -268,7 +268,7 @@ export const ProductDetailPage: React.FC = () => {
                   </>
                 ) : (
                   <>
-                    <span>Add To Cart</span>
+                    <span>Agregar al Carrito</span>
                     <span className="bg-neutral-800 text-white text-[11px] px-2.5 py-0.5 rounded-full font-mono font-medium ml-1">
                       {formatPrice(currentPrice * quantity)}
                     </span>
@@ -290,17 +290,17 @@ export const ProductDetailPage: React.FC = () => {
 
         </div>
 
-        {/* Sección de Productos Relacionados ("Related Product") idéntica a la imagen */}
+        {/* Sección de Productos Relacionados idéntica a la imagen */}
         {relatedProducts.length > 0 && (
           <div className="pt-12 border-t border-gray-100 space-y-6">
             
             {/* Cabecera de la sección */}
             <div className="flex items-center justify-between">
               <h2 className="text-xl font-bold text-slate-900 tracking-tight">
-                Related Product
+                Productos Relacionados
               </h2>
               <Link to="/catalog" className="text-xs font-semibold text-slate-900 hover:text-gray-500 flex items-center gap-1">
-                All Product <span>&gt;</span>
+                Ver Todo <span>&gt;</span>
               </Link>
             </div>
 
