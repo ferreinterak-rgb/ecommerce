@@ -111,16 +111,16 @@ export const ProductDetailPage: React.FC = () => {
           {/* Columna Izquierda: Galería con miniaturas verticales y foto principal */}
           <div className="lg:col-span-7 flex flex-col-reverse sm:flex-row gap-4">
             
-            {/* Lista Vertical de Miniaturas (3 recuadros suaves a la izquierda) */}
+            {/* Lista Vertical de Miniaturas sin marcos grises */}
             <div className="flex sm:flex-col gap-3 justify-center sm:justify-start">
               {displayThumbnails.map((img, idx) => (
                 <button
                   key={idx}
                   onClick={() => setSelectedImage(img)}
-                  className={`w-16 h-20 sm:w-20 sm:h-24 rounded-2xl bg-[#f4f4f4] p-2 flex items-center justify-center overflow-hidden border-2 transition-all cursor-pointer ${
+                  className={`w-16 h-20 sm:w-20 sm:h-24 rounded-xl bg-white p-1.5 flex items-center justify-center overflow-hidden border transition-all cursor-pointer ${
                     selectedImage === img
-                      ? 'border-black'
-                      : 'border-transparent hover:border-gray-300'
+                      ? 'border-black ring-1 ring-black'
+                      : 'border-gray-200 hover:border-gray-400'
                   }`}
                 >
                   <img src={img} alt={`Vista ${idx + 1}`} className="w-full h-full object-contain" />
@@ -128,8 +128,8 @@ export const ProductDetailPage: React.FC = () => {
               ))}
             </div>
 
-            {/* Gran Imagen Principal en marco redondeado neutro (#f4f4f4) */}
-            <div className="flex-1 bg-[#f4f4f4] rounded-3xl aspect-square sm:aspect-[4/5] p-8 flex items-center justify-center relative overflow-hidden">
+            {/* Imagen Principal limpia sin marco gris */}
+            <div className="flex-1 bg-white aspect-square sm:aspect-[4/5] p-4 flex items-center justify-center relative overflow-hidden">
               <img
                 src={selectedImage || product.images[0] || '/dewalt-chopsaw.jpg'}
                 alt={product.name}

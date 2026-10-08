@@ -177,17 +177,17 @@ export const CategorySlider: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         
         {/* Encabezado con Título y Controles del Slider */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-slate-200/80 pb-5">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-gray-100 pb-5">
           <div>
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#f48f25]/10 text-[#f48f25] text-xs font-black uppercase tracking-wider mb-2">
               <Sparkles className="w-3.5 h-3.5" />
-              Categorías de Inventario Real
+              Nuestras Categorías
             </div>
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-              Explora Nuestro Catálogo por Categoría
+              Nuestras Categorías de Productos
             </h2>
             <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-xl">
-              Navega por nuestras líneas especializadas en herrajes, cerraduras, discos de corte y herramientas de sujeción técnica.
+              Explora nuestras líneas especializadas en herrajes, cerraduras, discos de corte y herramientas para carpintería.
             </p>
           </div>
 
@@ -205,7 +205,7 @@ export const CategorySlider: React.FC = () => {
                 type="button"
                 onClick={() => scroll('left')}
                 disabled={!canScrollLeft}
-                className="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all shadow-xs disabled:opacity-30 disabled:pointer-events-none cursor-pointer"
+                className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-slate-700 hover:bg-black hover:text-white hover:border-black transition-all shadow-xs disabled:opacity-30 disabled:pointer-events-none cursor-pointer"
                 title="Categoría anterior"
                 aria-label="Categoría anterior"
               >
@@ -216,7 +216,7 @@ export const CategorySlider: React.FC = () => {
                 type="button"
                 onClick={() => scroll('right')}
                 disabled={!canScrollRight}
-                className="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all shadow-xs disabled:opacity-30 disabled:pointer-events-none cursor-pointer"
+                className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-slate-700 hover:bg-black hover:text-white hover:border-black transition-all shadow-xs disabled:opacity-30 disabled:pointer-events-none cursor-pointer"
                 title="Siguiente categoría"
                 aria-label="Siguiente categoría"
               >
@@ -235,38 +235,23 @@ export const CategorySlider: React.FC = () => {
           {categoryCards.map((cat) => (
             <div
               key={cat.id}
-              className="w-[280px] sm:w-[320px] lg:w-[350px] shrink-0 snap-start group"
+              className="w-[260px] sm:w-[300px] lg:w-[320px] shrink-0 snap-start group"
             >
-              <div className="h-full bg-white rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-slate-300 transition-all duration-300 overflow-hidden flex flex-col justify-between p-5 relative">
+              <div className="h-full bg-white flex flex-col justify-between p-2 relative">
                 
-                {/* Zona Superior: Badge y Conteo Real */}
-                <div className="flex items-center justify-between mb-3 z-10">
-                  <span className="px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-slate-100 text-slate-800 border border-slate-200">
-                    {cat.badgeTag}
-                  </span>
-                  
-                  <span className="inline-flex items-center gap-1 text-[11px] font-extrabold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                    {cat.count} {cat.count === 1 ? 'producto' : 'productos'}
-                  </span>
-                </div>
-
-                {/* Imagen Representativa del Producto de la Categoría */}
+                {/* Imagen Limpia del Producto de la Categoría SIN marco ni fondo gris */}
                 <Link
                   to={`/catalog?category=${cat.id}`}
-                  className="relative aspect-4/3 rounded-2xl bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-100 overflow-hidden flex items-center justify-center p-4 mb-4 group-hover:scale-[1.02] transition-transform duration-300 block"
+                  className="relative aspect-square flex items-center justify-center p-3 mb-2 overflow-hidden block bg-transparent"
                 >
                   <img
                     src={cat.displayImage}
                     alt={cat.name}
-                    className="w-full h-full object-contain filter group-hover:drop-shadow-md transition-all duration-500"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = cat.fallbackImage;
                     }}
                   />
-                  
-                  {/* Gradiente sutil decorativo */}
-                  <div className={`absolute inset-0 bg-gradient-to-t ${cat.accentBg} opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`} />
                 </Link>
 
                 {/* Contenido Textual */}

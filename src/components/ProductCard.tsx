@@ -25,14 +25,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
     <div className="group flex flex-col justify-between font-sans transition-all duration-200">
       
-      {/* Top Image Container: Fondo plano limpio y minimalista (sin marcos ni sombras de tarjeta) */}
+      {/* Top Image Container: Imagen completamente limpia sin marco ni fondo gris */}
       <Link
         to={`/product/${product.slug}`}
-        className="relative bg-[#f5f4f0] rounded-2xl aspect-[4/5] p-5 flex items-center justify-center overflow-hidden mb-3 group-hover:bg-[#ebe9e3] transition-colors duration-200"
+        className="relative bg-white aspect-square p-2 flex items-center justify-center overflow-hidden mb-3"
       >
         {/* Badge de Oferta / Descuento */}
         {hasDiscount && (
-          <span className="absolute top-3 left-3 bg-[#f48f25] text-black font-extrabold text-[10px] px-2.5 py-1 rounded-full uppercase font-mono shadow-sm z-10">
+          <span className="absolute top-2 left-2 bg-black text-white font-extrabold text-[10px] px-2 py-0.5 rounded-full uppercase font-mono shadow-sm z-10">
             -{discountPercent}%
           </span>
         )}
