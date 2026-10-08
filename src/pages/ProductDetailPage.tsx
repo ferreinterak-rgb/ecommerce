@@ -129,19 +129,55 @@ export const ProductDetailPage: React.FC = () => {
           </div>
 
           {/* Pricing Box */}
-          <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 flex items-baseline gap-3">
-            <span className="text-3xl font-black text-[#031834]">
-              {formatPrice(currentPrice)}
-            </span>
-            {hasDiscount && (
-              <span className="text-base text-gray-400 line-through font-medium">
-                {formatPrice(product.price)}
+          <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+            <div className="flex items-baseline gap-3">
+              <span className="text-3xl font-black text-[#031834]">
+                {formatPrice(currentPrice)}
               </span>
+              {hasDiscount && (
+                <span className="text-base text-gray-400 line-through font-medium">
+                  {formatPrice(product.price)}
+                </span>
+              )}
+              <span className="ml-auto text-xs font-bold text-emerald-600 flex items-center gap-1">
+                <CheckCircle2 className="w-4 h-4" /> Stock disponible ({product.stock} un.)
+              </span>
+            </div>
+
+            {product.wholesale_price && (
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-50 rounded-lg border border-amber-200 text-xs text-amber-900">
+                <span className="font-extrabold uppercase text-[10px] bg-[#f48f25] text-black px-1.5 py-0.5 rounded">Mayorista</span>
+                <span>Precio por mayor: <strong>{formatPrice(product.wholesale_price)}</strong></span>
+              </div>
             )}
-            <span className="ml-auto text-xs font-bold text-emerald-600 flex items-center gap-1">
-              <CheckCircle2 className="w-4 h-4" /> Stock disponible ({product.stock} unidades)
-            </span>
+
+            {(product.stock_warehouse || product.stock_store || product.stock_online) && (
+              <div className="text-[11px] text-gray-400 font-mono pt-1">
+                Ubicación inventario: Bodega ({product.stock_warehouse ?? 0}) · Tienda ({product.stock_store ?? 0}) · E-commerce ({product.stock_online ?? 0})
+              </div>
+            )}
           </div>
+
+          {/* Quick Technical Specs Badges */}
+          {(product.dimensions || product.materials || product.warranty) && (
+            <div className="flex flex-wrap gap-2 text-xs">
+              {product.dimensions && (
+                <div className="px-3 py-1.5 rounded-xl bg-slate-100 border border-gray-200 text-slate-800 font-medium">
+                  <span className="font-bold text-gray-400 mr-1.5">Medida:</span>{product.dimensions}
+                </div>
+              )}
+              {product.materials && (
+                <div className="px-3 py-1.5 rounded-xl bg-slate-100 border border-gray-200 text-slate-800 font-medium">
+                  <span className="font-bold text-gray-400 mr-1.5">Material:</span>{product.materials}
+                </div>
+              )}
+              {product.warranty && (
+                <div className="px-3 py-1.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 font-medium">
+                  <span className="font-bold text-emerald-600 mr-1.5">Garantía:</span>{product.warranty}
+                </div>
+              )}
+            </div>
+          )}
 
           {/* Description */}
           <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">

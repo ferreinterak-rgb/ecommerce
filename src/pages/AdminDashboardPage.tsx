@@ -162,42 +162,74 @@ export const AdminDashboardPage: React.FC = () => {
               <table className="w-full text-left text-xs border-collapse">
                 <thead className="bg-[#031834] text-white uppercase font-bold text-[10px]">
                   <tr>
-                    <th className="p-4">Producto</th>
-                    <th className="p-4">SKU</th>
-                    <th className="p-4">Categoría</th>
-                    <th className="p-4">Precio USD</th>
-                    <th className="p-4 text-center">Stock</th>
-                    <th className="p-4 text-center">Destacado</th>
-                    <th className="p-4 text-right">Acciones</th>
+                    <th className="p-3.5">Producto</th>
+                    <th className="p-3.5">SKU</th>
+                    <th className="p-3.5">Categoría</th>
+                    <th className="p-3.5">Precio Venta (COP)</th>
+                    <th className="p-3.5">Precio Por Mayor</th>
+                    <th className="p-3.5 text-center">Stock (Bod / Tda / Web)</th>
+                    <th className="p-3.5">Dimensiones & Material</th>
+                    <th className="p-3.5 text-center">Destacado</th>
+                    <th className="p-3.5 text-right">Acciones</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-100">
                   {products.map((p) => (
                     <tr key={p.id} className="hover:bg-gray-50/80 transition-colors">
-                      <td className="p-4 flex items-center gap-3">
-                        <img src={p.images[0]} alt={p.name} className="w-10 h-10 object-contain rounded-lg bg-gray-50 p-1" />
+                      <td className="p-3.5 flex items-center gap-3">
+                        <div className="relative group shrink-0">
+                          <img src={p.images[0]} alt={p.name} className="w-11 h-11 object-contain rounded-lg bg-gray-50 p-1 border border-gray-200" />
+                          <button
+                            onClick={() => {
+                              setEditingProduct(p);
+                              setIsProductModalOpen(true);
+                            }}
+                            className="absolute inset-0 bg-black/50 text-[9px] text-white font-bold opacity-0 group-hover:opacity-100 flex items-center justify-center rounded-lg transition-opacity"
+                            title="Cambiar Foto"
+                          >
+                            Foto
+                          </button>
+                        </div>
                         <div>
                           <span className="font-bold text-slate-900 line-clamp-1">{p.name}</span>
                           <span className="text-[10px] text-[#f48f25] font-bold uppercase">{p.brand}</span>
                         </div>
                       </td>
 
-                      <td className="p-4 font-mono text-gray-500">{p.sku}</td>
-                      <td className="p-4 font-semibold text-gray-700">{p.category}</td>
+                      <td className="p-3.5 font-mono text-gray-500 font-semibold">{p.sku}</td>
+                      <td className="p-3.5 font-semibold text-gray-700 capitalize">{p.category}</td>
                       
-                      <td className="p-4 font-bold text-slate-900">
-                        {formatPrice(p.discount_price ?? p.price)}
+                      <td className="p-3.5 font-bold text-slate-900 font-mono">
+                        {formatPrice(p.price)}
+                        {p.discount_price && (
+                          <span className="block text-[10px] text-emerald-600 font-normal">
+                            Oferta: {formatPrice(p.discount_price)}
+                          </span>
+                        )}
                       </td>
 
-                      <td className="p-4 text-center">
-                        <span className={`px-2.5 py-1 rounded-full text-[10px] font-extrabold ${
+                      <td className="p-3.5 font-mono font-bold text-emerald-700">
+                        {p.wholesale_price ? formatPrice(p.wholesale_price) : <span className="text-gray-400 font-normal">-</span>}
+                      </td>
+
+                      <td className="p-3.5 text-center">
+                        <span className={`inline-block px-2 py-0.5 rounded-full text-[10px] font-extrabold ${
                           p.stock > 10 ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'
                         }`}>
                           {p.stock} un.
                         </span>
+                        <div className="text-[9px] text-gray-400 font-mono mt-0.5">
+                          B:{p.stock_warehouse ?? 0} | T:{p.stock_store ?? 0} | W:{p.stock_online ?? 0}
+                        </div>
                       </td>
 
-                      <td className="p-4 text-center">
+                      <td className="p-3.5 text-gray-600">
+                        {p.dimensions && <span className="font-bold block text-[10px] text-slate-800">{p.dimensions}</span>}
+                        {p.materials && <span className="text-[10px] text-gray-400 block">{p.materials}</span>}
+                        {!p.dimensions && !p.materials && <span className="text-gray-300">-</span>}
+                      </td>
+
+                      <td className="p-3.5 text-center">
                         {p.is_featured ? (
                           <span className="bg-[#f48f25]/20 text-[#d97706] text-[10px] font-black px-2 py-0.5 rounded-full">
                             SI
@@ -205,14 +237,14 @@ export const AdminDashboardPage: React.FC = () => {
                         ) : <span className="text-gray-400 text-[10px]">NO</span>}
                       </td>
 
-                      <td className="p-4 text-right space-x-2">
+                      <td className="p-3.5 text-right space-x-2 whitespace-nowrap">
                         <button
                           onClick={() => {
                             setEditingProduct(p);
                             setIsProductModalOpen(true);
                           }}
                           className="p-1.5 rounded-lg bg-blue-50 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors"
-                          title="Editar"
+                          title="Editar producto y fotos"
                         >
                           <Edit className="w-3.5 h-3.5" />
                         </button>

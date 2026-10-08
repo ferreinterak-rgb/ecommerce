@@ -36,8 +36,8 @@ const SLIDES: SlideItem[] = [
     title: 'Caja de Herramientas Uso Rudo 20"',
     subtitle: 'Cierres de Acero Inoxidable & Polímero de Alto Impacto',
     description: 'Caja porta-herramientas reforzada con cierres broches metálicos anticorrosivos, bandeja organizadora extraíble y estructura indestructible.',
-    price: 34.50, // Formatted via COP context ($ 136.275 COP)
-    originalPrice: 42.00,
+    price: 136000,
+    originalPrice: 165000,
     productSlug: 'caja-de-herramientas-husky-20in',
     productImage: '/truper-toolbox.png',
     theme: {
@@ -60,8 +60,8 @@ const SLIDES: SlideItem[] = [
     title: 'Flexómetro PowerLock 25ft / 7.5m',
     subtitle: 'Cinta Ancha de Alta Visibilidad & Carcasa Antiderrapante',
     description: 'Flexómetro profesional Gripper de 10m/33ft con cinta ancha de 32mm recubierta en polímero resistente a la abrasión y freno de impacto.',
-    price: 21.99,
-    originalPrice: 26.00,
+    price: 86900,
+    originalPrice: 105000,
     productSlug: 'cinta-metrica-stanley-powerlock-25ft',
     productImage: '/truper-flexometro.png',
     theme: {
@@ -84,8 +84,8 @@ const SLIDES: SlideItem[] = [
     title: 'Taladro Percutor 20V Sin Carbones',
     subtitle: 'Combo Completo con Maletín & Juego de 100 Brocas',
     description: 'Taladro percutor inalámbrico Brushless sin carbones con 2 baterías de litio, cargador rápido y maletín rígido con 100 accesorios profesionales.',
-    price: 199.00,
-    originalPrice: 239.00,
+    price: 789000,
+    originalPrice: 950000,
     productSlug: 'taladro-percutor-dewalt-20v-max',
     productImage: '/dewalt-drill-kit.jpg',
     theme: {
@@ -108,8 +108,8 @@ const SLIDES: SlideItem[] = [
     title: 'Tronzadora Profesional de Metales 14"',
     subtitle: 'Corte de Alta Precisión en Aceros Pesados',
     description: 'Tronzadora de disco de 14 pulgadas con motor de alto rendimiento de 2200W, prensa de ajuste rápido y deflector de chispas ajustable.',
-    price: 189.99,
-    originalPrice: 219.00,
+    price: 750000,
+    originalPrice: 860000,
     productSlug: 'tronzadora-de-metales-dewalt-14-2200w',
     productImage: '/dewalt-chopsaw.jpg',
     theme: {

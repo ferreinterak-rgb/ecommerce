@@ -20,7 +20,7 @@ export const CatalogPage: React.FC = () => {
 
   const [filters, setFilters] = useState<FilterState>({
     category: initialCategory,
-    maxPrice: 500,
+    maxPrice: 300000,
     selectedBrands: [],
     onlyDiscounted: false,
     onlyInStock: false,
@@ -79,7 +79,7 @@ export const CatalogPage: React.FC = () => {
   const resetFilters = () => {
     setFilters({
       category: 'all',
-      maxPrice: 500,
+      maxPrice: 300000,
       selectedBrands: [],
       onlyDiscounted: false,
       onlyInStock: false,

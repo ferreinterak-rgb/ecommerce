@@ -21,8 +21,16 @@ export interface Product {
   technical_specs?: Record<string, string>;
   price: number;
   discount_price?: number | null;
+  wholesale_price?: number | null;
   category: string;
   stock: number;
+  stock_warehouse?: number | null;
+  stock_store?: number | null;
+  stock_online?: number | null;
+  warranty?: string | null;
+  dimensions?: string | null;
+  materials?: string | null;
+  inventory_status?: string | null;
   images: string[];
   is_featured: boolean;
   is_active: boolean;

@@ -114,16 +114,16 @@ export const CatalogSidebarFilter: React.FC<CatalogSidebarFilterProps> = ({
         </div>
         <input
           type="range"
-          min="10"
-          max="500"
-          step="10"
+          min="1000"
+          max="300000"
+          step="1000"
           value={filters.maxPrice}
           onChange={(e) => onFilterChange({ maxPrice: Number(e.target.value) })}
           className="w-full accent-[#f48f25] cursor-pointer"
         />
         <div className="flex items-center justify-between text-[11px] text-gray-400 font-mono">
-          <span>{formatPrice(10)}</span>
-          <span>{formatPrice(500)}</span>
+          <span>{formatPrice(1000)}</span>
+          <span>{formatPrice(300000)}</span>
         </div>
       </div>
 

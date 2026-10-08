@@ -152,7 +152,7 @@ const LEGACY_MOCK_PRODUCTS: Product[] = [
   }
 ];
 
-const LOCAL_STORAGE_KEY = 'ferre_products_cache_v2';
+const LOCAL_STORAGE_KEY = 'ferre_products_cache_v3';
 
 // Normaliza registros recibidos de Supabase hacia la interfaz Product
 const normalizeProduct = (row: any): Product => {
@@ -166,9 +166,16 @@ const normalizeProduct = (row: any): Product => {
     technical_specs: row.technical_specs || {},
     price: Number(row.price || 0),
     discount_price: row.discount_price !== null && row.discount_price !== undefined ? Number(row.discount_price) : undefined,
-    category: String(row.category || 'herramientas-electricas'),
-    // Compatibilidad tanto con stock_qty (esquema DDL) como stock
-    stock: Number(row.stock_qty !== undefined ? row.stock_qty : (row.stock !== undefined ? row.stock : 10)),
+    wholesale_price: row.wholesale_price !== null && row.wholesale_price !== undefined ? Number(row.wholesale_price) : undefined,
+    category: String(row.category || 'bisagras'),
+    stock: Number(row.stock_qty !== undefined ? row.stock_qty : (row.stock !== undefined ? row.stock : 1000)),
+    stock_warehouse: Number(row.stock_warehouse ?? 400),
+    stock_store: Number(row.stock_store ?? 200),
+    stock_online: Number(row.stock_online ?? 400),
+    warranty: row.warranty || undefined,
+    dimensions: row.dimensions || undefined,
+    materials: row.materials || undefined,
+    inventory_status: row.inventory_status || 'Disponible',
     images: Array.isArray(row.images) && row.images.length > 0 ? row.images : [DEWALT_CHOPSAW_IMAGE],
     is_featured: Boolean(row.is_featured ?? false),
     is_active: Boolean(row.is_active ?? true),
@@ -284,8 +291,16 @@ export const productService = {
       description: productData.description || '',
       price: productData.price || 0,
       discount_price: productData.discount_price,
-      category: productData.category || 'herramientas-electricas',
-      stock: productData.stock !== undefined ? productData.stock : 10,
+      wholesale_price: productData.wholesale_price,
+      category: productData.category || 'bisagras',
+      stock: productData.stock !== undefined ? productData.stock : 1000,
+      stock_warehouse: productData.stock_warehouse ?? 400,
+      stock_store: productData.stock_store ?? 200,
+      stock_online: productData.stock_online ?? 400,
+      warranty: productData.warranty,
+      dimensions: productData.dimensions,
+      materials: productData.materials,
+      inventory_status: productData.inventory_status || 'Disponible',
       images: productData.images && productData.images.length > 0 ? productData.images : [DEWALT_CHOPSAW_IMAGE],
       is_featured: productData.is_featured ?? false,
       is_active: productData.is_active ?? true,
@@ -321,8 +336,16 @@ export const productService = {
           description: fullProduct.description,
           price: fullProduct.price,
           discount_price: fullProduct.discount_price,
+          wholesale_price: fullProduct.wholesale_price,
           category: fullProduct.category,
           stock_qty: fullProduct.stock,
+          stock_warehouse: fullProduct.stock_warehouse,
+          stock_store: fullProduct.stock_store,
+          stock_online: fullProduct.stock_online,
+          warranty: fullProduct.warranty,
+          dimensions: fullProduct.dimensions,
+          materials: fullProduct.materials,
+          inventory_status: fullProduct.inventory_status,
           images: fullProduct.images,
           is_featured: fullProduct.is_featured,
           is_active: fullProduct.is_active

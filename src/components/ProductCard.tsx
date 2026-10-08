@@ -65,10 +65,15 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           </h3>
         </Link>
 
-        {/* Subtitle / Tagline */}
-        <p className="text-xs text-gray-400 font-medium line-clamp-1">
-          {product.brand ? `Línea Profesional ${product.brand}` : 'Herramienta de Máximo Rendimiento'}
-        </p>
+        {/* Subtitle / Tagline & Dimensions */}
+        <div className="flex items-center gap-1.5 text-xs text-gray-400 font-medium line-clamp-1">
+          <span>{product.brand ? `Línea ${product.brand}` : 'Herramienta'}</span>
+          {product.dimensions && (
+            <span className="text-[10px] bg-slate-100 text-slate-700 px-1.5 py-0.2 rounded font-mono font-bold shrink-0">
+              {product.dimensions}
+            </span>
+          )}
+        </div>
 
         {/* Short Description */}
         <p className="text-xs text-gray-500 line-clamp-2 leading-relaxed pt-1">
@@ -78,18 +83,22 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       </div>
 
       {/* Bottom Row: Colombian Price + Black Pill CTA Button with White Circle Arrow */}
-      <div className="flex items-center justify-between gap-2 pt-4 mt-3 border-t border-gray-100 px-1">
+      <div className="flex items-center justify-between gap-2 pt-3 mt-2 border-t border-gray-100 px-1">
         
         {/* Price in COP (Single line formatted cleanly) */}
         <div className="flex flex-col shrink-0">
           <span className="text-base sm:text-lg font-black text-slate-900 font-mono tracking-tight whitespace-nowrap">
             {formatPrice(currentPrice)}
           </span>
-          {hasDiscount && (
+          {product.wholesale_price ? (
+            <span className="text-[10px] text-emerald-700 font-bold font-mono whitespace-nowrap">
+              Mayor: {formatPrice(product.wholesale_price)}
+            </span>
+          ) : hasDiscount ? (
             <span className="text-[10px] text-gray-400 line-through font-mono whitespace-nowrap">
               {formatPrice(product.price)}
             </span>
-          )}
+          ) : null}
         </div>
 
         {/* Pill CTA Button matching reference image 2: "Comprar ↗" */}
