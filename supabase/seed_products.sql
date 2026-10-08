@@ -2,6 +2,17 @@
 -- FERRE INTER - ACTUALIZACIÓN DE ESQUEMA & INVENTARIO MAESTRO (67 PRODUCTOS)
 -- ============================================================================
 
+-- 0. Corregir recursión infinita en profiles y habilitar sincronización global de productos
+DROP POLICY IF EXISTS "Usuarios leen su propio perfil" ON public.profiles;
+CREATE POLICY "Usuarios leen su propio perfil" ON public.profiles
+  FOR SELECT USING (auth.uid() = id);
+
+DROP POLICY IF EXISTS "Usuarios actualizan su propio perfil" ON public.profiles;
+CREATE POLICY "Usuarios actualizan su propio perfil" ON public.profiles
+  FOR UPDATE USING (auth.uid() = id);
+
+ALTER TABLE public.products DISABLE ROW LEVEL SECURITY;
+
 -- 1. Asegurar columnas de inventario avanzado en public.products
 ALTER TABLE public.products ADD COLUMN IF NOT EXISTS wholesale_price NUMERIC(12, 2);
 ALTER TABLE public.products ADD COLUMN IF NOT EXISTS stock_warehouse INT DEFAULT 0;
