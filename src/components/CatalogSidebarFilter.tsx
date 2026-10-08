@@ -21,15 +21,16 @@ interface CatalogSidebarFilterProps {
 
 const CATEGORIES = [
   { id: 'all', name: 'Todos los Productos' },
-  { id: 'herramientas-electricas', name: 'Herramientas Eléctricas' },
-  { id: 'herramientas-manuales', name: 'Herramientas Manuales' },
-  { id: 'plomeria', name: 'Plomería & Fontanería' },
-  { id: 'pintura-supplies', name: 'Pintura & Acabados' },
-  { id: 'electricidad', name: 'Electricidad & Iluminación' },
-  { id: 'seguridad-herrajes', name: 'Seguridad & Herrajes' },
+  { id: 'bisagras', name: 'Bisagras Especializadas' },
+  { id: 'chapas', name: 'Chapas & Cerraduras' },
+  { id: 'discos-corte', name: 'Discos de Corte' },
+  { id: 'prensas-fijacion', name: 'Prensas de Sujeción' },
+  { id: 'brocas-accesorios', name: 'Brocas & Perforación' },
+  { id: 'escuadras-medicion', name: 'Escuadras de Medición' },
+  { id: 'placas-reparacion', name: 'Placas de Reparación' },
 ];
 
-const BRANDS = ['DeWalt', 'Stanley', 'Craftsman', 'Husky', 'Werner', 'Truper'];
+const BRANDS = ['LOCK PRIME', 'FORZA', 'GATO', 'PANTHERS', 'KL', 'FGV', 'FERREINTER'];
 
 export const CatalogSidebarFilter: React.FC<CatalogSidebarFilterProps> = ({
   filters,

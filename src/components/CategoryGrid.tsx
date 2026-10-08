@@ -5,9 +5,9 @@ import { ArrowUpRight, ArrowRight } from 'lucide-react';
 export const CategoryGrid: React.FC = () => {
   const categories = [
     {
-      id: 'herramientas-electricas',
-      title: 'HERRAMIENTAS ELÉCTRICAS',
-      subtitle: 'Herramientas de precisión para cada trabajo',
+      id: 'bisagras',
+      title: 'BISAGRAS ESPECIALIZADAS',
+      subtitle: 'Acero inoxidable 304, cierre lento & nudo para carpintería',
       image: 'https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=800&q=80',
       theme: {
         bg: 'bg-gradient-to-r from-[#0f172a] via-[#1e293b] to-[#0f172a]',
@@ -17,9 +17,9 @@ export const CategoryGrid: React.FC = () => {
       },
     },
     {
-      id: 'herramientas-manuales',
-      title: 'HERRAMIENTAS MANUALES',
-      subtitle: 'Resistencia, control & ergonomía profesional',
+      id: 'chapas',
+      title: 'CHAPAS & CERRADURAS',
+      subtitle: 'Cerraduras de pomo, manija, sobreponer & reja Lock Prime y Gato',
       image: 'https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80',
       theme: {
         bg: 'bg-[#f8f7f5] border border-gray-200/80',
@@ -29,9 +29,9 @@ export const CategoryGrid: React.FC = () => {
       },
     },
     {
-      id: 'plomeria',
-      title: 'PLOMERÍA & FONTANERÍA',
-      subtitle: 'Build, Fix, Create — Soluciones hidráulicas',
+      id: 'discos-corte',
+      title: 'DISCOS DE CORTE & PULIDO',
+      subtitle: 'Discos para madera y aluminio 10" con dientes de alta precisión',
       image: 'https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80',
       theme: {
         bg: 'bg-gradient-to-r from-[#111111] via-[#1c1917] to-[#111111]',
@@ -41,9 +41,9 @@ export const CategoryGrid: React.FC = () => {
       },
     },
     {
-      id: 'pintura-supplies',
-      title: 'PINTURA & ACABADOS',
-      subtitle: 'Suministros de cobertura & protección profesional',
+      id: 'prensas-fijacion',
+      title: 'PRENSAS & HERRAMIENTAS DE SUJECIÓN',
+      subtitle: 'Prensas de resorte de 3" a 9" y prensas para armado de cajones',
       image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80',
       theme: {
         bg: 'bg-gradient-to-r from-[#c2410c] via-[#ea580c] to-slate-950',
@@ -53,9 +53,9 @@ export const CategoryGrid: React.FC = () => {
       },
     },
     {
-      id: 'electricidad',
-      title: 'ELECTRICIDAD & ILUMINACIÓN',
-      subtitle: 'Instalaciones seguras & eficiencia energética',
+      id: 'brocas-accesorios',
+      title: 'BROCAS & PERFORACIÓN',
+      subtitle: 'Brocas multipropósito Forza, topes de profundidad & soportes',
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
       theme: {
         bg: 'bg-[#1c1917]',
@@ -65,9 +65,9 @@ export const CategoryGrid: React.FC = () => {
       },
     },
     {
-      id: 'seguridad-herrajes',
-      title: 'HERRAJES & SEGURIDAD',
-      subtitle: 'Cerraduras & protección para hogar y negocio',
+      id: 'escuadras-medicion',
+      title: 'ESCUADRAS & MEDICIÓN',
+      subtitle: 'Escuadras profesionales de 7" y 12" para carpintería y montaje',
       image: 'https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?auto=format&fit=crop&w=800&q=80',
       theme: {
         bg: 'bg-gradient-to-r from-slate-200 via-gray-200 to-slate-300 border border-gray-300',

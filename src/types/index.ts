@@ -20,7 +20,7 @@ export interface Product {
   description: string;
   technical_specs?: Record<string, string>;
   price: number;
-  discount_price?: number;
+  discount_price?: number | null;
   category: string;
   stock: number;
   images: string[];

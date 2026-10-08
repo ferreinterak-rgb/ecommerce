@@ -1,9 +1,12 @@
 import { Product } from '../types';
 import { supabase, isSupabaseConfigured } from './supabaseClient';
+import { INITIAL_REAL_PRODUCTS } from './initialProducts';
 
 const DEWALT_CHOPSAW_IMAGE = '/dewalt-chopsaw.jpg';
 
-export const INITIAL_PRODUCTS: Product[] = [
+export const INITIAL_PRODUCTS: Product[] = INITIAL_REAL_PRODUCTS;
+
+const LEGACY_MOCK_PRODUCTS: Product[] = [
   {
     id: 'p-1',
     name: 'Tronzadora de Metales DeWalt 14" 2200W (Chop Saw)',
@@ -149,7 +152,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   }
 ];
 
-const LOCAL_STORAGE_KEY = 'ferre_products_cache_v1';
+const LOCAL_STORAGE_KEY = 'ferre_products_cache_v2';
 
 // Normaliza registros recibidos de Supabase hacia la interfaz Product
 const normalizeProduct = (row: any): Product => {
