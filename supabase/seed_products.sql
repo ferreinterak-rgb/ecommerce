@@ -17,19 +17,11 @@ INSERT INTO storage.buckets (id, name, public)
 VALUES ('products', 'products', true)
 ON CONFLICT (id) DO UPDATE SET public = true;
 
--- Políticas de lectura y subida pública para fotos
-DO 37692
-BEGIN
-  IF NOT EXISTS (SELECT 1 FROM pg_policies WHERE policyname = 'Public Access Products' AND tablename = 'objects') THEN
-    CREATE POLICY "Public Access Products" ON storage.objects FOR SELECT USING (bucket_id = 'products');
-  END IF;
-  IF NOT EXISTS (SELECT 1 FROM pg_policies WHERE policyname = 'Public Upload Products' AND tablename = 'objects') THEN
-    CREATE POLICY "Public Upload Products" ON storage.objects FOR INSERT WITH CHECK (bucket_id = 'products');
-  END IF;
-  IF NOT EXISTS (SELECT 1 FROM pg_policies WHERE policyname = 'Public Update Products' AND tablename = 'objects') THEN
-    CREATE POLICY "Public Update Products" ON storage.objects FOR UPDATE USING (bucket_id = 'products');
-  END IF;
-END 37692;
+DROP POLICY IF EXISTS "Public Access Products" ON storage.objects;
+CREATE POLICY "Public Access Products" ON storage.objects FOR SELECT USING (bucket_id = 'products');
+
+DROP POLICY IF EXISTS "Public Upload Products" ON storage.objects;
+CREATE POLICY "Public Upload Products" ON storage.objects FOR INSERT WITH CHECK (bucket_id = 'products');
 
 -- 3. Carga e inserción de los 67 productos reales de inventario
 INSERT INTO public.products (
