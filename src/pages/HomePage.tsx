@@ -1,7 +1,6 @@
 import React from 'react';
-import { HeroSlider } from '../components/HeroSlider';
 import { TrustFeaturesBar } from '../components/TrustFeaturesBar';
-import { CategoryGrid } from '../components/CategoryGrid';
+import { CategorySlider } from '../components/CategorySlider';
 import { PromoBanner } from '../components/PromoBanner';
 import { BestSellersGrid } from '../components/BestSellersGrid';
 import { WhyChooseUsSection } from '../components/WhyChooseUsSection';
@@ -9,22 +8,19 @@ import { WhyChooseUsSection } from '../components/WhyChooseUsSection';
 export const HomePage: React.FC = () => {
   return (
     <div className="bg-white min-h-screen">
-      {/* 1. Header Hero Slider (Multi-product showcases with Spanish callouts & unique themes) */}
-      <HeroSlider />
-
-      {/* 2. Trust Features Bar */}
+      {/* 1. Trust Features Bar */}
       <TrustFeaturesBar />
 
-      {/* 3. Browse Categories */}
-      <CategoryGrid />
+      {/* 2. Slider Interactivo de Categorías Reales */}
+      <CategorySlider />
 
-      {/* 4. Special Offer Promo Banner */}
+      {/* 3. Special Offer Promo Banner */}
       <PromoBanner />
 
-      {/* 5. Our Best Sellers */}
+      {/* 4. Our Best Sellers */}
       <BestSellersGrid />
 
-      {/* 6. Why Choose Us */}
+      {/* 5. Why Choose Us */}
       <WhyChooseUsSection />
     </div>
   );
