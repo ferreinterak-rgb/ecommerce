@@ -1,37 +1,19 @@
 import { ActivityLog } from '../types';
 import { supabase, isSupabaseConfigured } from './supabaseClient';
 
-const MOCK_LOGS: ActivityLog[] = [
-  {
-    id: 'log-1',
-    user_name: 'Ing. Alejandro Silva',
-    action: 'Actualización de Inventario',
-    entity: 'Producto',
-    entity_id: 'DCD996B-20V',
-    details: 'Aumentó el stock de DeWalt 20V de 15 a 24 unidades.',
-    created_at: new Date(Date.now() - 3600000 * 1).toISOString()
-  },
-  {
-    id: 'log-2',
-    user_name: 'Sistema FERRE INTER',
-    action: 'Creación de Pedido',
-    entity: 'Pedido',
-    entity_id: 'FI-89210',
-    details: 'Pedido registrado correctamente por un monto de $426.25 USD.',
-    created_at: new Date(Date.now() - 3600000 * 2).toISOString()
-  },
-  {
-    id: 'log-3',
-    user_name: 'Dra. Patricia Ortiz',
-    action: 'Cambio de Estado de Pedido',
-    entity: 'Pedido',
-    entity_id: 'FI-89211',
-    details: 'Cambió el estado del pedido de "pendiente" a "procesando".',
-    created_at: new Date(Date.now() - 3600000 * 18).toISOString()
-  }
-];
+const LOCAL_LOGS_KEY = 'ferre_local_activity_logs_v1';
 
-let localLogs: ActivityLog[] = [...MOCK_LOGS];
+const getInitialLogs = (): ActivityLog[] => {
+  if (typeof window !== 'undefined') {
+    try {
+      const saved = localStorage.getItem(LOCAL_LOGS_KEY);
+      if (saved) return JSON.parse(saved);
+    } catch (_) {}
+  }
+  return [];
+};
+
+let localLogs: ActivityLog[] = getInitialLogs();
 
 export const activityLogService = {
   async getLogs(): Promise<ActivityLog[]> {
@@ -46,7 +28,7 @@ export const activityLogService = {
     return localLogs;
   },
 
-  async logAction(action: string, entity: string, entityId?: string, details?: string, userName: string = 'Usuario Logueado'): Promise<void> {
+  async logAction(action: string, entity: string, entityId?: string, details?: string, userName: string = 'Admin'): Promise<void> {
     const newLog: ActivityLog = {
       id: `log-${Date.now()}`,
       user_name: userName,
@@ -65,5 +47,10 @@ export const activityLogService = {
       }
     }
     localLogs.unshift(newLog);
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem(LOCAL_LOGS_KEY, JSON.stringify(localLogs.slice(0, 100)));
+      } catch (_) {}
+    }
   }
 };

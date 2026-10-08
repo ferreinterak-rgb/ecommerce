@@ -5,7 +5,6 @@ import { CategoryGrid } from '../components/CategoryGrid';
 import { PromoBanner } from '../components/PromoBanner';
 import { BestSellersGrid } from '../components/BestSellersGrid';
 import { WhyChooseUsSection } from '../components/WhyChooseUsSection';
-import { TestimonialsSection } from '../components/TestimonialsSection';
 
 export const HomePage: React.FC = () => {
   return (
@@ -27,9 +26,6 @@ export const HomePage: React.FC = () => {
 
       {/* 6. Why Choose Us */}
       <WhyChooseUsSection />
-
-      {/* 7. Testimonials */}
-      <TestimonialsSection />
     </div>
   );
 };

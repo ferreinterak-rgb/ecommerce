@@ -130,6 +130,8 @@ export const AdminDashboardPage: React.FC = () => {
             totalSalesUSD={totalSalesUSD}
             productsCount={products.length}
             appointmentsCount={appointmentsCount}
+            orders={orders}
+            products={products}
           />
         )}
 

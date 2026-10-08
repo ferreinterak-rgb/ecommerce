@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { useCurrency } from '../context/CurrencyContext';
+import { useAuth } from '../context/AuthContext';
 import { orderService } from '../services/orderService';
 import { activityLogService } from '../services/activityLogService';
 import { PaymentMethod, ShippingAddress } from '../types';
@@ -9,6 +10,7 @@ import { ShieldCheck, Lock, CreditCard, Landmark, Truck, CheckCircle2, ArrowRigh
 
 export const CheckoutPage: React.FC = () => {
   const navigate = useNavigate();
+  const { user } = useAuth();
   const {
     cart,
     subtotal,
@@ -23,18 +25,18 @@ export const CheckoutPage: React.FC = () => {
   } = useCart();
   const { formatPrice } = useCurrency();
 
-  const [customerName, setCustomerName] = useState('Carlos Mendoza');
-  const [customerEmail, setCustomerEmail] = useState('carlos.mendoza@constructora.com');
-  const [customerPhone, setCustomerPhone] = useState('+57 310 456 7890');
+  const [customerName, setCustomerName] = useState(user?.full_name || '');
+  const [customerEmail, setCustomerEmail] = useState(user?.email || '');
+  const [customerPhone, setCustomerPhone] = useState(user?.phone || '');
 
   const [shippingAddress, setShippingAddress] = useState<ShippingAddress>({
-    fullName: 'Carlos Mendoza',
-    address: 'Av. Industrial # 45-20, Edificio Co-Working',
-    city: 'Bogotá',
-    state: 'Cundinamarca',
-    zipCode: '110911',
-    phone: '+57 310 456 7890',
-    notes: 'Entregar en portería principal con previa llamada'
+    fullName: user?.full_name || '',
+    address: '',
+    city: '',
+    state: '',
+    zipCode: '',
+    phone: user?.phone || '',
+    notes: ''
   });
 
   const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('credit_card');

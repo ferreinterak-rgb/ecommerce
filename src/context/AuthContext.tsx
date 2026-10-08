@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { UserProfile, UserRole } from '../types';
-import { authService, MOCK_USERS } from '../services/authService';
+import { authService } from '../services/authService';
 
 interface AuthContextType {
   user: UserProfile | null;
@@ -16,14 +16,25 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [user, setUser] = useState<UserProfile | null>(MOCK_USERS[0]); // Default to admin for demo rich features
+  // Inicializa con sesión real si existe, o null
+  const [user, setUser] = useState<UserProfile | null>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem('ferre_current_user');
+        if (saved) return JSON.parse(saved);
+      } catch (_) {}
+    }
+    return null;
+  });
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const initAuth = async () => {
       try {
         const u = await authService.getCurrentUser();
-        if (u) setUser(u);
+        if (u) {
+          setUser(u);
+        }
       } catch (e) {
         console.error('Error initializing auth', e);
       } finally {
@@ -35,18 +46,25 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const setDemoRole = (newRole: UserRole) => {
     localStorage.setItem('ferre_demo_role', newRole);
-    const targetUser = MOCK_USERS.find(u => u.role === newRole) || {
+    const targetUser: UserProfile = {
       id: `usr-${newRole}`,
-      email: `demo.${newRole}@ferreinter.com`,
-      full_name: `Usuario Demo (${newRole.toUpperCase()})`,
+      email: `${newRole}@ferreinter.com`,
+      full_name: newRole === 'admin' ? 'Administrador' : newRole === 'collaborator' ? 'Colaborador' : 'Cliente',
       role: newRole,
       created_at: new Date().toISOString()
     };
     setUser(targetUser);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('ferre_current_user', JSON.stringify(targetUser));
+    }
   };
 
   const logout = () => {
     setUser(null);
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('ferre_current_user');
+      localStorage.removeItem('ferre_demo_role');
+    }
   };
 
   const role = user?.role || 'customer';
