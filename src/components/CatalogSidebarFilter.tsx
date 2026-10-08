@@ -28,6 +28,7 @@ const CATEGORIES = [
   { id: 'brocas-accesorios', name: 'Brocas & Perforación' },
   { id: 'escuadras-medicion', name: 'Escuadras de Medición' },
   { id: 'placas-reparacion', name: 'Placas de Reparación' },
+  { id: 'herrajes-carpinteria', name: 'Herrajes de Carpintería' },
 ];
 
 const BRANDS = ['LOCK PRIME', 'FORZA', 'GATO', 'PANTHERS', 'KL', 'FGV', 'FERREINTER'];
