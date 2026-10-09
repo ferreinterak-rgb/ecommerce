@@ -103,14 +103,10 @@ export const productService = {
   },
 
   /**
-   * 3. Obtener Producto por Slug (Cache + Red)
+   * 3. Obtener Producto por Slug (Red en Tiempo Real + Cache de Respaldo)
    */
   getProductBySlug: async (slug: string): Promise<Product | null> => {
-    const products = await productService.getProducts();
-    const found = products.find(p => p.slug === slug);
-    if (found) return found;
-
-    // Si no está en el listado inicial, intenta consulta puntual en Supabase
+    // 1. Siempre intentamos consultar directamente en Supabase para obtener las fotos y datos más recientes
     if (isSupabaseConfigured()) {
       try {
         const { data, error } = await supabase
@@ -121,13 +117,30 @@ export const productService = {
 
         if (!error && data) {
           const norm = normalizeProduct(data);
+          // Actualizar oportunamente el cache local con los datos frescos
+          if (typeof window !== 'undefined') {
+            try {
+              const current = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) || '[]');
+              const idx = current.findIndex((p: Product) => p.slug === slug || p.id === norm.id);
+              if (idx >= 0) {
+                current[idx] = norm;
+              } else {
+                current.unshift(norm);
+              }
+              localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(current));
+            } catch (_) {}
+          }
           return norm;
         }
       } catch (err) {
-        console.warn('Error obteniendo producto puntual en Supabase:', err);
+        console.warn('Error obteniendo producto puntual en Supabase, consultando cache local:', err);
       }
     }
-    return null;
+
+    // 2. Respaldo en cache local si estamos sin conexión o falla la red
+    const products = await productService.getProducts();
+    const found = products.find(p => p.slug === slug);
+    return found || null;
   },
 
   /**

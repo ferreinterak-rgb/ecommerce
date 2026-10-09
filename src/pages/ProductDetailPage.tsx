@@ -75,13 +75,9 @@ export const ProductDetailPage: React.FC = () => {
   const currentPrice = product.discount_price ?? product.price;
   const hasDiscount = Boolean(product.discount_price && product.discount_price < product.price);
 
-  // Generar lista de thumbnails para la galería vertical (mínimo 3 vistas)
-  const galleryImages = product.images && product.images.length > 0
-    ? product.images
-    : ['/dewalt-chopsaw.jpg'];
-  const displayThumbnails = galleryImages.length >= 3
-    ? galleryImages
-    : [galleryImages[0], galleryImages[0], galleryImages[0]];
+  // Fotografías reales del producto sin clonación ni repeticiones
+  const galleryImages = (product.images || []).filter(img => img && img.trim().length > 0);
+  const displayThumbnails = galleryImages;
 
   // Opciones de material y tamaño
   const materialOptions = product.materials
@@ -111,22 +107,24 @@ export const ProductDetailPage: React.FC = () => {
           {/* Columna Izquierda: Galería con miniaturas verticales y foto principal */}
           <div className="lg:col-span-7 flex flex-col-reverse sm:flex-row gap-4">
             
-            {/* Lista Vertical de Miniaturas sin marcos grises */}
-            <div className="flex sm:flex-col gap-3 justify-center sm:justify-start">
-              {displayThumbnails.map((img, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => setSelectedImage(img)}
-                  className={`w-16 h-20 sm:w-20 sm:h-24 rounded-xl bg-white p-1.5 flex items-center justify-center overflow-hidden border transition-all cursor-pointer ${
-                    selectedImage === img
-                      ? 'border-black ring-1 ring-black'
-                      : 'border-gray-200 hover:border-gray-400'
-                  }`}
-                >
-                  <img src={img} alt={`Vista ${idx + 1}`} className="w-full h-full object-contain" />
-                </button>
-              ))}
-            </div>
+            {/* Lista Vertical de Miniaturas (se muestra únicamente cuando hay más de una foto real) */}
+            {displayThumbnails.length > 1 && (
+              <div className="flex sm:flex-col gap-3 justify-center sm:justify-start">
+                {displayThumbnails.map((img, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setSelectedImage(img)}
+                    className={`w-16 h-20 sm:w-20 sm:h-24 rounded-xl bg-white p-1.5 flex items-center justify-center overflow-hidden border transition-all cursor-pointer ${
+                      selectedImage === img
+                        ? 'border-black ring-1 ring-black'
+                        : 'border-gray-200 hover:border-gray-400'
+                    }`}
+                  >
+                    <img src={img} alt={`Vista ${idx + 1}`} className="w-full h-full object-contain" />
+                  </button>
+                ))}
+              </div>
+            )}
 
             {/* Imagen Principal limpia sin marco gris */}
             <div className="flex-1 bg-white aspect-square sm:aspect-[4/5] p-4 flex items-center justify-center relative overflow-hidden">
