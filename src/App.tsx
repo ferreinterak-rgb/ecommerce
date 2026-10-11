@@ -15,11 +15,20 @@ import { CheckoutPage } from './pages/CheckoutPage';
 import { BookingPage } from './pages/BookingPage';
 import { LoginPage } from './pages/LoginPage';
 import { AdminDashboardPage } from './pages/AdminDashboardPage';
+import { productService } from './services/productService';
 
 // Layout wrapper to hide Navbar/Footer on login page or admin view if needed
 const LayoutContent: React.FC = () => {
   const location = useLocation();
   const isLoginPage = location.pathname === '/login';
+
+  // Inicializar sincronización en tiempo real (Supabase Realtime + Multi-pestaña)
+  React.useEffect(() => {
+    const cleanup = productService.initRealtimeSubscription();
+    return () => {
+      if (typeof cleanup === 'function') cleanup();
+    };
+  }, []);
 
   // Scroll to top of the page on route/navigation changes
   React.useEffect(() => {

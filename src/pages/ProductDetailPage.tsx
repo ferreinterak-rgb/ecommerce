@@ -43,6 +43,21 @@ export const ProductDetailPage: React.FC = () => {
     };
     fetchProduct();
     window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    // Escuchar sincronización en tiempo real
+    const handleSync = (e: any) => {
+      if (e.detail && Array.isArray(e.detail)) {
+        const updated = e.detail.find((p: Product) => p.slug === slug);
+        if (updated) {
+          setProduct(updated);
+          if (updated.images && updated.images.length > 0) {
+            setSelectedImage(prev => (updated.images.includes(prev) ? prev : updated.images[0]));
+          }
+        }
+      }
+    };
+    window.addEventListener('ferre_products_synced', handleSync);
+    return () => window.removeEventListener('ferre_products_synced', handleSync);
   }, [slug]);
 
   const handleAddToCart = () => {

@@ -56,15 +56,36 @@ export const AdminDashboardPage: React.FC = () => {
 
   useEffect(() => {
     loadData();
+
+    // Escuchar actualizaciones en tiempo real de productos
+    const handleSync = (e: any) => {
+      if (e.detail && Array.isArray(e.detail)) {
+        setProducts(e.detail);
+      }
+    };
+    window.addEventListener('ferre_products_synced', handleSync);
+    return () => window.removeEventListener('ferre_products_synced', handleSync);
   }, []);
 
   const handleSaveProduct = async (productData: Partial<Product>) => {
     const saved = await productService.saveProduct(productData);
+
+    // Actualización reactiva inmediata en la tabla (0 ms) sin esperar recarga
+    setProducts(prev => {
+      const idx = prev.findIndex(p => p.id === saved.id || p.sku === saved.sku);
+      if (idx >= 0) {
+        const copy = [...prev];
+        copy[idx] = saved;
+        return copy;
+      }
+      return [saved, ...prev];
+    });
+
     await activityLogService.logAction(
       editingProduct ? 'Modificación de Producto' : 'Creación de Producto',
       'Producto',
       saved.sku,
-      `Producto: ${saved.name} - Precio: $${saved.price} USD`,
+      `Producto: ${saved.name} - Precio: $${saved.price} COP`,
       user?.full_name || 'Admin'
     );
     loadData();
@@ -72,6 +93,7 @@ export const AdminDashboardPage: React.FC = () => {
 
   const handleDeleteProduct = async (id: string, name: string) => {
     if (confirm(`¿Estás seguro de eliminar el producto "${name}"?`)) {
+      setProducts(prev => prev.filter(p => p.id !== id));
       await productService.deleteProduct(id);
       await activityLogService.logAction(
         'Eliminación de Producto',

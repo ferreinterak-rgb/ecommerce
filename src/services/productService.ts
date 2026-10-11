@@ -177,6 +177,7 @@ export const productService = {
     };
 
     // A) Actualización optimista inmediata en Cache Local
+    let updatedCatalog: Product[] = [];
     try {
       const current = await productService.getProducts();
       const idx = current.findIndex(p => p.id === id || p.sku === fullProduct.sku);
@@ -185,8 +186,16 @@ export const productService = {
       } else {
         current.unshift(fullProduct);
       }
+      updatedCatalog = current;
       if (typeof window !== 'undefined') {
         localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(current));
+        // Disparo reactivo instantáneo para todos los componentes de la aplicación
+        window.dispatchEvent(new CustomEvent('ferre_products_synced', { detail: current }));
+        try {
+          const bc = new BroadcastChannel('ferre_products_realtime');
+          bc.postMessage({ type: 'SYNC_PRODUCTS', payload: current });
+          bc.close();
+        } catch (_) {}
       }
     } catch (e) {
       console.warn('Error guardando en cache local:', e);
@@ -218,10 +227,29 @@ export const productService = {
           is_active: fullProduct.is_active
         };
 
+        let resultData: any = null;
         if (productData.id && !productData.id.startsWith('p-')) {
-          await supabase.from('products').update(dbPayload).eq('id', productData.id);
+          const { data } = await supabase.from('products').update(dbPayload).eq('id', productData.id).select().single();
+          resultData = data;
         } else {
-          await supabase.from('products').upsert(dbPayload, { onConflict: 'sku' });
+          const { data } = await supabase.from('products').upsert(dbPayload, { onConflict: 'sku' }).select().single();
+          resultData = data;
+        }
+
+        if (resultData) {
+          const confirmed = normalizeProduct(resultData);
+          fullProduct.id = confirmed.id;
+          // Actualizar con el id definitivo generado por la base de datos
+          if (updatedCatalog.length > 0) {
+            const idx = updatedCatalog.findIndex(p => p.sku === fullProduct.sku);
+            if (idx >= 0) {
+              updatedCatalog[idx] = confirmed;
+              if (typeof window !== 'undefined') {
+                localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(updatedCatalog));
+                window.dispatchEvent(new CustomEvent('ferre_products_synced', { detail: updatedCatalog }));
+              }
+            }
+          }
         }
       } catch (err) {
         console.warn('Error persistiendo en Supabase, conservado en local:', err);
@@ -235,12 +263,18 @@ export const productService = {
    * 5. Eliminar Producto
    */
   deleteProduct: async (id: string): Promise<boolean> => {
-    // Optimista local
+    // Optimista local inmediato
     try {
       const current = await productService.getProducts();
       const filtered = current.filter(p => p.id !== id);
       if (typeof window !== 'undefined') {
         localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(filtered));
+        window.dispatchEvent(new CustomEvent('ferre_products_synced', { detail: filtered }));
+        try {
+          const bc = new BroadcastChannel('ferre_products_realtime');
+          bc.postMessage({ type: 'SYNC_PRODUCTS', payload: filtered });
+          bc.close();
+        } catch (_) {}
       }
     } catch (_) {}
 
@@ -248,12 +282,53 @@ export const productService = {
     if (isSupabaseConfigured()) {
       try {
         await supabase.from('products').delete().eq('id', id);
-        return true;
-      } catch (err) {
-        console.warn('Error eliminando en Supabase:', err);
+      } catch (e) {
+        console.warn('Error eliminando producto de Supabase:', e);
       }
     }
     return true;
+  },
+
+  /**
+   * 6. Suscripción en Tiempo Real (Supabase Realtime + Multi-pestaña)
+   * Escucha cambios en caliente de otros colaboradores y actualiza la pantalla al instante.
+   */
+  initRealtimeSubscription: () => {
+    if (typeof window === 'undefined') return;
+
+    // Escucha multi-pestaña
+    try {
+      const bc = new BroadcastChannel('ferre_products_realtime');
+      bc.onmessage = (event) => {
+        if (event.data?.type === 'SYNC_PRODUCTS' && Array.isArray(event.data.payload)) {
+          localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(event.data.payload));
+          window.dispatchEvent(new CustomEvent('ferre_products_synced', { detail: event.data.payload }));
+        }
+      };
+    } catch (_) {}
+
+    // Escucha WebSocket de Supabase
+    if (isSupabaseConfigured()) {
+      try {
+        const channel = supabase
+          .channel('products-realtime-channel')
+          .on(
+            'postgres_changes',
+            { event: '*', schema: 'public', table: 'products' },
+            async () => {
+              // Cuando cualquier colaborador guarde o modifique un producto, sincronizar en caliente
+              await productService.syncFromSupabase();
+            }
+          )
+          .subscribe();
+
+        return () => {
+          supabase.removeChannel(channel);
+        };
+      } catch (err) {
+        console.warn('No se pudo inicializar Supabase Realtime para productos:', err);
+      }
+    }
   },
 
   /**
