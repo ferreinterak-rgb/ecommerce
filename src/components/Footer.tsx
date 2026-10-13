@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FerreInterLogo } from './FerreInterLogo';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -12,20 +12,14 @@ export const Footer: React.FC = () => {
           {/* Column 1: Brand Info */}
           <div className="lg:col-span-4 space-y-4">
             <Link to="/" className="inline-block">
-              <FerreInterLogo size="md" />
+              <FerreInterLogo size="md" variant="light" />
             </Link>
             <p className="text-gray-400 text-xs leading-relaxed max-w-sm">
               FERREINTER es tu ferretería de confianza con herramientas eléctricas, manuales, suministros de construcción y plomería de la más alta calidad.
             </p>
             <div className="space-y-2 pt-2 text-xs">
               <div className="flex items-center gap-2 text-gray-300">
-                <MapPin className="w-4 h-4 text-[#f48f25]" /> Av. Industrial #450, Zona Comercial
-              </div>
-              <div className="flex items-center gap-2 text-gray-300">
-                <Phone className="w-4 h-4 text-[#f48f25]" /> +1 (800) 555-FERRE
-              </div>
-              <div className="flex items-center gap-2 text-gray-300">
-                <Mail className="w-4 h-4 text-[#f48f25]" /> contacto@ferreinter.com
+                <MapPin className="w-4 h-4 text-[#f48f25]" /> Calle 48 #56-05
               </div>
             </div>
           </div>
