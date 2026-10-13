@@ -68,17 +68,8 @@ export const Navbar: React.FC = () => {
             <Link to="/" className="hover:text-[#f48f25] transition-colors py-1 px-3 rounded-full hover:bg-gray-100">
               INICIO
             </Link>
-            <Link to="/catalog" className="flex items-center gap-1 hover:text-[#f48f25] transition-colors py-1 px-3 rounded-full hover:bg-gray-100">
-              TIENDA <ChevronDown className="w-3.5 h-3.5 opacity-60" />
-            </Link>
-            <Link to="/catalog" className="flex items-center gap-1 hover:text-[#f48f25] transition-colors py-1 px-3 rounded-full hover:bg-gray-100">
-              CATEGORÍAS <ChevronDown className="w-3.5 h-3.5 opacity-60" />
-            </Link>
-            <Link to="/booking" className="hover:text-[#f48f25] transition-colors py-1 px-3 rounded-full hover:bg-gray-100">
-              NOSOTROS
-            </Link>
             <Link to="/catalog" className="hover:text-[#f48f25] transition-colors py-1 px-3 rounded-full hover:bg-gray-100">
-              BLOG
+              TIENDA
             </Link>
             <Link to="/booking" className="hover:text-[#f48f25] transition-colors py-1 px-3 rounded-full hover:bg-gray-100">
               CONTACTO
@@ -251,30 +242,6 @@ export const Navbar: React.FC = () => {
               className="flex items-center justify-between py-3 px-3 rounded-xl hover:bg-gray-50 text-slate-900 font-black tracking-wider text-xs uppercase"
             >
               <span>TIENDA</span>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-            </Link>
-            <Link
-              to="/catalog"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-between py-3 px-3 rounded-xl hover:bg-gray-50 text-slate-900 font-black tracking-wider text-xs uppercase"
-            >
-              <span>CATEGORÍAS</span>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-            </Link>
-            <Link
-              to="/booking"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-between py-3 px-3 rounded-xl hover:bg-gray-50 text-slate-900 font-black tracking-wider text-xs uppercase"
-            >
-              <span>NOSOTROS</span>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-            </Link>
-            <Link
-              to="/catalog"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-between py-3 px-3 rounded-xl hover:bg-gray-50 text-slate-900 font-black tracking-wider text-xs uppercase"
-            >
-              <span>BLOG</span>
               <ArrowRight className="w-4 h-4 text-gray-400" />
             </Link>
             <Link

@@ -30,8 +30,6 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li><Link to="/" className="hover:text-[#f48f25] transition-colors">Inicio</Link></li>
               <li><Link to="/catalog" className="hover:text-[#f48f25] transition-colors">Tienda</Link></li>
-              <li><Link to="/catalog" className="hover:text-[#f48f25] transition-colors">Categorías</Link></li>
-              <li><Link to="/booking" className="hover:text-[#f48f25] transition-colors">Nosotros</Link></li>
               <li><Link to="/booking" className="hover:text-[#f48f25] transition-colors">Contacto</Link></li>
             </ul>
           </div>
