@@ -12,7 +12,7 @@ interface AdminSidebarProps {
 }
 
 export const AdminSidebar: React.FC<AdminSidebarProps> = ({ activeTab, setActiveTab }) => {
-  const { user, role, setDemoRole } = useAuth();
+  const { user, role, logout } = useAuth();
 
   const NAV_ITEMS: { id: AdminTab; label: string; icon: React.ElementType }[] = [
     { id: 'analytics', label: 'Métricas & KPIs', icon: LayoutDashboard },
@@ -73,38 +73,21 @@ export const AdminSidebar: React.FC<AdminSidebarProps> = ({ activeTab, setActive
         </nav>
       </div>
 
-      {/* Footer Return Link & Role Switcher */}
+      {/* Footer Return Link & Logout Button */}
       <div className="pt-6 border-t border-gray-100 space-y-3">
-        <div className="p-3 rounded-2xl bg-gray-50 border border-gray-200 text-[10px]">
-          <p className="text-gray-500 font-bold mb-1">Simular Vista de Rol:</p>
-          <div className="flex gap-1">
-            <button
-              onClick={() => setDemoRole('admin')}
-              className={`flex-1 py-1 rounded-lg font-bold ${role === 'admin' ? 'bg-[#111111] text-white' : 'bg-gray-200 text-gray-700'}`}
-            >
-              Admin
-            </button>
-            <button
-              onClick={() => setDemoRole('collaborator')}
-              className={`flex-1 py-1 rounded-lg font-bold ${role === 'collaborator' ? 'bg-[#111111] text-white' : 'bg-gray-200 text-gray-700'}`}
-            >
-              Colab
-            </button>
-            <button
-              onClick={() => setDemoRole('customer')}
-              className={`flex-1 py-1 rounded-lg font-bold ${role === 'customer' ? 'bg-[#111111] text-white' : 'bg-gray-200 text-gray-700'}`}
-            >
-              Cliente
-            </button>
-          </div>
-        </div>
-
         <Link
           to="/"
           className="flex items-center justify-center gap-2 py-2.5 px-4 rounded-2xl bg-gray-100 hover:bg-gray-200 text-slate-900 text-xs font-bold transition-colors"
         >
           <ArrowLeft className="w-4 h-4" /> Volver a la Tienda
         </Link>
+
+        <button
+          onClick={logout}
+          className="w-full py-2.5 px-4 rounded-2xl bg-rose-50 hover:bg-rose-100 text-rose-600 text-xs font-bold transition-colors"
+        >
+          Cerrar Sesión Segura
+        </button>
       </div>
     </aside>
   );

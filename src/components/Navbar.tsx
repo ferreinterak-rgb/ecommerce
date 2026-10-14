@@ -149,13 +149,6 @@ export const Navbar: React.FC = () => {
                       >
                         Iniciar Sesión
                       </Link>
-                      <Link
-                        to="/login?tab=register"
-                        onClick={() => setUserDropdown(false)}
-                        className="block px-4 py-2.5 hover:bg-gray-50 text-gray-700"
-                      >
-                        Crear Cuenta
-                      </Link>
                     </>
                   )}
                 </div>

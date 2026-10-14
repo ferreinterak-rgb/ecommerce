@@ -8,35 +8,26 @@ interface AuthContextType {
   isAdmin: boolean;
   isCollaborator: boolean;
   isCustomer: boolean;
-  setDemoRole: (role: UserRole) => void;
-  logout: () => void;
+  login: (email: string, password: string) => Promise<{ success: boolean; error: string | null }>;
+  logout: () => Promise<void>;
   loading: boolean;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  // Inicializa con sesión real si existe, o null
-  const [user, setUser] = useState<UserProfile | null>(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        const saved = localStorage.getItem('ferre_current_user');
-        if (saved) return JSON.parse(saved);
-      } catch (_) {}
-    }
-    return null;
-  });
+  const [user, setUser] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
+    // 1. Cargar usuario verificado por token en Supabase
     const initAuth = async () => {
       try {
         const u = await authService.getCurrentUser();
-        if (u) {
-          setUser(u);
-        }
+        setUser(u);
       } catch (e) {
         console.error('Error initializing auth', e);
+        setUser(null);
       } finally {
         setLoading(false);
       }
@@ -44,33 +35,30 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     initAuth();
   }, []);
 
-  const setDemoRole = (newRole: UserRole) => {
-    localStorage.setItem('ferre_demo_role', newRole);
-    const targetUser: UserProfile = {
-      id: `usr-${newRole}`,
-      email: `${newRole}@ferreinter.com`,
-      full_name: newRole === 'admin' ? 'Administrador' : newRole === 'collaborator' ? 'Colaborador' : 'Cliente',
-      role: newRole,
-      created_at: new Date().toISOString()
-    };
-    setUser(targetUser);
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('ferre_current_user', JSON.stringify(targetUser));
+  const login = async (email: string, password: string): Promise<{ success: boolean; error: string | null }> => {
+    setLoading(true);
+    const { user: authedUser, error } = await authService.signIn(email, password);
+    setLoading(false);
+
+    if (error || !authedUser) {
+      return { success: false, error: error || 'Error de autenticación' };
     }
+
+    setUser(authedUser);
+    return { success: true, error: null };
   };
 
-  const logout = () => {
+  const logout = async () => {
+    setLoading(true);
+    await authService.signOut();
     setUser(null);
-    if (typeof window !== 'undefined') {
-      localStorage.removeItem('ferre_current_user');
-      localStorage.removeItem('ferre_demo_role');
-    }
+    setLoading(false);
   };
 
   const role = user?.role || 'customer';
-  const isAdmin = role === 'admin';
-  const isCollaborator = role === 'collaborator' || role === 'admin';
-  const isCustomer = role === 'customer';
+  const isAdmin = Boolean(user && role === 'admin');
+  const isCollaborator = Boolean(user && (role === 'collaborator' || role === 'admin'));
+  const isCustomer = !user || role === 'customer';
 
   return (
     <AuthContext.Provider
@@ -80,7 +68,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         isAdmin,
         isCollaborator,
         isCustomer,
-        setDemoRole,
+        login,
         logout,
         loading
       }}

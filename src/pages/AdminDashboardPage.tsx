@@ -123,14 +123,30 @@ export const AdminDashboardPage: React.FC = () => {
 
   if (!isCollaborator) {
     return (
-      <div className="max-w-2xl mx-auto py-20 px-4 text-center space-y-4">
-        <div className="w-16 h-16 mx-auto rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center">
-          <ShieldAlert className="w-8 h-8" />
+      <div className="min-h-screen bg-[#010e21] flex items-center justify-center p-4">
+        <div className="max-w-md w-full bg-[#031834] p-8 rounded-3xl border border-red-500/30 text-center space-y-5 shadow-2xl">
+          <div className="w-16 h-16 mx-auto rounded-2xl bg-rose-500/10 text-rose-400 flex items-center justify-center border border-rose-500/20">
+            <ShieldAlert className="w-8 h-8" />
+          </div>
+          <h2 className="text-2xl font-black text-white">Acceso Restringido</h2>
+          <p className="text-xs text-gray-400 leading-relaxed">
+            Esta sección administrativa es estrictamente confidencial. Se requiere una sesión activa con el único usuario autorizado en Supabase.
+          </p>
+          <div className="pt-2 flex flex-col gap-2">
+            <a
+              href="/login"
+              className="py-3 px-6 rounded-xl bg-[#f48f25] text-black font-extrabold text-xs hover:bg-[#d97706] transition-all"
+            >
+              Iniciar Sesión en Supabase
+            </a>
+            <a
+              href="/"
+              className="py-2.5 px-6 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 text-xs font-semibold transition-all"
+            >
+              Volver a la Tienda
+            </a>
+          </div>
         </div>
-        <h2 className="text-2xl font-black text-slate-900">Acceso Restringido</h2>
-        <p className="text-xs text-gray-500">
-          Tu cuenta actual no posee permisos de Administrador o Colaborador. Cambia tu rol a <strong>Admin</strong> desde el menú superior para acceder al panel.
-        </p>
       </div>
     );
   }
