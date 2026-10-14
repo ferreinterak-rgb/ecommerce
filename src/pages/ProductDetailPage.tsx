@@ -28,8 +28,8 @@ export const ProductDetailPage: React.FC = () => {
         if (found) {
           setProduct(found);
           setSelectedImage(found.images[0] || '/dewalt-chopsaw.jpg');
-          setSelectedSize(found.dimensions || 'Estándar 35MM');
-          setSelectedMaterial(found.materials || 'Acero Inox 304');
+          setSelectedSize(found.dimensions || '');
+          setSelectedMaterial(found.materials || '');
 
           // Cargar productos relacionados
           const allProducts = await productService.getProducts();
@@ -94,14 +94,18 @@ export const ProductDetailPage: React.FC = () => {
   const galleryImages = (product.images || []).filter(img => img && img.trim().length > 0);
   const displayThumbnails = galleryImages;
 
-  // Opciones de material y tamaño
-  const materialOptions = product.materials
-    ? [product.materials, 'Acero Zincado', 'Acabado Negro'].slice(0, 3)
-    : ['Acero Inox 304', 'Acero Zincado', 'Negro Mate'];
+  // Variables reales del producto desde la base de datos (sin mockups ni valores inventados)
+  const parseOptions = (raw?: string | null): string[] => {
+    if (!raw) return [];
+    const trimmed = raw.trim();
+    if (!trimmed) return [];
+    // Permite separar por comas, barras o punto y coma si el usuario ingresa varias opciones (ej: "Acero Inox, Zincado")
+    const parts = trimmed.split(/[,|;/]+/).map(s => s.trim()).filter(Boolean);
+    return parts.length > 0 ? parts : [trimmed];
+  };
 
-  const sizeOptions = product.dimensions
-    ? [product.dimensions, '4X3 Pulgadas', 'Estándar'].slice(0, 4)
-    : ['35MM', '2 Pulgadas', '3 Pulgadas', '4X3'];
+  const materialOptions = parseOptions(product.materials);
+  const sizeOptions = parseOptions(product.dimensions);
 
   return (
     <div className="bg-white min-h-screen font-sans">
@@ -192,59 +196,63 @@ export const ProductDetailPage: React.FC = () => {
               </p>
             </div>
 
-            {/* Selector de Color / Material */}
-            <div>
-              <h3 className="text-xs font-semibold text-slate-900 uppercase tracking-wider mb-2.5">
-                Color / Acabado:
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {materialOptions.map((mat) => {
-                  const isSelected = selectedMaterial === mat;
-                  return (
-                    <button
-                      key={mat}
-                      type="button"
-                      onClick={() => setSelectedMaterial(mat)}
-                      className={`px-4 py-2 rounded-full text-xs font-medium border flex items-center gap-2 transition-all cursor-pointer ${
-                        isSelected
-                          ? 'border-black bg-white text-black font-semibold'
-                          : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
-                      }`}
-                    >
-                      <span className={`w-2 h-2 rounded-full ${isSelected ? 'bg-black' : 'bg-gray-300'}`} />
-                      {mat}
-                    </button>
-                  );
-                })}
+            {/* Selector de Color / Material (Solo si está registrado en la base de datos) */}
+            {materialOptions.length > 0 && (
+              <div>
+                <h3 className="text-xs font-semibold text-slate-900 uppercase tracking-wider mb-2.5">
+                  Color / Acabado:
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {materialOptions.map((mat) => {
+                    const isSelected = (selectedMaterial || materialOptions[0]) === mat;
+                    return (
+                      <button
+                        key={mat}
+                        type="button"
+                        onClick={() => setSelectedMaterial(mat)}
+                        className={`px-4 py-2 rounded-full text-xs font-medium border flex items-center gap-2 transition-all cursor-pointer ${
+                          isSelected
+                            ? 'border-black bg-white text-black font-semibold'
+                            : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
+                        }`}
+                      >
+                        <span className={`w-2 h-2 rounded-full ${isSelected ? 'bg-black' : 'bg-gray-300'}`} />
+                        {mat}
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
-            </div>
+            )}
 
-            {/* Selector de Medida / Tamaño */}
-            <div>
-              <h3 className="text-xs font-semibold text-slate-900 uppercase tracking-wider mb-2.5">
-                Medida / Dimensión:
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {sizeOptions.map((size) => {
-                  const isSelected = selectedSize === size;
-                  return (
-                    <button
-                      key={size}
-                      type="button"
-                      onClick={() => setSelectedSize(size)}
-                      className={`px-3.5 py-1.5 rounded-full text-xs font-medium border flex items-center gap-1.5 transition-all cursor-pointer ${
-                        isSelected
-                          ? 'border-black bg-white text-black font-bold'
-                          : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
-                      }`}
-                    >
-                      <span className={`w-1.5 h-1.5 rounded-full ${isSelected ? 'bg-black' : 'border border-gray-400'}`} />
-                      {size}
-                    </button>
-                  );
-                })}
+            {/* Selector de Medida / Tamaño (Solo si está registrado en la base de datos) */}
+            {sizeOptions.length > 0 && (
+              <div>
+                <h3 className="text-xs font-semibold text-slate-900 uppercase tracking-wider mb-2.5">
+                  Medida / Dimensión:
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {sizeOptions.map((size) => {
+                    const isSelected = (selectedSize || sizeOptions[0]) === size;
+                    return (
+                      <button
+                        key={size}
+                        type="button"
+                        onClick={() => setSelectedSize(size)}
+                        className={`px-3.5 py-1.5 rounded-full text-xs font-medium border flex items-center gap-1.5 transition-all cursor-pointer ${
+                          isSelected
+                            ? 'border-black bg-white text-black font-bold'
+                            : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
+                        }`}
+                      >
+                        <span className={`w-1.5 h-1.5 rounded-full ${isSelected ? 'bg-black' : 'border border-gray-400'}`} />
+                        {size}
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
-            </div>
+            )}
 
             {/* Fila de Controles: Selector de Cantidad + Botón Negro "Agregar al Carrito" */}
             <div className="flex items-center gap-3 pt-3">

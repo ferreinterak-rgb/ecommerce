@@ -783,23 +783,29 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1.5">Dimensiones</label>
+                    <label className="block text-xs font-bold text-slate-700 mb-1.5">
+                      Medida / Dimensiones
+                      <span className="text-[10px] text-slate-400 font-normal ml-1">(separadas por coma)</span>
+                    </label>
                     <input
                       type="text"
                       value={formData.dimensions || ''}
                       onChange={(e) => setFormData({ ...formData, dimensions: e.target.value })}
-                      placeholder="Ej. 35MM, 4x3 Pulgadas"
+                      placeholder="Ej. 10 Pulgadas, 12 Pulgadas o 35MM, 2 Pulgadas"
                       className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-medium text-slate-800 focus:border-[#f48f25] focus:outline-none"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1.5">Materiales</label>
+                    <label className="block text-xs font-bold text-slate-700 mb-1.5">
+                      Color / Materiales
+                      <span className="text-[10px] text-slate-400 font-normal ml-1">(separadas por coma)</span>
+                    </label>
                     <input
                       type="text"
                       value={formData.materials || ''}
                       onChange={(e) => setFormData({ ...formData, materials: e.target.value })}
-                      placeholder="Ej. ACERO INOXIDABLE 304"
+                      placeholder="Ej. Acero Inox 304, Zincado, Negro Mate"
                       className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-medium text-slate-800 focus:border-[#f48f25] focus:outline-none"
                     />
                   </div>
