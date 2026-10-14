@@ -78,7 +78,7 @@ export const OrderDetailModal: React.FC<ModalProps> = ({
                 <span>{order.shipping_address.address}, {order.shipping_address.city}, {order.shipping_address.state}</span>
               </p>
               <p className="flex items-center gap-1.5 text-gray-600">
-                <CreditCard className="w-3.5 h-3.5 text-[#f48f25]" /> Pago: <span className="uppercase font-bold">{order.payment_method}</span>
+                <CreditCard className="w-3.5 h-3.5 text-[#f48f25]" /> Pago: <span className="uppercase font-bold">{order.payment_method === 'mercadopago' ? 'Mercado Pago' : order.payment_method}</span>
               </p>
             </div>
           </div>

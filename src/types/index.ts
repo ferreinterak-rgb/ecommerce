@@ -56,7 +56,7 @@ export interface ShippingAddress {
   notes?: string;
 }
 
-export type PaymentMethod = 'credit_card' | 'bank_transfer' | 'cash_on_delivery' | 'pse';
+export type PaymentMethod = 'mercadopago' | 'credit_card' | 'bank_transfer' | 'cash_on_delivery' | 'pse';
 
 export type OrderStatus = 'pending' | 'processing' | 'shipped' | 'delivered' | 'cancelled';
 

@@ -99,7 +99,7 @@ export const OrderKanbanBoard: React.FC<KanbanProps> = ({
 
                         <div>
                           <p className="font-bold text-xs text-slate-800 truncate">{order.customer_name}</p>
-                          <p className="text-[10px] text-gray-500">{order.items.length} ítem(s) • {order.payment_method.toUpperCase()}</p>
+                          <p className="text-[10px] text-gray-500">{order.items.length} ítem(s) • {order.payment_method === 'mercadopago' ? 'MERCADO PAGO' : order.payment_method.toUpperCase()}</p>
                         </div>
 
                         <div className="flex justify-between items-center pt-2 border-t border-gray-100">

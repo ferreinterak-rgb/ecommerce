@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brief de Marca & Manual de Identidad Visual - FERREINTER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --orange: #f48f25;
+      --orange-dark: #e07d10;
+      --orange-light: #ff8a00;
+      --black: #111111;
+      --dark: #1a1a1a;
+      --slate-900: #0f172a;
+      --slate-800: #1e293b;
+      --slate-600: #475569;
+      --slate-400: #94a3b8;
+      --slate-100: #f1f5f9;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #0d1117;
+      color: #334155;
+      line-height: 1.5;
+      padding: 30px 15px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Print header actions */
+    .action-bar {
+      background: #1e293b;
+      color: #fff;
+      padding: 16px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #334155;
+    }
+    .action-bar button {
+      background: var(--orange);
+      color: #111;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      border: none;
+      padding: 10px 22px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+    .action-bar button:hover {
+      background: #ff9d3a;
+      transform: translateY(-1px);
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, #111111 0%, #1e293b 100%);
+      color: #ffffff;
+      padding: 48px 40px;
+      position: relative;
+      border-bottom: 4px solid var(--orange);
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(244, 143, 37, 0.2);
+      color: var(--orange);
+      border: 1px solid var(--orange);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    .brand-title {
+      font-size: 38px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .brand-title .brand-ferre {
+      color: #ffffff;
+    }
+    .brand-title .brand-inter {
+      color: var(--orange);
+    }
+    .header-sub {
+      color: #94a3b8;
+      font-size: 15px;
+      font-weight: 500;
+      max-width: 600px;
+    }
+
+    /* Body content */
+    .content {
+      padding: 40px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--slate-900);
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 18px;
+      background: var(--orange);
+      border-radius: 2px;
+    }
+
+    /* Color Palette */
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 14px;
+    }
+    .color-card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fafafa;
+    }
+    .color-swatch {
+      height: 70px;
+      width: 100%;
+    }
+    .color-info {
+      padding: 10px 12px;
+    }
+    .color-name {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--slate-900);
+      display: block;
+    }
+    .color-hex {
+      font-family: monospace;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--slate-600);
+    }
+    .color-role {
+      font-size: 10px;
+      color: var(--slate-400);
+      text-transform: uppercase;
+      margin-top: 2px;
+      display: block;
+    }
+
+    /* Typography */
+    .type-specimen {
+      background: var(--slate-100);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    .font-sample-big {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--slate-900);
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .font-meta {
+      font-size: 13px;
+      color: var(--slate-600);
+    }
+
+    /* Guidelines boxes */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 640px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      .content { padding: 24px 20px; }
+      .header { padding: 32px 20px; }
+    }
+
+    .guide-card {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .guide-card h4 {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--slate-900);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .guide-card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .guide-card li {
+      font-size: 13px;
+      color: var(--slate-600);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .guide-card li::before {
+      content: '•';
+      color: var(--orange);
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .tag {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      color: var(--slate-800);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* Print media styling */
+    @media print {
+      body {
+        background: none;
+        padding: 0;
+      }
+      .action-bar {
+        display: none !important;
+      }
+      .container {
+        box-shadow: none;
+        border-radius: 0;
+        max-width: 100%;
+      }
+      .section {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Action Bar for 1-Click PDF Save -->
+    <div class="action-bar">
+      <div>
+        <strong>FERREINTER Brand Guide</strong> &mdash; <span style="color: #94a3b8; font-size: 13px;">Manual de Identidad Web & Contenido</span>
+      </div>
+      <button onclick="window.print()">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+          <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zm1 2h4v2H6V3zm6 8v2H4v-2h8zM2 6h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1z"/>
+        </svg>
+        Descargar / Imprimir en PDF
+      </button>
+    </div>
+
+    <!-- Header / Brand Hero -->
+    <header class="header">
+      <span class="badge">Manual de Identidad & Brief Visual</span>
+      <h1 class="brand-title"><span class="brand-ferre">FERRE</span><span class="brand-inter">INTER</span></h1>
+      <p class="header-sub">
+        Guía de estilo, identidad visual, paleta cromática y lineamientos de diseño digital para piezas gráficas, redes sociales, catálogos y contenido web.
+      </p>
+    </header>
+
+    <div class="content">
+
+      <!-- 1. IDENTIDAD DEL LOGOTIPO -->
+      <section class="section">
+        <h2 class="section-title">1. Construcción del Logotipo</h2>
+        <div class="guide-card">
+          <h4>Tratamiento y Reglas del Logo</h4>
+          <ul>
+            <li><strong>Regla sobre fondos oscuros (#111111 / #1e293b / negro):</strong> La palabra <strong style="color: #0f172a;">"FERRE"</strong> debe ir en <strong>BLANCO (#FFFFFF)</strong> y <strong style="color: var(--orange-dark);">"INTER"</strong> en <strong>NARANJA (#F48F25)</strong>.</li>
+            <li><strong>Regla sobre fondos claros (blanco / gris):</strong> <strong style="color: #0f172a;">"FERRE"</strong> en <strong>NEGRO (#111111)</strong> y <strong style="color: var(--orange-dark);">"INTER"</strong> en <strong>NARANJA (#F48F25)</strong>.</li>
+            <li><strong>Tipografía de la Marca:</strong> Inter Black (900), en mayúsculas sostenidas con tracking condensado (-0.03em a -0.05em).</li>
+            <li><strong>Isotipo / Acento:</strong> Ícono de rayo o herramientas con iluminación naranja industrial.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 2. PALETA DE COLOR OFICIAL -->
+      <section class="section">
+        <h2 class="section-title">2. Paleta Cromática Oficial</h2>
+        <div class="color-grid">
+          <div class="color-card">
+            <div class="color-swatch" style="background: #f48f25;"></div>
+            <div class="color-info">
+              <span class="color-name">Brand Orange</span>
+              <span class="color-hex">#F48F25</span>
+              <span class="color-role">Color Primario</span>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-swatch" style="background: #e07d10;"></div>
+            <div class="color-info">
+              <span class="color-name">Orange Dark</span>
+              <span class="color-hex">#E07D10</span>
+              <span class="color-role">Hover & Énfasis</span>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-swatch" style="background: #111111;"></div>
+            <div class="color-info">
+              <span class="color-name">Brand Black</span>
+              <span class="color-hex">#111111</span>
+              <span class="color-role">Fondos & Navbar</span>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-swatch" style="background: #0f172a;"></div>
+            <div class="color-info">
+              <span class="color-name">Industrial Navy</span>
+              <span class="color-hex">#0F172A</span>
+              <span class="color-role">Títulos & Textos</span>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-swatch" style="background: #f8fafc; border-bottom: 1px solid #e2e8f0;"></div>
+            <div class="color-info">
+              <span class="color-name">Surface Light</span>
+              <span class="color-hex">#F8FAFC</span>
+              <span class="color-role">Fondos Claros</span>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-swatch" style="background: #ffffff; border-bottom: 1px solid #e2e8f0;"></div>
+            <div class="color-info">
+              <span class="color-name">Pure White</span>
+              <span class="color-hex">#FFFFFF</span>
+              <span class="color-role">Tarjetas & Base</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. TIPOGRAFÍA Y JERARQUÍA -->
+      <section class="section">
+        <h2 class="section-title">3. Tipografía & Jerarquía</h2>
+        <div class="type-specimen">
+          <div class="font-sample-big">Inter Sans (Google Fonts)</div>
+          <p class="font-meta">Familia limpia, geométrica, moderna y de alta legibilidad para interfaces y catálogos.</p>
+        </div>
+        <div class="grid-2">
+          <div class="guide-card">
+            <h4>Titulares & Banners</h4>
+            <ul>
+              <li><strong>Pesos:</strong> Extra Bold (800) y Black (900).</li>
+              <li><strong>Estilo:</strong> Mayúsculas para llamados de acción, promociones y badges.</li>
+              <li><strong>Tracking:</strong> Ligeramente apretado en títulos grandes (-0.02em).</li>
+            </ul>
+          </div>
+          <div class="guide-card">
+            <h4>Párrafos & Precios</h4>
+            <ul>
+              <li><strong>Pesos:</strong> Regular (400) y Medium (500) para lectura.</li>
+              <li><strong>Precios:</strong> Bold (700) o Black (900) con formato colombiano (COP $X.XXX.XXX).</li>
+              <li><strong>Monospaced:</strong> JetBrains Mono / Courier para códigos SKU o etiquetas técnicas.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. FOTOGRAFÍA Y TRATAMIENTO DE PRODUCTO -->
+      <section class="section">
+        <h2 class="section-title">4. Guía Fotográfica & Producto</h2>
+        <div class="grid-2">
+          <div class="guide-card">
+            <h4 style="color: #16a34a;">✓ Reglas de Aprobación</h4>
+            <ul>
+              <li><strong>Fondo Blanco Puro o Transparente (PNG / WebP):</strong> Producto recortado nítido.</li>
+              <li><strong>Sin marcos artificiales:</strong> La imagen debe respirar libremente dentro del contenedor (sin bordes o marcos rectangulares pesados).</li>
+              <li><strong>Proporción cuadrada (1:1):</strong> Recomendado 1000x1000px o 1200x1200px.</li>
+              <li><strong>Iluminación:</strong> Luz neutra de estudio sin sombras duras ni reflejos invasivos.</li>
+            </ul>
+          </div>
+          <div class="guide-card">
+            <h4 style="color: #dc2626;">✗ Lo que se debe Evitar</h4>
+            <ul>
+              <li>Marcos de colores o bordes añadidos alrededor de la foto del producto.</li>
+              <li>Marcas de agua gigantescas de distribuidores ajenos.</li>
+              <li>Fotos pixeladas, deformadas o de baja resolución tomadas con flash directo.</li>
+              <li>Textos promocionales sobrecargados sobre la imagen del producto.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. ESTRUCTURA Y CATEGORÍAS -->
+      <section class="section">
+        <h2 class="section-title">5. Categorías Clave & Universo de Marca</h2>
+        <div class="tag-list" style="margin-bottom: 20px;">
+          <span class="tag">Herramientas Eléctricas</span>
+          <span class="tag">Herramientas Manuales</span>
+          <span class="tag">Soldadura & Equipos</span>
+          <span class="tag">Construcción & Obra</span>
+          <span class="tag">Seguridad Industrial (EPP)</span>
+          <span class="tag">Plomería & Grifería</span>
+          <span class="tag">Tornillería & Fijaciones</span>
+          <span class="tag">Pinturas & Químicos</span>
+        </div>
+        <div class="guide-card">
+          <h4>Tono de Comunicación</h4>
+          <ul>
+            <li><strong>Profesional, Industrial y Confiable:</strong> Hablamos tanto al maestro de obra y profesional industrial como al cliente de hogar.</li>
+            <li><strong>Directo y Orientado a Soluciones:</strong> Resaltar potencia, resistencia, durabilidad, garantía y entrega rápida.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 6. INFORMACIÓN CORPORATIVA OFICIAL -->
+      <section class="section">
+        <h2 class="section-title">6. Datos Oficiales del Negocio</h2>
+        <div class="guide-card">
+          <ul>
+            <li><strong>Nombre Comercial:</strong> FERREINTER (Ferretería Ferreinter)</li>
+            <li><strong>Dirección Física:</strong> Calle 48 #56-05</li>
+            <li><strong>Enfoque:</strong> Herramientas Industriales, Materiales y Equipos Ferreteros de Alta Calidad.</li>
+            <li><strong>Navegación Web Activa:</strong> INICIO | TIENDA | CONTACTO</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+</body>
+</html>

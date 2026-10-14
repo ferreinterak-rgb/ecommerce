@@ -6,7 +6,8 @@ import { useAuth } from '../context/AuthContext';
 import { orderService } from '../services/orderService';
 import { activityLogService } from '../services/activityLogService';
 import { PaymentMethod, ShippingAddress } from '../types';
-import { ShieldCheck, Lock, CreditCard, Landmark, Truck, CheckCircle2, ArrowRight, Tag } from 'lucide-react';
+import { mercadopagoService } from '../services/mercadopagoService';
+import { ShieldCheck, Lock, CreditCard, Landmark, Truck, CheckCircle2, ArrowRight, Tag, ExternalLink } from 'lucide-react';
 
 export const CheckoutPage: React.FC = () => {
   const navigate = useNavigate();
@@ -39,11 +40,12 @@ export const CheckoutPage: React.FC = () => {
     notes: ''
   });
 
-  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('credit_card');
+  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('mercadopago');
   const [couponCodeInput, setCouponCodeInput] = useState('');
   const [couponMessage, setCouponMessage] = useState<string | null>(null);
   const [processing, setProcessing] = useState(false);
   const [completedOrderNumber, setCompletedOrderNumber] = useState<string | null>(null);
+  const [paymentRedirectUrl, setPaymentRedirectUrl] = useState<string | null>(null);
   const [checkoutError, setCheckoutError] = useState<string | null>(null);
 
   if (cart.length === 0 && !completedOrderNumber) {
@@ -81,13 +83,14 @@ export const CheckoutPage: React.FC = () => {
         subtotal: (item.product.discount_price ?? item.product.price) * item.quantity
       }));
 
+      // 1. Crear la orden en la base de datos
       const created = await orderService.createOrder(
         {
           customer_name: customerName,
           customer_email: customerEmail,
           customer_phone: customerPhone,
           shipping_address: shippingAddress,
-          payment_method: paymentMethod,
+          payment_method: 'mercadopago',
           status: 'pending',
           subtotal,
           discount: discountAmount,
@@ -104,11 +107,38 @@ export const CheckoutPage: React.FC = () => {
         'Nuevo Pedido Creado',
         'Pedido',
         created.order_number,
-        `Monto total: ${formatPrice(created.total)} COP via ${paymentMethod}`,
+        `Monto total: ${formatPrice(created.total)} COP via Mercado Pago`,
         customerName
       );
 
+      // 2. Preparar la preferencia de Mercado Pago
+      const preference = await mercadopagoService.createPaymentPreference({
+        order_number: created.order_number,
+        items: cart.map(item => ({
+          id: item.product.id,
+          title: item.product.name,
+          quantity: item.quantity,
+          unit_price: item.product.discount_price ?? item.product.price,
+          currency_id: 'COP',
+          picture_url: item.product.images?.[0]
+        })),
+        payer: {
+          name: customerName,
+          email: customerEmail,
+          phone: { number: customerPhone },
+          address: { street_name: shippingAddress.address }
+        },
+        back_urls: {
+          success: `${window.location.origin}/checkout?status=approved&order=${created.order_number}`,
+          pending: `${window.location.origin}/checkout?status=pending&order=${created.order_number}`,
+          failure: `${window.location.origin}/checkout?status=rejected&order=${created.order_number}`
+        }
+      });
+
       setCompletedOrderNumber(created.order_number);
+      if (preference?.init_point) {
+        setPaymentRedirectUrl(preference.init_point);
+      }
       clearCart();
     } catch (err: any) {
       console.error('Error placing order', err);
@@ -127,18 +157,44 @@ export const CheckoutPage: React.FC = () => {
           <CheckCircle2 className="w-10 h-10 stroke-[2.5]" />
         </div>
 
-        <h1 className="text-3xl font-black text-slate-900">¡Pedido Confirmado con Éxito!</h1>
+        <h1 className="text-3xl font-black text-slate-900">¡Pedido Registrado con Éxito!</h1>
         <p className="text-sm text-gray-600 max-w-md mx-auto">
-          Gracias por confiar en <strong>FERRE INTER</strong>. Hemos enviado la confirmación y recibo de compra al correo electrónico <strong>{customerEmail}</strong>.
+          Gracias por confiar en <strong>FERRE INTER</strong>. Hemos registrado tu pedido con el correo <strong>{customerEmail}</strong>.
         </p>
 
-        <div className="p-6 rounded-2xl bg-[#031834] text-white space-y-2 max-w-md mx-auto border border-[#f48f25]/30">
+        <div className="p-6 rounded-2xl bg-[#031834] text-white space-y-3 max-w-md mx-auto border border-[#f48f25]/30">
           <span className="text-xs text-gray-400 font-mono">NÚMERO DE ORDEN</span>
           <div className="text-2xl font-mono font-black text-[#f48f25]">{completedOrderNumber}</div>
-          <p className="text-[11px] text-gray-300 pt-2 border-t border-white/10">
-            Puedes realizar el seguimiento del pedido con tu número de orden en cualquier momento.
-          </p>
+          <div className="flex items-center justify-center gap-2 pt-2 border-t border-white/10 text-xs text-emerald-400">
+            <ShieldCheck className="w-4 h-4 text-emerald-400" />
+            <span>Pasarela oficial configurada: Mercado Pago</span>
+          </div>
         </div>
+
+        {paymentRedirectUrl && (
+          <div className="max-w-md mx-auto p-4 rounded-2xl bg-[#009ee3]/10 border border-[#009ee3]/30 text-left space-y-3">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-[#009ee3] text-white flex items-center justify-center font-black text-xs shrink-0">
+                MP
+              </div>
+              <div className="flex-1">
+                <h4 className="font-bold text-xs text-slate-900">Pasarela Mercado Pago Lista</h4>
+                <p className="text-[11px] text-gray-500">
+                  El link seguro de pago para esta orden está preparado.
+                </p>
+              </div>
+            </div>
+            <a
+              href={paymentRedirectUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-3 px-4 rounded-xl bg-[#009ee3] hover:bg-[#0081ba] text-white font-extrabold text-xs flex items-center justify-center gap-2 transition-all shadow-md"
+            >
+              <span>Ir a Pagar en Mercado Pago</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+          </div>
+        )}
 
         <div className="pt-4 flex justify-center gap-4">
           <Link to="/catalog" className="px-6 py-3 rounded-xl bg-[#f48f25] text-black font-extrabold text-xs">
@@ -157,7 +213,7 @@ export const CheckoutPage: React.FC = () => {
       
       <div>
         <h1 className="text-3xl font-black text-slate-900 tracking-tight">Finalizar Compra</h1>
-        <p className="text-xs text-gray-500 mt-1">Completa los datos de envío y pago seguro para procesar tu orden.</p>
+        <p className="text-xs text-gray-500 mt-1">Completa tus datos de entrega y procesa tu pago seguro con Mercado Pago.</p>
       </div>
 
       {checkoutError && (
@@ -270,43 +326,66 @@ export const CheckoutPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Payment Method Card */}
+          {/* Payment Method Card - EXCLUSIVO MERCADO PAGO */}
           <div className="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm space-y-4">
-            <h3 className="font-bold text-base text-slate-900 border-b border-gray-100 pb-3">
-              3. Método de Pago
-            </h3>
+            <div className="flex items-center justify-between border-b border-gray-100 pb-3">
+              <h3 className="font-bold text-base text-slate-900">
+                3. Método de Pago Oficial
+              </h3>
+              <span className="text-[10px] font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 flex items-center gap-1">
+                <ShieldCheck className="w-3 h-3 text-emerald-600" /> Pasarela Segura
+              </span>
+            </div>
 
-            <div className="space-y-3 text-xs">
-              {[
-                { id: 'credit_card', label: 'Tarjeta de Crédito / Débito (Visa, Mastercard, Amex)', icon: CreditCard },
-                { id: 'pse', label: 'PSE / Transferencia Débito Bancario Directo', icon: Landmark },
-                { id: 'bank_transfer', label: 'Transferencia Bancaria a Cuenta Empresarial FERRE INTER', icon: Landmark },
-                { id: 'cash_on_delivery', label: 'Pago Contra Entrega (Efectivo al recibir)', icon: Truck }
-              ].map((m) => {
-                const Icon = m.icon;
-                const isSelected = paymentMethod === m.id;
-                return (
-                  <label
-                    key={m.id}
-                    className={`flex items-center gap-3 p-4 rounded-2xl border cursor-pointer transition-all ${
-                      isSelected
-                        ? 'border-[#f48f25] bg-[#f48f25]/5 text-slate-900 font-bold ring-1 ring-[#f48f25]'
-                        : 'border-gray-200 hover:border-gray-300 text-gray-700'
-                    }`}
-                  >
-                    <input
-                      type="radio"
-                      name="paymentMethod"
-                      value={m.id}
-                      checked={isSelected}
-                      onChange={() => setPaymentMethod(m.id as PaymentMethod)}
-                      className="w-4 h-4 text-[#f48f25] accent-[#f48f25]"
-                    />
-                    <Icon className="w-5 h-5 text-[#f48f25]" />
-                    <span className="flex-1">{m.label}</span>
-                  </label>
-                );
-              })}
+            {/* Tarjeta destacada de Mercado Pago */}
+            <div className="p-5 rounded-2xl border-2 border-[#009ee3] bg-gradient-to-br from-[#009ee3]/5 via-white to-orange-50/20 space-y-4 relative overflow-hidden">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-2xl bg-[#009ee3] text-white flex items-center justify-center font-black text-sm shadow-md shadow-[#009ee3]/20">
+                    MP
+                  </div>
+                  <div>
+                    <h4 className="font-black text-sm text-slate-900 flex items-center gap-2">
+                      Mercado Pago
+                      <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-[#009ee3] text-white uppercase font-bold tracking-wider">
+                        Oficial
+                      </span>
+                    </h4>
+                    <p className="text-xs text-gray-500">
+                      Paga de forma 100% segura con tus medios preferidos en Colombia
+                    </p>
+                  </div>
+                </div>
+
+                <div className="w-5 h-5 rounded-full bg-[#009ee3] flex items-center justify-center text-white">
+                  <CheckCircle2 className="w-4 h-4 stroke-[3]" />
+                </div>
+              </div>
+
+              {/* Medios de pago soportados a través de Mercado Pago */}
+              <div className="pt-3 border-t border-gray-100 grid grid-cols-2 sm:grid-cols-4 gap-2 text-[11px]">
+                <div className="p-2 rounded-xl bg-white border border-gray-100 flex items-center gap-2 text-slate-700">
+                  <CreditCard className="w-4 h-4 text-[#009ee3]" />
+                  <span className="font-bold">Tarjetas de Crédito</span>
+                </div>
+                <div className="p-2 rounded-xl bg-white border border-gray-100 flex items-center gap-2 text-slate-700">
+                  <Landmark className="w-4 h-4 text-[#009ee3]" />
+                  <span className="font-bold">PSE Débito</span>
+                </div>
+                <div className="p-2 rounded-xl bg-white border border-gray-100 flex items-center gap-2 text-slate-700">
+                  <ShieldCheck className="w-4 h-4 text-[#009ee3]" />
+                  <span className="font-bold">Efectivo / Puntos</span>
+                </div>
+                <div className="p-2 rounded-xl bg-white border border-gray-100 flex items-center gap-2 text-slate-700">
+                  <Lock className="w-4 h-4 text-emerald-600" />
+                  <span className="font-bold">Dinero en MP</span>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2 text-[11px] text-gray-500 pt-1">
+                <Lock className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                <span>Tus datos financieros viajan encriptados con protección al comprador de Mercado Pago.</span>
+              </div>
             </div>
           </div>
 
@@ -384,9 +463,9 @@ export const CheckoutPage: React.FC = () => {
             <button
               type="submit"
               disabled={processing}
-              className="w-full py-4 rounded-xl bg-[#f48f25] text-black font-black text-sm hover:bg-[#d97706] transition-all shadow-xl shadow-[#f48f25]/30 flex items-center justify-center gap-2"
+              className="w-full py-4 rounded-xl bg-[#009ee3] hover:bg-[#0081ba] text-white font-black text-sm transition-all shadow-xl shadow-[#009ee3]/25 flex items-center justify-center gap-2"
             >
-              {processing ? 'Procesando Orden...' : 'Pagar y Confirmar Pedido'}
+              {processing ? 'Generando Pago Seguro...' : 'Continuar con Mercado Pago'}
               <ArrowRight className="w-4 h-4 stroke-[3]" />
             </button>
 
