@@ -1,7 +1,6 @@
 import React from 'react';
 import { TrustFeaturesBar } from '../components/TrustFeaturesBar';
 import { CategorySlider } from '../components/CategorySlider';
-import { PromoBanner } from '../components/PromoBanner';
 import { BestSellersGrid } from '../components/BestSellersGrid';
 import { WhyChooseUsSection } from '../components/WhyChooseUsSection';
 
@@ -14,13 +13,10 @@ export const HomePage: React.FC = () => {
       {/* 2. Slider Interactivo de Categorías Reales */}
       <CategorySlider />
 
-      {/* 3. Special Offer Promo Banner */}
-      <PromoBanner />
-
-      {/* 4. Our Best Sellers */}
+      {/* 3. Our Best Sellers */}
       <BestSellersGrid />
 
-      {/* 5. Why Choose Us */}
+      {/* 4. Why Choose Us */}
       <WhyChooseUsSection />
     </div>
   );
