@@ -6,70 +6,75 @@ export const WhyChooseUsSection: React.FC = () => {
   const points = [
     {
       icon: Package,
-      title: 'Productos de Calidad',
-      desc: 'Solo vendemos productos de la mejor calidad de marcas de gran confianza.',
+      title: 'Variedad & Rotación',
+      desc: 'Herrajes, cerraduras, discos de corte y herramientas para diferentes necesidades.',
     },
     {
       icon: DollarSign,
-      title: 'Precios Accesibles',
-      desc: 'Obtén el mejor valor por tu dinero con nuestros precios altamente competitivos.',
+      title: 'Precios de Proveedor',
+      desc: 'Rentabilidad real y márgenes competitivos para ferreterías y contratistas.',
     },
     {
       icon: Lightbulb,
-      title: 'Asesoría de Expertos',
-      desc: 'Nuestro equipo de especialistas técnicos siempre está listo para ayudarte.',
+      title: 'Asesoría Técnica Experta',
+      desc: 'Te orientamos en medidas, materiales, resistencia y compatibilidad de productos.',
     },
     {
       icon: Smile,
-      title: 'Satisfacción Garantizada',
-      desc: 'Nos comprometemos con tu satisfacción total en cada compra y servicio.',
+      title: 'Garantía y Confianza',
+      desc: 'Abastecimiento continuo con respaldo y calidad probada en obra.',
     },
   ];
 
   return (
-    <section className="bg-white py-16 border-t border-gray-100">
+    <section className="bg-[#f7f7f5] py-16 border-t border-black/[0.06]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Left Column */}
-          <div className="lg:col-span-5 space-y-5">
-            <span className="text-xs font-bold text-[#f48f25] uppercase tracking-wider font-mono">
-              POR QUÉ ELEGIRNOS
+          <div className="lg:col-span-5 space-y-6">
+            <span className="text-xs font-black text-[#ff5500] uppercase tracking-widest font-mono">
+              PROVEEDOR FERRETERO CONFIABLE
             </span>
 
-            <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight">
-              Brindamos Lo Mejor <br className="hidden sm:inline" />
-              Para Tu Proyecto
+            <h2 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight leading-[1.1] uppercase">
+              El Aliado Que Tu <br className="hidden sm:inline" />
+              <span className="text-[#ff5500]">Negocio</span> Necesita.
             </h2>
 
-            <p className="text-sm text-gray-600 leading-relaxed">
-              Nos comprometemos a proporcionar a nuestros clientes productos de la más alta calidad, precios competitivos y una atención profesional de primera.
+            <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-medium">
+              Abastece tu ferretería con productos de alta rotación, precios de distribuidor directo y despacho garantizado a tiempo.
             </p>
 
-            <div>
+            <div className="pt-2">
               <Link
-                to="/booking"
-                className="inline-block bg-[#111111] hover:bg-slate-800 text-white font-bold text-xs sm:text-sm px-6 py-3 rounded-md transition-colors"
+                to="/catalog"
+                className="inline-flex items-center gap-2 bg-[#ff5500] hover:bg-[#e04800] text-white font-black text-xs sm:text-sm px-8 py-4 rounded-full shadow-lg shadow-[#ff5500]/25 transition-all transform active:scale-95 uppercase tracking-wider"
               >
-                Saber Más
+                <span>Ver Portafolio Completo</span>
+                <span className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center">→</span>
               </Link>
             </div>
           </div>
 
-          {/* Right Column 2x2 Cards */}
+          {/* Right Column: Grid 2x2 de beneficios en tarjetas estilo póster */}
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
-            {points.map((pt, idx) => {
-              const IconComp = pt.icon;
+            {points.map((p, idx) => {
+              const Icon = p.icon;
               return (
-                <div
+                <div 
                   key={idx}
-                  className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm space-y-3 hover:border-[#f48f25]/40 transition-colors"
+                  className="bg-white p-6 rounded-3xl border border-black/[0.06] shadow-[0_4px_20px_rgba(0,0,0,0.02)] space-y-3 hover:border-[#ff5500]/40 transition-all duration-300"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-[#f5f5f7] border border-[#f48f25]/20 flex items-center justify-center text-[#f48f25]">
-                    <IconComp className="w-5 h-5 stroke-[2]" />
+                  <div className="w-12 h-12 rounded-2xl bg-[#ff5500]/10 text-[#ff5500] flex items-center justify-center">
+                    <Icon className="w-6 h-6 stroke-[2]" />
                   </div>
-                  <h3 className="font-bold text-base text-slate-900">{pt.title}</h3>
-                  <p className="text-xs text-gray-500 leading-relaxed">{pt.desc}</p>
+                  <h4 className="font-black text-base text-slate-900 uppercase tracking-tight">
+                    {p.title}
+                  </h4>
+                  <p className="text-xs text-slate-600 leading-relaxed font-medium">
+                    {p.desc}
+                  </p>
                 </div>
               );
             })}

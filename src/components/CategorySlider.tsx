@@ -173,28 +173,28 @@ export const CategorySlider: React.FC = () => {
   }).filter(c => c.count > 0 || products.length === 0);
 
   return (
-    <section className="bg-gradient-to-b from-white via-slate-50/50 to-white py-14 font-sans border-b border-slate-100">
+    <section className="bg-[#f7f7f5] py-14 font-sans border-b border-black/[0.06]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         
         {/* Encabezado con Título y Controles del Slider */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-gray-100 pb-5">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-black/[0.08] pb-5">
           <div>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#f48f25]/10 text-[#f48f25] text-xs font-black uppercase tracking-wider mb-2">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#ff5500]/10 text-[#ff5500] text-xs font-black uppercase tracking-wider mb-2">
               <Sparkles className="w-3.5 h-3.5" />
-              Nuestras Categorías
+              Líneas Industriales
             </div>
-            <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-              Nuestras Categorías de Productos
+            <h2 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight uppercase">
+              Categorías de Productos <span className="text-[#ff5500]">&bull;</span>
             </h2>
-            <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-xl">
-              Explora nuestras líneas especializadas en herrajes, cerraduras, discos de corte y herramientas para carpintería.
+            <p className="text-xs sm:text-sm text-slate-600 mt-1 max-w-xl font-medium">
+              Explora nuestras líneas especializadas en herrajes, cerraduras, discos de corte y herramientas para tu negocio.
             </p>
           </div>
 
           <div className="flex items-center gap-3">
             <Link
               to="/catalog"
-              className="text-xs sm:text-sm font-extrabold text-slate-900 hover:text-[#f48f25] flex items-center gap-1 transition-colors mr-2"
+              className="text-xs sm:text-sm font-black text-slate-900 hover:text-[#ff5500] flex items-center gap-1 transition-colors mr-2 uppercase tracking-wider"
             >
               Ver Catálogo Completo <ArrowRight className="w-4 h-4 ml-0.5" />
             </Link>

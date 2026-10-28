@@ -41,7 +41,7 @@ const LayoutContent: React.FC = () => {
   }, [location.pathname, location.search]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-white text-slate-900 font-sans antialiased selection:bg-[#f48f25] selection:text-black">
+    <div className="min-h-screen flex flex-col bg-[#f7f7f5] text-slate-900 font-sans antialiased selection:bg-[#ff5500] selection:text-white">
       {!isLoginPage && <Navbar />}
       
       <main className="flex-1">

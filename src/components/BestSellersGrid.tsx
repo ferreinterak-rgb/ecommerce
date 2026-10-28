@@ -18,23 +18,23 @@ export const BestSellersGrid: React.FC = () => {
   }, []);
 
   return (
-    <section className="bg-white py-14">
+    <section className="bg-[#f7f7f5] py-14 border-t border-black/[0.06]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         
-        {/* Header */}
-        <div className="flex items-end justify-between border-b border-gray-100 pb-4">
+        {/* Header con estilo editorial */}
+        <div className="flex items-end justify-between border-b border-black/[0.08] pb-4">
           <div>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#f48f25]/10 text-[#f48f25] text-xs font-black uppercase tracking-wider mb-2">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#ff5500]/10 text-[#ff5500] text-xs font-black uppercase tracking-wider mb-2">
               <Sparkles className="w-3.5 h-3.5" />
-              Productos Destacados
+              Catálogo de Alta Demanda
             </div>
-            <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-              Los Más Vendidos
+            <h2 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight uppercase">
+              Los Más Vendidos <span className="text-[#ff5500]">&bull;</span>
             </h2>
           </div>
           <Link
             to="/catalog"
-            className="text-xs sm:text-sm font-bold text-slate-900 hover:text-[#f48f25] flex items-center gap-1 transition-colors"
+            className="text-xs sm:text-sm font-black text-slate-900 hover:text-[#ff5500] flex items-center gap-1 transition-colors uppercase tracking-wider"
           >
             Ver Todos los Productos <ArrowRight className="w-4 h-4 ml-1" />
           </Link>

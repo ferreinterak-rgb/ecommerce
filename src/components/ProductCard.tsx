@@ -25,14 +25,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
     <div className="group flex flex-col justify-between font-sans transition-all duration-200">
       
-      {/* Top Image Container: Imagen completamente limpia sin marco ni fondo gris */}
+      {/* Top Image Container: Fondo blanco puro con marco suave estilo editorial */}
       <Link
         to={`/product/${product.slug}`}
-        className="relative bg-white aspect-square p-2 flex items-center justify-center overflow-hidden mb-3"
+        className="relative bg-white rounded-2xl border border-black/[0.06] aspect-square p-4 flex items-center justify-center overflow-hidden mb-3 shadow-[0_4px_20px_rgba(0,0,0,0.03)] group-hover:border-[#ff5500]/40 group-hover:shadow-[0_10px_25px_rgba(255,85,0,0.08)] transition-all duration-300"
       >
         {/* Badge de Oferta / Descuento */}
         {hasDiscount && (
-          <span className="absolute top-2 left-2 bg-black text-white font-extrabold text-[10px] px-2 py-0.5 rounded-full uppercase font-mono shadow-sm z-10">
+          <span className="absolute top-3 left-3 bg-[#ff5500] text-white font-black text-[10px] px-2.5 py-1 rounded-full uppercase font-mono shadow-md z-10 tracking-wider">
             -{discountPercent}%
           </span>
         )}
@@ -66,8 +66,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           </div>
 
           {/* Título del Producto */}
-          <Link to={`/product/${product.slug}`} className="block group-hover:text-[#f48f25] transition-colors">
-            <h3 className="text-sm sm:text-base font-bold text-slate-900 tracking-tight leading-snug line-clamp-2">
+          <Link to={`/product/${product.slug}`} className="block group-hover:text-[#ff5500] transition-colors">
+            <h3 className="text-sm sm:text-base font-extrabold text-slate-900 tracking-tight leading-snug line-clamp-2">
               {product.name}
             </h3>
           </Link>
@@ -82,7 +82,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               {formatPrice(currentPrice)}
             </span>
             {product.wholesale_price ? (
-              <span className="text-[11px] text-emerald-700 font-bold font-mono whitespace-nowrap">
+              <span className="text-[11px] text-emerald-700 font-black font-mono whitespace-nowrap">
                 Mayor: {formatPrice(product.wholesale_price)}
               </span>
             ) : hasDiscount ? (
@@ -95,7 +95,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           {/* Botón Comprar moderno y estilizado */}
           <button
             onClick={() => addToCart(product, 1)}
-            className="bg-slate-950 hover:bg-[#f48f25] text-white hover:text-black font-bold text-xs sm:text-sm pl-3.5 pr-1.5 py-1.5 rounded-full flex items-center gap-1.5 transition-all transform active:scale-95 group/btn shrink-0"
+            className="bg-[#111111] hover:bg-[#ff5500] text-white hover:text-white font-extrabold text-xs sm:text-sm pl-4 pr-1.5 py-1.5 rounded-full flex items-center gap-2 transition-all transform active:scale-95 group/btn shrink-0 shadow-md"
             title="Añadir al carrito"
           >
             <span>Comprar</span>

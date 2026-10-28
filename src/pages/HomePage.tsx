@@ -1,4 +1,5 @@
 import React from 'react';
+import { EditorialHeroBanner } from '../components/EditorialHeroBanner';
 import { TrustFeaturesBar } from '../components/TrustFeaturesBar';
 import { VideoShowcaseBanner } from '../components/VideoShowcaseBanner';
 import { CategorySlider } from '../components/CategorySlider';
@@ -7,20 +8,23 @@ import { WhyChooseUsSection } from '../components/WhyChooseUsSection';
 
 export const HomePage: React.FC = () => {
   return (
-    <div className="bg-white min-h-screen">
-      {/* 1. Trust Features Bar */}
+    <div className="bg-[#f7f7f5] min-h-screen">
+      {/* 1. Hero Principal Editorial: TU NEGOCIO NECESITA UN BUEN PROVEEDOR */}
+      <EditorialHeroBanner />
+
+      {/* 2. Barra de Confianza & Valores */}
       <TrustFeaturesBar />
 
-      {/* 2. Banner Tipo Slider / Video Comercial de Productos */}
+      {/* 3. Showcase Interactivo de Productos */}
       <VideoShowcaseBanner />
 
-      {/* 3. Slider Interactivo de Categorías Reales */}
+      {/* 4. Categorías Reales */}
       <CategorySlider />
 
-      {/* 4. Our Best Sellers */}
+      {/* 5. Catálogo de Alta Demanda / Más Vendidos */}
       <BestSellersGrid />
 
-      {/* 5. Why Choose Us */}
+      {/* 6. Beneficios para Negocios y Clientes */}
       <WhyChooseUsSection />
     </div>
   );
