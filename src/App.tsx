@@ -7,6 +7,7 @@ import { CurrencyProvider } from './context/CurrencyContext';
 import { Navbar } from './components/Navbar';
 import { CartDrawer } from './components/CartDrawer';
 import { Footer } from './components/Footer';
+import { SmartWhatsAppButton } from './components/SmartWhatsAppButton';
 
 import { HomePage } from './pages/HomePage';
 import { CatalogPage } from './pages/CatalogPage';
@@ -21,6 +22,7 @@ import { productService } from './services/productService';
 const LayoutContent: React.FC = () => {
   const location = useLocation();
   const isLoginPage = location.pathname === '/login';
+  const isAdminPage = location.pathname.startsWith('/admin');
 
   // Inicializar sincronización en tiempo real (Supabase Realtime + Multi-pestaña)
   React.useEffect(() => {
@@ -60,6 +62,9 @@ const LayoutContent: React.FC = () => {
 
       {/* Global Slide-Over Cart Drawer */}
       <CartDrawer />
+
+      {/* Botón Flotante Inteligente de WhatsApp */}
+      {!isLoginPage && !isAdminPage && <SmartWhatsAppButton />}
     </div>
   );
 };
