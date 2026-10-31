@@ -4,6 +4,7 @@ import { Product } from '../types';
 import { productService } from '../services/productService';
 import { useCart } from '../context/CartContext';
 import { useCurrency } from '../context/CurrencyContext';
+import { ProductReviewsSection } from '../components/ProductReviewsSection';
 import { Plus, Minus, ArrowRight, Check } from 'lucide-react';
 
 export const ProductDetailPage: React.FC = () => {
@@ -376,6 +377,9 @@ export const ProductDetailPage: React.FC = () => {
 
           </div>
         )}
+
+        {/* 4. Reseñas y Calificaciones Verificadas */}
+        <ProductReviewsSection productId={product.id} productName={product.name} />
 
       </div>
     </div>

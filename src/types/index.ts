@@ -48,6 +48,8 @@ export interface CartItem {
 
 export interface ShippingAddress {
   fullName: string;
+  documentType?: 'CC' | 'NIT' | 'CE' | 'PP';
+  documentId?: string;
   address: string;
   city: string;
   state: string;
@@ -78,6 +80,8 @@ export interface Order {
   customer_name: string;
   customer_email: string;
   customer_phone: string;
+  customer_document_type?: string;
+  customer_document_id?: string;
   shipping_address: ShippingAddress;
   payment_method: PaymentMethod;
   status: OrderStatus;
@@ -88,6 +92,11 @@ export interface Order {
   total: number;
   items: OrderItem[];
   notes?: string;
+  effi_invoice_id?: string;
+  effi_invoice_number?: string;
+  effi_invoice_status?: 'pending' | 'sent' | 'error' | 'not_applicable';
+  effi_pdf_url?: string;
+  effi_error_log?: string;
   created_at: string;
   updated_at?: string;
 }
@@ -114,11 +123,29 @@ export interface Appointment {
 export interface Coupon {
   id: string;
   code: string;
-  discount_percentage: number;
-  valid_until: string;
-  max_uses: number;
-  used_count: number;
+  discount_percentage?: number;
+  discount_type?: 'percentage' | 'fixed';
+  discount_value?: number;
+  min_purchase?: number;
+  valid_until?: string;
+  expiry_date?: string;
+  max_uses?: number;
+  used_count?: number;
+  usage_count?: number;
   is_active: boolean;
+  created_at: string;
+}
+
+export interface ProductReview {
+  id: string;
+  product_id: string;
+  user_id?: string;
+  user_name: string;
+  user_email?: string;
+  rating: number; // 1-5
+  title?: string;
+  comment?: string;
+  status: 'pending' | 'approved' | 'rejected';
   created_at: string;
 }
 

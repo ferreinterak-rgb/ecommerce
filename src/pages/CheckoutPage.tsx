@@ -29,6 +29,8 @@ export const CheckoutPage: React.FC = () => {
   const [customerName, setCustomerName] = useState(user?.full_name || '');
   const [customerEmail, setCustomerEmail] = useState(user?.email || '');
   const [customerPhone, setCustomerPhone] = useState(user?.phone || '');
+  const [documentType, setDocumentType] = useState<'CC' | 'NIT' | 'CE' | 'PP'>('CC');
+  const [documentId, setDocumentId] = useState('');
 
   const [shippingAddress, setShippingAddress] = useState<ShippingAddress>({
     fullName: user?.full_name || '',
@@ -89,7 +91,13 @@ export const CheckoutPage: React.FC = () => {
           customer_name: customerName,
           customer_email: customerEmail,
           customer_phone: customerPhone,
-          shipping_address: shippingAddress,
+          customer_document_type: documentType,
+          customer_document_id: documentId,
+          shipping_address: {
+            ...shippingAddress,
+            documentType,
+            documentId
+          },
           payment_method: 'mercadopago',
           status: 'pending',
           subtotal,
@@ -260,7 +268,7 @@ export const CheckoutPage: React.FC = () => {
                 />
               </div>
 
-              <div className="sm:col-span-2">
+              <div>
                 <label className="block font-bold text-slate-700 mb-1">Teléfono de Contacto *</label>
                 <input
                   type="text"
@@ -269,6 +277,30 @@ export const CheckoutPage: React.FC = () => {
                   onChange={(e) => setCustomerPhone(e.target.value)}
                   className="w-full rounded-xl border border-gray-300 p-2.5 focus:border-[#f48f25] focus:outline-none"
                 />
+              </div>
+
+              <div>
+                <label className="block font-bold text-slate-700 mb-1">Identificación Fiscal (Facturación) *</label>
+                <div className="flex gap-2">
+                  <select
+                    value={documentType}
+                    onChange={(e) => setDocumentType(e.target.value as any)}
+                    className="w-24 rounded-xl border border-gray-300 p-2.5 focus:border-[#f48f25] focus:outline-none bg-slate-50 font-bold"
+                  >
+                    <option value="CC">CC</option>
+                    <option value="NIT">NIT</option>
+                    <option value="CE">CE</option>
+                    <option value="PP">PP</option>
+                  </select>
+                  <input
+                    type="text"
+                    required
+                    placeholder="Número de cédula o NIT"
+                    value={documentId}
+                    onChange={(e) => setDocumentId(e.target.value)}
+                    className="flex-1 rounded-xl border border-gray-300 p-2.5 focus:border-[#f48f25] focus:outline-none"
+                  />
+                </div>
               </div>
             </div>
           </div>

@@ -107,28 +107,34 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setAppliedCoupon(null);
   };
 
+  const subtotal = cart.reduce((acc, item) => {
+    const itemPrice = item.product.discount_price ?? item.product.price;
+    return acc + itemPrice * item.quantity;
+  }, 0);
+
   const applyCoupon = async (code: string): Promise<{ success: boolean; message: string }> => {
-    const coupon = await couponService.validateCoupon(code);
-    if (coupon) {
-      setAppliedCoupon(coupon);
-      return { success: true, message: `¡Cupon ${coupon.code} aplicado! (-${coupon.discount_percentage}%)` };
+    const res = await couponService.validateCoupon(code, subtotal);
+    if (res.valid && res.coupon) {
+      setAppliedCoupon(res.coupon);
+      return { success: true, message: res.message };
     }
-    return { success: false, message: 'Cupón inválido o expirado. Prueba con FERRE20' };
+    return { success: false, message: res.message };
   };
 
   const removeCoupon = () => {
     setAppliedCoupon(null);
   };
 
-  const subtotal = cart.reduce((acc, item) => {
-    const itemPrice = item.product.discount_price ?? item.product.price;
-    return acc + itemPrice * item.quantity;
-  }, 0);
+  // Calcular descuento porcentual o monto fijo
+  const discountAmount = appliedCoupon
+    ? appliedCoupon.discount_type === 'fixed'
+      ? Math.min(subtotal, appliedCoupon.discount_value || 0)
+      : (subtotal * (appliedCoupon.discount_value || appliedCoupon.discount_percentage || 0)) / 100
+    : 0;
 
-  const discountAmount = appliedCoupon ? (subtotal * appliedCoupon.discount_percentage) / 100 : 0;
   const taxableBase = Math.max(0, subtotal - discountAmount);
   const taxAmount = taxableBase * 0.19; // 19% IVA standard
-  const shippingCost = subtotal > 150 || cart.length === 0 ? 0 : 15.00;
+  const shippingCost = subtotal > 500000 || cart.length === 0 ? 0 : 30000;
   const total = taxableBase + taxAmount + shippingCost;
   const totalItemsCount = cart.reduce((acc, item) => acc + item.quantity, 0);
 

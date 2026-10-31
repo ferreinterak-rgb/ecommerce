@@ -74,35 +74,48 @@ export const orderService = {
           throw new Error(rpcError.message);
         }
 
-        // 2. Fallback de inserción directa si el RPC aún no fue creado en Supabase
+        // 2. Inserción directa compatible con arquitectura JSON inmutable
         const { data, error } = await supabase.from('orders').insert({
+          order_ref: newOrder.order_number,
           order_number: newOrder.order_number,
           user_id: newOrder.user_id || null,
           customer_name: newOrder.customer_name,
           customer_email: newOrder.customer_email,
           customer_phone: newOrder.customer_phone,
-          shipping_address: newOrder.shipping_address,
+          customer_document_type: newOrder.customer_document_type || newOrder.shipping_address?.documentType || 'CC',
+          customer_document_id: newOrder.customer_document_id || newOrder.shipping_address?.documentId || null,
+          shipping_address: typeof newOrder.shipping_address === 'string' ? newOrder.shipping_address : newOrder.shipping_address.address,
+          city: newOrder.shipping_address?.city || 'Colombia',
+          payment_gateway: 'mercadopago',
           payment_method: newOrder.payment_method,
+          payment_status: 'pending',
           status: newOrder.status,
           subtotal: newOrder.subtotal,
           discount: newOrder.discount,
           tax: newOrder.tax,
           shipping_cost: newOrder.shipping_cost,
           total: newOrder.total,
-          notes: newOrder.notes
+          items_count: newOrder.items.reduce((acc, it) => acc + it.quantity, 0),
+          items: newOrder.items, // Snapshot inmutable
+          notes: newOrder.notes,
+          effi_invoice_status: 'pending'
         }).select().single();
 
         if (!error && data) {
-          const orderItemsToInsert = newOrder.items.map(item => ({
-            order_id: data.id,
-            product_id: item.product_id,
-            product_name: item.product_name,
-            product_sku: item.product_sku,
-            price: item.price,
-            quantity: item.quantity,
-            subtotal: item.subtotal
-          }));
-          await supabase.from('order_items').insert(orderItemsToInsert);
+          // Intentar insertar en order_items si la tabla relacional existe como backup
+          try {
+            const orderItemsToInsert = newOrder.items.map(item => ({
+              order_id: data.id,
+              product_id: item.product_id,
+              product_name: item.product_name,
+              product_sku: item.product_sku,
+              price: item.price,
+              quantity: item.quantity,
+              subtotal: item.subtotal
+            }));
+            await supabase.from('order_items').insert(orderItemsToInsert);
+          } catch (_) {}
+
           const finalOrder = { ...newOrder, id: data.id };
           localOrdersStore.unshift(finalOrder);
           return finalOrder;
