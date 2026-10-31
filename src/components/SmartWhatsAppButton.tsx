@@ -46,33 +46,35 @@ export const SmartWhatsAppButton: React.FC = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex items-center justify-center">
-      {/* Botón flotante 3D de WhatsApp - Directo, limpio y sin recuadros */}
+    <div className="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 flex items-center justify-center">
+      {/* Botón flotante 3D de WhatsApp - Tamaño controlado estricto */}
       <button
         onClick={handleClick}
         aria-label="Contactar por WhatsApp a FERREINTER (323 371 2156)"
         title="Chatear con un asesor de FERREINTER"
-        className="relative group focus:outline-hidden transition-all duration-300 transform hover:scale-110 active:scale-95 cursor-pointer"
+        className="relative group focus:outline-hidden transition-transform duration-300 transform hover:scale-110 active:scale-95 cursor-pointer block"
       >
         {/* Halo de luz / pulso verde sutil */}
         <span 
-          className="absolute inset-0 rounded-full bg-emerald-500 opacity-25 group-hover:opacity-50 blur-lg animate-pulse"
+          className="absolute inset-0 rounded-full bg-emerald-500 opacity-20 group-hover:opacity-40 blur-md animate-pulse pointer-events-none"
           aria-hidden="true"
         ></span>
 
-        {/* Ícono 3D circular transparente sin fondo blanco */}
-        <div className="relative w-15 h-15 sm:w-16 sm:h-16 flex items-center justify-center filter drop-shadow-[0_8px_18px_rgba(22,163,74,0.45)]">
+        {/* Contenedor con tamaño en píxeles fijos y seguros (56px en móvil, 60px en PC) */}
+        <div className="relative w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center drop-shadow-[0_6px_14px_rgba(22,163,74,0.4)]">
           <img
             src="/whatsapp-3d-icon.png"
             alt="WhatsApp Asesoría FERREINTER"
-            className="w-full h-full object-contain pointer-events-none select-none"
+            className="w-14 h-14 sm:w-16 sm:h-16 max-w-none block object-contain pointer-events-none select-none"
+            width="64"
+            height="64"
             loading="eager"
           />
 
           {/* Indicador de asesor activo / notificación sutil */}
-          <span className="absolute 0 top-0.5 right-0.5 flex h-3.5 w-3.5">
+          <span className="absolute top-0 right-0 flex h-3 w-3 sm:h-3.5 sm:w-3.5">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-500 border-2 border-white"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 sm:h-3.5 sm:w-3.5 bg-emerald-500 border-2 border-white"></span>
           </span>
         </div>
 
