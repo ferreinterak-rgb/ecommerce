@@ -343,10 +343,10 @@ export const ProductDetailPage: React.FC = () => {
                         e.stopPropagation();
                         addToCart(rel, 1);
                       }}
-                      className="absolute top-3 right-3 w-7 h-7 rounded-full bg-white text-slate-700 flex items-center justify-center hover:bg-black hover:text-white transition-colors shadow-sm"
+                      className="absolute top-3 right-3 w-8 h-8 rounded-full bg-white text-slate-800 group-hover:bg-[#ff5500] group-hover:text-white hover:!bg-[#e04800] flex items-center justify-center transition-all shadow-md group-hover:shadow-[0_4px_12px_rgba(255,85,0,0.35)]"
                       title="Añadir rápido"
                     >
-                      <Plus className="w-3.5 h-3.5" />
+                      <Plus className="w-4 h-4 stroke-[2.5]" />
                     </button>
 
                     <img

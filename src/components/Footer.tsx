@@ -61,7 +61,7 @@ export const Footer: React.FC = () => {
               />
               <button
                 type="submit"
-                className="w-full bg-[#ff5500] hover:bg-[#e04800] text-black font-bold text-xs py-2.5 rounded-md transition-colors"
+                className="w-full bg-[#ff5500] hover:bg-[#e04800] text-white font-extrabold text-xs py-3 rounded-xl transition-all shadow-md shadow-[#ff5500]/20 transform active:scale-95"
               >
                 Suscribirme
               </button>

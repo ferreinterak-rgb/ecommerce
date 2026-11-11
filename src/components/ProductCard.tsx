@@ -92,14 +92,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             ) : null}
           </div>
 
-          {/* Botón Comprar moderno y estilizado */}
+          {/* Botón Comprar moderno y estilizado - se activa en naranja al hover de la tarjeta o del botón */}
           <button
             onClick={() => addToCart(product, 1)}
-            className="bg-[#111111] hover:bg-[#ff5500] text-white hover:text-white font-extrabold text-xs sm:text-sm pl-4 pr-1.5 py-1.5 rounded-full flex items-center gap-2 transition-all transform active:scale-95 group/btn shrink-0 shadow-md"
+            className="bg-[#111111] group-hover:bg-[#ff5500] hover:!bg-[#e04800] text-white font-extrabold text-xs sm:text-sm pl-4 pr-1.5 py-1.5 rounded-full flex items-center gap-2 transition-all duration-300 transform active:scale-95 group/btn shrink-0 shadow-md group-hover:shadow-[0_6px_20px_rgba(255,85,0,0.35)]"
             title="Añadir al carrito"
           >
             <span>Comprar</span>
-            <span className="w-6 h-6 rounded-full bg-white text-slate-900 flex items-center justify-center group-hover/btn:bg-black group-hover/btn:text-white transition-colors">
+            <span className="w-6 h-6 rounded-full bg-white text-slate-900 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-colors">
               <ArrowUpRight className="w-3.5 h-3.5" />
             </span>
           </button>

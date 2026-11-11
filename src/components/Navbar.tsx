@@ -90,7 +90,7 @@ export const Navbar: React.FC = () => {
               />
               <button
                 type="submit"
-                className="bg-[#ff5500] hover:bg-[#e04800] text-black font-extrabold text-[10px] uppercase px-3 py-1.5 rounded-full shadow-sm transition-transform active:scale-95 shrink-0 flex items-center gap-1"
+                className="bg-[#ff5500] hover:bg-[#e04800] text-white font-black text-[10px] uppercase px-3.5 py-1.5 rounded-full shadow-md shadow-[#ff5500]/25 transition-all transform active:scale-95 shrink-0 flex items-center gap-1.5 tracking-wider"
               >
                 <Search className="w-3 h-3 stroke-[3]" />
                 <span>BUSCAR</span>
@@ -159,12 +159,12 @@ export const Navbar: React.FC = () => {
             <div className="relative flex items-center justify-center mr-1 sm:mr-0">
               <button
                 onClick={() => setIsCartOpen(true)}
-                className="bg-[#111111] hover:bg-[#ff5500] text-white hover:text-black p-2 sm:p-2.5 rounded-full transition-all relative flex items-center justify-center shadow-md active:scale-95 group shrink-0"
+                className="bg-[#ff5500] hover:bg-[#e04800] text-white p-2 sm:p-2.5 rounded-full transition-all relative flex items-center justify-center shadow-md shadow-[#ff5500]/30 active:scale-95 group shrink-0"
                 title="Ver Carrito"
               >
-                <ShoppingBag className="w-4 h-4 sm:w-5 sm:h-5 stroke-[2]" />
+                <ShoppingBag className="w-4 h-4 sm:w-5 sm:h-5 stroke-[2.5]" />
                 {totalItemsCount > 0 && (
-                  <span className="absolute -top-1.5 -right-1.5 bg-[#ff5500] text-black font-black text-[10px] sm:text-[11px] min-w-[20px] h-[20px] px-1 rounded-full flex items-center justify-center border-2 border-white shadow-md leading-none">
+                  <span className="absolute -top-1.5 -right-1.5 bg-slate-900 text-white font-black text-[10px] sm:text-[11px] min-w-[20px] h-[20px] px-1 rounded-full flex items-center justify-center border-2 border-white shadow-md leading-none">
                     {totalItemsCount}
                   </span>
                 )}
@@ -190,7 +190,7 @@ export const Navbar: React.FC = () => {
             />
             <button
               type="submit"
-              className="bg-[#ff5500] text-black font-bold text-xs px-4 py-2 rounded-full shadow-sm"
+              className="bg-[#ff5500] hover:bg-[#e04800] text-white font-black text-xs px-4 py-2 rounded-full shadow-md transition-colors"
             >
               BUSCAR
             </button>
@@ -213,7 +213,7 @@ export const Navbar: React.FC = () => {
             />
             <button
               type="submit"
-              className="bg-[#ff5500] text-black font-black text-[10px] uppercase px-3 py-1.5 rounded-full shadow-sm"
+              className="bg-[#ff5500] hover:bg-[#e04800] text-white font-black text-[10px] uppercase px-3 py-1.5 rounded-full shadow-md transition-colors"
             >
               BUSCAR
             </button>
