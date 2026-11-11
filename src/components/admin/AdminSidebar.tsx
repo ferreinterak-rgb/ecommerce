@@ -30,7 +30,7 @@ export const AdminSidebar: React.FC<AdminSidebarProps> = ({ activeTab, setActive
           <Link to="/" className="block">
             <FerreInterLogo size="sm" />
           </Link>
-          <span className="inline-block text-[9px] font-mono font-bold text-[#f48f25] uppercase tracking-wider mt-2">
+          <span className="inline-block text-[9px] font-mono font-bold text-[#ff5500] uppercase tracking-wider mt-2">
             PANEL DE CONTROL ADMIN
           </span>
         </div>
@@ -40,11 +40,11 @@ export const AdminSidebar: React.FC<AdminSidebarProps> = ({ activeTab, setActive
           <img
             src={user?.avatar_url || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200'}
             alt="User"
-            className="w-10 h-10 rounded-full object-cover border border-[#f48f25]"
+            className="w-10 h-10 rounded-full object-cover border border-[#ff5500]"
           />
           <div className="overflow-hidden">
             <p className="font-extrabold text-xs text-slate-900 truncate">{user?.full_name}</p>
-            <span className="inline-block text-[9px] font-black text-black bg-[#f48f25] px-2 py-0.5 rounded-full uppercase mt-0.5">
+            <span className="inline-block text-[9px] font-black text-black bg-[#ff5500] px-2 py-0.5 rounded-full uppercase mt-0.5">
               {role}
             </span>
           </div>
@@ -65,7 +65,7 @@ export const AdminSidebar: React.FC<AdminSidebarProps> = ({ activeTab, setActive
                     : 'text-gray-600 hover:bg-gray-100 hover:text-slate-900'
                 }`}
               >
-                <Icon className={`w-4 h-4 ${isActive ? 'text-[#f48f25]' : ''}`} />
+                <Icon className={`w-4 h-4 ${isActive ? 'text-[#ff5500]' : ''}`} />
                 <span>{item.label}</span>
               </button>
             );

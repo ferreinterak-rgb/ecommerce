@@ -269,17 +269,17 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
       <div className="bg-white rounded-3xl w-full max-w-6xl shadow-2xl overflow-hidden border border-slate-200 flex flex-col max-h-[94vh] transition-all">
         
         {/* Header Superior con branding FERREINTER */}
-        <div className="px-6 py-4.5 bg-[#031834] text-white flex items-center justify-between border-b border-[#f48f25]/40 select-none">
+        <div className="px-6 py-4.5 bg-[#031834] text-white flex items-center justify-between border-b border-[#ff5500]/40 select-none">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center border border-white/10 shadow-inner">
-              <Package className="w-5 h-5 text-[#f48f25]" />
+              <Package className="w-5 h-5 text-[#ff5500]" />
             </div>
             <div>
               <div className="flex items-center gap-2">
                 <h3 className="font-extrabold text-base tracking-wide text-white">
                   {productToEdit ? 'Editar Ficha de Producto' : 'Registro de Nuevo Producto'}
                 </h3>
-                <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-[#f48f25]/20 text-[#f48f25] border border-[#f48f25]/30">
+                <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-[#ff5500]/20 text-[#ff5500] border border-[#ff5500]/30">
                   {productToEdit ? 'Modo Edición' : 'Creación'}
                 </span>
               </div>
@@ -315,7 +315,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                 {/* Encabezado del panel multimedia */}
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <ImageIcon className="w-5 h-5 text-[#f48f25]" />
+                    <ImageIcon className="w-5 h-5 text-[#ff5500]" />
                     <h4 className="font-extrabold text-slate-900 text-sm tracking-tight">
                       Galería de Fotografías
                     </h4>
@@ -353,8 +353,8 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                   onClick={() => !uploadingImages && fileInputRef.current?.click()}
                   className={`relative border-2 border-dashed rounded-2xl p-6 text-center transition-all cursor-pointer select-none flex flex-col items-center justify-center gap-2 ${
                     isDragOver
-                      ? 'border-[#f48f25] bg-[#f48f25]/10 scale-[1.01]'
-                      : 'border-slate-300 hover:border-[#f48f25] bg-slate-50/70 hover:bg-amber-50/40'
+                      ? 'border-[#ff5500] bg-[#ff5500]/10 scale-[1.01]'
+                      : 'border-slate-300 hover:border-[#ff5500] bg-slate-50/70 hover:bg-amber-50/40'
                   } ${uploadingImages ? 'opacity-60 pointer-events-none' : ''}`}
                 >
                   <input
@@ -366,9 +366,9 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                     className="hidden"
                   />
 
-                  <div className="w-14 h-14 rounded-2xl bg-[#031834] text-[#f48f25] flex items-center justify-center shadow-md">
+                  <div className="w-14 h-14 rounded-2xl bg-[#031834] text-[#ff5500] flex items-center justify-center shadow-md">
                     {uploadingImages ? (
-                      <div className="w-6 h-6 border-2 border-[#f48f25] border-t-transparent rounded-full animate-spin" />
+                      <div className="w-6 h-6 border-2 border-[#ff5500] border-t-transparent rounded-full animate-spin" />
                     ) : (
                       <UploadCloud className="w-7 h-7" />
                     )}
@@ -386,7 +386,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                   </div>
 
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-bold bg-white text-slate-800 border border-slate-200 shadow-sm mt-1">
-                    <Plus className="w-3.5 h-3.5 text-[#f48f25]" /> Seleccionar Fotografías del Computador
+                    <Plus className="w-3.5 h-3.5 text-[#ff5500]" /> Seleccionar Fotografías del Computador
                   </span>
                 </div>
 
@@ -395,7 +395,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                   <button
                     type="button"
                     onClick={() => setShowUrlInput(!showUrlInput)}
-                    className="text-xs font-bold text-slate-600 hover:text-[#f48f25] flex items-center gap-1.5 transition-colors"
+                    className="text-xs font-bold text-slate-600 hover:text-[#ff5500] flex items-center gap-1.5 transition-colors"
                   >
                     <LinkIcon className="w-3.5 h-3.5" />
                     {showUrlInput ? 'Ocultar enlace por URL' : 'O vincular imagen por enlace URL directo'}
@@ -410,7 +410,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                       value={imageUrlInput}
                       onChange={(e) => setImageUrlInput(e.target.value)}
                       placeholder="https://ejemplo.com/foto-producto.webp"
-                      className="flex-1 rounded-lg border border-slate-300 px-3 py-1.5 text-xs focus:border-[#f48f25] focus:outline-none"
+                      className="flex-1 rounded-lg border border-slate-300 px-3 py-1.5 text-xs focus:border-[#ff5500] focus:outline-none"
                     />
                     <button
                       type="button"
@@ -426,7 +426,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                 <div className="space-y-3 pt-2">
                   <div className="flex items-center justify-between text-xs font-bold text-slate-700">
                     <span className="flex items-center gap-1.5">
-                      <Layers className="w-4 h-4 text-[#f48f25]" />
+                      <Layers className="w-4 h-4 text-[#ff5500]" />
                       Orden de visualización
                     </span>
                     <span className="text-[11px] font-normal text-slate-500">
@@ -454,7 +454,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                             onDrop={() => handleItemDrop(index)}
                             className={`group relative flex items-center gap-3 p-2.5 rounded-2xl border transition-all select-none ${
                               isPrimary
-                                ? 'bg-amber-50/60 border-[#f48f25] shadow-sm ring-1 ring-[#f48f25]/40'
+                                ? 'bg-amber-50/60 border-[#ff5500] shadow-sm ring-1 ring-[#ff5500]/40'
                                 : 'bg-white border-slate-200 hover:border-slate-300 hover:shadow-sm'
                             } ${draggedIdx === index ? 'opacity-40 scale-95' : ''}`}
                           >
@@ -491,7 +491,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                             {/* Información y Badge de Estado */}
                             <div className="flex-1 min-w-0">
                               {isPrimary ? (
-                                <div className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#f48f25] text-black text-[10px] font-black tracking-wide uppercase shadow-sm">
+                                <div className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#ff5500] text-black text-[10px] font-black tracking-wide uppercase shadow-sm">
                                   <Star className="w-3 h-3 fill-black text-black" />
                                   Foto Principal (Portada)
                                 </div>
@@ -499,10 +499,10 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                                 <button
                                   type="button"
                                   onClick={() => handleSetPrimary(index)}
-                                  className="inline-flex items-center gap-1 text-[11px] font-bold text-slate-600 hover:text-[#f48f25] transition-colors"
+                                  className="inline-flex items-center gap-1 text-[11px] font-bold text-slate-600 hover:text-[#ff5500] transition-colors"
                                   title="Definir como foto de portada"
                                 >
-                                  <Star className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#f48f25]" />
+                                  <Star className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#ff5500]" />
                                   Hacer Principal
                                 </button>
                               )}
@@ -564,7 +564,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
               {/* 1. INFORMACIÓN BÁSICA Y CATEGORIZACIÓN */}
               <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-4">
                 <h4 className="font-extrabold text-slate-900 text-xs uppercase tracking-wider text-[#031834] flex items-center gap-1.5">
-                  <Sparkles className="w-4 h-4 text-[#f48f25]" />
+                  <Sparkles className="w-4 h-4 text-[#ff5500]" />
                   Identificación y Clasificación
                 </h4>
 
@@ -579,7 +579,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                       value={formData.name || ''}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="Ej. Bisagra Parche Inoxidable 304 Cierre Suave"
-                      className="w-full rounded-xl border border-slate-300 p-3 text-sm font-semibold text-slate-900 focus:border-[#f48f25] focus:ring-2 focus:ring-[#f48f25]/20 focus:outline-none transition-all placeholder:font-normal"
+                      className="w-full rounded-xl border border-slate-300 p-3 text-sm font-semibold text-slate-900 focus:border-[#ff5500] focus:ring-2 focus:ring-[#ff5500]/20 focus:outline-none transition-all placeholder:font-normal"
                     />
                   </div>
 
@@ -593,7 +593,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                       value={formData.brand || 'FERREINTER'}
                       onChange={(e) => setFormData({ ...formData, brand: e.target.value })}
                       placeholder="Ej. FERREINTER, DEWALT, FORZA"
-                      className="w-full rounded-xl border border-slate-300 p-3 text-sm font-semibold text-slate-900 focus:border-[#f48f25] focus:ring-2 focus:ring-[#f48f25]/20 focus:outline-none transition-all placeholder:font-normal"
+                      className="w-full rounded-xl border border-slate-300 p-3 text-sm font-semibold text-slate-900 focus:border-[#ff5500] focus:ring-2 focus:ring-[#ff5500]/20 focus:outline-none transition-all placeholder:font-normal"
                     />
                   </div>
                 </div>
@@ -609,7 +609,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                       value={formData.sku || ''}
                       onChange={(e) => setFormData({ ...formData, sku: e.target.value.toUpperCase() })}
                       placeholder="Ej. MTR-304"
-                      className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-mono font-bold text-slate-900 focus:border-[#f48f25] focus:ring-2 focus:ring-[#f48f25]/20 focus:outline-none transition-all uppercase"
+                      className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-mono font-bold text-slate-900 focus:border-[#ff5500] focus:ring-2 focus:ring-[#ff5500]/20 focus:outline-none transition-all uppercase"
                     />
                   </div>
 
@@ -620,7 +620,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                     <select
                       value={formData.category || 'bisagras'}
                       onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                      className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-semibold text-slate-800 bg-white focus:border-[#f48f25] focus:ring-2 focus:ring-[#f48f25]/20 focus:outline-none transition-all"
+                      className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-semibold text-slate-800 bg-white focus:border-[#ff5500] focus:ring-2 focus:ring-[#ff5500]/20 focus:outline-none transition-all"
                     >
                       {CATEGORIES.map(cat => (
                         <option key={cat.id} value={cat.id}>{cat.name}</option>
@@ -635,7 +635,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                     <select
                       value={formData.inventory_status || 'Disponible'}
                       onChange={(e) => setFormData({ ...formData, inventory_status: e.target.value })}
-                      className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-semibold text-slate-800 bg-white focus:border-[#f48f25] focus:ring-2 focus:ring-[#f48f25]/20 focus:outline-none transition-all"
+                      className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-semibold text-slate-800 bg-white focus:border-[#ff5500] focus:ring-2 focus:ring-[#ff5500]/20 focus:outline-none transition-all"
                     >
                       <option value="Disponible">🟢 Disponible</option>
                       <option value="Agotado">🔴 Agotado</option>
@@ -649,7 +649,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
               {/* 2. ESTRUCTURA DE PRECIOS EN PESOS COLOMBIANOS (COP) */}
               <div className="bg-gradient-to-br from-amber-50/40 to-orange-50/20 p-5 rounded-2xl border border-amber-200/80 shadow-sm space-y-3">
                 <div className="flex items-center justify-between">
-                  <h4 className="font-extrabold text-xs uppercase tracking-wider text-[#b45309]">
+                  <h4 className="font-extrabold text-xs uppercase tracking-wider text-[#c43e00]">
                     Precios Comerciales (COP - Pesos Colombianos)
                   </h4>
                   {formData.price && formData.discount_price && formData.discount_price < formData.price ? (
@@ -674,7 +674,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                         value={formData.price || ''}
                         onChange={(e) => setFormData({ ...formData, price: parseFloat(e.target.value) || 0 })}
                         placeholder="7800"
-                        className="w-full rounded-xl border border-slate-300 pl-7 pr-3 py-2.5 text-sm font-extrabold text-slate-900 focus:border-[#f48f25] focus:ring-2 focus:ring-[#f48f25]/20 focus:outline-none transition-all"
+                        className="w-full rounded-xl border border-slate-300 pl-7 pr-3 py-2.5 text-sm font-extrabold text-slate-900 focus:border-[#ff5500] focus:ring-2 focus:ring-[#ff5500]/20 focus:outline-none transition-all"
                       />
                     </div>
                   </div>
@@ -692,7 +692,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                         value={formData.wholesale_price || ''}
                         onChange={(e) => setFormData({ ...formData, wholesale_price: e.target.value ? parseFloat(e.target.value) : undefined })}
                         placeholder="6500"
-                        className="w-full rounded-xl border border-slate-300 pl-7 pr-3 py-2.5 text-sm font-extrabold text-emerald-700 focus:border-[#f48f25] focus:ring-2 focus:ring-[#f48f25]/20 focus:outline-none transition-all"
+                        className="w-full rounded-xl border border-slate-300 pl-7 pr-3 py-2.5 text-sm font-extrabold text-emerald-700 focus:border-[#ff5500] focus:ring-2 focus:ring-[#ff5500]/20 focus:outline-none transition-all"
                       />
                     </div>
                   </div>
@@ -710,7 +710,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                         value={formData.discount_price || ''}
                         onChange={(e) => setFormData({ ...formData, discount_price: e.target.value ? parseFloat(e.target.value) : undefined })}
                         placeholder="7200 (Opcional)"
-                        className="w-full rounded-xl border border-slate-300 pl-7 pr-3 py-2.5 text-sm font-bold text-rose-600 focus:border-[#f48f25] focus:ring-2 focus:ring-[#f48f25]/20 focus:outline-none transition-all placeholder:font-normal"
+                        className="w-full rounded-xl border border-slate-300 pl-7 pr-3 py-2.5 text-sm font-bold text-rose-600 focus:border-[#ff5500] focus:ring-2 focus:ring-[#ff5500]/20 focus:outline-none transition-all placeholder:font-normal"
                       />
                     </div>
                   </div>
@@ -736,7 +736,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                       min="0"
                       value={formData.stock_warehouse ?? 400}
                       onChange={(e) => handleStockChange('stock_warehouse', parseInt(e.target.value) || 0)}
-                      className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-bold text-slate-800 focus:border-[#f48f25] focus:outline-none"
+                      className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-bold text-slate-800 focus:border-[#ff5500] focus:outline-none"
                     />
                   </div>
 
@@ -747,7 +747,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                       min="0"
                       value={formData.stock_store ?? 200}
                       onChange={(e) => handleStockChange('stock_store', parseInt(e.target.value) || 0)}
-                      className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-bold text-slate-800 focus:border-[#f48f25] focus:outline-none"
+                      className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-bold text-slate-800 focus:border-[#ff5500] focus:outline-none"
                     />
                   </div>
 
@@ -758,7 +758,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                       min="0"
                       value={formData.stock_online ?? 400}
                       onChange={(e) => handleStockChange('stock_online', parseInt(e.target.value) || 0)}
-                      className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-bold text-slate-800 focus:border-[#f48f25] focus:outline-none"
+                      className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-bold text-slate-800 focus:border-[#ff5500] focus:outline-none"
                     />
                   </div>
                 </div>
@@ -778,7 +778,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                       value={formData.warranty || ''}
                       onChange={(e) => setFormData({ ...formData, warranty: e.target.value })}
                       placeholder="Ej. 1 AÑO, 5 AÑOS"
-                      className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-medium text-slate-800 focus:border-[#f48f25] focus:outline-none"
+                      className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-medium text-slate-800 focus:border-[#ff5500] focus:outline-none"
                     />
                   </div>
 
@@ -792,7 +792,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                       value={formData.dimensions || ''}
                       onChange={(e) => setFormData({ ...formData, dimensions: e.target.value })}
                       placeholder="Ej. 10 Pulgadas, 12 Pulgadas o 35MM, 2 Pulgadas"
-                      className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-medium text-slate-800 focus:border-[#f48f25] focus:outline-none"
+                      className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-medium text-slate-800 focus:border-[#ff5500] focus:outline-none"
                     />
                   </div>
 
@@ -806,7 +806,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                       value={formData.materials || ''}
                       onChange={(e) => setFormData({ ...formData, materials: e.target.value })}
                       placeholder="Ej. Acero Inox 304, Zincado, Negro Mate"
-                      className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-medium text-slate-800 focus:border-[#f48f25] focus:outline-none"
+                      className="w-full rounded-xl border border-slate-300 p-2.5 text-xs font-medium text-slate-800 focus:border-[#ff5500] focus:outline-none"
                     />
                   </div>
                 </div>
@@ -821,7 +821,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                     value={formData.description || ''}
                     onChange={(e) => setFormData({ ...formData, description: e.target.value })}
                     placeholder="Describe las características técnicas, uso recomendado, compatibilidad y ventajas del producto..."
-                    className="w-full rounded-xl border border-slate-300 p-3 text-xs leading-relaxed font-normal text-slate-800 focus:border-[#f48f25] focus:ring-2 focus:ring-[#f48f25]/20 focus:outline-none transition-all resize-y"
+                    className="w-full rounded-xl border border-slate-300 p-3 text-xs leading-relaxed font-normal text-slate-800 focus:border-[#ff5500] focus:ring-2 focus:ring-[#ff5500]/20 focus:outline-none transition-all resize-y"
                   />
                 </div>
               </div>
@@ -833,7 +833,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                     type="checkbox"
                     checked={formData.is_featured || false}
                     onChange={(e) => setFormData({ ...formData, is_featured: e.target.checked })}
-                    className="w-4 h-4 text-[#f48f25] accent-[#f48f25] rounded"
+                    className="w-4 h-4 text-[#ff5500] accent-[#ff5500] rounded"
                   />
                   <div>
                     <span className="block font-bold text-xs text-slate-800">Producto Destacado</span>
@@ -846,7 +846,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                     type="checkbox"
                     checked={formData.is_active !== undefined ? formData.is_active : true}
                     onChange={(e) => setFormData({ ...formData, is_active: e.target.checked })}
-                    className="w-4 h-4 text-[#f48f25] accent-[#f48f25] rounded"
+                    className="w-4 h-4 text-[#ff5500] accent-[#ff5500] rounded"
                   />
                   <div>
                     <span className="block font-bold text-xs text-slate-800">Producto Activo</span>
@@ -880,7 +880,7 @@ export const ProductRegistrationForm: React.FC<FormProps> = ({
                 disabled={saving || uploadingImages}
                 className="px-7 py-2.5 rounded-xl bg-black hover:bg-slate-800 text-white font-extrabold text-xs flex items-center gap-2 shadow-lg shadow-black/10 hover:shadow-black/20 transition-all cursor-pointer disabled:opacity-50"
               >
-                <Save className="w-4 h-4 text-[#f48f25]" />
+                <Save className="w-4 h-4 text-[#ff5500]" />
                 {saving ? 'Guardando en Base de Datos...' : 'Guardar y Publicar Producto'}
               </button>
             </div>

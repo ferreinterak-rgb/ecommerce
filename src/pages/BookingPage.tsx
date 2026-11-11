@@ -59,14 +59,14 @@ export const BookingPage: React.FC = () => {
           Un asesor comercial e-commerce de <strong>FERREINTER</strong> revisará tus requerimientos de compra y te enviará la oferta detallada a <strong>{clientEmail}</strong>.
         </p>
 
-        <div className="p-6 rounded-2xl bg-[#111111] text-white max-w-md mx-auto space-y-2 border border-[#f48f25]/30">
-          <h4 className="font-bold text-sm text-[#f48f25]">Resumen de Solicitud E-Commerce</h4>
+        <div className="p-6 rounded-2xl bg-[#111111] text-white max-w-md mx-auto space-y-2 border border-[#ff5500]/30">
+          <h4 className="font-bold text-sm text-[#ff5500]">Resumen de Solicitud E-Commerce</h4>
           <p className="text-xs">Atención Programada: <strong>{preferredDate}</strong> ({preferredTime})</p>
           <p className="text-xs">Servicio: <strong>{serviceType.replace('_', ' ').toUpperCase()}</strong></p>
         </div>
 
         <div className="pt-4">
-          <Link to="/catalog" className="px-7 py-3.5 rounded-full bg-[#f48f25] hover:bg-[#e07d18] text-black font-extrabold text-xs uppercase tracking-wide">
+          <Link to="/catalog" className="px-7 py-3.5 rounded-full bg-[#ff5500] hover:bg-[#e04800] text-black font-extrabold text-xs uppercase tracking-wide">
             Explorar Tienda Online
           </Link>
         </div>
@@ -79,7 +79,7 @@ export const BookingPage: React.FC = () => {
       
       {/* Header */}
       <div className="text-center max-w-2xl mx-auto space-y-2">
-        <span className="text-xs font-mono font-bold text-[#f48f25] uppercase tracking-widest">
+        <span className="text-xs font-mono font-bold text-[#ff5500] uppercase tracking-widest">
           VENTAS E-COMMERCE & ATENCIÓN EMPRESARIAL
         </span>
         <h1 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
@@ -112,7 +112,7 @@ export const BookingPage: React.FC = () => {
                   onClick={() => setServiceType(s.id as ServiceType)}
                   className={`p-4 rounded-2xl border text-left transition-all ${
                     serviceType === s.id
-                      ? 'border-[#f48f25] bg-[#f5f5f7] ring-2 ring-[#f48f25]/20 shadow-sm'
+                      ? 'border-[#ff5500] bg-[#f5f5f7] ring-2 ring-[#ff5500]/20 shadow-sm'
                       : 'border-gray-200 hover:border-gray-300 bg-white'
                   }`}
                 >
@@ -140,7 +140,7 @@ export const BookingPage: React.FC = () => {
                     placeholder="Ej: Constructora Bolívar S.A."
                     value={clientName}
                     onChange={(e) => setClientName(e.target.value)}
-                    className="w-full bg-[#f4f5f7] border border-gray-200 rounded-xl pl-9 pr-4 py-2.5 text-xs text-slate-900 focus:outline-none focus:border-[#f48f25]"
+                    className="w-full bg-[#f4f5f7] border border-gray-200 rounded-xl pl-9 pr-4 py-2.5 text-xs text-slate-900 focus:outline-none focus:border-[#ff5500]"
                   />
                 </div>
               </div>
@@ -155,7 +155,7 @@ export const BookingPage: React.FC = () => {
                     placeholder="ejemplo@empresa.com"
                     value={clientEmail}
                     onChange={(e) => setClientEmail(e.target.value)}
-                    className="w-full bg-[#f4f5f7] border border-gray-200 rounded-xl pl-9 pr-4 py-2.5 text-xs text-slate-900 focus:outline-none focus:border-[#f48f25]"
+                    className="w-full bg-[#f4f5f7] border border-gray-200 rounded-xl pl-9 pr-4 py-2.5 text-xs text-slate-900 focus:outline-none focus:border-[#ff5500]"
                   />
                 </div>
               </div>
@@ -171,7 +171,7 @@ export const BookingPage: React.FC = () => {
                   placeholder="+57 300 123 4567"
                   value={clientPhone}
                   onChange={(e) => setClientPhone(e.target.value)}
-                  className="w-full bg-[#f4f5f7] border border-gray-200 rounded-xl pl-9 pr-4 py-2.5 text-xs text-slate-900 focus:outline-none focus:border-[#f48f25]"
+                  className="w-full bg-[#f4f5f7] border border-gray-200 rounded-xl pl-9 pr-4 py-2.5 text-xs text-slate-900 focus:outline-none focus:border-[#ff5500]"
                 />
               </div>
             </div>
@@ -188,14 +188,14 @@ export const BookingPage: React.FC = () => {
               placeholder="Escribe la lista de productos, referencias y cantidades requeridas..."
               value={comments}
               onChange={(e) => setComments(e.target.value)}
-              className="w-full bg-[#f4f5f7] border border-gray-200 rounded-2xl p-4 text-xs text-slate-900 focus:outline-none focus:border-[#f48f25]"
+              className="w-full bg-[#f4f5f7] border border-gray-200 rounded-2xl p-4 text-xs text-slate-900 focus:outline-none focus:border-[#ff5500]"
             />
           </div>
 
           <button
             type="submit"
             disabled={submitting}
-            className="w-full bg-[#f48f25] hover:bg-[#e07d18] text-black font-extrabold text-sm py-4 rounded-full shadow-lg transition-all transform active:scale-95 uppercase tracking-wide"
+            className="w-full bg-[#ff5500] hover:bg-[#e04800] text-black font-extrabold text-sm py-4 rounded-full shadow-lg transition-all transform active:scale-95 uppercase tracking-wide"
           >
             {submitting ? 'Enviando Solicitud...' : 'Enviar Solicitud de Cotización ↗'}
           </button>

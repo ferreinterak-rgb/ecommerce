@@ -89,11 +89,11 @@ const SLIDES: SlideItem[] = [
     productSlug: 'taladro-percutor-dewalt-20v-max',
     productImage: '/dewalt-drill-kit.jpg',
     theme: {
-      gradientClass: 'bg-gradient-to-r from-slate-950 via-[#18181b] via-[#f48f25]/20 to-zinc-950 text-white animate-gradient-shift',
-      badgeBg: 'bg-[#f48f25]',
+      gradientClass: 'bg-gradient-to-r from-slate-950 via-[#18181b] via-[#ff5500]/20 to-zinc-950 text-white animate-gradient-shift',
+      badgeBg: 'bg-[#ff5500]',
       badgeText: 'text-black',
       textColor: 'text-white',
-      accentColor: 'text-[#f48f25]',
+      accentColor: 'text-[#ff5500]',
       specsBg: 'bg-white/10 backdrop-blur-md border border-white/15',
     },
     callouts: [
@@ -113,11 +113,11 @@ const SLIDES: SlideItem[] = [
     productSlug: 'tronzadora-de-metales-dewalt-14-2200w',
     productImage: '/dewalt-chopsaw.jpg',
     theme: {
-      gradientClass: 'bg-gradient-to-r from-[#0f172a] via-[#1e293b] via-[#f48f25]/20 to-slate-950 text-white animate-gradient-shift',
-      badgeBg: 'bg-[#f48f25]',
+      gradientClass: 'bg-gradient-to-r from-[#0f172a] via-[#1e293b] via-[#ff5500]/20 to-slate-950 text-white animate-gradient-shift',
+      badgeBg: 'bg-[#ff5500]',
       badgeText: 'text-black',
       textColor: 'text-white',
-      accentColor: 'text-[#f48f25]',
+      accentColor: 'text-[#ff5500]',
       specsBg: 'bg-white/10 backdrop-blur-md border border-white/15',
     },
     callouts: [
@@ -161,7 +161,7 @@ export const HeroSlider: React.FC = () => {
     >
       
       {/* Dynamic Keyframe Ambient Light Glow Spheres */}
-      <div className="absolute -top-32 -left-32 w-96 h-96 bg-[#f48f25]/20 rounded-full blur-3xl pointer-events-none animate-pulse" />
+      <div className="absolute -top-32 -left-32 w-96 h-96 bg-[#ff5500]/20 rounded-full blur-3xl pointer-events-none animate-pulse" />
       <div className="absolute -bottom-32 right-12 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 w-full relative z-10">
@@ -229,7 +229,7 @@ export const HeroSlider: React.FC = () => {
               {/* Action Buttons */}
               <Link
                 to={`/product/${currentSlide.productSlug}`}
-                className="bg-[#f48f25] hover:bg-[#e07d18] text-black font-extrabold text-xs sm:text-sm px-8 py-3.5 rounded-full shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-0.5 active:scale-95 flex items-center gap-2 uppercase tracking-wide"
+                className="bg-[#ff5500] hover:bg-[#e04800] text-black font-extrabold text-xs sm:text-sm px-8 py-3.5 rounded-full shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-0.5 active:scale-95 flex items-center gap-2 uppercase tracking-wide"
               >
                 <span>Comprar Ahora</span>
                 <span className="w-6 h-6 rounded-full bg-white text-black flex items-center justify-center shadow-sm">
@@ -239,7 +239,7 @@ export const HeroSlider: React.FC = () => {
 
               <Link
                 to={`/product/${currentSlide.productSlug}`}
-                className="text-xs sm:text-sm font-bold opacity-90 hover:opacity-100 underline hover:text-[#f48f25] transition-colors px-2 py-2"
+                className="text-xs sm:text-sm font-bold opacity-90 hover:opacity-100 underline hover:text-[#ff5500] transition-colors px-2 py-2"
               >
                 Ver Ficha Técnica
               </Link>
@@ -262,7 +262,7 @@ export const HeroSlider: React.FC = () => {
 
               {/* Floating Tech Pill Badge */}
               <div className="absolute top-6 left-2 sm:left-6 bg-black/80 backdrop-blur-md text-white px-4 py-2 rounded-full text-xs font-mono font-bold shadow-xl border border-white/20 flex items-center gap-2 animate-bounce">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#f48f25]" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[#ff5500]" />
                 <span>FERREINTER ESTUDIO 100% ISOLADO</span>
               </div>
 
@@ -298,7 +298,7 @@ export const HeroSlider: React.FC = () => {
             onClick={() => setCurrentIndex(idx)}
             className={`h-2.5 rounded-full transition-all duration-300 ${
               currentIndex === idx
-                ? 'w-8 bg-[#f48f25]'
+                ? 'w-8 bg-[#ff5500]'
                 : 'w-2.5 bg-white/40 hover:bg-white/70'
             }`}
             aria-label={`Ir a diapositiva ${idx + 1}`}

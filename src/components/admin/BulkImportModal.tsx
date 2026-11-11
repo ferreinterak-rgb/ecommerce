@@ -95,7 +95,7 @@ export const BulkImportModal: React.FC<BulkImportModalProps> = ({
         {/* Modal Header */}
         <div className="px-6 py-5 bg-[#031834] text-white flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-2xl bg-white/10 flex items-center justify-center text-[#f48f25]">
+            <div className="w-10 h-10 rounded-2xl bg-white/10 flex items-center justify-center text-[#ff5500]">
               <FileSpreadsheet className="w-5 h-5 stroke-[2.5]" />
             </div>
             <div>
@@ -124,7 +124,7 @@ export const BulkImportModal: React.FC<BulkImportModalProps> = ({
               onClick={downloadImportTemplateExcel}
               className="px-4 py-2.5 rounded-xl bg-white hover:bg-gray-100 text-slate-800 border border-gray-200 font-bold text-xs flex items-center gap-2 transition-colors shrink-0 shadow-sm"
             >
-              <Download className="w-3.5 h-3.5 text-[#f48f25]" /> Descargar Plantilla Excel
+              <Download className="w-3.5 h-3.5 text-[#ff5500]" /> Descargar Plantilla Excel
             </button>
           </div>
 
@@ -134,7 +134,7 @@ export const BulkImportModal: React.FC<BulkImportModalProps> = ({
               onDragOver={(e) => e.preventDefault()}
               onDrop={handleDrop}
               onClick={() => fileInputRef.current?.click()}
-              className="border-2 border-dashed border-gray-300 hover:border-[#f48f25] rounded-3xl p-10 text-center cursor-pointer bg-gray-50/50 hover:bg-[#f48f25]/5 transition-all space-y-3"
+              className="border-2 border-dashed border-gray-300 hover:border-[#ff5500] rounded-3xl p-10 text-center cursor-pointer bg-gray-50/50 hover:bg-[#ff5500]/5 transition-all space-y-3"
             >
               <input
                 ref={fileInputRef}
@@ -147,7 +147,7 @@ export const BulkImportModal: React.FC<BulkImportModalProps> = ({
                   }
                 }}
               />
-              <div className="w-14 h-14 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center mx-auto text-[#f48f25]">
+              <div className="w-14 h-14 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center mx-auto text-[#ff5500]">
                 <UploadCloud className="w-7 h-7" />
               </div>
               <div>
@@ -160,7 +160,7 @@ export const BulkImportModal: React.FC<BulkImportModalProps> = ({
           {/* Loader de Procesamiento del Archivo */}
           {isParsing && (
             <div className="p-12 text-center space-y-3">
-              <RefreshCw className="w-8 h-8 animate-spin mx-auto text-[#f48f25]" />
+              <RefreshCw className="w-8 h-8 animate-spin mx-auto text-[#ff5500]" />
               <p className="font-bold text-slate-800">Leyendo y validando datos del archivo...</p>
             </div>
           )}
@@ -292,7 +292,7 @@ export const BulkImportModal: React.FC<BulkImportModalProps> = ({
               </div>
               <div className="w-full bg-gray-200 h-2.5 rounded-full overflow-hidden">
                 <div
-                  className="bg-[#f48f25] h-full transition-all duration-300"
+                  className="bg-[#ff5500] h-full transition-all duration-300"
                   style={{
                     width: `${uploadProgress.total > 0 ? (uploadProgress.current / uploadProgress.total) * 100 : 0}%`
                   }}
@@ -331,7 +331,7 @@ export const BulkImportModal: React.FC<BulkImportModalProps> = ({
               >
                 {isUploading ? (
                   <>
-                    <RefreshCw className="w-4 h-4 animate-spin text-[#f48f25]" />
+                    <RefreshCw className="w-4 h-4 animate-spin text-[#ff5500]" />
                     <span>Importando...</span>
                   </>
                 ) : (

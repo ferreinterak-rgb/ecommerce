@@ -31,9 +31,9 @@ export const LoginPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#010e21] flex items-center justify-center p-4 relative overflow-hidden text-white">
       {/* Background glow elements */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#f48f25]/15 rounded-full filter blur-3xl pointer-events-none" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#ff5500]/15 rounded-full filter blur-3xl pointer-events-none" />
 
-      <div className="max-w-md w-full bg-[#031834]/95 backdrop-blur-xl p-8 rounded-3xl border border-[#f48f25]/30 shadow-2xl space-y-6 relative z-10">
+      <div className="max-w-md w-full bg-[#031834]/95 backdrop-blur-xl p-8 rounded-3xl border border-[#ff5500]/30 shadow-2xl space-y-6 relative z-10">
         
         {/* Brand Header */}
         <div className="text-center space-y-3">
@@ -67,7 +67,7 @@ export const LoginPage: React.FC = () => {
               placeholder="tu-correo@dominio.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full bg-white/10 text-white placeholder-gray-500 rounded-xl border border-white/15 p-3 focus:outline-none focus:border-[#f48f25] transition-colors"
+              className="w-full bg-white/10 text-white placeholder-gray-500 rounded-xl border border-white/15 p-3 focus:outline-none focus:border-[#ff5500] transition-colors"
             />
           </div>
 
@@ -79,14 +79,14 @@ export const LoginPage: React.FC = () => {
               placeholder="••••••••••••"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full bg-white/10 text-white placeholder-gray-500 rounded-xl border border-white/15 p-3 focus:outline-none focus:border-[#f48f25] transition-colors"
+              className="w-full bg-white/10 text-white placeholder-gray-500 rounded-xl border border-white/15 p-3 focus:outline-none focus:border-[#ff5500] transition-colors"
             />
           </div>
 
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-3.5 rounded-xl bg-[#f48f25] text-black font-extrabold text-sm hover:bg-[#d97706] disabled:opacity-50 transition-all shadow-lg shadow-[#f48f25]/30 flex items-center justify-center gap-2"
+            className="w-full py-3.5 rounded-xl bg-[#ff5500] text-black font-extrabold text-sm hover:bg-[#e04800] disabled:opacity-50 transition-all shadow-lg shadow-[#ff5500]/30 flex items-center justify-center gap-2"
           >
             {loading ? 'Verificando Credenciales...' : 'Iniciar Sesión'}
             <ArrowRight className="w-4 h-4 stroke-[3]" />

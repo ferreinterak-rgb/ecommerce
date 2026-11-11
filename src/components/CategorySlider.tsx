@@ -257,7 +257,7 @@ export const CategorySlider: React.FC = () => {
                 {/* Contenido Textual */}
                 <div className="space-y-2 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="font-extrabold text-base sm:text-lg text-slate-900 tracking-tight group-hover:text-[#f48f25] transition-colors leading-snug">
+                    <h3 className="font-extrabold text-base sm:text-lg text-slate-900 tracking-tight group-hover:text-[#ff5500] transition-colors leading-snug">
                       {cat.name}
                     </h3>
                     
@@ -283,7 +283,7 @@ export const CategorySlider: React.FC = () => {
 
                     <Link
                       to={`/catalog?category=${cat.id}`}
-                      className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-black hover:bg-[#f48f25] text-white hover:text-black font-extrabold text-xs transition-all shadow-sm hover:shadow-md group/btn"
+                      className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-black hover:bg-[#ff5500] text-white hover:text-black font-extrabold text-xs transition-all shadow-sm hover:shadow-md group/btn"
                     >
                       <span>Ver Productos</span>
                       <ArrowUpRight className="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
@@ -299,7 +299,7 @@ export const CategorySlider: React.FC = () => {
         {/* Barra de llamada a la acción inferior */}
         <div className="bg-slate-900 rounded-2xl p-4 sm:p-5 text-white flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3 text-center sm:text-left">
-            <div className="w-10 h-10 rounded-xl bg-[#f48f25]/20 text-[#f48f25] flex items-center justify-center shrink-0">
+            <div className="w-10 h-10 rounded-xl bg-[#ff5500]/20 text-[#ff5500] flex items-center justify-center shrink-0">
               <FolderOpen className="w-5 h-5" />
             </div>
             <div>
@@ -314,7 +314,7 @@ export const CategorySlider: React.FC = () => {
 
           <Link
             to="/catalog"
-            className="px-5 py-2.5 rounded-xl bg-[#f48f25] hover:bg-[#d97706] text-black font-extrabold text-xs tracking-wide uppercase transition-colors shrink-0"
+            className="px-5 py-2.5 rounded-xl bg-[#ff5500] hover:bg-[#e04800] text-black font-extrabold text-xs tracking-wide uppercase transition-colors shrink-0"
           >
             Abrir Filtros & Catálogo
           </Link>

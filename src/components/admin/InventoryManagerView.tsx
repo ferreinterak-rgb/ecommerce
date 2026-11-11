@@ -287,7 +287,7 @@ export const InventoryManagerView: React.FC<InventoryManagerViewProps> = ({
       <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
-            <span className="text-[10px] font-mono uppercase bg-[#f48f25]/20 text-[#d97706] font-bold px-2 py-0.5 rounded-full">
+            <span className="text-[10px] font-mono uppercase bg-[#ff5500]/20 text-[#e04800] font-bold px-2 py-0.5 rounded-full">
               Control Maestro
             </span>
             <span className="text-xs text-gray-400 font-mono">
@@ -309,7 +309,7 @@ export const InventoryManagerView: React.FC<InventoryManagerViewProps> = ({
             className="px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-black text-white font-bold text-xs flex items-center gap-2 shadow-sm transition-colors cursor-pointer"
             title="Importar catálogo masivamente desde Excel o CSV"
           >
-            <Upload className="w-3.5 h-3.5 text-[#f48f25]" />
+            <Upload className="w-3.5 h-3.5 text-[#ff5500]" />
             <span>Importar Masivo</span>
           </button>
 
@@ -336,13 +336,13 @@ export const InventoryManagerView: React.FC<InventoryManagerViewProps> = ({
             className="px-3 py-2.5 rounded-xl bg-white hover:bg-gray-100 text-slate-700 border border-gray-200 font-bold text-xs flex items-center gap-1 shadow-sm transition-colors cursor-pointer"
             title="Descargar plantilla de Excel modelo"
           >
-            <Download className="w-3.5 h-3.5 text-[#f48f25]" />
+            <Download className="w-3.5 h-3.5 text-[#ff5500]" />
             <span>Plantilla</span>
           </button>
 
           <button
             onClick={onOpenNewProduct}
-            className="px-4 py-2.5 rounded-xl bg-[#f48f25] text-black font-extrabold text-xs hover:bg-[#d97706] flex items-center gap-1.5 shadow-md shadow-[#f48f25]/30 transition-colors cursor-pointer"
+            className="px-4 py-2.5 rounded-xl bg-[#ff5500] text-black font-extrabold text-xs hover:bg-[#e04800] flex items-center gap-1.5 shadow-md shadow-[#ff5500]/30 transition-colors cursor-pointer"
           >
             <Plus className="w-4 h-4 stroke-[3]" /> Nuevo Producto
           </button>
@@ -461,7 +461,7 @@ export const InventoryManagerView: React.FC<InventoryManagerViewProps> = ({
               : 'bg-gray-50 text-slate-800 border-gray-100 hover:border-gray-300'
           }`}
         >
-          <div className="flex items-center justify-between text-[#f48f25]">
+          <div className="flex items-center justify-between text-[#ff5500]">
             <span className={`text-[10px] font-bold uppercase tracking-wider ${statusFilter === 'discounted' ? 'text-white' : 'text-slate-800'}`}>
               En Oferta
             </span>
@@ -606,7 +606,7 @@ export const InventoryManagerView: React.FC<InventoryManagerViewProps> = ({
       {selectedIds.length > 0 && (
         <div className="bg-slate-900 text-white p-3.5 rounded-2xl shadow-xl flex flex-wrap items-center justify-between gap-3 animate-fadeIn">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-xl bg-white/10 flex items-center justify-center font-bold text-xs text-[#f48f25]">
+            <div className="w-8 h-8 rounded-xl bg-white/10 flex items-center justify-center font-bold text-xs text-[#ff5500]">
               {selectedIds.length}
             </div>
             <div>
@@ -639,7 +639,7 @@ export const InventoryManagerView: React.FC<InventoryManagerViewProps> = ({
             <button
               onClick={() => handleBulkAction('discount20')}
               disabled={isProcessingAction}
-              className="px-3 py-1.5 rounded-lg bg-[#f48f25] hover:bg-[#d97706] text-black font-extrabold text-[11px] flex items-center gap-1.5 transition-colors cursor-pointer"
+              className="px-3 py-1.5 rounded-lg bg-[#ff5500] hover:bg-[#e04800] text-black font-extrabold text-[11px] flex items-center gap-1.5 transition-colors cursor-pointer"
               title="Aplicar 20% de descuento para mover inventario"
             >
               <Percent className="w-3.5 h-3.5" /> Descuento 20% OFF
@@ -683,7 +683,7 @@ export const InventoryManagerView: React.FC<InventoryManagerViewProps> = ({
                     type="checkbox"
                     checked={filteredProducts.length > 0 && selectedIds.length === filteredProducts.length}
                     onChange={handleSelectAll}
-                    className="w-4 h-4 rounded cursor-pointer accent-[#f48f25]"
+                    className="w-4 h-4 rounded cursor-pointer accent-[#ff5500]"
                     title="Seleccionar todos"
                   />
                 </th>
@@ -727,7 +727,7 @@ export const InventoryManagerView: React.FC<InventoryManagerViewProps> = ({
                           type="checkbox"
                           checked={isChecked}
                           onChange={() => handleToggleSelectOne(p.id)}
-                          className="w-4 h-4 rounded cursor-pointer accent-[#f48f25]"
+                          className="w-4 h-4 rounded cursor-pointer accent-[#ff5500]"
                         />
                       </td>
 
@@ -750,7 +750,7 @@ export const InventoryManagerView: React.FC<InventoryManagerViewProps> = ({
                         <div>
                           <span className="font-bold text-slate-900 line-clamp-1">{p.name}</span>
                           <div className="flex items-center gap-2 mt-0.5">
-                            <span className="text-[10px] text-[#f48f25] font-bold uppercase">{p.brand}</span>
+                            <span className="text-[10px] text-[#ff5500] font-bold uppercase">{p.brand}</span>
                             {p.dimensions && (
                               <span className="text-[10px] text-gray-400 font-mono">[{p.dimensions}]</span>
                             )}

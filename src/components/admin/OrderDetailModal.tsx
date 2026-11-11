@@ -25,7 +25,7 @@ export const OrderDetailModal: React.FC<ModalProps> = ({
         {/* Header */}
         <div className="px-6 py-4 bg-[#031834] text-white flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <ShoppingBag className="w-5 h-5 text-[#f48f25]" />
+            <ShoppingBag className="w-5 h-5 text-[#ff5500]" />
             <div>
               <h3 className="font-extrabold text-base">Pedido #{order.order_number}</h3>
               <p className="text-[10px] text-gray-400">Fecha: {new Date(order.created_at).toLocaleString()}</p>
@@ -51,7 +51,7 @@ export const OrderDetailModal: React.FC<ModalProps> = ({
               <select
                 value={order.status}
                 onChange={(e) => onUpdateStatus(order.id, e.target.value as OrderStatus)}
-                className="bg-white border border-gray-300 rounded-lg px-3 py-1.5 font-bold focus:border-[#f48f25] focus:outline-none"
+                className="bg-white border border-gray-300 rounded-lg px-3 py-1.5 font-bold focus:border-[#ff5500] focus:outline-none"
               >
                 <option value="pending">Pendiente</option>
                 <option value="processing">Procesando</option>
@@ -67,18 +67,18 @@ export const OrderDetailModal: React.FC<ModalProps> = ({
             <div className="p-4 rounded-xl border border-gray-100 bg-white space-y-2">
               <h4 className="font-bold text-slate-900 border-b border-gray-100 pb-1 text-sm">Datos del Cliente</h4>
               <p className="font-bold">{order.customer_name}</p>
-              <p className="flex items-center gap-1.5 text-gray-600"><Mail className="w-3.5 h-3.5 text-[#f48f25]" /> {order.customer_email}</p>
-              <p className="flex items-center gap-1.5 text-gray-600"><Phone className="w-3.5 h-3.5 text-[#f48f25]" /> {order.customer_phone}</p>
+              <p className="flex items-center gap-1.5 text-gray-600"><Mail className="w-3.5 h-3.5 text-[#ff5500]" /> {order.customer_email}</p>
+              <p className="flex items-center gap-1.5 text-gray-600"><Phone className="w-3.5 h-3.5 text-[#ff5500]" /> {order.customer_phone}</p>
             </div>
 
             <div className="p-4 rounded-xl border border-gray-100 bg-white space-y-2">
               <h4 className="font-bold text-slate-900 border-b border-gray-100 pb-1 text-sm">Dirección de Envío</h4>
               <p className="flex items-start gap-1.5 text-gray-600">
-                <MapPin className="w-3.5 h-3.5 text-[#f48f25] shrink-0 mt-0.5" />
+                <MapPin className="w-3.5 h-3.5 text-[#ff5500] shrink-0 mt-0.5" />
                 <span>{order.shipping_address.address}, {order.shipping_address.city}, {order.shipping_address.state}</span>
               </p>
               <p className="flex items-center gap-1.5 text-gray-600">
-                <CreditCard className="w-3.5 h-3.5 text-[#f48f25]" /> Pago: <span className="uppercase font-bold">{order.payment_method === 'mercadopago' ? 'Mercado Pago' : order.payment_method}</span>
+                <CreditCard className="w-3.5 h-3.5 text-[#ff5500]" /> Pago: <span className="uppercase font-bold">{order.payment_method === 'mercadopago' ? 'Mercado Pago' : order.payment_method}</span>
               </p>
             </div>
           </div>
@@ -104,7 +104,7 @@ export const OrderDetailModal: React.FC<ModalProps> = ({
                       <td className="p-3 font-mono text-gray-400">{item.product_sku}</td>
                       <td className="p-3 text-center font-bold">{item.quantity}</td>
                       <td className="p-3 text-right">{formatPrice(item.price)}</td>
-                      <td className="p-3 text-right font-bold text-[#f48f25]">{formatPrice(item.subtotal)}</td>
+                      <td className="p-3 text-right font-bold text-[#ff5500]">{formatPrice(item.subtotal)}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -121,7 +121,7 @@ export const OrderDetailModal: React.FC<ModalProps> = ({
               <div className="flex justify-between"><span>Envío:</span><span>{formatPrice(order.shipping_cost)}</span></div>
               <div className="flex justify-between font-black text-sm text-slate-900 pt-2 border-t border-gray-200">
                 <span>Total del Pedido:</span>
-                <span className="text-[#f48f25]">{formatPrice(order.total)}</span>
+                <span className="text-[#ff5500]">{formatPrice(order.total)}</span>
               </div>
             </div>
           </div>

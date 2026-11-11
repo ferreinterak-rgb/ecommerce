@@ -33,7 +33,7 @@ export const CategoryTabs: React.FC<TabsProps> = ({ activeCategory, onSelectCate
                 onClick={() => onSelectCategory(cat.slug)}
                 className={`pb-2 border-b-2 transition-all font-sans ${
                   isActive
-                    ? 'border-[#f48f25] text-[#111111] font-black'
+                    ? 'border-[#ff5500] text-[#111111] font-black'
                     : 'border-transparent hover:text-slate-900'
                 }`}
               >

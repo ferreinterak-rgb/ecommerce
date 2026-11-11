@@ -264,10 +264,10 @@ export const CatalogPage: React.FC = () => {
             onClick={() => setMobileFilterOpen(true)}
             className="lg:hidden bg-black text-white font-bold text-xs px-5 py-3 rounded-full flex items-center gap-2 self-start shadow-sm"
           >
-            <SlidersHorizontal className="w-4 h-4 text-[#f48f25]" />
+            <SlidersHorizontal className="w-4 h-4 text-[#ff5500]" />
             <span>Filtros Inteligentes</span>
             {activeFiltersCount > 0 && (
-              <span className="bg-[#f48f25] text-black font-extrabold text-[10px] w-5 h-5 rounded-full flex items-center justify-center">
+              <span className="bg-[#ff5500] text-black font-extrabold text-[10px] w-5 h-5 rounded-full flex items-center justify-center">
                 {activeFiltersCount}
               </span>
             )}
@@ -356,7 +356,7 @@ export const CatalogPage: React.FC = () => {
                 {searchInputValue && (
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 text-white text-xs font-medium">
                     Búsqueda: "{searchInputValue}"
-                    <button onClick={handleClearSearch} className="hover:text-[#f48f25] ml-0.5">
+                    <button onClick={handleClearSearch} className="hover:text-[#ff5500] ml-0.5">
                       <X className="w-3 h-3" />
                     </button>
                   </span>

@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
             </p>
             <div className="space-y-2 pt-2 text-xs">
               <div className="flex items-center gap-2 text-gray-300">
-                <MapPin className="w-4 h-4 text-[#f48f25]" /> Calle 48 #56-05
+                <MapPin className="w-4 h-4 text-[#ff5500]" /> Calle 48 #56-05
               </div>
             </div>
           </div>
@@ -28,9 +28,9 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-2 space-y-3">
             <h4 className="text-white font-bold text-sm uppercase tracking-wider font-mono">Enlaces Rápido</h4>
             <ul className="space-y-2">
-              <li><Link to="/" className="hover:text-[#f48f25] transition-colors">Inicio</Link></li>
-              <li><Link to="/catalog" className="hover:text-[#f48f25] transition-colors">Tienda</Link></li>
-              <li><Link to="/booking" className="hover:text-[#f48f25] transition-colors">Contacto</Link></li>
+              <li><Link to="/" className="hover:text-[#ff5500] transition-colors">Inicio</Link></li>
+              <li><Link to="/catalog" className="hover:text-[#ff5500] transition-colors">Tienda</Link></li>
+              <li><Link to="/booking" className="hover:text-[#ff5500] transition-colors">Contacto</Link></li>
             </ul>
           </div>
 
@@ -38,11 +38,11 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-3 space-y-3">
             <h4 className="text-white font-bold text-sm uppercase tracking-wider font-mono">Atención al Cliente</h4>
             <ul className="space-y-2">
-              <li><Link to="/admin" className="hover:text-[#f48f25] transition-colors">Rastrear Pedido</Link></li>
-              <li><Link to="/booking" className="hover:text-[#f48f25] transition-colors">Envíos y Devoluciones</Link></li>
-              <li><Link to="/booking" className="hover:text-[#f48f25] transition-colors">Soporte Técnico</Link></li>
-              <li><Link to="/booking" className="hover:text-[#f48f25] transition-colors">Preguntas Frecuentes</Link></li>
-              <li><Link to="/login" className="hover:text-[#f48f25] transition-colors">Mi Cuenta</Link></li>
+              <li><Link to="/admin" className="hover:text-[#ff5500] transition-colors">Rastrear Pedido</Link></li>
+              <li><Link to="/booking" className="hover:text-[#ff5500] transition-colors">Envíos y Devoluciones</Link></li>
+              <li><Link to="/booking" className="hover:text-[#ff5500] transition-colors">Soporte Técnico</Link></li>
+              <li><Link to="/booking" className="hover:text-[#ff5500] transition-colors">Preguntas Frecuentes</Link></li>
+              <li><Link to="/login" className="hover:text-[#ff5500] transition-colors">Mi Cuenta</Link></li>
             </ul>
           </div>
 
@@ -56,12 +56,12 @@ export const Footer: React.FC = () => {
               <input
                 type="email"
                 placeholder="Tu correo electrónico"
-                className="w-full bg-gray-900 border border-gray-800 rounded-md px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-[#f48f25]"
+                className="w-full bg-gray-900 border border-gray-800 rounded-md px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-[#ff5500]"
                 required
               />
               <button
                 type="submit"
-                className="w-full bg-[#f48f25] hover:bg-[#e07d18] text-black font-bold text-xs py-2.5 rounded-md transition-colors"
+                className="w-full bg-[#ff5500] hover:bg-[#e04800] text-black font-bold text-xs py-2.5 rounded-md transition-colors"
               >
                 Suscribirme
               </button>

@@ -81,7 +81,7 @@ export const AnalyticsDashboard: React.FC<AnalyticsProps> = ({
       });
     }
 
-    const colors = ['bg-[#f48f25]', 'bg-blue-600', 'bg-emerald-500', 'bg-purple-600', 'bg-slate-700', 'bg-amber-500'];
+    const colors = ['bg-[#ff5500]', 'bg-blue-600', 'bg-emerald-500', 'bg-purple-600', 'bg-slate-700', 'bg-amber-500'];
 
     return Object.entries(catSales)
       .map(([category, value], idx) => ({
@@ -99,7 +99,7 @@ export const AnalyticsDashboard: React.FC<AnalyticsProps> = ({
       value: formatPrice(totalSalesUSD),
       subtitle: ordersCount > 0 ? `${ordersCount} pedidos confirmados` : 'Sin ventas aún',
       icon: DollarSign,
-      color: 'from-[#f48f25] to-amber-600'
+      color: 'from-[#ff5500] to-amber-600'
     },
     {
       title: 'Pedidos Procesados',
@@ -164,7 +164,7 @@ export const AnalyticsDashboard: React.FC<AnalyticsProps> = ({
           <div className="flex items-center justify-between pb-4 border-b border-gray-100">
             <div>
               <h3 className="font-bold text-base text-slate-900 flex items-center gap-2">
-                <TrendingUp className="w-5 h-5 text-[#f48f25]" />
+                <TrendingUp className="w-5 h-5 text-[#ff5500]" />
                 {ordersCount > 0 ? 'Distribución de Ventas por Categoría' : 'Distribución de Catálogo por Categoría'}
               </h3>
               <p className="text-xs text-gray-400">
@@ -203,8 +203,8 @@ export const AnalyticsDashboard: React.FC<AnalyticsProps> = ({
         {/* Top Productos Más Vendidos */}
         <div className="lg:col-span-5 bg-[#031834] text-white rounded-2xl p-6 border border-white/10 shadow-xl space-y-4 flex flex-col">
           <div className="flex items-center justify-between pb-3 border-b border-white/10">
-            <h3 className="font-bold text-base text-[#f48f25] flex items-center gap-2">
-              <Award className="w-5 h-5 text-[#f48f25]" />
+            <h3 className="font-bold text-base text-[#ff5500] flex items-center gap-2">
+              <Award className="w-5 h-5 text-[#ff5500]" />
               Top Productos Más Vendidos
             </h3>
           </div>
@@ -221,7 +221,7 @@ export const AnalyticsDashboard: React.FC<AnalyticsProps> = ({
             ) : (
               topSellingProducts.map((p, index) => (
                 <div key={p.id || index} className="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/10">
-                  <span className="font-black text-sm text-[#f48f25] w-5 text-center">#{index + 1}</span>
+                  <span className="font-black text-sm text-[#ff5500] w-5 text-center">#{index + 1}</span>
                   <div className="flex-1 overflow-hidden">
                     <h4 className="font-bold text-xs truncate">{p.name}</h4>
                     <p className="text-[10px] text-gray-400 font-mono">

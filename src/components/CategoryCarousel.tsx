@@ -55,7 +55,7 @@ export const CategoryCarousel: React.FC = () => {
         {/* Section Header */}
         <div className="flex items-end justify-between mb-6">
           <div>
-            <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-[#f48f25]">
+            <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-[#ff5500]">
               CATEGORÍAS DE ESPECIALIDAD
             </span>
             <h2 className="text-2xl font-black text-slate-900 tracking-tight mt-0.5">
@@ -64,7 +64,7 @@ export const CategoryCarousel: React.FC = () => {
           </div>
           <Link
             to="/catalog"
-            className="text-xs font-bold text-slate-900 hover:text-[#f48f25] flex items-center gap-1 transition-colors group"
+            className="text-xs font-bold text-slate-900 hover:text-[#ff5500] flex items-center gap-1 transition-colors group"
           >
             Ver Todo <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </Link>
@@ -78,7 +78,7 @@ export const CategoryCarousel: React.FC = () => {
               <Link
                 key={cat.slug}
                 to={`/catalog?category=${cat.slug}`}
-                className="group glass-card-white p-5 rounded-[24px] hover:border-[#f48f25]/50 transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden"
+                className="group glass-card-white p-5 rounded-[24px] hover:border-[#ff5500]/50 transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden"
               >
                 <div className="w-20 h-20 mb-3 rounded-2xl bg-gray-100 p-2.5 flex items-center justify-center overflow-hidden group-hover:scale-105 transition-transform">
                   <img
@@ -87,10 +87,10 @@ export const CategoryCarousel: React.FC = () => {
                     className="object-contain max-h-full max-w-full"
                   />
                 </div>
-                <div className="p-1.5 rounded-full bg-[#f48f25] text-black mb-2 shadow-sm">
+                <div className="p-1.5 rounded-full bg-[#ff5500] text-black mb-2 shadow-sm">
                   <Icon className="w-3.5 h-3.5 stroke-[2.5]" />
                 </div>
-                <h3 className="font-extrabold text-xs text-slate-900 line-clamp-1 group-hover:text-[#f48f25] transition-colors">
+                <h3 className="font-extrabold text-xs text-slate-900 line-clamp-1 group-hover:text-[#ff5500] transition-colors">
                   {cat.name}
                 </h3>
                 <span className="text-[10px] text-gray-500 font-mono mt-1 font-semibold">

@@ -31,15 +31,15 @@ export const Navbar: React.FC = () => {
       <div className="bg-[#111111] text-gray-300 text-[11px] font-medium py-2 px-3 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">
           <div className="flex items-center justify-center sm:justify-start gap-2 w-full sm:w-auto">
-            <span className="w-2 h-2 rounded-full bg-[#f48f25] animate-pulse shrink-0" />
+            <span className="w-2 h-2 rounded-full bg-[#ff5500] animate-pulse shrink-0" />
             <span className="truncate text-center sm:text-left">Envío gratis por compras mayores a $500.000</span>
           </div>
           <div className="hidden sm:flex items-center gap-4 text-gray-300 text-[11px] shrink-0">
-            <Link to="/booking" className="hover:text-[#f48f25] transition-colors">Ubicación de Tiendas</Link>
+            <Link to="/booking" className="hover:text-[#ff5500] transition-colors">Ubicación de Tiendas</Link>
             <span className="text-gray-700">|</span>
-            <Link to="/admin" className="hover:text-[#f48f25] transition-colors">Rastrear Pedido</Link>
+            <Link to="/admin" className="hover:text-[#ff5500] transition-colors">Rastrear Pedido</Link>
             <span className="text-gray-700">|</span>
-            <Link to="/booking" className="hover:text-[#f48f25] transition-colors">Ayuda & Soporte</Link>
+            <Link to="/booking" className="hover:text-[#ff5500] transition-colors">Ayuda & Soporte</Link>
           </div>
         </div>
       </div>
@@ -52,7 +52,7 @@ export const Navbar: React.FC = () => {
           <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-1.5 text-slate-800 hover:text-[#f48f25] focus:outline-none rounded-lg hover:bg-gray-100"
+              className="lg:hidden p-1.5 text-slate-800 hover:text-[#ff5500] focus:outline-none rounded-lg hover:bg-gray-100"
               aria-label="Menú"
             >
               {mobileMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
@@ -65,13 +65,13 @@ export const Navbar: React.FC = () => {
 
           {/* Center Navigation Links (Pill-inspired active styling) */}
           <nav className="hidden lg:flex items-center gap-7 text-xs font-bold text-slate-800 tracking-wide uppercase">
-            <Link to="/" className="hover:text-[#f48f25] transition-colors py-1 px-3 rounded-full hover:bg-gray-100">
+            <Link to="/" className="hover:text-[#ff5500] transition-colors py-1 px-3 rounded-full hover:bg-gray-100">
               INICIO
             </Link>
-            <Link to="/catalog" className="hover:text-[#f48f25] transition-colors py-1 px-3 rounded-full hover:bg-gray-100">
+            <Link to="/catalog" className="hover:text-[#ff5500] transition-colors py-1 px-3 rounded-full hover:bg-gray-100">
               TIENDA
             </Link>
-            <Link to="/booking" className="hover:text-[#f48f25] transition-colors py-1 px-3 rounded-full hover:bg-gray-100">
+            <Link to="/booking" className="hover:text-[#ff5500] transition-colors py-1 px-3 rounded-full hover:bg-gray-100">
               CONTACTO
             </Link>
           </nav>
@@ -80,7 +80,7 @@ export const Navbar: React.FC = () => {
           <div className="flex items-center gap-1.5 sm:gap-3 lg:gap-4 shrink-0">
             
             {/* Embedded Search Pill Bar matching UI Kit (Desktop) */}
-            <form onSubmit={handleSearchSubmit} className="hidden sm:flex items-center bg-[#f4f5f7] border border-gray-200 focus-within:border-[#f48f25] rounded-full pl-4 pr-1 py-1 transition-all shadow-inner w-56 md:w-64 lg:w-72">
+            <form onSubmit={handleSearchSubmit} className="hidden sm:flex items-center bg-[#f4f5f7] border border-gray-200 focus-within:border-[#ff5500] rounded-full pl-4 pr-1 py-1 transition-all shadow-inner w-56 md:w-64 lg:w-72">
               <input
                 type="text"
                 placeholder="Buscar herramientas..."
@@ -90,7 +90,7 @@ export const Navbar: React.FC = () => {
               />
               <button
                 type="submit"
-                className="bg-[#f48f25] hover:bg-[#e07d18] text-black font-extrabold text-[10px] uppercase px-3 py-1.5 rounded-full shadow-sm transition-transform active:scale-95 shrink-0 flex items-center gap-1"
+                className="bg-[#ff5500] hover:bg-[#e04800] text-black font-extrabold text-[10px] uppercase px-3 py-1.5 rounded-full shadow-sm transition-transform active:scale-95 shrink-0 flex items-center gap-1"
               >
                 <Search className="w-3 h-3 stroke-[3]" />
                 <span>BUSCAR</span>
@@ -100,7 +100,7 @@ export const Navbar: React.FC = () => {
             {/* Mobile Search Icon */}
             <button
               onClick={() => setShowSearchModal(!showSearchModal)}
-              className="sm:hidden text-slate-800 hover:text-[#f48f25] transition-colors p-1.5 rounded-full hover:bg-gray-100"
+              className="sm:hidden text-slate-800 hover:text-[#ff5500] transition-colors p-1.5 rounded-full hover:bg-gray-100"
               title="Buscar productos"
             >
               <Search className="w-5 h-5 stroke-[2]" />
@@ -110,7 +110,7 @@ export const Navbar: React.FC = () => {
             <div className="relative">
               <button
                 onClick={() => setUserDropdown(!userDropdown)}
-                className="text-slate-800 hover:text-[#f48f25] transition-colors p-1.5 rounded-full hover:bg-gray-100 flex items-center justify-center"
+                className="text-slate-800 hover:text-[#ff5500] transition-colors p-1.5 rounded-full hover:bg-gray-100 flex items-center justify-center"
                 title="Cuenta de usuario"
               >
                 <User className="w-5 h-5 stroke-[2]" />
@@ -145,7 +145,7 @@ export const Navbar: React.FC = () => {
                       <Link
                         to="/login"
                         onClick={() => setUserDropdown(false)}
-                        className="block px-4 py-2.5 hover:bg-gray-50 text-[#f48f25] font-bold"
+                        className="block px-4 py-2.5 hover:bg-gray-50 text-[#ff5500] font-bold"
                       >
                         Iniciar Sesión
                       </Link>
@@ -159,12 +159,12 @@ export const Navbar: React.FC = () => {
             <div className="relative flex items-center justify-center mr-1 sm:mr-0">
               <button
                 onClick={() => setIsCartOpen(true)}
-                className="bg-[#111111] hover:bg-[#f48f25] text-white hover:text-black p-2 sm:p-2.5 rounded-full transition-all relative flex items-center justify-center shadow-md active:scale-95 group shrink-0"
+                className="bg-[#111111] hover:bg-[#ff5500] text-white hover:text-black p-2 sm:p-2.5 rounded-full transition-all relative flex items-center justify-center shadow-md active:scale-95 group shrink-0"
                 title="Ver Carrito"
               >
                 <ShoppingBag className="w-4 h-4 sm:w-5 sm:h-5 stroke-[2]" />
                 {totalItemsCount > 0 && (
-                  <span className="absolute -top-1.5 -right-1.5 bg-[#f48f25] text-black font-black text-[10px] sm:text-[11px] min-w-[20px] h-[20px] px-1 rounded-full flex items-center justify-center border-2 border-white shadow-md leading-none">
+                  <span className="absolute -top-1.5 -right-1.5 bg-[#ff5500] text-black font-black text-[10px] sm:text-[11px] min-w-[20px] h-[20px] px-1 rounded-full flex items-center justify-center border-2 border-white shadow-md leading-none">
                     {totalItemsCount}
                   </span>
                 )}
@@ -190,7 +190,7 @@ export const Navbar: React.FC = () => {
             />
             <button
               type="submit"
-              className="bg-[#f48f25] text-black font-bold text-xs px-4 py-2 rounded-full shadow-sm"
+              className="bg-[#ff5500] text-black font-bold text-xs px-4 py-2 rounded-full shadow-sm"
             >
               BUSCAR
             </button>
@@ -213,7 +213,7 @@ export const Navbar: React.FC = () => {
             />
             <button
               type="submit"
-              className="bg-[#f48f25] text-black font-black text-[10px] uppercase px-3 py-1.5 rounded-full shadow-sm"
+              className="bg-[#ff5500] text-black font-black text-[10px] uppercase px-3 py-1.5 rounded-full shadow-sm"
             >
               BUSCAR
             </button>
@@ -251,16 +251,16 @@ export const Navbar: React.FC = () => {
           <div className="pt-4 border-t border-gray-100 space-y-3">
             <span className="text-[10px] font-mono uppercase text-gray-400 font-semibold tracking-wider block">Servicios & Ayuda</span>
             <div className="space-y-2 text-xs font-semibold text-gray-600">
-              <Link to="/booking" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2 hover:text-[#f48f25]">
-                <MapPin className="w-4 h-4 text-[#f48f25]" />
+              <Link to="/booking" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2 hover:text-[#ff5500]">
+                <MapPin className="w-4 h-4 text-[#ff5500]" />
                 <span>Ubicación de Tiendas</span>
               </Link>
-              <Link to="/admin" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2 hover:text-[#f48f25]">
-                <Truck className="w-4 h-4 text-[#f48f25]" />
+              <Link to="/admin" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2 hover:text-[#ff5500]">
+                <Truck className="w-4 h-4 text-[#ff5500]" />
                 <span>Rastrear Pedido</span>
               </Link>
-              <Link to="/booking" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2 hover:text-[#f48f25]">
-                <HelpCircle className="w-4 h-4 text-[#f48f25]" />
+              <Link to="/booking" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2 hover:text-[#ff5500]">
+                <HelpCircle className="w-4 h-4 text-[#ff5500]" />
                 <span>Ayuda & Soporte</span>
               </Link>
             </div>

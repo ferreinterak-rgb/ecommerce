@@ -67,13 +67,13 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
         <div className="bg-white/95 backdrop-blur-2xl border border-gray-200/90 rounded-[28px] p-6 shadow-2xl text-slate-900">
           <div className="flex justify-between items-center pb-3 mb-4 border-b border-gray-100">
             <h3 className="text-sm font-black text-slate-900 flex items-center gap-2 uppercase tracking-wider">
-              <Wrench className="w-4 h-4 text-[#f48f25]" />
+              <Wrench className="w-4 h-4 text-[#ff5500]" />
               Catálogo General de Categorías
             </h3>
             <Link
               to="/catalog"
               onClick={onClose}
-              className="text-xs font-bold text-gray-500 hover:text-[#f48f25] flex items-center gap-1 transition-colors"
+              className="text-xs font-bold text-gray-500 hover:text-[#ff5500] flex items-center gap-1 transition-colors"
             >
               Ver todo <ArrowRight className="w-3.5 h-3.5" />
             </Link>
@@ -87,19 +87,19 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
                   key={cat.id}
                   to={`/catalog?category=${cat.slug}`}
                   onClick={onClose}
-                  className="group flex items-start p-3 rounded-2xl hover:bg-gray-100/80 transition-all border border-transparent hover:border-[#f48f25]/40"
+                  className="group flex items-start p-3 rounded-2xl hover:bg-gray-100/80 transition-all border border-transparent hover:border-[#ff5500]/40"
                 >
-                  <div className="p-2.5 rounded-xl bg-[#f48f25] text-black shadow-sm group-hover:scale-105 transition-transform mr-3 mt-0.5">
+                  <div className="p-2.5 rounded-xl bg-[#ff5500] text-black shadow-sm group-hover:scale-105 transition-transform mr-3 mt-0.5">
                     <Icon className="w-4 h-4 stroke-[2.5]" />
                   </div>
                   <div>
-                    <h4 className="font-extrabold text-xs text-slate-900 group-hover:text-[#f48f25] transition-colors">
+                    <h4 className="font-extrabold text-xs text-slate-900 group-hover:text-[#ff5500] transition-colors">
                       {cat.name}
                     </h4>
                     <p className="text-[11px] text-gray-500 mt-0.5 line-clamp-2">
                       {cat.description}
                     </p>
-                    <span className="text-[10px] font-mono font-bold text-[#f48f25] mt-1 inline-block">
+                    <span className="text-[10px] font-mono font-bold text-[#ff5500] mt-1 inline-block">
                       {cat.itemCount} Disponibles
                     </span>
                   </div>

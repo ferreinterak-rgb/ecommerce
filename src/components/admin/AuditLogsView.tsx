@@ -58,7 +58,7 @@ export const AuditLogsView: React.FC = () => {
                   <td className="p-4 font-bold text-slate-900">{log.user_name}</td>
 
                   <td className="p-4">
-                    <span className="px-2.5 py-1 rounded-full bg-[#f48f25]/15 text-[#d97706] font-bold text-[10px] uppercase">
+                    <span className="px-2.5 py-1 rounded-full bg-[#ff5500]/15 text-[#e04800] font-bold text-[10px] uppercase">
                       {log.action}
                     </span>
                   </td>

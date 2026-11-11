@@ -135,7 +135,7 @@ export const AdminDashboardPage: React.FC = () => {
           <div className="pt-2 flex flex-col gap-2">
             <a
               href="/login"
-              className="py-3 px-6 rounded-xl bg-[#f48f25] text-black font-extrabold text-xs hover:bg-[#d97706] transition-all"
+              className="py-3 px-6 rounded-xl bg-[#ff5500] text-black font-extrabold text-xs hover:bg-[#e04800] transition-all"
             >
               Iniciar Sesión en Supabase
             </a>

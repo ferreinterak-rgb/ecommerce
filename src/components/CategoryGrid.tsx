@@ -13,7 +13,7 @@ export const CategoryGrid: React.FC = () => {
         bg: 'bg-gradient-to-r from-[#0f172a] via-[#1e293b] to-[#0f172a]',
         titleColor: 'text-white',
         subtitleColor: 'text-gray-300',
-        btnBg: 'bg-[#f48f25] hover:bg-[#e07d18] text-black font-extrabold',
+        btnBg: 'bg-[#ff5500] hover:bg-[#e04800] text-black font-extrabold',
       },
     },
     {
@@ -25,7 +25,7 @@ export const CategoryGrid: React.FC = () => {
         bg: 'bg-[#f8f7f5] border border-gray-200/80',
         titleColor: 'text-slate-900',
         subtitleColor: 'text-gray-600',
-        btnBg: 'bg-[#111111] hover:bg-[#f48f25] text-white hover:text-black font-extrabold',
+        btnBg: 'bg-[#111111] hover:bg-[#ff5500] text-white hover:text-black font-extrabold',
       },
     },
     {
@@ -37,7 +37,7 @@ export const CategoryGrid: React.FC = () => {
         bg: 'bg-gradient-to-r from-[#111111] via-[#1c1917] to-[#111111]',
         titleColor: 'text-white',
         subtitleColor: 'text-gray-400',
-        btnBg: 'bg-[#f48f25] hover:bg-[#e07d18] text-black font-extrabold',
+        btnBg: 'bg-[#ff5500] hover:bg-[#e04800] text-black font-extrabold',
       },
     },
     {
@@ -61,7 +61,7 @@ export const CategoryGrid: React.FC = () => {
         bg: 'bg-[#1c1917]',
         titleColor: 'text-white',
         subtitleColor: 'text-gray-300',
-        btnBg: 'bg-[#f48f25] hover:bg-[#e07d18] text-black font-extrabold',
+        btnBg: 'bg-[#ff5500] hover:bg-[#e04800] text-black font-extrabold',
       },
     },
     {
@@ -73,7 +73,7 @@ export const CategoryGrid: React.FC = () => {
         bg: 'bg-gradient-to-r from-slate-200 via-gray-200 to-slate-300 border border-gray-300',
         titleColor: 'text-slate-900',
         subtitleColor: 'text-slate-700',
-        btnBg: 'bg-[#111111] hover:bg-[#f48f25] text-white hover:text-black font-extrabold',
+        btnBg: 'bg-[#111111] hover:bg-[#ff5500] text-white hover:text-black font-extrabold',
       },
     },
   ];
@@ -85,7 +85,7 @@ export const CategoryGrid: React.FC = () => {
         {/* Section Header */}
         <div className="flex items-end justify-between border-b border-gray-100 pb-4">
           <div>
-            <span className="text-xs font-bold text-[#f48f25] uppercase tracking-wider font-mono">
+            <span className="text-xs font-bold text-[#ff5500] uppercase tracking-wider font-mono">
               CATEGORÍAS DESTACADAS
             </span>
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mt-1">
@@ -94,7 +94,7 @@ export const CategoryGrid: React.FC = () => {
           </div>
           <Link
             to="/catalog"
-            className="text-xs sm:text-sm font-bold text-slate-900 hover:text-[#f48f25] flex items-center gap-1 transition-colors"
+            className="text-xs sm:text-sm font-bold text-slate-900 hover:text-[#ff5500] flex items-center gap-1 transition-colors"
           >
             Ver Catálogo Completo <ArrowRight className="w-4 h-4 ml-1" />
           </Link>

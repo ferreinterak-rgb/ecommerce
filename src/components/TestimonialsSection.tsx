@@ -8,7 +8,7 @@ export const TestimonialsSection: React.FC = () => {
         
         {/* Header */}
         <div className="space-y-1">
-          <span className="text-xs font-bold text-[#f48f25] uppercase tracking-wider font-mono">
+          <span className="text-xs font-bold text-[#ff5500] uppercase tracking-wider font-mono">
             TESTIMONIOS
           </span>
           <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
@@ -18,7 +18,7 @@ export const TestimonialsSection: React.FC = () => {
 
         {/* Yellow Circle Quote Icon */}
         <div className="flex justify-center">
-          <div className="w-12 h-12 rounded-full bg-[#f48f25] flex items-center justify-center text-black font-black shadow">
+          <div className="w-12 h-12 rounded-full bg-[#ff5500] flex items-center justify-center text-black font-black shadow">
             <Quote className="w-5 h-5 fill-black" />
           </div>
         </div>

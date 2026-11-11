@@ -55,7 +55,7 @@ export const CheckoutPage: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 py-20 text-center space-y-4">
         <h2 className="text-2xl font-black text-slate-900">Tu carrito está vacío</h2>
         <p className="text-xs text-gray-500">Agrega productos del catálogo para proceder con la compra.</p>
-        <Link to="/catalog" className="inline-block px-6 py-3 rounded-xl bg-[#f48f25] text-black font-extrabold text-xs">
+        <Link to="/catalog" className="inline-block px-6 py-3 rounded-xl bg-[#ff5500] text-black font-extrabold text-xs">
           Ver Catálogo
         </Link>
       </div>
@@ -170,9 +170,9 @@ export const CheckoutPage: React.FC = () => {
           Gracias por confiar en <strong>FERRE INTER</strong>. Hemos registrado tu pedido con el correo <strong>{customerEmail}</strong>.
         </p>
 
-        <div className="p-6 rounded-2xl bg-[#031834] text-white space-y-3 max-w-md mx-auto border border-[#f48f25]/30">
+        <div className="p-6 rounded-2xl bg-[#031834] text-white space-y-3 max-w-md mx-auto border border-[#ff5500]/30">
           <span className="text-xs text-gray-400 font-mono">NÚMERO DE ORDEN</span>
-          <div className="text-2xl font-mono font-black text-[#f48f25]">{completedOrderNumber}</div>
+          <div className="text-2xl font-mono font-black text-[#ff5500]">{completedOrderNumber}</div>
           <div className="flex items-center justify-center gap-2 pt-2 border-t border-white/10 text-xs text-emerald-400">
             <ShieldCheck className="w-4 h-4 text-emerald-400" />
             <span>Pasarela oficial configurada: Mercado Pago</span>
@@ -205,7 +205,7 @@ export const CheckoutPage: React.FC = () => {
         )}
 
         <div className="pt-4 flex justify-center gap-4">
-          <Link to="/catalog" className="px-6 py-3 rounded-xl bg-[#f48f25] text-black font-extrabold text-xs">
+          <Link to="/catalog" className="px-6 py-3 rounded-xl bg-[#ff5500] text-black font-extrabold text-xs">
             Seguir Comprando
           </Link>
           <Link to="/admin" className="px-6 py-3 rounded-xl bg-[#031834] text-white font-bold text-xs">
@@ -253,7 +253,7 @@ export const CheckoutPage: React.FC = () => {
                   required
                   value={customerName}
                   onChange={(e) => setCustomerName(e.target.value)}
-                  className="w-full rounded-xl border border-gray-300 p-2.5 focus:border-[#f48f25] focus:outline-none"
+                  className="w-full rounded-xl border border-gray-300 p-2.5 focus:border-[#ff5500] focus:outline-none"
                 />
               </div>
 
@@ -264,7 +264,7 @@ export const CheckoutPage: React.FC = () => {
                   required
                   value={customerEmail}
                   onChange={(e) => setCustomerEmail(e.target.value)}
-                  className="w-full rounded-xl border border-gray-300 p-2.5 focus:border-[#f48f25] focus:outline-none"
+                  className="w-full rounded-xl border border-gray-300 p-2.5 focus:border-[#ff5500] focus:outline-none"
                 />
               </div>
 
@@ -275,7 +275,7 @@ export const CheckoutPage: React.FC = () => {
                   required
                   value={customerPhone}
                   onChange={(e) => setCustomerPhone(e.target.value)}
-                  className="w-full rounded-xl border border-gray-300 p-2.5 focus:border-[#f48f25] focus:outline-none"
+                  className="w-full rounded-xl border border-gray-300 p-2.5 focus:border-[#ff5500] focus:outline-none"
                 />
               </div>
 
@@ -285,7 +285,7 @@ export const CheckoutPage: React.FC = () => {
                   <select
                     value={documentType}
                     onChange={(e) => setDocumentType(e.target.value as any)}
-                    className="w-24 rounded-xl border border-gray-300 p-2.5 focus:border-[#f48f25] focus:outline-none bg-slate-50 font-bold"
+                    className="w-24 rounded-xl border border-gray-300 p-2.5 focus:border-[#ff5500] focus:outline-none bg-slate-50 font-bold"
                   >
                     <option value="CC">CC</option>
                     <option value="NIT">NIT</option>
@@ -298,7 +298,7 @@ export const CheckoutPage: React.FC = () => {
                     placeholder="Número de cédula o NIT"
                     value={documentId}
                     onChange={(e) => setDocumentId(e.target.value)}
-                    className="flex-1 rounded-xl border border-gray-300 p-2.5 focus:border-[#f48f25] focus:outline-none"
+                    className="flex-1 rounded-xl border border-gray-300 p-2.5 focus:border-[#ff5500] focus:outline-none"
                   />
                 </div>
               </div>
@@ -319,7 +319,7 @@ export const CheckoutPage: React.FC = () => {
                   required
                   value={shippingAddress.address}
                   onChange={(e) => setShippingAddress({ ...shippingAddress, address: e.target.value })}
-                  className="w-full rounded-xl border border-gray-300 p-2.5 focus:border-[#f48f25] focus:outline-none"
+                  className="w-full rounded-xl border border-gray-300 p-2.5 focus:border-[#ff5500] focus:outline-none"
                 />
               </div>
 
@@ -330,7 +330,7 @@ export const CheckoutPage: React.FC = () => {
                   required
                   value={shippingAddress.city}
                   onChange={(e) => setShippingAddress({ ...shippingAddress, city: e.target.value })}
-                  className="w-full rounded-xl border border-gray-300 p-2.5 focus:border-[#f48f25] focus:outline-none"
+                  className="w-full rounded-xl border border-gray-300 p-2.5 focus:border-[#ff5500] focus:outline-none"
                 />
               </div>
 
@@ -341,7 +341,7 @@ export const CheckoutPage: React.FC = () => {
                   required
                   value={shippingAddress.state}
                   onChange={(e) => setShippingAddress({ ...shippingAddress, state: e.target.value })}
-                  className="w-full rounded-xl border border-gray-300 p-2.5 focus:border-[#f48f25] focus:outline-none"
+                  className="w-full rounded-xl border border-gray-300 p-2.5 focus:border-[#ff5500] focus:outline-none"
                 />
               </div>
 
@@ -352,7 +352,7 @@ export const CheckoutPage: React.FC = () => {
                   value={shippingAddress.notes || ''}
                   onChange={(e) => setShippingAddress({ ...shippingAddress, notes: e.target.value })}
                   placeholder="Ej. Entregar en la obra de la Calle 80..."
-                  className="w-full rounded-xl border border-gray-300 p-2.5 focus:border-[#f48f25] focus:outline-none"
+                  className="w-full rounded-xl border border-gray-300 p-2.5 focus:border-[#ff5500] focus:outline-none"
                 />
               </div>
             </div>
@@ -429,7 +429,7 @@ export const CheckoutPage: React.FC = () => {
             
             <h3 className="font-bold text-base text-white border-b border-white/10 pb-3 flex items-center justify-between">
               <span>Resumen de la Orden</span>
-              <span className="text-xs text-[#f48f25] font-mono">{cart.length} Artículos</span>
+              <span className="text-xs text-[#ff5500] font-mono">{cart.length} Artículos</span>
             </h3>
 
             {/* Cart items list */}
@@ -442,7 +442,7 @@ export const CheckoutPage: React.FC = () => {
                       <p className="font-bold text-white truncate">{item.product.name}</p>
                       <span className="text-[10px] text-gray-400">Cant: {item.quantity} × {formatPrice(itemPrice)}</span>
                     </div>
-                    <span className="font-bold text-[#f48f25] shrink-0">{formatPrice(itemPrice * item.quantity)}</span>
+                    <span className="font-bold text-[#ff5500] shrink-0">{formatPrice(itemPrice * item.quantity)}</span>
                   </div>
                 );
               })}
@@ -462,12 +462,12 @@ export const CheckoutPage: React.FC = () => {
                     placeholder="Cupón (ej: FERRE20)"
                     value={couponCodeInput}
                     onChange={(e) => setCouponCodeInput(e.target.value)}
-                    className="flex-1 bg-white/10 text-white placeholder-gray-400 text-xs rounded-xl px-3 py-2 border border-white/15 focus:outline-none focus:border-[#f48f25]"
+                    className="flex-1 bg-white/10 text-white placeholder-gray-400 text-xs rounded-xl px-3 py-2 border border-white/15 focus:outline-none focus:border-[#ff5500]"
                   />
                   <button
                     type="button"
                     onClick={handleApplyCoupon}
-                    className="px-4 py-2 bg-[#f48f25] text-black font-bold text-xs rounded-xl hover:bg-[#d97706]"
+                    className="px-4 py-2 bg-[#ff5500] text-black font-bold text-xs rounded-xl hover:bg-[#e04800]"
                   >
                     Aplicar
                   </button>
@@ -487,7 +487,7 @@ export const CheckoutPage: React.FC = () => {
               
               <div className="flex justify-between text-lg font-black text-white pt-3 border-t border-white/15">
                 <span>Total a Pagar:</span>
-                <span className="text-[#f48f25] text-xl">{formatPrice(total)}</span>
+                <span className="text-[#ff5500] text-xl">{formatPrice(total)}</span>
               </div>
             </div>
 

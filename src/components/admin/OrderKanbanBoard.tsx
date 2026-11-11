@@ -45,7 +45,7 @@ export const OrderKanbanBoard: React.FC<KanbanProps> = ({
           <h2 className="text-2xl font-black text-slate-900 tracking-tight">Tablero Kanban de Pedidos</h2>
           <p className="text-xs text-gray-500 mt-1">Gestiona el flujo de trabajo y cambia estados con un clic.</p>
         </div>
-        <span className="text-xs font-mono font-bold bg-[#031834] text-[#f48f25] px-3 py-1.5 rounded-xl self-start sm:self-auto">
+        <span className="text-xs font-mono font-bold bg-[#031834] text-[#ff5500] px-3 py-1.5 rounded-xl self-start sm:self-auto">
           {orders.length} Pedidos Registrados
         </span>
       </div>
@@ -103,7 +103,7 @@ export const OrderKanbanBoard: React.FC<KanbanProps> = ({
                         </div>
 
                         <div className="flex justify-between items-center pt-2 border-t border-gray-100">
-                          <span className="font-black text-sm text-[#f48f25]">
+                          <span className="font-black text-sm text-[#ff5500]">
                             {formatPrice(order.total)}
                           </span>
 
@@ -130,7 +130,7 @@ export const OrderKanbanBoard: React.FC<KanbanProps> = ({
                           {next && (
                             <button
                               onClick={() => onUpdateStatus(order.id, next)}
-                              className="px-2 py-1 rounded bg-[#031834] text-white hover:bg-[#f48f25] hover:text-black text-[10px] font-bold flex items-center gap-0.5 ml-auto"
+                              className="px-2 py-1 rounded bg-[#031834] text-white hover:bg-[#ff5500] hover:text-black text-[10px] font-bold flex items-center gap-0.5 ml-auto"
                             >
                               Avanzar <ArrowRight className="w-3 h-3" />
                             </button>

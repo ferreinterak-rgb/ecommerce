@@ -38,11 +38,11 @@ export const FerreInterLogo: React.FC<LogoProps> = ({ size = 'md', className = '
           {/* Bottom Half Saw Blade - Orange */}
           <path
             d="M 90 50 L 100 50 L 88 65 L 80 60 L 75 75 L 65 68 L 58 82 L 50 75 L 50 90 A 40 40 0 0 0 90 50 Z"
-            fill="#f48f25"
+            fill="#ff5500"
           />
           <path
             d="M 50 90 A 40 40 0 0 1 10 50 L 30 50 A 20 20 0 0 0 50 70 L 50 90 Z"
-            fill="#f48f25"
+            fill="#ff5500"
           />
           {/* Inner Circle hole */}
           <circle cx="50" cy="50" r="16" fill={isLight ? '#111111' : '#f8fafc'} />
@@ -52,7 +52,7 @@ export const FerreInterLogo: React.FC<LogoProps> = ({ size = 'md', className = '
       {/* Brand Text: FERRE in white or dark, INTER in orange */}
       <div className="flex flex-col">
         <span className={`font-black italic tracking-tighter ${textSizes} leading-none ${isLight ? 'text-white' : 'text-[#111111]'}`}>
-          FERRE<span className="text-[#f48f25]">INTER</span>
+          FERRE<span className="text-[#ff5500]">INTER</span>
         </span>
         <span className={`hidden sm:block text-[9px] font-mono tracking-widest uppercase font-semibold mt-0.5 ${isLight ? 'text-gray-400' : 'text-gray-500'}`}>
           Ferretería & Soluciones

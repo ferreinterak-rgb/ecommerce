@@ -61,7 +61,7 @@ export const TeamManagementView: React.FC = () => {
                       <img
                         src={member.avatar_url}
                         alt={member.full_name}
-                        className="w-9 h-9 rounded-full object-cover border border-[#f48f25]"
+                        className="w-9 h-9 rounded-full object-cover border border-[#ff5500]"
                       />
                     ) : (
                       <div className="w-9 h-9 rounded-full bg-slate-900 text-white font-bold text-xs flex items-center justify-center">
@@ -80,7 +80,7 @@ export const TeamManagementView: React.FC = () => {
                   <td className="p-4">
                     <span className={`px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase ${
                       member.role === 'admin'
-                        ? 'bg-[#f48f25]/20 text-[#d97706] border border-[#f48f25]'
+                        ? 'bg-[#ff5500]/20 text-[#e04800] border border-[#ff5500]'
                         : member.role === 'collaborator'
                         ? 'bg-blue-100 text-blue-800'
                         : 'bg-gray-100 text-gray-700'
@@ -93,7 +93,7 @@ export const TeamManagementView: React.FC = () => {
                     <select
                       value={member.role}
                       onChange={(e) => handleRoleChange(member.id, e.target.value as UserRole)}
-                      className="bg-white border border-gray-300 rounded-lg px-2.5 py-1 font-bold text-xs focus:border-[#f48f25] focus:outline-none cursor-pointer"
+                      className="bg-white border border-gray-300 rounded-lg px-2.5 py-1 font-bold text-xs focus:border-[#ff5500] focus:outline-none cursor-pointer"
                     >
                       <option value="admin">Administrador (Control Total)</option>
                       <option value="collaborator">Colaborador (Ventas / Kanban)</option>

@@ -28,7 +28,7 @@ export const AnimatedHeroHeader: React.FC = () => {
               </h2>
               <Link
                 to="/catalog?category=herramientas-electricas"
-                className="inline-block mt-1 text-xs font-black text-slate-900 uppercase tracking-wider underline underline-offset-4 hover:text-[#f48f25] transition-colors"
+                className="inline-block mt-1 text-xs font-black text-slate-900 uppercase tracking-wider underline underline-offset-4 hover:text-[#ff5500] transition-colors"
               >
                 Shop Now
               </Link>
@@ -47,7 +47,7 @@ export const AnimatedHeroHeader: React.FC = () => {
                 </h3>
                 <Link
                   to="/catalog?category=herramientas-manuales"
-                  className="inline-block text-xs font-black text-slate-900 uppercase tracking-wider underline underline-offset-4 hover:text-[#f48f25] transition-colors"
+                  className="inline-block text-xs font-black text-slate-900 uppercase tracking-wider underline underline-offset-4 hover:text-[#ff5500] transition-colors"
                 >
                   Shop Now
                 </Link>
@@ -70,7 +70,7 @@ export const AnimatedHeroHeader: React.FC = () => {
                 </h3>
                 <Link
                   to="/catalog?category=plomeria-y-fontaneria"
-                  className="inline-block text-xs font-black text-slate-900 uppercase tracking-wider underline underline-offset-4 hover:text-[#f48f25] transition-colors"
+                  className="inline-block text-xs font-black text-slate-900 uppercase tracking-wider underline underline-offset-4 hover:text-[#ff5500] transition-colors"
                 >
                   Shop Now
                 </Link>

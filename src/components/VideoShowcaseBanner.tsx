@@ -44,7 +44,7 @@ const SHOWCASE_SLIDES: ShowcaseSlide[] = [
     usageLabel: 'Para alcoba y baño • Fácil instalación',
     link: '/product/chapa-manija-cuadrada-cromada-alcoba-lp007',
     image: '/banner-chapa-lp007.jpg',
-    accentColor: '#f48f25',
+    accentColor: '#ff5500',
     gradient: 'from-[#0b0c10] via-[#12141a] to-[#1a120b]',
     ambientLight: 'rgba(244, 143, 37, 0.25)',
     highlightSpecs: ['Mecanismo Reforzado', '3 Llaves de Seguridad', 'Garantía 1 Año']
@@ -95,7 +95,7 @@ const SHOWCASE_SLIDES: ShowcaseSlide[] = [
     usageLabel: 'Para carpintería, encolado y montaje rápido',
     link: '/product/prensa-resorte-6-pulgadas-av012',
     image: 'https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791667955947_prensa_6_jfif.jfif',
-    accentColor: '#f48f25',
+    accentColor: '#ff5500',
     gradient: 'from-[#0d1117] via-[#161b22] to-[#1f170f]',
     ambientLight: 'rgba(244, 143, 37, 0.22)',
     highlightSpecs: ['Resorte Templado Heavy-Duty', 'Agarre Ergonómico', 'No Marca la Madera']
@@ -198,7 +198,7 @@ export const VideoShowcaseBanner: React.FC = () => {
             {/* Logo y lema superior */}
             <div className="flex items-center gap-3">
               <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-[#f48f25] animate-ping" />
+                <span className="w-2 h-2 rounded-full bg-[#ff5500] animate-ping" />
                 <span className="text-[10px] sm:text-xs font-mono font-black text-white/90 tracking-widest uppercase">
                   FERREINTER SHOWROOM
                 </span>
@@ -237,7 +237,7 @@ export const VideoShowcaseBanner: React.FC = () => {
               
               {/* Badge promocional superior */}
               <div className="inline-flex items-center gap-2">
-                <span className="px-3 py-1 rounded-md text-[10px] sm:text-xs font-black tracking-wider uppercase bg-[#f48f25] text-black shadow-md shadow-[#f48f25]/30">
+                <span className="px-3 py-1 rounded-md text-[10px] sm:text-xs font-black tracking-wider uppercase bg-[#ff5500] text-black shadow-md shadow-[#ff5500]/30">
                   {currentSlide.badge}
                 </span>
                 <span className="text-xs font-mono font-bold text-white/60">
@@ -261,7 +261,7 @@ export const VideoShowcaseBanner: React.FC = () => {
               </div>
 
               {/* RECUADRO NARANJA DE PRECIO - Estilo píldora idéntico al banner de referencia */}
-              <div className="inline-flex items-center gap-3 bg-[#f48f25] text-black px-6 py-3 rounded-2xl shadow-xl shadow-[#f48f25]/30 hover:scale-[1.02] transition-transform">
+              <div className="inline-flex items-center gap-3 bg-[#ff5500] text-black px-6 py-3 rounded-2xl shadow-xl shadow-[#ff5500]/30 hover:scale-[1.02] transition-transform">
                 <span className="text-xs font-black uppercase tracking-wider text-black/80">
                   PRECIO:
                 </span>
@@ -280,7 +280,7 @@ export const VideoShowcaseBanner: React.FC = () => {
                     key={i}
                     className="inline-flex items-center gap-1.5 text-[11px] font-semibold text-gray-300 bg-white/5 border border-white/10 px-3 py-1 rounded-full backdrop-blur-sm"
                   >
-                    <ShieldCheck className="w-3.5 h-3.5 text-[#f48f25]" />
+                    <ShieldCheck className="w-3.5 h-3.5 text-[#ff5500]" />
                     {spec}
                   </span>
                 ))}
@@ -290,7 +290,7 @@ export const VideoShowcaseBanner: React.FC = () => {
               <div className="pt-2 flex flex-wrap items-center gap-3">
                 <Link
                   to={currentSlide.link}
-                  className="inline-flex items-center gap-2 bg-white hover:bg-[#f48f25] text-black font-black text-xs sm:text-sm px-7 py-3.5 rounded-xl shadow-lg transition-all duration-300 hover:gap-3 group"
+                  className="inline-flex items-center gap-2 bg-white hover:bg-[#ff5500] text-black font-black text-xs sm:text-sm px-7 py-3.5 rounded-xl shadow-lg transition-all duration-300 hover:gap-3 group"
                 >
                   <span>Ver Ficha y Comprar</span>
                   <ArrowRight className="w-4 h-4 stroke-[3] group-hover:translate-x-1 transition-transform" />
@@ -300,7 +300,7 @@ export const VideoShowcaseBanner: React.FC = () => {
                   to="/catalog"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-white/70 hover:text-white px-4 py-3 rounded-xl hover:bg-white/5 transition-colors"
                 >
-                  <Tag className="w-3.5 h-3.5 text-[#f48f25]" />
+                  <Tag className="w-3.5 h-3.5 text-[#ff5500]" />
                   <span>Explorar Todo el Catálogo</span>
                 </Link>
               </div>
@@ -327,14 +327,14 @@ export const VideoShowcaseBanner: React.FC = () => {
 
                 {/* Badge flotante inferior derecho con ubicación física oficial */}
                 <div className="absolute bottom-4 left-4 right-4 sm:left-auto sm:right-4 z-20 bg-black/80 backdrop-blur-md border border-white/10 rounded-2xl p-3 text-left space-y-1 shadow-xl">
-                  <div className="flex items-center gap-1.5 text-[#f48f25] text-[11px] font-black tracking-wider uppercase">
+                  <div className="flex items-center gap-1.5 text-[#ff5500] text-[11px] font-black tracking-wider uppercase">
                     <MapPin className="w-3.5 h-3.5" />
                     <span>Ferretería Ferreinter</span>
                   </div>
                   <p className="text-[11px] font-medium text-white/80 leading-snug">
                     Cl. 48 #56 - 05, La Candelaria &bull; Medellín
                   </p>
-                  <span className="text-[10px] font-mono text-[#f48f25] block">
+                  <span className="text-[10px] font-mono text-[#ff5500] block">
                     @ferreinter
                   </span>
                 </div>
@@ -362,7 +362,7 @@ export const VideoShowcaseBanner: React.FC = () => {
                   >
                     <div className="w-full h-1 sm:h-1.5 bg-white/15 rounded-full overflow-hidden">
                       <div
-                        className="h-full bg-[#f48f25] transition-all duration-75 rounded-full"
+                        className="h-full bg-[#ff5500] transition-all duration-75 rounded-full"
                         style={{
                           width: isCurrent ? `${progress}%` : isPast ? '100%' : '0%'
                         }}
@@ -372,7 +372,7 @@ export const VideoShowcaseBanner: React.FC = () => {
                       <span className={`font-bold truncate ${isCurrent ? 'text-white' : 'text-white/40 group-hover:text-white/70'}`}>
                         {slide.sku}
                       </span>
-                      <span className={`font-mono hidden sm:inline ${isCurrent ? 'text-[#f48f25]' : 'text-white/30'}`}>
+                      <span className={`font-mono hidden sm:inline ${isCurrent ? 'text-[#ff5500]' : 'text-white/30'}`}>
                         ${(slide.price / 1000).toFixed(0)}k
                       </span>
                     </div>
@@ -390,14 +390,14 @@ export const VideoShowcaseBanner: React.FC = () => {
               <div className="flex items-center gap-2">
                 <button
                   onClick={handlePrev}
-                  className="w-9 h-9 rounded-xl bg-white/10 hover:bg-[#f48f25] text-white hover:text-black flex items-center justify-center transition-all border border-white/10 hover:scale-105 active:scale-95"
+                  className="w-9 h-9 rounded-xl bg-white/10 hover:bg-[#ff5500] text-white hover:text-black flex items-center justify-center transition-all border border-white/10 hover:scale-105 active:scale-95"
                   aria-label="Producto anterior"
                 >
                   <ChevronLeft className="w-5 h-5 stroke-[2.5]" />
                 </button>
                 <button
                   onClick={handleNext}
-                  className="w-9 h-9 rounded-xl bg-white/10 hover:bg-[#f48f25] text-white hover:text-black flex items-center justify-center transition-all border border-white/10 hover:scale-105 active:scale-95"
+                  className="w-9 h-9 rounded-xl bg-white/10 hover:bg-[#ff5500] text-white hover:text-black flex items-center justify-center transition-all border border-white/10 hover:scale-105 active:scale-95"
                   aria-label="Producto siguiente"
                 >
                   <ChevronRight className="w-5 h-5 stroke-[2.5]" />
