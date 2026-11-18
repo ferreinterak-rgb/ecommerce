@@ -2,62 +2,37 @@ import React from 'react';
 
 interface LogoProps {
   className?: string;
-  size?: 'sm' | 'md' | 'lg';
+  size?: 'sm' | 'md' | 'lg' | 'xl';
   variant?: 'dark' | 'light';
 }
 
-export const FerreInterLogo: React.FC<LogoProps> = ({ size = 'md', className = '', variant = 'dark' }) => {
-  const iconDimensions = {
-    sm: 'w-7 h-7 sm:w-8 sm:h-8',
-    md: 'w-7 h-7 sm:w-10 sm:h-10 lg:w-11 lg:h-11',
-    lg: 'w-12 h-12 sm:w-16 sm:h-16'
-  }[size];
-
-  const textSizes = {
-    sm: 'text-base sm:text-lg',
-    md: 'text-lg sm:text-xl lg:text-2xl',
-    lg: 'text-2xl sm:text-4xl'
-  }[size];
-
+export const FerreInterLogo: React.FC<LogoProps> = ({ 
+  size = 'md', 
+  className = '', 
+  variant = 'dark' 
+}) => {
   const isLight = variant === 'light';
 
-  return (
-    <div className={`flex items-center gap-2 sm:gap-3 select-none ${className}`}>
-      {/* Saw blade logo icon */}
-      <div className={`relative ${iconDimensions} flex items-center justify-center shrink-0`}>
-        <svg viewBox="0 0 100 100" className="w-full h-full">
-          {/* Top Half Saw Blade - White in light mode, Dark in dark mode */}
-          <path
-            d="M 50 10 A 40 40 0 0 1 90 50 L 70 50 A 20 20 0 0 0 50 30 L 50 10 Z"
-            fill={isLight ? '#ffffff' : '#111111'}
-          />
-          <path
-            d="M 10 50 L 0 50 L 12 35 L 20 40 L 25 25 L 35 32 L 42 18 L 50 25 L 50 10 A 40 40 0 0 0 10 50 Z"
-            fill={isLight ? '#ffffff' : '#111111'}
-          />
-          {/* Bottom Half Saw Blade - Orange */}
-          <path
-            d="M 90 50 L 100 50 L 88 65 L 80 60 L 75 75 L 65 68 L 58 82 L 50 75 L 50 90 A 40 40 0 0 0 90 50 Z"
-            fill="#ff5500"
-          />
-          <path
-            d="M 50 90 A 40 40 0 0 1 10 50 L 30 50 A 20 20 0 0 0 50 70 L 50 90 Z"
-            fill="#ff5500"
-          />
-          {/* Inner Circle hole */}
-          <circle cx="50" cy="50" r="16" fill={isLight ? '#111111' : '#f8fafc'} />
-        </svg>
-      </div>
+  // Tamaños proporcionales según el contexto
+  const heights = {
+    sm: 'h-8 sm:h-9',
+    md: 'h-10 sm:h-11 lg:h-12',
+    lg: 'h-14 sm:h-16',
+    xl: 'h-20 sm:h-24'
+  }[size];
 
-      {/* Brand Text: FERRE in white or dark, INTER in orange */}
-      <div className="flex flex-col">
-        <span className={`font-black italic tracking-tighter ${textSizes} leading-none ${isLight ? 'text-white' : 'text-[#111111]'}`}>
-          FERRE<span className="text-[#ff5500]">INTER</span>
-        </span>
-        <span className={`hidden sm:block text-[9px] font-mono tracking-widest uppercase font-semibold mt-0.5 ${isLight ? 'text-gray-400' : 'text-gray-500'}`}>
-          Ferretería & Soluciones
-        </span>
-      </div>
+  const logoSrc = isLight 
+    ? '/logo-ferreinter-white.png' 
+    : '/logo-ferreinter.png';
+
+  return (
+    <div className={`inline-flex items-center select-none ${className}`}>
+      <img
+        src={logoSrc}
+        alt="FERREINTER"
+        className={`${heights} w-auto object-contain transition-transform duration-200 hover:scale-[1.02]`}
+        loading="eager"
+      />
     </div>
   );
 };
