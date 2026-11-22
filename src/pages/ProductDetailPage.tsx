@@ -149,7 +149,7 @@ export const ProductDetailPage: React.FC = () => {
             {/* Imagen Principal limpia sin marco gris */}
             <div className="flex-1 bg-white aspect-square sm:aspect-[4/5] p-4 flex items-center justify-center relative overflow-hidden">
               <img
-                src={selectedImage || product.images[0] || '/dewalt-chopsaw.jpg'}
+                src={selectedImage || product.images[0] || '/placeholder-producto.png'}
                 alt={product.name}
                 className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
               />

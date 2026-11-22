@@ -2,7 +2,7 @@ import { Product } from '../types';
 import { supabase, isSupabaseConfigured } from './supabaseClient';
 import { INITIAL_REAL_PRODUCTS } from './initialProducts';
 
-const DEWALT_CHOPSAW_IMAGE = '/dewalt-chopsaw.jpg';
+const PLACEHOLDER_PRODUCT_IMAGE = '/placeholder-producto.png';
 
 export const INITIAL_PRODUCTS: Product[] = INITIAL_REAL_PRODUCTS;
 
@@ -30,7 +30,7 @@ const normalizeProduct = (row: any): Product => {
     dimensions: row.dimensions || undefined,
     materials: row.materials || undefined,
     inventory_status: row.inventory_status || 'Disponible',
-    images: Array.isArray(row.images) && row.images.length > 0 ? row.images : [DEWALT_CHOPSAW_IMAGE],
+    images: Array.isArray(row.images) && row.images.length > 0 ? row.images : [PLACEHOLDER_PRODUCT_IMAGE],
     is_featured: Boolean(row.is_featured ?? false),
     is_active: Boolean(row.is_active ?? true),
     rating: Number(row.rating || 5.0),
@@ -168,7 +168,7 @@ export const productService = {
       dimensions: productData.dimensions,
       materials: productData.materials,
       inventory_status: productData.inventory_status || 'Disponible',
-      images: productData.images && productData.images.length > 0 ? productData.images : [DEWALT_CHOPSAW_IMAGE],
+      images: productData.images && productData.images.length > 0 ? productData.images : [PLACEHOLDER_PRODUCT_IMAGE],
       is_featured: productData.is_featured ?? false,
       is_active: productData.is_active ?? true,
       rating: productData.rating || 5,
@@ -387,7 +387,7 @@ export const productService = {
           inventory_status: (item.stock ?? existingProd?.stock ?? 0) > 0 ? 'Disponible' : 'Agotado',
           images: (item.images && item.images.length > 0)
             ? item.images
-            : (existingProd?.images && existingProd.images.length > 0 ? existingProd.images : [DEWALT_CHOPSAW_IMAGE]),
+            : (existingProd?.images && existingProd.images.length > 0 ? existingProd.images : [PLACEHOLDER_PRODUCT_IMAGE]),
           is_featured: item.is_featured ?? existingProd?.is_featured ?? false,
           is_active: item.is_active ?? existingProd?.is_active ?? true,
           rating: existingProd?.rating || 5,

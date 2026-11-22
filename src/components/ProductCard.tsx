@@ -20,7 +20,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     ? Math.round(((product.price - product.discount_price!) / product.price) * 100)
     : 0;
 
-  const productImage = product.images[0] || '/dewalt-chopsaw.jpg';
+  const productImage = product.images[0] || '/placeholder-producto.png';
 
   return (
     <div className="group flex flex-col justify-between font-sans transition-all duration-200">

@@ -735,7 +735,7 @@ export const InventoryManagerView: React.FC<InventoryManagerViewProps> = ({
                       <td className="p-3.5 flex items-center gap-3">
                         <div className="relative group shrink-0">
                           <img
-                            src={p.images[0] || '/dewalt-chopsaw.jpg'}
+                            src={p.images[0] || '/placeholder-producto.png'}
                             alt={p.name}
                             className="w-11 h-11 object-contain rounded-lg bg-gray-50 p-1 border border-gray-200"
                           />

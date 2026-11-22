@@ -18,7 +18,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -43,7 +43,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -68,7 +68,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -93,7 +93,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -118,7 +118,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -143,7 +143,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -168,7 +168,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -193,7 +193,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -218,7 +218,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -243,7 +243,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -268,7 +268,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -293,7 +293,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -318,7 +318,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -343,7 +343,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -368,7 +368,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -393,7 +393,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -418,7 +418,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -443,7 +443,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -468,7 +468,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -493,7 +493,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -518,7 +518,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -543,7 +543,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -568,7 +568,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -593,7 +593,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -618,7 +618,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -643,7 +643,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -668,7 +668,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -693,7 +693,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -718,7 +718,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -743,7 +743,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -768,7 +768,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -793,7 +793,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -818,7 +818,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -843,7 +843,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -868,7 +868,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -893,7 +893,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -918,7 +918,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -943,7 +943,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -968,7 +968,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -993,7 +993,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1018,7 +1018,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1043,7 +1043,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1068,7 +1068,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1093,7 +1093,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1118,7 +1118,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1143,7 +1143,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1168,7 +1168,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1193,7 +1193,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1218,7 +1218,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1243,7 +1243,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1268,7 +1268,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1294,7 +1294,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "warranty": "1 AÑO",
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1320,7 +1320,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "warranty": "1 AÑO",
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1346,7 +1346,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "warranty": "1 AÑO",
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1374,7 +1374,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "materials": "ACERO INOX",
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1400,7 +1400,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "warranty": "1 AÑO",
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1409,298 +1409,23 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-11-22T02:22:21.587593+00:00"
   },
   {
-    "id": "0d56d40b-ab35-453b-b312-bb985f8e2ea7",
-    "name": "PATA NIVELADORA DE 20",
-    "slug": "pata-niveladora-de-20-mt20",
-    "brand": "FIXPRIME",
-    "sku": "MT20",
-    "description": "Pata niveladora FixPrime, referencia 20. Te sirve pa apoyar y ajustar un mueble. La referencia no indica unidad; confirmá si el número corresponde a la altura u otra medida antes de comprar.",
+    "id": "3dda3923-ddad-44ed-9bb0-e9adf48dd291",
+    "name": "MASILLA XILOPROT 1/4",
+    "slug": "masilla-xiloprot-1-4-1244",
+    "brand": "XILORPOT",
+    "sku": "1244",
+    "description": "Masilla Xiloprot para madera, referencia 1/4. Te sirve pa resanar imperfecciones antes del acabado; confirmá en el envase el tono y la aplicación recomendada.",
     "technical_specs": {},
-    "price": 4300,
-    "wholesale_price": 3870,
-    "category": "patas-niveladores",
+    "price": 14500,
+    "wholesale_price": 13050,
+    "category": "masillas-acabados",
     "stock": 1000,
     "stock_warehouse": 400,
     "stock_store": 200,
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.86677+00:00"
-  },
-  {
-    "id": "e2a400ce-0fa3-48f5-90dd-bb737e50245d",
-    "name": "PATA ACERO 2\" 20CM",
-    "slug": "pata-acero-2-20cm-p20020",
-    "brand": "FIXPRIME",
-    "sku": "P20020",
-    "description": "Pata de acero FixPrime, referencia P20020. El nombre indica 2 pulgadas y 20 cm, pero no aclara a qué dimensiones corresponde cada valor; confirmalo antes de comprarla.",
-    "technical_specs": {},
-    "price": 15500,
-    "wholesale_price": 13950,
-    "category": "patas-niveladores",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.86677+00:00"
-  },
-  {
-    "id": "2cdad370-386f-4411-b217-cfb651387dfb",
-    "name": "PATA ACERO 2 15 CM",
-    "slug": "pata-acero-2-15-cm-p20015",
-    "brand": "FIXPRIME",
-    "sku": "P20015",
-    "description": "Pata de acero FixPrime, referencia P20015, con 15 cm indicados en el nombre. Te sirve pa apoyar un mueble; el “2” de la referencia no trae unidad, confirmá qué medida representa antes de instalarla.",
-    "technical_specs": {},
-    "price": 9500,
-    "wholesale_price": 8550,
-    "category": "patas-niveladores",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.86677+00:00"
-  },
-  {
-    "id": "4a118626-7b58-4126-9fe5-b9f51395550c",
-    "name": "PATA ACERO 2 10CM",
-    "slug": "pata-acero-2-10cm-p20010",
-    "brand": "FIXPRIME",
-    "sku": "P20010",
-    "description": "Pata de acero FixPrime, referencia P20010, con 10 cm indicados en el nombre. Te sirve pa apoyar un mueble; el “2” de la referencia no trae unidad, confirmá qué medida representa antes de instalarla.",
-    "technical_specs": {},
-    "price": 6500,
-    "wholesale_price": 5850,
-    "category": "patas-niveladores",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.86677+00:00"
-  },
-  {
-    "id": "bea53261-0b37-4c9f-92c5-bc21e1284ac4",
-    "name": "PATA ACERO 2 8CM",
-    "slug": "pata-acero-2-8cm-p20008",
-    "brand": "FIXPRIME",
-    "sku": "P20008",
-    "description": "Pata de acero FixPrime, referencia P20008, con 8 cm indicados en el nombre. Te sirve pa apoyar un mueble; el “2” de la referencia no trae unidad, confirmá qué medida representa antes de instalarla.",
-    "technical_specs": {},
-    "price": 5500,
-    "wholesale_price": 4950,
-    "category": "patas-niveladores",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.86677+00:00"
-  },
-  {
-    "id": "da8ecaec-f5d5-4fbf-bf54-1cdb1c6b61cd",
-    "name": "PATA ACERO 2 5CM",
-    "slug": "pata-acero-2-5cm-p20005",
-    "brand": "FIXPRIME",
-    "sku": "P20005",
-    "description": "Pata de acero FixPrime, referencia P20005, con 5 cm indicados en el nombre. Te sirve pa apoyar un mueble; el “2” de la referencia no trae unidad, confirmá qué medida representa antes de instalarla.",
-    "technical_specs": {},
-    "price": 4500,
-    "wholesale_price": 4050,
-    "category": "patas-niveladores",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.86677+00:00"
-  },
-  {
-    "id": "fcd05bca-a027-4c17-b36b-49bcab17a69f",
-    "name": "PATA NIVELADORA 10CM NEGRA",
-    "slug": "pata-niveladora-10cm-negra-mt10n",
-    "brand": "FIXPRIME",
-    "sku": "MT10N",
-    "description": "Pata niveladora FixPrime negra de 10 cm. Te sirve pa apoyar y nivelar muebles; revisá que la altura y el punto de fijación te coincidan con el diseño.",
-    "technical_specs": {},
-    "price": 3000,
-    "wholesale_price": 2700,
-    "category": "patas-niveladores",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.86677+00:00"
-  },
-  {
-    "id": "2b463ca5-9f38-48bc-8a43-ffc00ea05db8",
-    "name": "PATA NIVELADORA 8CM NEGRA",
-    "slug": "pata-niveladora-8cm-negra-mt8n",
-    "brand": "FIXPRIME",
-    "sku": "MT8N",
-    "description": "Pata niveladora FixPrime negra de 8 cm. Te sirve pa apoyar y nivelar muebles; revisá que la altura y el punto de fijación te coincidan con el diseño.",
-    "technical_specs": {},
-    "price": 2800,
-    "wholesale_price": 2520,
-    "category": "patas-niveladores",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.86677+00:00"
-  },
-  {
-    "id": "00bb0bdf-1857-4111-9cb8-ea79cfeb7495",
-    "name": "PATA NIVELADORA 6CM NEGRA",
-    "slug": "pata-niveladora-6cm-negra-mt6n",
-    "brand": "FIXPRIME",
-    "sku": "MT6N",
-    "description": "Pata niveladora FixPrime negra de 6 cm. Te sirve pa apoyar y nivelar muebles; revisá que la altura y el punto de fijación te coincidan con el diseño.",
-    "technical_specs": {},
-    "price": 2600,
-    "wholesale_price": 2340,
-    "category": "patas-niveladores",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.86677+00:00"
-  },
-  {
-    "id": "ca3de6b7-336a-4a82-afa4-912c632d8078",
-    "name": "PATA NIVELADORA DE 15",
-    "slug": "pata-niveladora-de-15-mt15",
-    "brand": "FIXPRIME",
-    "sku": "MT15",
-    "description": "Pata niveladora FixPrime, referencia 15. Te sirve pa apoyar y ajustar un mueble. La referencia no indica unidad; confirmá si el número corresponde a la altura u otra medida antes de comprar.",
-    "technical_specs": {},
-    "price": 3800,
-    "wholesale_price": 3420,
-    "category": "patas-niveladores",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.86677+00:00"
-  },
-  {
-    "id": "c357fae8-4ef1-4b4e-ad19-d7d68aafdb63",
-    "name": "PATA NIVELADORA DE 12",
-    "slug": "pata-niveladora-de-12-mt12",
-    "brand": "FIXPRIME",
-    "sku": "MT12",
-    "description": "Pata niveladora FixPrime, referencia 12. Te sirve pa apoyar y ajustar un mueble. La referencia no indica unidad; confirmá si el número corresponde a la altura u otra medida antes de comprar.",
-    "technical_specs": {},
-    "price": 3400,
-    "wholesale_price": 3060,
-    "category": "patas-niveladores",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.86677+00:00"
-  },
-  {
-    "id": "3b77900a-d7d5-46be-bac5-c3c698a1dec5",
-    "name": "PATA NIVELADORA DE 10",
-    "slug": "pata-niveladora-de-10-mt10",
-    "brand": "FIXPRIME",
-    "sku": "MT10",
-    "description": "Pata niveladora FixPrime, referencia 10. Te sirve pa apoyar y ajustar un mueble. La referencia no indica unidad; confirmá si el número corresponde a la altura u otra medida antes de comprar.",
-    "technical_specs": {},
-    "price": 2500,
-    "wholesale_price": 2250,
-    "category": "patas-niveladores",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1725,7 +1450,307 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.86677+00:00"
+  },
+  {
+    "id": "e2a400ce-0fa3-48f5-90dd-bb737e50245d",
+    "name": "PATA ACERO 2\" 20CM",
+    "slug": "pata-acero-2-20cm-p20020",
+    "brand": "FIXPRIME",
+    "sku": "P20020",
+    "description": "Pata de acero FixPrime, referencia P20020. El nombre indica 2 pulgadas y 20 cm, pero no aclara a qué dimensiones corresponde cada valor; confirmalo antes de comprarla.",
+    "technical_specs": {},
+    "price": 15500,
+    "wholesale_price": 13950,
+    "category": "patas-niveladores",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.86677+00:00"
+  },
+  {
+    "id": "2cdad370-386f-4411-b217-cfb651387dfb",
+    "name": "PATA ACERO 2 15 CM",
+    "slug": "pata-acero-2-15-cm-p20015",
+    "brand": "FIXPRIME",
+    "sku": "P20015",
+    "description": "Pata de acero FixPrime, referencia P20015, con 15 cm indicados en el nombre. Te sirve pa apoyar un mueble; el “2” de la referencia no trae unidad, confirmá qué medida representa antes de instalarla.",
+    "technical_specs": {},
+    "price": 9500,
+    "wholesale_price": 8550,
+    "category": "patas-niveladores",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.86677+00:00"
+  },
+  {
+    "id": "4a118626-7b58-4126-9fe5-b9f51395550c",
+    "name": "PATA ACERO 2 10CM",
+    "slug": "pata-acero-2-10cm-p20010",
+    "brand": "FIXPRIME",
+    "sku": "P20010",
+    "description": "Pata de acero FixPrime, referencia P20010, con 10 cm indicados en el nombre. Te sirve pa apoyar un mueble; el “2” de la referencia no trae unidad, confirmá qué medida representa antes de instalarla.",
+    "technical_specs": {},
+    "price": 6500,
+    "wholesale_price": 5850,
+    "category": "patas-niveladores",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.86677+00:00"
+  },
+  {
+    "id": "bea53261-0b37-4c9f-92c5-bc21e1284ac4",
+    "name": "PATA ACERO 2 8CM",
+    "slug": "pata-acero-2-8cm-p20008",
+    "brand": "FIXPRIME",
+    "sku": "P20008",
+    "description": "Pata de acero FixPrime, referencia P20008, con 8 cm indicados en el nombre. Te sirve pa apoyar un mueble; el “2” de la referencia no trae unidad, confirmá qué medida representa antes de instalarla.",
+    "technical_specs": {},
+    "price": 5500,
+    "wholesale_price": 4950,
+    "category": "patas-niveladores",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.86677+00:00"
+  },
+  {
+    "id": "da8ecaec-f5d5-4fbf-bf54-1cdb1c6b61cd",
+    "name": "PATA ACERO 2 5CM",
+    "slug": "pata-acero-2-5cm-p20005",
+    "brand": "FIXPRIME",
+    "sku": "P20005",
+    "description": "Pata de acero FixPrime, referencia P20005, con 5 cm indicados en el nombre. Te sirve pa apoyar un mueble; el “2” de la referencia no trae unidad, confirmá qué medida representa antes de instalarla.",
+    "technical_specs": {},
+    "price": 4500,
+    "wholesale_price": 4050,
+    "category": "patas-niveladores",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.86677+00:00"
+  },
+  {
+    "id": "fcd05bca-a027-4c17-b36b-49bcab17a69f",
+    "name": "PATA NIVELADORA 10CM NEGRA",
+    "slug": "pata-niveladora-10cm-negra-mt10n",
+    "brand": "FIXPRIME",
+    "sku": "MT10N",
+    "description": "Pata niveladora FixPrime negra de 10 cm. Te sirve pa apoyar y nivelar muebles; revisá que la altura y el punto de fijación te coincidan con el diseño.",
+    "technical_specs": {},
+    "price": 3000,
+    "wholesale_price": 2700,
+    "category": "patas-niveladores",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.86677+00:00"
+  },
+  {
+    "id": "2b463ca5-9f38-48bc-8a43-ffc00ea05db8",
+    "name": "PATA NIVELADORA 8CM NEGRA",
+    "slug": "pata-niveladora-8cm-negra-mt8n",
+    "brand": "FIXPRIME",
+    "sku": "MT8N",
+    "description": "Pata niveladora FixPrime negra de 8 cm. Te sirve pa apoyar y nivelar muebles; revisá que la altura y el punto de fijación te coincidan con el diseño.",
+    "technical_specs": {},
+    "price": 2800,
+    "wholesale_price": 2520,
+    "category": "patas-niveladores",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.86677+00:00"
+  },
+  {
+    "id": "00bb0bdf-1857-4111-9cb8-ea79cfeb7495",
+    "name": "PATA NIVELADORA 6CM NEGRA",
+    "slug": "pata-niveladora-6cm-negra-mt6n",
+    "brand": "FIXPRIME",
+    "sku": "MT6N",
+    "description": "Pata niveladora FixPrime negra de 6 cm. Te sirve pa apoyar y nivelar muebles; revisá que la altura y el punto de fijación te coincidan con el diseño.",
+    "technical_specs": {},
+    "price": 2600,
+    "wholesale_price": 2340,
+    "category": "patas-niveladores",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.86677+00:00"
+  },
+  {
+    "id": "0d56d40b-ab35-453b-b312-bb985f8e2ea7",
+    "name": "PATA NIVELADORA DE 20",
+    "slug": "pata-niveladora-de-20-mt20",
+    "brand": "FIXPRIME",
+    "sku": "MT20",
+    "description": "Pata niveladora FixPrime, referencia 20. Te sirve pa apoyar y ajustar un mueble. La referencia no indica unidad; confirmá si el número corresponde a la altura u otra medida antes de comprar.",
+    "technical_specs": {},
+    "price": 4300,
+    "wholesale_price": 3870,
+    "category": "patas-niveladores",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.86677+00:00"
+  },
+  {
+    "id": "ca3de6b7-336a-4a82-afa4-912c632d8078",
+    "name": "PATA NIVELADORA DE 15",
+    "slug": "pata-niveladora-de-15-mt15",
+    "brand": "FIXPRIME",
+    "sku": "MT15",
+    "description": "Pata niveladora FixPrime, referencia 15. Te sirve pa apoyar y ajustar un mueble. La referencia no indica unidad; confirmá si el número corresponde a la altura u otra medida antes de comprar.",
+    "technical_specs": {},
+    "price": 3800,
+    "wholesale_price": 3420,
+    "category": "patas-niveladores",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.86677+00:00"
+  },
+  {
+    "id": "c357fae8-4ef1-4b4e-ad19-d7d68aafdb63",
+    "name": "PATA NIVELADORA DE 12",
+    "slug": "pata-niveladora-de-12-mt12",
+    "brand": "FIXPRIME",
+    "sku": "MT12",
+    "description": "Pata niveladora FixPrime, referencia 12. Te sirve pa apoyar y ajustar un mueble. La referencia no indica unidad; confirmá si el número corresponde a la altura u otra medida antes de comprar.",
+    "technical_specs": {},
+    "price": 3400,
+    "wholesale_price": 3060,
+    "category": "patas-niveladores",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.86677+00:00"
+  },
+  {
+    "id": "3b77900a-d7d5-46be-bac5-c3c698a1dec5",
+    "name": "PATA NIVELADORA DE 10",
+    "slug": "pata-niveladora-de-10-mt10",
+    "brand": "FIXPRIME",
+    "sku": "MT10",
+    "description": "Pata niveladora FixPrime, referencia 10. Te sirve pa apoyar y ajustar un mueble. La referencia no indica unidad; confirmá si el número corresponde a la altura u otra medida antes de comprar.",
+    "technical_specs": {},
+    "price": 2500,
+    "wholesale_price": 2250,
+    "category": "patas-niveladores",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1750,7 +1775,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1775,7 +1800,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "/truper-toolbox.png"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1800,7 +1825,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "/truper-toolbox.png"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1825,7 +1850,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "/truper-toolbox.png"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1850,7 +1875,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "/truper-toolbox.png"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1875,7 +1900,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "/truper-toolbox.png"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1900,7 +1925,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "/truper-toolbox.png"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1925,7 +1950,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -1950,32 +1975,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.86677+00:00"
-  },
-  {
-    "id": "3dda3923-ddad-44ed-9bb0-e9adf48dd291",
-    "name": "MASILLA XILOPROT 1/4",
-    "slug": "masilla-xiloprot-1-4-1244",
-    "brand": "XILORPOT",
-    "sku": "1244",
-    "description": "Masilla Xiloprot para madera, referencia 1/4. Te sirve pa resanar imperfecciones antes del acabado; confirmá en el envase el tono y la aplicación recomendada.",
-    "technical_specs": {},
-    "price": 14500,
-    "wholesale_price": 13050,
-    "category": "masillas-acabados",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2000,7 +2000,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2009,15 +2009,15 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-11-22T02:20:54.86677+00:00"
   },
   {
-    "id": "571428d0-d28c-4174-a60b-101b8c6ea2c5",
-    "name": "LOCERO INOXIDABLE 70CM NEGRO",
-    "slug": "locero-inoxidable-70cm-negro-ss114-70n",
-    "brand": "MAXITOOLS",
-    "sku": "SS114-70N",
-    "description": "Locero de acero inoxidable negro, de 70 cm. Te sirve pa organizar la loza en un mueble de cocina; medí el espacio disponible para confirmar que te quede bien.",
+    "id": "34d8fe69-e8d5-45b6-975c-7419b6fc2348",
+    "name": "LOCERO BLANCO REGILLA 50CM",
+    "slug": "locero-blanco-regilla-50cm-l50",
+    "brand": "NACIONAL",
+    "sku": "L50",
+    "description": "Locero blanco con rejilla, de 50 cm. Te sirve pa organizar la loza en un mueble de cocina; medí el espacio disponible para confirmar que te quede bien.",
     "technical_specs": {},
-    "price": 58000,
-    "wholesale_price": 52200,
+    "price": 13500,
+    "wholesale_price": 12150,
     "category": "organizacion-cocina",
     "stock": 1000,
     "stock_warehouse": 400,
@@ -2025,7 +2025,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2050,7 +2050,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2075,7 +2075,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2100,7 +2100,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2125,7 +2125,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2150,7 +2150,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2175,7 +2175,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2200,7 +2200,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2225,7 +2225,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2250,32 +2250,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.716634+00:00"
-  },
-  {
-    "id": "34d8fe69-e8d5-45b6-975c-7419b6fc2348",
-    "name": "LOCERO BLANCO REGILLA 50CM",
-    "slug": "locero-blanco-regilla-50cm-l50",
-    "brand": "NACIONAL",
-    "sku": "L50",
-    "description": "Locero blanco con rejilla, de 50 cm. Te sirve pa organizar la loza en un mueble de cocina; medí el espacio disponible para confirmar que te quede bien.",
-    "technical_specs": {},
-    "price": 13500,
-    "wholesale_price": 12150,
-    "category": "organizacion-cocina",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2300,7 +2275,32 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.716634+00:00"
+  },
+  {
+    "id": "571428d0-d28c-4174-a60b-101b8c6ea2c5",
+    "name": "LOCERO INOXIDABLE 70CM NEGRO",
+    "slug": "locero-inoxidable-70cm-negro-ss114-70n",
+    "brand": "MAXITOOLS",
+    "sku": "SS114-70N",
+    "description": "Locero de acero inoxidable negro, de 70 cm. Te sirve pa organizar la loza en un mueble de cocina; medí el espacio disponible para confirmar que te quede bien.",
+    "technical_specs": {},
+    "price": 58000,
+    "wholesale_price": 52200,
+    "category": "organizacion-cocina",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2325,7 +2325,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2350,7 +2350,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2375,7 +2375,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2400,7 +2400,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2425,7 +2425,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2450,7 +2450,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2475,32 +2475,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.716634+00:00"
-  },
-  {
-    "id": "0964b57c-8a30-49ed-a91a-35b50dc3ce6e",
-    "name": "LOCERO DE ACERO INOXIDABLE 50",
-    "slug": "locero-de-acero-inoxidable-50-ss114-50",
-    "brand": "MAXITOOLS",
-    "sku": "SS114-50",
-    "description": "Locero de acero inoxidable, de referencia 50 (confirmá la unidad). Te sirve pa organizar la loza en un mueble de cocina; medí el espacio disponible para confirmar que te quede bien.",
-    "technical_specs": {},
-    "price": 42000,
-    "wholesale_price": 37800,
-    "category": "organizacion-cocina",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2525,7 +2500,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2550,7 +2525,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2575,7 +2550,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2600,7 +2575,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2625,7 +2600,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2634,40 +2609,40 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-11-22T02:20:54.716634+00:00"
   },
   {
-    "id": "b3fa0630-f2f8-4b18-b510-70ffc171abb7",
-    "name": "RIEL PESADO 25CM NEGRO Y CROMADO",
-    "slug": "riel-pesado-25cm-negro-y-cromado-fe25",
-    "brand": "MI HITS",
-    "sku": "FE25",
-    "description": "Riel pesado para cajón de 25 cm, acabado negro y cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan. La ficha no indica la capacidad máxima de carga; confirmala si el cajón va a llevar bastante peso.",
+    "id": "0964b57c-8a30-49ed-a91a-35b50dc3ce6e",
+    "name": "LOCERO DE ACERO INOXIDABLE 50",
+    "slug": "locero-de-acero-inoxidable-50-ss114-50",
+    "brand": "MAXITOOLS",
+    "sku": "SS114-50",
+    "description": "Locero de acero inoxidable, de referencia 50 (confirmá la unidad). Te sirve pa organizar la loza en un mueble de cocina; medí el espacio disponible para confirmar que te quede bien.",
     "technical_specs": {},
-    "price": 6200,
-    "wholesale_price": 5580,
-    "category": "rieles-correderas",
+    "price": 42000,
+    "wholesale_price": 37800,
+    "category": "organizacion-cocina",
     "stock": 1000,
     "stock_warehouse": 400,
     "stock_store": 200,
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
     "rating": 5,
     "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.583585+00:00"
+    "created_at": "2026-11-22T02:20:54.716634+00:00"
   },
   {
-    "id": "1d5dd67f-a76f-4212-a22a-f6998a02dad8",
-    "name": "RIEL PUSH 50",
-    "slug": "riel-push-50-rp50",
+    "id": "9f76f544-4dea-40a2-8436-e8f54e93c4db",
+    "name": "RIEL PESADO 45CM NEGRO Y CROMADO",
+    "slug": "riel-pesado-45cm-negro-y-cromado-fe45",
     "brand": "MI HITS",
-    "sku": "RP50",
-    "description": "Riel tipo push para cajón de 50 cm, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan. Su sistema push permite abrir el cajón al presionarlo.",
+    "sku": "FE45",
+    "description": "Riel pesado para cajón de 45 cm, acabado negro y cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan. La ficha no indica la capacidad máxima de carga; confirmala si el cajón va a llevar bastante peso.",
     "technical_specs": {},
-    "price": 26600,
-    "wholesale_price": 23940,
+    "price": 9900,
+    "wholesale_price": 8910,
     "category": "rieles-correderas",
     "stock": 1000,
     "stock_warehouse": 400,
@@ -2675,207 +2650,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.583585+00:00"
-  },
-  {
-    "id": "d8d55005-8109-496e-ba4a-f4ded7ea1509",
-    "name": "RIEL PUSH 45",
-    "slug": "riel-push-45-rp45",
-    "brand": "MI HITS",
-    "sku": "RP45",
-    "description": "Riel tipo push para cajón de 45 cm, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan. Su sistema push permite abrir el cajón al presionarlo.",
-    "technical_specs": {},
-    "price": 23900,
-    "wholesale_price": 21510,
-    "category": "rieles-correderas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.583585+00:00"
-  },
-  {
-    "id": "66212499-5994-4ba5-831c-543b5f49c4a6",
-    "name": "RIEL PUSH 40",
-    "slug": "riel-push-40-rp40",
-    "brand": "MI HITS",
-    "sku": "RP40",
-    "description": "Riel tipo push para cajón de 40 cm, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan. Su sistema push permite abrir el cajón al presionarlo.",
-    "technical_specs": {},
-    "price": 21900,
-    "wholesale_price": 19710,
-    "category": "rieles-correderas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.583585+00:00"
-  },
-  {
-    "id": "9f65b21c-e770-44bc-a846-9d355af57941",
-    "name": "RIEL PUSH 35",
-    "slug": "riel-push-35-rp35",
-    "brand": "MI HITS",
-    "sku": "RP35",
-    "description": "Riel tipo push para cajón de 35 cm, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan. Su sistema push permite abrir el cajón al presionarlo.",
-    "technical_specs": {},
-    "price": 20200,
-    "wholesale_price": 18180,
-    "category": "rieles-correderas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.583585+00:00"
-  },
-  {
-    "id": "21087a2e-8521-47dd-9ead-9d3f37e9b88c",
-    "name": "RIEL PUSH 30",
-    "slug": "riel-push-30-rp30",
-    "brand": "MI HITS",
-    "sku": "RP30",
-    "description": "Riel tipo push para cajón de 30 cm, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan. Su sistema push permite abrir el cajón al presionarlo.",
-    "technical_specs": {},
-    "price": 18500,
-    "wholesale_price": 16650,
-    "category": "rieles-correderas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.583585+00:00"
-  },
-  {
-    "id": "15039cf9-c686-44ef-b5bf-b8a7728f255d",
-    "name": "RIEL CIERRE LENTO 50 NEGRO",
-    "slug": "riel-cierre-lento-50-negro-rcl50n",
-    "brand": "MI HITS",
-    "sku": "RCL50N",
-    "description": "Riel con cierre lento para cajón de 50 cm, acabado negro, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
-    "technical_specs": {},
-    "price": 21900,
-    "wholesale_price": 19710,
-    "category": "rieles-correderas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.583585+00:00"
-  },
-  {
-    "id": "d34cd1b9-2a48-4861-903f-5cda0a55e01c",
-    "name": "RIEL CIERRE LENTO 50 CROMADO",
-    "slug": "riel-cierre-lento-50-cromado-rcl50",
-    "brand": "MI HITS",
-    "sku": "RCL50",
-    "description": "Riel con cierre lento para cajón de 50 cm, acabado cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
-    "technical_specs": {},
-    "price": 21900,
-    "wholesale_price": 19710,
-    "category": "rieles-correderas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.583585+00:00"
-  },
-  {
-    "id": "63b87dba-947c-45e4-a369-80392ba0aceb",
-    "name": "RIEL CIERRE LENTO 45 NEGRO",
-    "slug": "riel-cierre-lento-45-negro-rcl45n",
-    "brand": "MI HITS",
-    "sku": "RCL45N",
-    "description": "Riel con cierre lento para cajón de 45 cm, acabado negro, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
-    "technical_specs": {},
-    "price": 20900,
-    "wholesale_price": 18810,
-    "category": "rieles-correderas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.583585+00:00"
-  },
-  {
-    "id": "d4314dbd-6b2b-4a16-b18d-35dfa3cf5359",
-    "name": "RIEL CIERRE LENTO 45 CROMADO",
-    "slug": "riel-cierre-lento-45-cromado-rcl45",
-    "brand": "MI HITS",
-    "sku": "RCL45",
-    "description": "Riel con cierre lento para cajón de 45 cm, acabado cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
-    "technical_specs": {},
-    "price": 20900,
-    "wholesale_price": 18810,
-    "category": "rieles-correderas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2900,7 +2675,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -2909,187 +2684,12 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-11-22T02:20:54.583585+00:00"
   },
   {
-    "id": "1e687197-c2e1-4a9b-99bd-76aa0ff36436",
-    "name": "RIEL CIERRE LENTO 40 NEGRO",
-    "slug": "riel-cierre-lento-40-negro-rcl40n",
+    "id": "b3fa0630-f2f8-4b18-b510-70ffc171abb7",
+    "name": "RIEL PESADO 25CM NEGRO Y CROMADO",
+    "slug": "riel-pesado-25cm-negro-y-cromado-fe25",
     "brand": "MI HITS",
-    "sku": "RCL40N",
-    "description": "Riel con cierre lento para cajón de 40 cm, acabado negro, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
-    "technical_specs": {},
-    "price": 18500,
-    "wholesale_price": 16650,
-    "category": "rieles-correderas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.583585+00:00"
-  },
-  {
-    "id": "a37ec63a-c30d-4d41-9e77-96b1ea496d24",
-    "name": "RIEL LIVIANO 50CM CROMADO",
-    "slug": "riel-liviano-50cm-cromado-fl50",
-    "brand": "MI HITS",
-    "sku": "FL50",
-    "description": "Riel liviano para cajón de 50 cm, acabado cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
-    "technical_specs": {},
-    "price": 7300,
-    "wholesale_price": 6570,
-    "category": "rieles-correderas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.583585+00:00"
-  },
-  {
-    "id": "1359b4f0-9ede-40bd-8a35-b009a6e4307f",
-    "name": "RIEL CIERRE LENTO 40 CROMADO",
-    "slug": "riel-cierre-lento-40-cromado-rcl40",
-    "brand": "MI HITS",
-    "sku": "RCL40",
-    "description": "Riel con cierre lento para cajón de 40 cm, acabado cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
-    "technical_specs": {},
-    "price": 18500,
-    "wholesale_price": 17910,
-    "category": "rieles-correderas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.583585+00:00"
-  },
-  {
-    "id": "08c7a351-d9a5-4480-822c-06f00a26c7c0",
-    "name": "RIEL CIERRE LENTO 35 NEGRO",
-    "slug": "riel-cierre-lento-35-negro-rcl35n",
-    "brand": "MI HITS",
-    "sku": "RCL35N",
-    "description": "Riel con cierre lento para cajón de 35 cm, acabado negro, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
-    "technical_specs": {},
-    "price": 18900,
-    "wholesale_price": 17010,
-    "category": "rieles-correderas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.583585+00:00"
-  },
-  {
-    "id": "30eeb0cf-7166-417f-8f30-8878ce5ed0fe",
-    "name": "RIEL CIERRE LENTO 35 CROMADO",
-    "slug": "riel-cierre-lento-35-cromado-rcl35",
-    "brand": "MI HITS",
-    "sku": "RCL35",
-    "description": "Riel con cierre lento para cajón de 35 cm, acabado cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
-    "technical_specs": {},
-    "price": 18900,
-    "wholesale_price": 17010,
-    "category": "rieles-correderas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.583585+00:00"
-  },
-  {
-    "id": "00d9e3bb-de16-4332-b1f3-ea0cb7d8fcd5",
-    "name": "RIEL CIERRE LENTO 30 NEGRO",
-    "slug": "riel-cierre-lento-30-negro-rcl30n",
-    "brand": "MI HITS",
-    "sku": "RCL30N",
-    "description": "Riel con cierre lento para cajón de 30 cm, acabado negro, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
-    "technical_specs": {},
-    "price": 17500,
-    "wholesale_price": 15750,
-    "category": "rieles-correderas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.583585+00:00"
-  },
-  {
-    "id": "4196768e-dbac-4390-97d9-bc065d451dae",
-    "name": "RIEL CIERRE LENTO 30 CROMADO",
-    "slug": "riel-cierre-lento-30-cromado-rcl30",
-    "brand": "MI HITS",
-    "sku": "RCL30",
-    "description": "Riel con cierre lento para cajón de 30 cm, acabado cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
-    "technical_specs": {},
-    "price": 17500,
-    "wholesale_price": 15750,
-    "category": "rieles-correderas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.583585+00:00"
-  },
-  {
-    "id": "40e31e8b-7eec-4d8f-9631-c61c27b1dc3d",
-    "name": "RIEL CIERRE LENTO 25 NEGRO",
-    "slug": "riel-cierre-lento-25-negro-rcl25n",
-    "brand": "MI HITS",
-    "sku": "RCL25N",
-    "description": "Riel con cierre lento para cajón de 25 cm, acabado negro, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
+    "sku": "FE25",
+    "description": "Riel pesado para cajón de 25 cm, acabado negro y cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan. La ficha no indica la capacidad máxima de carga; confirmala si el cajón va a llevar bastante peso.",
     "technical_specs": {},
     "price": 6200,
     "wholesale_price": 5580,
@@ -3100,82 +2700,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.583585+00:00"
-  },
-  {
-    "id": "723bf39d-6672-4391-b1f6-aff89f1dcd57",
-    "name": "RIEL CIERRE LENTO 25 CROMADO",
-    "slug": "riel-cierre-lento-25-cromado-rcl25",
-    "brand": "MI HITS",
-    "sku": "RCL25",
-    "description": "Riel con cierre lento para cajón de 25 cm, acabado cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
-    "technical_specs": {},
-    "price": 6200,
-    "wholesale_price": 5580,
-    "category": "rieles-correderas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.583585+00:00"
-  },
-  {
-    "id": "bc147aaf-d88e-4a70-9da9-ba2798ad6c44",
-    "name": "RIEL PESADO 50CM NEGRO Y CROMADO",
-    "slug": "riel-pesado-50cm-negro-y-cromado-fe50",
-    "brand": "MI HITS",
-    "sku": "FE50",
-    "description": "Riel pesado para cajón de 50 cm, acabado negro y cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan. La ficha no indica la capacidad máxima de carga; confirmala si el cajón va a llevar bastante peso.",
-    "technical_specs": {},
-    "price": 10900,
-    "wholesale_price": 9810,
-    "category": "rieles-correderas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.583585+00:00"
-  },
-  {
-    "id": "9f76f544-4dea-40a2-8436-e8f54e93c4db",
-    "name": "RIEL PESADO 45CM NEGRO Y CROMADO",
-    "slug": "riel-pesado-45cm-negro-y-cromado-fe45",
-    "brand": "MI HITS",
-    "sku": "FE45",
-    "description": "Riel pesado para cajón de 45 cm, acabado negro y cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan. La ficha no indica la capacidad máxima de carga; confirmala si el cajón va a llevar bastante peso.",
-    "technical_specs": {},
-    "price": 9900,
-    "wholesale_price": 8910,
-    "category": "rieles-correderas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3200,7 +2725,57 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.583585+00:00"
+  },
+  {
+    "id": "1d5dd67f-a76f-4212-a22a-f6998a02dad8",
+    "name": "RIEL PUSH 50",
+    "slug": "riel-push-50-rp50",
+    "brand": "MI HITS",
+    "sku": "RP50",
+    "description": "Riel tipo push para cajón de 50 cm, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan. Su sistema push permite abrir el cajón al presionarlo.",
+    "technical_specs": {},
+    "price": 26600,
+    "wholesale_price": 23940,
+    "category": "rieles-correderas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.583585+00:00"
+  },
+  {
+    "id": "a37ec63a-c30d-4d41-9e77-96b1ea496d24",
+    "name": "RIEL LIVIANO 50CM CROMADO",
+    "slug": "riel-liviano-50cm-cromado-fl50",
+    "brand": "MI HITS",
+    "sku": "FL50",
+    "description": "Riel liviano para cajón de 50 cm, acabado cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
+    "technical_specs": {},
+    "price": 7300,
+    "wholesale_price": 6570,
+    "category": "rieles-correderas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3225,7 +2800,132 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.583585+00:00"
+  },
+  {
+    "id": "d8d55005-8109-496e-ba4a-f4ded7ea1509",
+    "name": "RIEL PUSH 45",
+    "slug": "riel-push-45-rp45",
+    "brand": "MI HITS",
+    "sku": "RP45",
+    "description": "Riel tipo push para cajón de 45 cm, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan. Su sistema push permite abrir el cajón al presionarlo.",
+    "technical_specs": {},
+    "price": 23900,
+    "wholesale_price": 21510,
+    "category": "rieles-correderas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.583585+00:00"
+  },
+  {
+    "id": "66212499-5994-4ba5-831c-543b5f49c4a6",
+    "name": "RIEL PUSH 40",
+    "slug": "riel-push-40-rp40",
+    "brand": "MI HITS",
+    "sku": "RP40",
+    "description": "Riel tipo push para cajón de 40 cm, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan. Su sistema push permite abrir el cajón al presionarlo.",
+    "technical_specs": {},
+    "price": 21900,
+    "wholesale_price": 19710,
+    "category": "rieles-correderas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.583585+00:00"
+  },
+  {
+    "id": "9f65b21c-e770-44bc-a846-9d355af57941",
+    "name": "RIEL PUSH 35",
+    "slug": "riel-push-35-rp35",
+    "brand": "MI HITS",
+    "sku": "RP35",
+    "description": "Riel tipo push para cajón de 35 cm, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan. Su sistema push permite abrir el cajón al presionarlo.",
+    "technical_specs": {},
+    "price": 20200,
+    "wholesale_price": 18180,
+    "category": "rieles-correderas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.583585+00:00"
+  },
+  {
+    "id": "21087a2e-8521-47dd-9ead-9d3f37e9b88c",
+    "name": "RIEL PUSH 30",
+    "slug": "riel-push-30-rp30",
+    "brand": "MI HITS",
+    "sku": "RP30",
+    "description": "Riel tipo push para cajón de 30 cm, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan. Su sistema push permite abrir el cajón al presionarlo.",
+    "technical_specs": {},
+    "price": 18500,
+    "wholesale_price": 16650,
+    "category": "rieles-correderas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.583585+00:00"
+  },
+  {
+    "id": "15039cf9-c686-44ef-b5bf-b8a7728f255d",
+    "name": "RIEL CIERRE LENTO 50 NEGRO",
+    "slug": "riel-cierre-lento-50-negro-rcl50n",
+    "brand": "MI HITS",
+    "sku": "RCL50N",
+    "description": "Riel con cierre lento para cajón de 50 cm, acabado negro, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
+    "technical_specs": {},
+    "price": 21900,
+    "wholesale_price": 19710,
+    "category": "rieles-correderas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3250,7 +2950,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3259,15 +2959,315 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-11-22T02:20:54.583585+00:00"
   },
   {
-    "id": "f017c0ff-2f66-4b91-a879-d9e85d62cd18",
-    "name": "AFIX INSTANTANEO MULT X 20 GR",
-    "slug": "afix-instantaneo-mult-x-20-gr-6911",
-    "brand": "AFIX",
-    "sku": "6911",
-    "description": "Pegante instantáneo multipropósito Afix, presentación 20 g. Te sirve pa uniones pequeñas con materiales compatibles. Confirmá en el envase las superficies permitidas y la forma de aplicación.",
+    "id": "d34cd1b9-2a48-4861-903f-5cda0a55e01c",
+    "name": "RIEL CIERRE LENTO 50 CROMADO",
+    "slug": "riel-cierre-lento-50-cromado-rcl50",
+    "brand": "MI HITS",
+    "sku": "RCL50",
+    "description": "Riel con cierre lento para cajón de 50 cm, acabado cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
     "technical_specs": {},
-    "price": 4200,
-    "wholesale_price": 3780,
+    "price": 21900,
+    "wholesale_price": 19710,
+    "category": "rieles-correderas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.583585+00:00"
+  },
+  {
+    "id": "63b87dba-947c-45e4-a369-80392ba0aceb",
+    "name": "RIEL CIERRE LENTO 45 NEGRO",
+    "slug": "riel-cierre-lento-45-negro-rcl45n",
+    "brand": "MI HITS",
+    "sku": "RCL45N",
+    "description": "Riel con cierre lento para cajón de 45 cm, acabado negro, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
+    "technical_specs": {},
+    "price": 20900,
+    "wholesale_price": 18810,
+    "category": "rieles-correderas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.583585+00:00"
+  },
+  {
+    "id": "d4314dbd-6b2b-4a16-b18d-35dfa3cf5359",
+    "name": "RIEL CIERRE LENTO 45 CROMADO",
+    "slug": "riel-cierre-lento-45-cromado-rcl45",
+    "brand": "MI HITS",
+    "sku": "RCL45",
+    "description": "Riel con cierre lento para cajón de 45 cm, acabado cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
+    "technical_specs": {},
+    "price": 20900,
+    "wholesale_price": 18810,
+    "category": "rieles-correderas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.583585+00:00"
+  },
+  {
+    "id": "1e687197-c2e1-4a9b-99bd-76aa0ff36436",
+    "name": "RIEL CIERRE LENTO 40 NEGRO",
+    "slug": "riel-cierre-lento-40-negro-rcl40n",
+    "brand": "MI HITS",
+    "sku": "RCL40N",
+    "description": "Riel con cierre lento para cajón de 40 cm, acabado negro, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
+    "technical_specs": {},
+    "price": 18500,
+    "wholesale_price": 16650,
+    "category": "rieles-correderas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.583585+00:00"
+  },
+  {
+    "id": "1359b4f0-9ede-40bd-8a35-b009a6e4307f",
+    "name": "RIEL CIERRE LENTO 40 CROMADO",
+    "slug": "riel-cierre-lento-40-cromado-rcl40",
+    "brand": "MI HITS",
+    "sku": "RCL40",
+    "description": "Riel con cierre lento para cajón de 40 cm, acabado cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
+    "technical_specs": {},
+    "price": 18500,
+    "wholesale_price": 17910,
+    "category": "rieles-correderas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.583585+00:00"
+  },
+  {
+    "id": "08c7a351-d9a5-4480-822c-06f00a26c7c0",
+    "name": "RIEL CIERRE LENTO 35 NEGRO",
+    "slug": "riel-cierre-lento-35-negro-rcl35n",
+    "brand": "MI HITS",
+    "sku": "RCL35N",
+    "description": "Riel con cierre lento para cajón de 35 cm, acabado negro, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
+    "technical_specs": {},
+    "price": 18900,
+    "wholesale_price": 17010,
+    "category": "rieles-correderas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.583585+00:00"
+  },
+  {
+    "id": "30eeb0cf-7166-417f-8f30-8878ce5ed0fe",
+    "name": "RIEL CIERRE LENTO 35 CROMADO",
+    "slug": "riel-cierre-lento-35-cromado-rcl35",
+    "brand": "MI HITS",
+    "sku": "RCL35",
+    "description": "Riel con cierre lento para cajón de 35 cm, acabado cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
+    "technical_specs": {},
+    "price": 18900,
+    "wholesale_price": 17010,
+    "category": "rieles-correderas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.583585+00:00"
+  },
+  {
+    "id": "00d9e3bb-de16-4332-b1f3-ea0cb7d8fcd5",
+    "name": "RIEL CIERRE LENTO 30 NEGRO",
+    "slug": "riel-cierre-lento-30-negro-rcl30n",
+    "brand": "MI HITS",
+    "sku": "RCL30N",
+    "description": "Riel con cierre lento para cajón de 30 cm, acabado negro, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
+    "technical_specs": {},
+    "price": 17500,
+    "wholesale_price": 15750,
+    "category": "rieles-correderas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.583585+00:00"
+  },
+  {
+    "id": "4196768e-dbac-4390-97d9-bc065d451dae",
+    "name": "RIEL CIERRE LENTO 30 CROMADO",
+    "slug": "riel-cierre-lento-30-cromado-rcl30",
+    "brand": "MI HITS",
+    "sku": "RCL30",
+    "description": "Riel con cierre lento para cajón de 30 cm, acabado cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
+    "technical_specs": {},
+    "price": 17500,
+    "wholesale_price": 15750,
+    "category": "rieles-correderas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.583585+00:00"
+  },
+  {
+    "id": "40e31e8b-7eec-4d8f-9631-c61c27b1dc3d",
+    "name": "RIEL CIERRE LENTO 25 NEGRO",
+    "slug": "riel-cierre-lento-25-negro-rcl25n",
+    "brand": "MI HITS",
+    "sku": "RCL25N",
+    "description": "Riel con cierre lento para cajón de 25 cm, acabado negro, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
+    "technical_specs": {},
+    "price": 6200,
+    "wholesale_price": 5580,
+    "category": "rieles-correderas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.583585+00:00"
+  },
+  {
+    "id": "723bf39d-6672-4391-b1f6-aff89f1dcd57",
+    "name": "RIEL CIERRE LENTO 25 CROMADO",
+    "slug": "riel-cierre-lento-25-cromado-rcl25",
+    "brand": "MI HITS",
+    "sku": "RCL25",
+    "description": "Riel con cierre lento para cajón de 25 cm, acabado cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan.",
+    "technical_specs": {},
+    "price": 6200,
+    "wholesale_price": 5580,
+    "category": "rieles-correderas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.583585+00:00"
+  },
+  {
+    "id": "bc147aaf-d88e-4a70-9da9-ba2798ad6c44",
+    "name": "RIEL PESADO 50CM NEGRO Y CROMADO",
+    "slug": "riel-pesado-50cm-negro-y-cromado-fe50",
+    "brand": "MI HITS",
+    "sku": "FE50",
+    "description": "Riel pesado para cajón de 50 cm, acabado negro y cromado, marca Mi Hits. Te sirve pa instalar un cajón compatible; revisá que el largo y el espacio del mueble coincidan. La ficha no indica la capacidad máxima de carga; confirmala si el cajón va a llevar bastante peso.",
+    "technical_specs": {},
+    "price": 10900,
+    "wholesale_price": 9810,
+    "category": "rieles-correderas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.583585+00:00"
+  },
+  {
+    "id": "98975c11-1f3c-4a06-8e0c-00ae71c7c40a",
+    "name": "CEMENTO PL 285 MADERA X750",
+    "slug": "cemento-pl-285-madera-x750-4148",
+    "brand": "AFIX",
+    "sku": "4148",
+    "description": "Pegante Afix PL285 para madera, presentación x750 (unidad no especificada). Te sirve pa unir piezas en trabajos de carpintería. Aplicalo según las indicaciones del empaque y el material que vayas a trabajar.",
+    "technical_specs": {},
+    "price": 21500,
+    "wholesale_price": 19350,
     "category": "adhesivos-pegantes",
     "stock": 1000,
     "stock_warehouse": 400,
@@ -3275,7 +3275,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3300,7 +3300,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3325,7 +3325,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3350,7 +3350,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3375,7 +3375,32 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.451378+00:00"
+  },
+  {
+    "id": "f017c0ff-2f66-4b91-a879-d9e85d62cd18",
+    "name": "AFIX INSTANTANEO MULT X 20 GR",
+    "slug": "afix-instantaneo-mult-x-20-gr-6911",
+    "brand": "AFIX",
+    "sku": "6911",
+    "description": "Pegante instantáneo multipropósito Afix, presentación 20 g. Te sirve pa uniones pequeñas con materiales compatibles. Confirmá en el envase las superficies permitidas y la forma de aplicación.",
+    "technical_specs": {},
+    "price": 4200,
+    "wholesale_price": 3780,
+    "category": "adhesivos-pegantes",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3400,7 +3425,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3425,7 +3450,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3450,32 +3475,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.451378+00:00"
-  },
-  {
-    "id": "98975c11-1f3c-4a06-8e0c-00ae71c7c40a",
-    "name": "CEMENTO PL 285 MADERA X750",
-    "slug": "cemento-pl-285-madera-x750-4148",
-    "brand": "AFIX",
-    "sku": "4148",
-    "description": "Pegante Afix PL285 para madera, presentación x750 (unidad no especificada). Te sirve pa unir piezas en trabajos de carpintería. Aplicalo según las indicaciones del empaque y el material que vayas a trabajar.",
-    "technical_specs": {},
-    "price": 21500,
-    "wholesale_price": 19350,
-    "category": "adhesivos-pegantes",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3500,7 +3500,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3525,32 +3525,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.451378+00:00"
-  },
-  {
-    "id": "7bc57a16-5c7d-4b59-85f7-e0350eafec8f",
-    "name": "BOXER XL TRADICIONAL ST PET X 60 mL",
-    "slug": "boxer-xl-tradicional-st-pet-x-60-ml-8036",
-    "brand": "PEGATEX",
-    "sku": "8036",
-    "description": "Pegante Boxer XL tradicional, presentación 60 ml. Te sirve pa pegar materiales compatibles con este producto. Revisá en el envase las superficies recomendadas y el modo de aplicación.",
-    "technical_specs": {},
-    "price": 4100,
-    "wholesale_price": 3690,
-    "category": "adhesivos-pegantes",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3575,7 +3550,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3600,7 +3575,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3625,7 +3600,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3650,7 +3625,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3675,7 +3650,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3700,7 +3675,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3726,7 +3701,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3751,7 +3726,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3776,7 +3751,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3801,7 +3776,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3826,7 +3801,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3851,7 +3826,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3876,7 +3851,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -3885,15 +3860,15 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-11-22T02:20:54.451378+00:00"
   },
   {
-    "id": "08e35322-2c9a-4631-be3f-12542cc75e04",
-    "name": "KOLMADERA 250GRAMOS",
-    "slug": "kolmadera-250gramos-815d27",
-    "brand": "KOLMADERA",
-    "sku": "815D27",
-    "description": "Pegante Kolmadera para trabajos de madera, presentación 250 g. Te sirve pa uniones de carpintería en los materiales recomendados por el fabricante. Revisá el envase para confirmar aplicación y tiempo de secado.",
+    "id": "7bc57a16-5c7d-4b59-85f7-e0350eafec8f",
+    "name": "BOXER XL TRADICIONAL ST PET X 60 mL",
+    "slug": "boxer-xl-tradicional-st-pet-x-60-ml-8036",
+    "brand": "PEGATEX",
+    "sku": "8036",
+    "description": "Pegante Boxer XL tradicional, presentación 60 ml. Te sirve pa pegar materiales compatibles con este producto. Revisá en el envase las superficies recomendadas y el modo de aplicación.",
     "technical_specs": {},
-    "price": 9500,
-    "wholesale_price": 8550,
+    "price": 4100,
+    "wholesale_price": 3690,
     "category": "adhesivos-pegantes",
     "stock": 1000,
     "stock_warehouse": 400,
@@ -3901,63 +3876,13 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
     "rating": 5,
     "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.311509+00:00"
-  },
-  {
-    "id": "eac7574d-80e3-4469-badf-95bb0637cb0d",
-    "name": "SILICONA TRANSPARENTE 300GR",
-    "slug": "silicona-transparente-300gr-61392",
-    "brand": "AFIX",
-    "sku": "61392",
-    "description": "Silicona Afix transparente, presentación 300 g. Te sirve pa sellar juntas en aplicaciones compatibles. Contame dónde la vas a usar y revisamos si ese tipo te sirve.",
-    "technical_specs": {},
-    "price": 9000,
-    "wholesale_price": 8100,
-    "category": "adhesivos-pegantes",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.311509+00:00"
-  },
-  {
-    "id": "fbe63d4b-e5d1-409d-8a2e-c93e2edd24dc",
-    "name": "PEGADIT TURBO MAX BLANCO",
-    "slug": "pegadit-turbo-max-blanco-6174",
-    "brand": "AFIX",
-    "sku": "6174",
-    "description": "Pegante Afix Pegadit Turbo Max blanco. La ficha no detalla las superficies compatibles; revisá el envase antes de aplicarlo pa confirmar que te sirva en tu material.",
-    "technical_specs": {},
-    "price": 34900,
-    "wholesale_price": 31410,
-    "category": "adhesivos-pegantes",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.311509+00:00"
+    "created_at": "2026-11-22T02:20:54.451378+00:00"
   },
   {
     "id": "e102439d-4dd5-4133-ad8a-ec42e4e6869d",
@@ -3976,7 +3901,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -4001,257 +3926,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.311509+00:00"
-  },
-  {
-    "id": "de5af86f-f767-456d-9e04-c24d6d76aea0",
-    "name": "CARPINCOL MR60 APX250GR",
-    "slug": "carpincol-mr60-apx250gr-4138",
-    "brand": "AFIX",
-    "sku": "4138",
-    "description": "Pegante Carpincol MR60 para carpintería, presentación 250 g. Te sirve pa unir piezas de madera en aplicaciones compatibles. Revisá las instrucciones del envase y el tiempo de secado antes de continuar el trabajo.",
-    "technical_specs": {},
-    "price": 8800,
-    "wholesale_price": 7920,
-    "category": "adhesivos-pegantes",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.311509+00:00"
-  },
-  {
-    "id": "6bf73550-3855-450a-af38-1d31f22a906b",
-    "name": "KOLMADERA 4 KILOGRAMOS",
-    "slug": "kolmadera-4-kilogramos-801d14",
-    "brand": "KOLMADERA",
-    "sku": "801D14",
-    "description": "Pegante Kolmadera para trabajos de madera, presentación 4 kg. Te sirve pa uniones de carpintería en los materiales recomendados por el fabricante. Revisá el envase para confirmar aplicación y tiempo de secado.",
-    "technical_specs": {},
-    "price": 76000,
-    "wholesale_price": 68400,
-    "category": "adhesivos-pegantes",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.311509+00:00"
-  },
-  {
-    "id": "7e6dccf4-6e23-4f39-8f6d-bcace14f1013",
-    "name": "KOLMADERA 1 KILOGRAMOS",
-    "slug": "kolmadera-1-kilogramos-815d81",
-    "brand": "KOLMADERA",
-    "sku": "815D81",
-    "description": "Pegante Kolmadera para trabajos de madera, presentación 1 kg. Te sirve pa uniones de carpintería en los materiales recomendados por el fabricante. Revisá el envase para confirmar aplicación y tiempo de secado.",
-    "technical_specs": {},
-    "price": 19000,
-    "wholesale_price": 17100,
-    "category": "adhesivos-pegantes",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.311509+00:00"
-  },
-  {
-    "id": "fe1800d8-e651-417b-b319-fc1f4fe673f5",
-    "name": "KOLMADERA 480GRAMOS",
-    "slug": "kolmadera-480gramos-815d08",
-    "brand": "KOLMADERA",
-    "sku": "815D08",
-    "description": "Pegante Kolmadera para trabajos de madera, presentación 480 g. Te sirve pa uniones de carpintería en los materiales recomendados por el fabricante. Revisá el envase para confirmar aplicación y tiempo de secado.",
-    "technical_specs": {},
-    "price": 13600,
-    "wholesale_price": 12240,
-    "category": "adhesivos-pegantes",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.311509+00:00"
-  },
-  {
-    "id": "be50dd8d-fa01-4655-bdb3-99befab1c518",
-    "name": "CARPINCOL MR60 APT X500 GR*APLICADOR*500G",
-    "slug": "carpincol-mr60-apt-x500-gr-aplicador-500g-4139",
-    "brand": "AFIX",
-    "sku": "4139",
-    "description": "Pegante Carpincol MR60 para carpintería, presentación 500 g. Te sirve pa unir piezas de madera en aplicaciones compatibles. Revisá las instrucciones del envase y el tiempo de secado antes de continuar el trabajo.",
-    "technical_specs": {},
-    "price": 13000,
-    "wholesale_price": 11700,
-    "category": "adhesivos-pegantes",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.311509+00:00"
-  },
-  {
-    "id": "694b217c-441f-41a1-b6b7-46f1a842ffc8",
-    "name": "CARPINCOL MR60 APX1KG*APLICADOR 1KL",
-    "slug": "carpincol-mr60-apx1kg-aplicador-1kl-4140",
-    "brand": "AFIX",
-    "sku": "4140",
-    "description": "Pegante Carpincol MR60 para carpintería, presentación 1 kg. Te sirve pa unir piezas de madera en aplicaciones compatibles. Revisá las instrucciones del envase y el tiempo de secado antes de continuar el trabajo.",
-    "technical_specs": {},
-    "price": 69600,
-    "wholesale_price": 62640,
-    "category": "adhesivos-pegantes",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.311509+00:00"
-  },
-  {
-    "id": "057ed6f5-868f-4027-8551-1d41b2c808c9",
-    "name": "PATTEX NO MAS CLAVOS FA Y FACIL",
-    "slug": "pattex-no-mas-clavos-fa-y-facil-83536",
-    "brand": "AFIX",
-    "sku": "83536",
-    "description": "Adhesivo Pattex No Más Clavos Fuerte y Fácil. Te sirve pa pegar elementos en aplicaciones compatibles sin usar clavos. Revisá las superficies permitidas y las instrucciones del empaque antes de aplicarlo.",
-    "technical_specs": {},
-    "price": 25600,
-    "wholesale_price": 23040,
-    "category": "adhesivos-pegantes",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.311509+00:00"
-  },
-  {
-    "id": "daeed7c0-80bd-4181-9832-6e7eca48dfab",
-    "name": "SILICONA BLANCA 280ML*TUBOX280ML",
-    "slug": "silicona-blanca-280ml-tubox280ml-2823",
-    "brand": "AFIX",
-    "sku": "2823",
-    "description": "Silicona Afix blanca, presentación 280 ml. Te sirve pa sellar juntas en aplicaciones compatibles. Contame dónde la vas a usar y revisamos si ese tipo te sirve.",
-    "technical_specs": {},
-    "price": 9000,
-    "wholesale_price": 8100,
-    "category": "adhesivos-pegantes",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.311509+00:00"
-  },
-  {
-    "id": "2d3d84fb-5400-4cbc-932f-8e9c851b0338",
-    "name": "SELLANTE ACRILICO  BASE AGUA AFIX GREEN  430GR TUBO",
-    "slug": "sellante-acrilico-base-agua-afix-green-430gr-tubo-6732",
-    "brand": "AFIX",
-    "sku": "6732",
-    "description": "Sellante acrílico Afix Green, base agua, en tubo de 430 g. Te sirve pa sellar juntas en superficies compatibles. Revisá en el envase si es adecuado para el material y el lugar donde lo vas a aplicar.",
-    "technical_specs": {},
-    "price": 9000,
-    "wholesale_price": 8100,
-    "category": "adhesivos-pegantes",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.311509+00:00"
-  },
-  {
-    "id": "03f4d6d1-bfd2-4f9a-af19-b5d23c379a6f",
-    "name": "SILICONA PEGAD VYA CONSUMO X280ML* TUBO",
-    "slug": "silicona-pegad-vya-consumo-x280ml-tubo-6218",
-    "brand": "AFIX",
-    "sku": "6218",
-    "description": "Silicona Afix VYA, presentación 280 ml. Te sirve pa sellar juntas en aplicaciones compatibles. Contame dónde la vas a usar y revisamos si ese tipo te sirve.",
-    "technical_specs": {},
-    "price": 9000,
-    "wholesale_price": 8100,
-    "category": "adhesivos-pegantes",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -4276,7 +3951,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -4301,32 +3976,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.311509+00:00"
-  },
-  {
-    "id": "4a335d2a-b5ec-4134-b219-71df9f721991",
-    "name": "CERRADURA PICO DE LOCO LLAVE LLAVE",
-    "slug": "cerradura-pico-de-loco-llave-llave-mx320cd",
-    "brand": "MAXILOCK",
-    "sku": "MX320CD",
-    "description": "Cerradura Maxilock referencia MX320CD, identificada como pico de loro con llave en ambos lados. Te sirve pa una puerta preparada para ese mecanismo; confirmá medidas y montaje antes de pedirla.",
-    "technical_specs": {},
-    "price": 28000,
-    "wholesale_price": 25200,
-    "category": "chapas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -4351,7 +4001,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -4376,7 +4026,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -4401,7 +4051,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -4426,7 +4076,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -4451,7 +4101,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -4460,23 +4110,23 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-11-22T02:20:54.311509+00:00"
   },
   {
-    "id": "a04b6a81-e551-4766-bea3-00c71e1e6833",
-    "name": "CHAPA CLOSET",
-    "slug": "chapa-closet-531ss",
-    "brand": "MAXITOOLS",
-    "sku": "531SS",
-    "description": "Chapa para clóset, referencia 531SS. Te sirve pa el cierre de un clóset compatible; la ficha no detalla medidas ni tipo de llave, así que confirmá esos datos antes de ofrecerla.",
+    "id": "694b217c-441f-41a1-b6b7-46f1a842ffc8",
+    "name": "CARPINCOL MR60 APX1KG*APLICADOR 1KL",
+    "slug": "carpincol-mr60-apx1kg-aplicador-1kl-4140",
+    "brand": "AFIX",
+    "sku": "4140",
+    "description": "Pegante Carpincol MR60 para carpintería, presentación 1 kg. Te sirve pa unir piezas de madera en aplicaciones compatibles. Revisá las instrucciones del envase y el tiempo de secado antes de continuar el trabajo.",
     "technical_specs": {},
-    "price": 18000,
-    "wholesale_price": 16200,
-    "category": "chapas",
+    "price": 69600,
+    "wholesale_price": 62640,
+    "category": "adhesivos-pegantes",
     "stock": 1000,
     "stock_warehouse": 400,
     "stock_store": 200,
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -4501,7 +4151,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -4510,15 +4160,240 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-11-22T02:20:54.311509+00:00"
   },
   {
-    "id": "15189346-4857-40c1-b0e9-55c47672770f",
-    "name": "CERRADURA EMBUTIDA MANIJA ISLA",
-    "slug": "cerradura-embutida-manija-isla-z4750sn",
+    "id": "a04b6a81-e551-4766-bea3-00c71e1e6833",
+    "name": "CHAPA CLOSET",
+    "slug": "chapa-closet-531ss",
+    "brand": "MAXITOOLS",
+    "sku": "531SS",
+    "description": "Chapa para clóset, referencia 531SS. Te sirve pa el cierre de un clóset compatible; la ficha no detalla medidas ni tipo de llave, así que confirmá esos datos antes de ofrecerla.",
+    "technical_specs": {},
+    "price": 18000,
+    "wholesale_price": 16200,
+    "category": "chapas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.311509+00:00"
+  },
+  {
+    "id": "be50dd8d-fa01-4655-bdb3-99befab1c518",
+    "name": "CARPINCOL MR60 APT X500 GR*APLICADOR*500G",
+    "slug": "carpincol-mr60-apt-x500-gr-aplicador-500g-4139",
+    "brand": "AFIX",
+    "sku": "4139",
+    "description": "Pegante Carpincol MR60 para carpintería, presentación 500 g. Te sirve pa unir piezas de madera en aplicaciones compatibles. Revisá las instrucciones del envase y el tiempo de secado antes de continuar el trabajo.",
+    "technical_specs": {},
+    "price": 13000,
+    "wholesale_price": 11700,
+    "category": "adhesivos-pegantes",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.311509+00:00"
+  },
+  {
+    "id": "6bf73550-3855-450a-af38-1d31f22a906b",
+    "name": "KOLMADERA 4 KILOGRAMOS",
+    "slug": "kolmadera-4-kilogramos-801d14",
+    "brand": "KOLMADERA",
+    "sku": "801D14",
+    "description": "Pegante Kolmadera para trabajos de madera, presentación 4 kg. Te sirve pa uniones de carpintería en los materiales recomendados por el fabricante. Revisá el envase para confirmar aplicación y tiempo de secado.",
+    "technical_specs": {},
+    "price": 76000,
+    "wholesale_price": 68400,
+    "category": "adhesivos-pegantes",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.311509+00:00"
+  },
+  {
+    "id": "7e6dccf4-6e23-4f39-8f6d-bcace14f1013",
+    "name": "KOLMADERA 1 KILOGRAMOS",
+    "slug": "kolmadera-1-kilogramos-815d81",
+    "brand": "KOLMADERA",
+    "sku": "815D81",
+    "description": "Pegante Kolmadera para trabajos de madera, presentación 1 kg. Te sirve pa uniones de carpintería en los materiales recomendados por el fabricante. Revisá el envase para confirmar aplicación y tiempo de secado.",
+    "technical_specs": {},
+    "price": 19000,
+    "wholesale_price": 17100,
+    "category": "adhesivos-pegantes",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.311509+00:00"
+  },
+  {
+    "id": "fe1800d8-e651-417b-b319-fc1f4fe673f5",
+    "name": "KOLMADERA 480GRAMOS",
+    "slug": "kolmadera-480gramos-815d08",
+    "brand": "KOLMADERA",
+    "sku": "815D08",
+    "description": "Pegante Kolmadera para trabajos de madera, presentación 480 g. Te sirve pa uniones de carpintería en los materiales recomendados por el fabricante. Revisá el envase para confirmar aplicación y tiempo de secado.",
+    "technical_specs": {},
+    "price": 13600,
+    "wholesale_price": 12240,
+    "category": "adhesivos-pegantes",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.311509+00:00"
+  },
+  {
+    "id": "08e35322-2c9a-4631-be3f-12542cc75e04",
+    "name": "KOLMADERA 250GRAMOS",
+    "slug": "kolmadera-250gramos-815d27",
+    "brand": "KOLMADERA",
+    "sku": "815D27",
+    "description": "Pegante Kolmadera para trabajos de madera, presentación 250 g. Te sirve pa uniones de carpintería en los materiales recomendados por el fabricante. Revisá el envase para confirmar aplicación y tiempo de secado.",
+    "technical_specs": {},
+    "price": 9500,
+    "wholesale_price": 8550,
+    "category": "adhesivos-pegantes",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.311509+00:00"
+  },
+  {
+    "id": "daeed7c0-80bd-4181-9832-6e7eca48dfab",
+    "name": "SILICONA BLANCA 280ML*TUBOX280ML",
+    "slug": "silicona-blanca-280ml-tubox280ml-2823",
+    "brand": "AFIX",
+    "sku": "2823",
+    "description": "Silicona Afix blanca, presentación 280 ml. Te sirve pa sellar juntas en aplicaciones compatibles. Contame dónde la vas a usar y revisamos si ese tipo te sirve.",
+    "technical_specs": {},
+    "price": 9000,
+    "wholesale_price": 8100,
+    "category": "adhesivos-pegantes",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.311509+00:00"
+  },
+  {
+    "id": "2d3d84fb-5400-4cbc-932f-8e9c851b0338",
+    "name": "SELLANTE ACRILICO  BASE AGUA AFIX GREEN  430GR TUBO",
+    "slug": "sellante-acrilico-base-agua-afix-green-430gr-tubo-6732",
+    "brand": "AFIX",
+    "sku": "6732",
+    "description": "Sellante acrílico Afix Green, base agua, en tubo de 430 g. Te sirve pa sellar juntas en superficies compatibles. Revisá en el envase si es adecuado para el material y el lugar donde lo vas a aplicar.",
+    "technical_specs": {},
+    "price": 9000,
+    "wholesale_price": 8100,
+    "category": "adhesivos-pegantes",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.311509+00:00"
+  },
+  {
+    "id": "03f4d6d1-bfd2-4f9a-af19-b5d23c379a6f",
+    "name": "SILICONA PEGAD VYA CONSUMO X280ML* TUBO",
+    "slug": "silicona-pegad-vya-consumo-x280ml-tubo-6218",
+    "brand": "AFIX",
+    "sku": "6218",
+    "description": "Silicona Afix VYA, presentación 280 ml. Te sirve pa sellar juntas en aplicaciones compatibles. Contame dónde la vas a usar y revisamos si ese tipo te sirve.",
+    "technical_specs": {},
+    "price": 9000,
+    "wholesale_price": 8100,
+    "category": "adhesivos-pegantes",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.311509+00:00"
+  },
+  {
+    "id": "4a335d2a-b5ec-4134-b219-71df9f721991",
+    "name": "CERRADURA PICO DE LOCO LLAVE LLAVE",
+    "slug": "cerradura-pico-de-loco-llave-llave-mx320cd",
     "brand": "MAXILOCK",
-    "sku": "Z4750SN",
-    "description": "Cerradura embutida con manija tipo Isla, referencia Z4750SN. Te sirve pa una puerta preparada para este sistema; revisá las medidas de instalación antes de comprarla.",
+    "sku": "MX320CD",
+    "description": "Cerradura Maxilock referencia MX320CD, identificada como pico de loro con llave en ambos lados. Te sirve pa una puerta preparada para ese mecanismo; confirmá medidas y montaje antes de pedirla.",
     "technical_specs": {},
-    "price": 165000,
-    "wholesale_price": 148500,
+    "price": 28000,
+    "wholesale_price": 25200,
     "category": "chapas",
     "stock": 1000,
     "stock_warehouse": 400,
@@ -4526,413 +4401,113 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
     "rating": 5,
     "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.165251+00:00"
+    "created_at": "2026-11-22T02:20:54.311509+00:00"
   },
   {
-    "id": "2b25c44a-5789-417f-9356-7a0d227733a7",
-    "name": "CERRADURA 360 MANIJA CUADRADA ALCOBA DORADO SATIN",
-    "slug": "cerradura-360-manija-cuadrada-alcoba-dorado-satin-361d",
-    "brand": "GATO",
-    "sku": "361D",
-    "description": "Cerradura para alcoba con manija cuadrada y acabado dorado satín, referencia 361D. Te sirve pa instalar en una puerta compatible; confirmá las medidas y el sistema de montaje.",
+    "id": "de5af86f-f767-456d-9e04-c24d6d76aea0",
+    "name": "CARPINCOL MR60 APX250GR",
+    "slug": "carpincol-mr60-apx250gr-4138",
+    "brand": "AFIX",
+    "sku": "4138",
+    "description": "Pegante Carpincol MR60 para carpintería, presentación 250 g. Te sirve pa unir piezas de madera en aplicaciones compatibles. Revisá las instrucciones del envase y el tiempo de secado antes de continuar el trabajo.",
     "technical_specs": {},
-    "price": 110000,
-    "wholesale_price": 99000,
-    "category": "chapas",
+    "price": 8800,
+    "wholesale_price": 7920,
+    "category": "adhesivos-pegantes",
     "stock": 1000,
     "stock_warehouse": 400,
     "stock_store": 200,
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
     "rating": 5,
     "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.165251+00:00"
+    "created_at": "2026-11-22T02:20:54.311509+00:00"
   },
   {
-    "id": "389aac71-4f64-4187-bd01-9e8f3d3d2fd7",
-    "name": "CILINDRO BUMP 60 LLAVE MARIPOSA",
-    "slug": "cilindro-bump-60-llave-mariposa-c1300-60m",
-    "brand": "KL",
-    "sku": "C1300-60M",
-    "description": "Cilindro de cerradura tipo Bump, referencia 60, con configuración de llave y mariposa. Te sirve pa reemplazar un cilindro compatible; revisá el largo y el perfil que usa tu cerradura.",
+    "id": "057ed6f5-868f-4027-8551-1d41b2c808c9",
+    "name": "PATTEX NO MAS CLAVOS FA Y FACIL",
+    "slug": "pattex-no-mas-clavos-fa-y-facil-83536",
+    "brand": "AFIX",
+    "sku": "83536",
+    "description": "Adhesivo Pattex No Más Clavos Fuerte y Fácil. Te sirve pa pegar elementos en aplicaciones compatibles sin usar clavos. Revisá las superficies permitidas y las instrucciones del empaque antes de aplicarlo.",
     "technical_specs": {},
-    "price": 35000,
-    "wholesale_price": 31500,
-    "category": "chapas",
+    "price": 25600,
+    "wholesale_price": 23040,
+    "category": "adhesivos-pegantes",
     "stock": 1000,
     "stock_warehouse": 400,
     "stock_store": 200,
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
     "rating": 5,
     "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.165251+00:00"
+    "created_at": "2026-11-22T02:20:54.311509+00:00"
   },
   {
-    "id": "4c84116c-42ab-4964-a763-90c363732b63",
-    "name": "CILINDRO BUMP 60 LLAVE-MARIPOSA",
-    "slug": "cilindro-bump-60-llave-mariposa-c1100-60m",
-    "brand": "KL",
-    "sku": "C1100-60M",
-    "description": "Cilindro de cerradura tipo Bump, referencia 60, con configuración de llave y mariposa. Te sirve pa reemplazar un cilindro compatible; revisá el largo y el perfil que usa tu cerradura.",
+    "id": "eac7574d-80e3-4469-badf-95bb0637cb0d",
+    "name": "SILICONA TRANSPARENTE 300GR",
+    "slug": "silicona-transparente-300gr-61392",
+    "brand": "AFIX",
+    "sku": "61392",
+    "description": "Silicona Afix transparente, presentación 300 g. Te sirve pa sellar juntas en aplicaciones compatibles. Contame dónde la vas a usar y revisamos si ese tipo te sirve.",
     "technical_specs": {},
-    "price": 35000,
-    "wholesale_price": 31500,
-    "category": "chapas",
+    "price": 9000,
+    "wholesale_price": 8100,
+    "category": "adhesivos-pegantes",
     "stock": 1000,
     "stock_warehouse": 400,
     "stock_store": 200,
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
     "rating": 5,
     "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.165251+00:00"
+    "created_at": "2026-11-22T02:20:54.311509+00:00"
   },
   {
-    "id": "69f65621-ea22-40f0-875f-6ab33442e330",
-    "name": "KL PICO LORO ESPECIAL FUNCION BAÑO",
-    "slug": "kl-pico-loro-especial-funcion-bano-kl300-1",
-    "brand": "KL",
-    "sku": "KL300-1",
-    "description": "Cerradura tipo pico de loro para baño, referencia KL300-1. Te sirve pa el cierre de una puerta preparada para ese mecanismo; confirmá las medidas y el tipo de instalación antes de pedirla.",
+    "id": "fbe63d4b-e5d1-409d-8a2e-c93e2edd24dc",
+    "name": "PEGADIT TURBO MAX BLANCO",
+    "slug": "pegadit-turbo-max-blanco-6174",
+    "brand": "AFIX",
+    "sku": "6174",
+    "description": "Pegante Afix Pegadit Turbo Max blanco. La ficha no detalla las superficies compatibles; revisá el envase antes de aplicarlo pa confirmar que te sirva en tu material.",
     "technical_specs": {},
-    "price": 65000,
-    "wholesale_price": 58500,
-    "category": "chapas",
+    "price": 34900,
+    "wholesale_price": 31410,
+    "category": "adhesivos-pegantes",
     "stock": 1000,
     "stock_warehouse": 400,
     "stock_store": 200,
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
     "rating": 5,
     "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.165251+00:00"
-  },
-  {
-    "id": "6ce24e4f-e36f-4544-8a6f-5b8152491c0a",
-    "name": "CERRADURA MANIJA ENVEJECIDA EMBUTIR",
-    "slug": "cerradura-manija-envejecida-embutir-z4750n",
-    "brand": "MAXILOCK",
-    "sku": "Z4750N",
-    "description": "Cerradura de embutir con manija y acabado envejecido, referencia Z4750N. Te sirve pa puertas preparadas para cerradura embutida; confirmá las medidas del cajetín y el sentido de apertura.",
-    "technical_specs": {},
-    "price": 150000,
-    "wholesale_price": 135000,
-    "category": "chapas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.165251+00:00"
-  },
-  {
-    "id": "b4bcdafe-b2ab-47c0-825c-6d42be0aed42",
-    "name": "PICO LORO ESPECIAL ALCOBA",
-    "slug": "pico-loro-especial-alcoba-kl300",
-    "brand": "KL",
-    "sku": "KL300",
-    "description": "Cerradura tipo pico de loro para alcoba, referencia KL300. Te sirve pa el cierre de una puerta preparada para ese mecanismo; confirmá las medidas y el tipo de instalación antes de pedirla.",
-    "technical_specs": {},
-    "price": 65000,
-    "wholesale_price": 58500,
-    "category": "chapas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.165251+00:00"
-  },
-  {
-    "id": "21409d37-6910-449a-8f7a-e2de818ddea2",
-    "name": "TOPE PUERTA INMANTADO NEGRO",
-    "slug": "tope-puerta-inmantado-negro-kd-25",
-    "brand": "FIXPRIME",
-    "sku": "KD-25",
-    "description": "Tope de puerta imantado con acabado negro, referencia KD-25. Te sirve pa limitar el recorrido de la puerta y sujetarla con su imán cuando corresponda; revisá que el sistema de montaje te funcione.",
-    "technical_specs": {},
-    "price": 5500,
-    "wholesale_price": 4950,
-    "category": "topes-puerta",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.165251+00:00"
-  },
-  {
-    "id": "7c4af81c-1ba3-4a0e-a73b-1820b14b75a9",
-    "name": "TOPE PUERTA INMANTADO CROMADO",
-    "slug": "tope-puerta-inmantado-cromado-kd-26",
-    "brand": "FIXPRIME",
-    "sku": "KD-26",
-    "description": "Tope de puerta imantado con acabado cromado, referencia KD-26. Te sirve pa limitar el recorrido de la puerta y sujetarla con su imán cuando corresponda; revisá que el sistema de montaje te funcione.",
-    "technical_specs": {},
-    "price": 5500,
-    "wholesale_price": 4950,
-    "category": "topes-puerta",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.165251+00:00"
-  },
-  {
-    "id": "962b1171-26c9-4a3f-9b5d-3bd88c26dd66",
-    "name": "CONJUNTO MANIJA BARI Z3000-60-Z",
-    "slug": "conjunto-manija-bari-z3000-60-z-z3000-60-z",
-    "brand": "MAXILOCK",
-    "sku": "Z3000-60-Z",
-    "description": "Conjunto de manija Bari, referencia Z3000-60-Z. Te sirve pa completar el accionamiento de una puerta compatible. La ficha no desglosa las piezas incluidas; confirmá el contenido del conjunto antes de ofrecerlo.",
-    "technical_specs": {},
-    "price": 165000,
-    "wholesale_price": 148500,
-    "category": "chapas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.165251+00:00"
-  },
-  {
-    "id": "4cb63a25-ad6e-4aff-9fdc-2e030f8080e0",
-    "name": "CERRADURA DE SOBREPONER 3X3 3 BULONES APOLO",
-    "slug": "cerradura-de-sobreponer-3x3-3-bulones-apolo-z2035i",
-    "brand": "MAXILOCK",
-    "sku": "Z2035I",
-    "description": "Cerradura de sobreponer Apolo, referencia 3 × 3 y tres bulones. Te sirve pa instalar en una puerta compatible con este sistema; revisá la mano, el espesor de la puerta y el montaje antes de pedirla.",
-    "technical_specs": {},
-    "price": 26000,
-    "wholesale_price": 23400,
-    "category": "chapas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.165251+00:00"
-  },
-  {
-    "id": "78e2f513-6529-4e02-bcfc-e26fef942dd6",
-    "name": "CERRADURA SOBREPONER 3X3 3 BULONES APOLO DERECHA",
-    "slug": "cerradura-sobreponer-3x3-3-bulones-apolo-derecha-z2035d",
-    "brand": "MAXILOCK",
-    "sku": "Z2035D",
-    "description": "Cerradura de sobreponer Apolo, referencia 3 × 3 y tres bulones. El modelo Z2035D indica mano derecha. Te sirve pa instalar en una puerta compatible con este sistema; revisá la mano, el espesor de la puerta y el montaje antes de pedirla.",
-    "technical_specs": {},
-    "price": 26000,
-    "wholesale_price": 23400,
-    "category": "chapas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.165251+00:00"
-  },
-  {
-    "id": "ad250198-403b-4a23-88c9-ef4860baf4ea",
-    "name": "CLAVO CON CABEZA 2",
-    "slug": "clavo-con-cabeza-2-ccc2",
-    "brand": "CORSAN",
-    "sku": "CCC2",
-    "description": "Clavo con cabeza, de 2 pulgadas. Te sirve pa fijaciones en trabajos de carpintería y obra; elegí el largo y el tipo de cabeza según la pieza que vas a asegurar.",
-    "technical_specs": {},
-    "price": 6300,
-    "wholesale_price": 5670,
-    "category": "fijaciones-clavos",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.165251+00:00"
-  },
-  {
-    "id": "71ecdf85-9128-42a7-9953-601d145f6672",
-    "name": "CLAVO SIN CABEZA 2",
-    "slug": "clavo-sin-cabeza-2-csc2",
-    "brand": "CORSAN",
-    "sku": "CSC2",
-    "description": "Clavo sin cabeza, de 2 pulgadas. Te sirve pa fijaciones en trabajos de carpintería y obra; elegí el largo y el tipo de cabeza según la pieza que vas a asegurar.",
-    "technical_specs": {},
-    "price": 6300,
-    "wholesale_price": 5670,
-    "category": "fijaciones-clavos",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.165251+00:00"
-  },
-  {
-    "id": "66c51e50-5ff1-46a4-98e3-4ec14137a4f9",
-    "name": "CLAVO SIN CABEZA 11/2",
-    "slug": "clavo-sin-cabeza-11-2-csc11-2",
-    "brand": "CORSAN",
-    "sku": "CSC11/2",
-    "description": "Clavo sin cabeza, de 1 1/2 pulgadas. Te sirve pa fijaciones en trabajos de carpintería y obra; elegí el largo y el tipo de cabeza según la pieza que vas a asegurar.",
-    "technical_specs": {},
-    "price": 6300,
-    "wholesale_price": 5670,
-    "category": "fijaciones-clavos",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.165251+00:00"
-  },
-  {
-    "id": "656b1822-f661-47b7-9e2f-853ef9aeae40",
-    "name": "CLAVO SIN CABEZA 3/4",
-    "slug": "clavo-sin-cabeza-3-4-csc3-4",
-    "brand": "CORSAN",
-    "sku": "CSC3/4",
-    "description": "Clavo sin cabeza, de 3/4 de pulgada. Te sirve pa fijaciones en trabajos de carpintería y obra; elegí el largo y el tipo de cabeza según la pieza que vas a asegurar.",
-    "technical_specs": {},
-    "price": 6800,
-    "wholesale_price": 6120,
-    "category": "fijaciones-clavos",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.165251+00:00"
-  },
-  {
-    "id": "6f18ee20-c4c4-421f-a36b-9bdb52cf2219",
-    "name": "CLAVO SIN CABEZA 1",
-    "slug": "clavo-sin-cabeza-1-csc1",
-    "brand": "CORSAN",
-    "sku": "CSC1",
-    "description": "Clavo sin cabeza, de 1 pulgada. Te sirve pa fijaciones en trabajos de carpintería y obra; elegí el largo y el tipo de cabeza según la pieza que vas a asegurar.",
-    "technical_specs": {},
-    "price": 6800,
-    "wholesale_price": 6120,
-    "category": "fijaciones-clavos",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.165251+00:00"
+    "created_at": "2026-11-22T02:20:54.311509+00:00"
   },
   {
     "id": "b9eaefce-2bac-4652-8eba-9aefd5f329fc",
@@ -4951,32 +4526,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:54.165251+00:00"
-  },
-  {
-    "id": "67b1f65a-6290-4253-a444-26939e1d149c",
-    "name": "CLAVO CON CABEZA 3",
-    "slug": "clavo-con-cabeza-3-ccc3",
-    "brand": "CORSAN",
-    "sku": "CCC3",
-    "description": "Clavo con cabeza, de 3 pulgadas. Te sirve pa fijaciones en trabajos de carpintería y obra; elegí el largo y el tipo de cabeza según la pieza que vas a asegurar.",
-    "technical_specs": {},
-    "price": 5800,
-    "wholesale_price": 5220,
-    "category": "fijaciones-clavos",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -5001,7 +4551,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -5026,7 +4576,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -5051,7 +4601,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -5076,7 +4626,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -5101,7 +4651,182 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "/truper-toolbox.png"
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.165251+00:00"
+  },
+  {
+    "id": "15189346-4857-40c1-b0e9-55c47672770f",
+    "name": "CERRADURA EMBUTIDA MANIJA ISLA",
+    "slug": "cerradura-embutida-manija-isla-z4750sn",
+    "brand": "MAXILOCK",
+    "sku": "Z4750SN",
+    "description": "Cerradura embutida con manija tipo Isla, referencia Z4750SN. Te sirve pa una puerta preparada para este sistema; revisá las medidas de instalación antes de comprarla.",
+    "technical_specs": {},
+    "price": 165000,
+    "wholesale_price": 148500,
+    "category": "chapas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.165251+00:00"
+  },
+  {
+    "id": "6ce24e4f-e36f-4544-8a6f-5b8152491c0a",
+    "name": "CERRADURA MANIJA ENVEJECIDA EMBUTIR",
+    "slug": "cerradura-manija-envejecida-embutir-z4750n",
+    "brand": "MAXILOCK",
+    "sku": "Z4750N",
+    "description": "Cerradura de embutir con manija y acabado envejecido, referencia Z4750N. Te sirve pa puertas preparadas para cerradura embutida; confirmá las medidas del cajetín y el sentido de apertura.",
+    "technical_specs": {},
+    "price": 150000,
+    "wholesale_price": 135000,
+    "category": "chapas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.165251+00:00"
+  },
+  {
+    "id": "962b1171-26c9-4a3f-9b5d-3bd88c26dd66",
+    "name": "CONJUNTO MANIJA BARI Z3000-60-Z",
+    "slug": "conjunto-manija-bari-z3000-60-z-z3000-60-z",
+    "brand": "MAXILOCK",
+    "sku": "Z3000-60-Z",
+    "description": "Conjunto de manija Bari, referencia Z3000-60-Z. Te sirve pa completar el accionamiento de una puerta compatible. La ficha no desglosa las piezas incluidas; confirmá el contenido del conjunto antes de ofrecerlo.",
+    "technical_specs": {},
+    "price": 165000,
+    "wholesale_price": 148500,
+    "category": "chapas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.165251+00:00"
+  },
+  {
+    "id": "2b25c44a-5789-417f-9356-7a0d227733a7",
+    "name": "CERRADURA 360 MANIJA CUADRADA ALCOBA DORADO SATIN",
+    "slug": "cerradura-360-manija-cuadrada-alcoba-dorado-satin-361d",
+    "brand": "GATO",
+    "sku": "361D",
+    "description": "Cerradura para alcoba con manija cuadrada y acabado dorado satín, referencia 361D. Te sirve pa instalar en una puerta compatible; confirmá las medidas y el sistema de montaje.",
+    "technical_specs": {},
+    "price": 110000,
+    "wholesale_price": 99000,
+    "category": "chapas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.165251+00:00"
+  },
+  {
+    "id": "389aac71-4f64-4187-bd01-9e8f3d3d2fd7",
+    "name": "CILINDRO BUMP 60 LLAVE MARIPOSA",
+    "slug": "cilindro-bump-60-llave-mariposa-c1300-60m",
+    "brand": "KL",
+    "sku": "C1300-60M",
+    "description": "Cilindro de cerradura tipo Bump, referencia 60, con configuración de llave y mariposa. Te sirve pa reemplazar un cilindro compatible; revisá el largo y el perfil que usa tu cerradura.",
+    "technical_specs": {},
+    "price": 35000,
+    "wholesale_price": 31500,
+    "category": "chapas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.165251+00:00"
+  },
+  {
+    "id": "4c84116c-42ab-4964-a763-90c363732b63",
+    "name": "CILINDRO BUMP 60 LLAVE-MARIPOSA",
+    "slug": "cilindro-bump-60-llave-mariposa-c1100-60m",
+    "brand": "KL",
+    "sku": "C1100-60M",
+    "description": "Cilindro de cerradura tipo Bump, referencia 60, con configuración de llave y mariposa. Te sirve pa reemplazar un cilindro compatible; revisá el largo y el perfil que usa tu cerradura.",
+    "technical_specs": {},
+    "price": 35000,
+    "wholesale_price": 31500,
+    "category": "chapas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.165251+00:00"
+  },
+  {
+    "id": "69f65621-ea22-40f0-875f-6ab33442e330",
+    "name": "KL PICO LORO ESPECIAL FUNCION BAÑO",
+    "slug": "kl-pico-loro-especial-funcion-bano-kl300-1",
+    "brand": "KL",
+    "sku": "KL300-1",
+    "description": "Cerradura tipo pico de loro para baño, referencia KL300-1. Te sirve pa el cierre de una puerta preparada para ese mecanismo; confirmá las medidas y el tipo de instalación antes de pedirla.",
+    "technical_specs": {},
+    "price": 65000,
+    "wholesale_price": 58500,
+    "category": "chapas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -5126,7 +4851,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -5135,23 +4860,298 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-11-22T02:20:54.165251+00:00"
   },
   {
-    "id": "444bfd37-75bd-484a-9ec7-c097e37bbe9a",
-    "name": "FLEXOMETRO 8M LUFKIN",
-    "slug": "flexometro-8m-lufkin-l525",
-    "brand": "LUFKIN",
-    "sku": "L525",
-    "description": "Flexómetro Lufkin de 8 m. Te sirve pa tomar medidas en trabajos de instalación, carpintería o construcción; escogé el largo que necesitás.",
+    "id": "b4bcdafe-b2ab-47c0-825c-6d42be0aed42",
+    "name": "PICO LORO ESPECIAL ALCOBA",
+    "slug": "pico-loro-especial-alcoba-kl300",
+    "brand": "KL",
+    "sku": "KL300",
+    "description": "Cerradura tipo pico de loro para alcoba, referencia KL300. Te sirve pa el cierre de una puerta preparada para ese mecanismo; confirmá las medidas y el tipo de instalación antes de pedirla.",
     "technical_specs": {},
-    "price": 24500,
-    "wholesale_price": 22050,
-    "category": "medicion-nivelacion",
+    "price": 65000,
+    "wholesale_price": 58500,
+    "category": "chapas",
     "stock": 1000,
     "stock_warehouse": 400,
     "stock_store": 200,
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "/truper-flexometro.png"
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.165251+00:00"
+  },
+  {
+    "id": "21409d37-6910-449a-8f7a-e2de818ddea2",
+    "name": "TOPE PUERTA INMANTADO NEGRO",
+    "slug": "tope-puerta-inmantado-negro-kd-25",
+    "brand": "FIXPRIME",
+    "sku": "KD-25",
+    "description": "Tope de puerta imantado con acabado negro, referencia KD-25. Te sirve pa limitar el recorrido de la puerta y sujetarla con su imán cuando corresponda; revisá que el sistema de montaje te funcione.",
+    "technical_specs": {},
+    "price": 5500,
+    "wholesale_price": 4950,
+    "category": "topes-puerta",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.165251+00:00"
+  },
+  {
+    "id": "7c4af81c-1ba3-4a0e-a73b-1820b14b75a9",
+    "name": "TOPE PUERTA INMANTADO CROMADO",
+    "slug": "tope-puerta-inmantado-cromado-kd-26",
+    "brand": "FIXPRIME",
+    "sku": "KD-26",
+    "description": "Tope de puerta imantado con acabado cromado, referencia KD-26. Te sirve pa limitar el recorrido de la puerta y sujetarla con su imán cuando corresponda; revisá que el sistema de montaje te funcione.",
+    "technical_specs": {},
+    "price": 5500,
+    "wholesale_price": 4950,
+    "category": "topes-puerta",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.165251+00:00"
+  },
+  {
+    "id": "4cb63a25-ad6e-4aff-9fdc-2e030f8080e0",
+    "name": "CERRADURA DE SOBREPONER 3X3 3 BULONES APOLO",
+    "slug": "cerradura-de-sobreponer-3x3-3-bulones-apolo-z2035i",
+    "brand": "MAXILOCK",
+    "sku": "Z2035I",
+    "description": "Cerradura de sobreponer Apolo, referencia 3 × 3 y tres bulones. Te sirve pa instalar en una puerta compatible con este sistema; revisá la mano, el espesor de la puerta y el montaje antes de pedirla.",
+    "technical_specs": {},
+    "price": 26000,
+    "wholesale_price": 23400,
+    "category": "chapas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.165251+00:00"
+  },
+  {
+    "id": "78e2f513-6529-4e02-bcfc-e26fef942dd6",
+    "name": "CERRADURA SOBREPONER 3X3 3 BULONES APOLO DERECHA",
+    "slug": "cerradura-sobreponer-3x3-3-bulones-apolo-derecha-z2035d",
+    "brand": "MAXILOCK",
+    "sku": "Z2035D",
+    "description": "Cerradura de sobreponer Apolo, referencia 3 × 3 y tres bulones. El modelo Z2035D indica mano derecha. Te sirve pa instalar en una puerta compatible con este sistema; revisá la mano, el espesor de la puerta y el montaje antes de pedirla.",
+    "technical_specs": {},
+    "price": 26000,
+    "wholesale_price": 23400,
+    "category": "chapas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.165251+00:00"
+  },
+  {
+    "id": "ad250198-403b-4a23-88c9-ef4860baf4ea",
+    "name": "CLAVO CON CABEZA 2",
+    "slug": "clavo-con-cabeza-2-ccc2",
+    "brand": "CORSAN",
+    "sku": "CCC2",
+    "description": "Clavo con cabeza, de 2 pulgadas. Te sirve pa fijaciones en trabajos de carpintería y obra; elegí el largo y el tipo de cabeza según la pieza que vas a asegurar.",
+    "technical_specs": {},
+    "price": 6300,
+    "wholesale_price": 5670,
+    "category": "fijaciones-clavos",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.165251+00:00"
+  },
+  {
+    "id": "71ecdf85-9128-42a7-9953-601d145f6672",
+    "name": "CLAVO SIN CABEZA 2",
+    "slug": "clavo-sin-cabeza-2-csc2",
+    "brand": "CORSAN",
+    "sku": "CSC2",
+    "description": "Clavo sin cabeza, de 2 pulgadas. Te sirve pa fijaciones en trabajos de carpintería y obra; elegí el largo y el tipo de cabeza según la pieza que vas a asegurar.",
+    "technical_specs": {},
+    "price": 6300,
+    "wholesale_price": 5670,
+    "category": "fijaciones-clavos",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.165251+00:00"
+  },
+  {
+    "id": "66c51e50-5ff1-46a4-98e3-4ec14137a4f9",
+    "name": "CLAVO SIN CABEZA 11/2",
+    "slug": "clavo-sin-cabeza-11-2-csc11-2",
+    "brand": "CORSAN",
+    "sku": "CSC11/2",
+    "description": "Clavo sin cabeza, de 1 1/2 pulgadas. Te sirve pa fijaciones en trabajos de carpintería y obra; elegí el largo y el tipo de cabeza según la pieza que vas a asegurar.",
+    "technical_specs": {},
+    "price": 6300,
+    "wholesale_price": 5670,
+    "category": "fijaciones-clavos",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.165251+00:00"
+  },
+  {
+    "id": "656b1822-f661-47b7-9e2f-853ef9aeae40",
+    "name": "CLAVO SIN CABEZA 3/4",
+    "slug": "clavo-sin-cabeza-3-4-csc3-4",
+    "brand": "CORSAN",
+    "sku": "CSC3/4",
+    "description": "Clavo sin cabeza, de 3/4 de pulgada. Te sirve pa fijaciones en trabajos de carpintería y obra; elegí el largo y el tipo de cabeza según la pieza que vas a asegurar.",
+    "technical_specs": {},
+    "price": 6800,
+    "wholesale_price": 6120,
+    "category": "fijaciones-clavos",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.165251+00:00"
+  },
+  {
+    "id": "6f18ee20-c4c4-421f-a36b-9bdb52cf2219",
+    "name": "CLAVO SIN CABEZA 1",
+    "slug": "clavo-sin-cabeza-1-csc1",
+    "brand": "CORSAN",
+    "sku": "CSC1",
+    "description": "Clavo sin cabeza, de 1 pulgada. Te sirve pa fijaciones en trabajos de carpintería y obra; elegí el largo y el tipo de cabeza según la pieza que vas a asegurar.",
+    "technical_specs": {},
+    "price": 6800,
+    "wholesale_price": 6120,
+    "category": "fijaciones-clavos",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.165251+00:00"
+  },
+  {
+    "id": "67b1f65a-6290-4253-a444-26939e1d149c",
+    "name": "CLAVO CON CABEZA 3",
+    "slug": "clavo-con-cabeza-3-ccc3",
+    "brand": "CORSAN",
+    "sku": "CCC3",
+    "description": "Clavo con cabeza, de 3 pulgadas. Te sirve pa fijaciones en trabajos de carpintería y obra; elegí el largo y el tipo de cabeza según la pieza que vas a asegurar.",
+    "technical_specs": {},
+    "price": 5800,
+    "wholesale_price": 5220,
+    "category": "fijaciones-clavos",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:54.165251+00:00"
+  },
+  {
+    "id": "831f7c45-d27d-486a-8f89-356db552c91a",
+    "name": "Fresa para encajar con rodamiento - corte de 1/2\"",
+    "slug": "fresa-para-encajar-con-rodamiento-corte-de-1-2-12758",
+    "brand": "WEELDONE",
+    "sku": "12758",
+    "description": "Fresa para encajar con rodamiento, corte de 1/2\". Te sirve pa hacer encajes en madera con una ruteadora compatible. La ficha no indica el vástago; revisá que coincida con tu máquina antes de comprar.",
+    "technical_specs": {},
+    "price": 45300,
+    "wholesale_price": 40770,
+    "category": "fresas-madera",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -5160,23 +5160,23 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-11-22T02:20:53.695282+00:00"
   },
   {
-    "id": "f1f5cd45-34d3-44d0-9280-0d65281a8661",
-    "name": "FLEXOMETRO 3M LUFKIN",
-    "slug": "flexometro-3m-lufkin-l510",
-    "brand": "LUFKIN",
-    "sku": "L510",
-    "description": "Flexómetro Lufkin de 3 m. Te sirve pa tomar medidas en trabajos de instalación, carpintería o construcción; escogé el largo que necesitás.",
+    "id": "ed4946a8-e801-421d-bb82-0add9c92bd5c",
+    "name": "Fresa para ranurar con tres puntas - alto de corte 3.0 mm",
+    "slug": "fresa-para-ranurar-con-tres-puntas-alto-de-corte-3-0-mm-12661",
+    "brand": "WEELDONE",
+    "sku": "12661",
+    "description": "Fresa para ranurar con tres puntas, alto de corte 3.0 mm. Te sirve pa abrir ranuras con tres puntas en madera con una ruteadora compatible. La ficha no indica el vástago; revisá que coincida con tu máquina antes de comprar.",
     "technical_specs": {},
-    "price": 9500,
-    "wholesale_price": 8550,
-    "category": "medicion-nivelacion",
+    "price": 56900,
+    "wholesale_price": 51210,
+    "category": "fresas-madera",
     "stock": 1000,
     "stock_warehouse": 400,
     "stock_store": 200,
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "/truper-flexometro.png"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -5185,23 +5185,23 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-11-22T02:20:53.695282+00:00"
   },
   {
-    "id": "3f5871df-c4de-4931-954a-68f683cf2928",
-    "name": "PISTOLA  TOTAL AEROGRAFO 400CC",
-    "slug": "pistola-total-aerografo-400cc-pq2501",
-    "brand": "TOTAL",
-    "sku": "PQ2501",
-    "description": "Pistola tipo aerógrafo Total, con presentación indicada de 400 cc. Te sirve pa aplicar pintura con la configuración compatible. La ficha no detalla conexión ni accesorios incluidos; confirmá esos datos antes de ofrecerla.",
+    "id": "6e7708ba-784c-44a0-a34b-92bc07184814",
+    "name": "Fresa para biselar a 45 grados - diámetro de corte 2\"",
+    "slug": "fresa-para-biselar-a-45-grados-diametro-de-corte-2-12773",
+    "brand": "WEELDONE",
+    "sku": "12773",
+    "description": "Fresa para biselar a 45 grados, diámetro de corte 2\". Te sirve pa hacer biseles de 45 grados en madera con una ruteadora compatible. La ficha no indica el vástago; revisá que coincida con tu máquina antes de comprar.",
     "technical_specs": {},
-    "price": 62000,
-    "wholesale_price": 55800,
-    "category": "herramientas-manuales",
+    "price": 99900,
+    "wholesale_price": 89910,
+    "category": "fresas-madera",
     "stock": 1000,
     "stock_warehouse": 400,
     "stock_store": 200,
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "/truper-toolbox.png"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -5210,23 +5210,23 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-11-22T02:20:53.695282+00:00"
   },
   {
-    "id": "190e2786-8a92-43d4-b203-27ddb99daab9",
-    "name": "PULIDORA TOTAL 710W",
-    "slug": "pulidora-total-710w-11576",
-    "brand": "TOTAL",
-    "sku": "11576",
-    "description": "Pulidora Total de 710 W. Te sirve pa pulir o desbastar con un disco compatible. La ficha no indica el diámetro del disco; revisá ese dato antes de montarlo.",
+    "id": "630b3bbe-248c-4b94-bd76-0be50d57109b",
+    "name": "Fresa para encajar con rodamiento - corte de 3/8\"",
+    "slug": "fresa-para-encajar-con-rodamiento-corte-de-3-8-12757",
+    "brand": "WEELDONE",
+    "sku": "12757",
+    "description": "Fresa para encajar con rodamiento, corte de 3/8\". Te sirve pa hacer encajes en madera con una ruteadora compatible. La ficha no indica el vástago; revisá que coincida con tu máquina antes de comprar.",
     "technical_specs": {},
-    "price": 149900,
-    "wholesale_price": 134910,
-    "category": "herramientas-electricas",
+    "price": 49600,
+    "wholesale_price": 44640,
+    "category": "fresas-madera",
     "stock": 1000,
     "stock_warehouse": 400,
     "stock_store": 200,
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "/dewalt-drill-kit.jpg"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -5235,23 +5235,23 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-11-22T02:20:53.695282+00:00"
   },
   {
-    "id": "db3ea8b9-e459-4887-a9dd-fa2afec63c84",
-    "name": "TALADRO ATORNILLADOR 20V DE IMPACTO",
-    "slug": "taladro-atornillador-20v-de-impacto-250784",
-    "brand": "TOTAL",
-    "sku": "250784",
-    "description": "Taladro atornillador Total de 20 V con función de impacto. Te sirve pa perforar o atornillar con accesorios compatibles. Revisá si trae batería y cargador, porque esa información no aparece en la ficha.",
+    "id": "89d43e58-650c-4c5f-b64d-a801681c9565",
+    "name": "Fresa para ranurar con tres puntas - alto de corte 1.5 mm",
+    "slug": "fresa-para-ranurar-con-tres-puntas-alto-de-corte-1-5-mm-12668",
+    "brand": "WEELDONE",
+    "sku": "12668",
+    "description": "Fresa para ranurar con tres puntas, alto de corte 1.5 mm. Te sirve pa abrir ranuras con tres puntas en madera con una ruteadora compatible. La ficha no indica el vástago; revisá que coincida con tu máquina antes de comprar.",
     "technical_specs": {},
-    "price": 450000,
-    "wholesale_price": 405000,
-    "category": "herramientas-electricas",
+    "price": 51700,
+    "wholesale_price": 46530,
+    "category": "fresas-madera",
     "stock": 1000,
     "stock_warehouse": 400,
     "stock_store": 200,
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "/dewalt-drill-kit.jpg"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -5260,23 +5260,23 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-11-22T02:20:53.695282+00:00"
   },
   {
-    "id": "1f458d20-1832-4bed-ba32-e9661dcb55eb",
-    "name": "TALADRO TOTAL PERCUTOR 20V",
-    "slug": "taladro-total-percutor-20v-20668",
-    "brand": "TOTAL",
-    "sku": "20668",
-    "description": "Taladro percutor Total de 20 V. Te sirve pa perforar con brocas compatibles y usar la función percutora en materiales adecuados. La ficha no dice si incluye batería o cargador; confirmá esos accesorios antes de comprarlo.",
+    "id": "1fbd47df-da61-4311-87f1-137f591f19c8",
+    "name": "Fresa para ranurar con tres puntas - alto de corte 2.0 mm",
+    "slug": "fresa-para-ranurar-con-tres-puntas-alto-de-corte-2-0-mm-12660",
+    "brand": "WEELDONE",
+    "sku": "12660",
+    "description": "Fresa para ranurar con tres puntas, alto de corte 2.0 mm. Te sirve pa abrir ranuras con tres puntas en madera con una ruteadora compatible. La ficha no indica el vástago; revisá que coincida con tu máquina antes de comprar.",
     "technical_specs": {},
-    "price": 450000,
-    "wholesale_price": 405000,
-    "category": "herramientas-electricas",
+    "price": 56900,
+    "wholesale_price": 51210,
+    "category": "fresas-madera",
     "stock": 1000,
     "stock_warehouse": 400,
     "stock_store": 200,
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "/dewalt-drill-kit.jpg"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -5285,24 +5285,23 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-11-22T02:20:53.695282+00:00"
   },
   {
-    "id": "075e293b-1e02-41ea-84bc-fb4ee7ed1147",
-    "name": "PRENSA EN C 4°",
-    "slug": "prensa-en-c-4-64125",
-    "brand": "IMPORTADO",
-    "sku": "64125",
-    "description": "Prensa en C, referencia 64125, para sujetar piezas en trabajos de carpintería o montaje. Te sirve pa mantener la pieza firme mientras trabajás; confirmá la apertura que necesitás antes de comprarla.",
+    "id": "06f2d68a-801b-467f-9d1b-2b35f138ec8e",
+    "name": "Fresa en conjunto reversible especial para ensamble de puertas - diámetro de corte 1.3/8\"",
+    "slug": "fresa-en-conjunto-reversible-especial-para-ensamble-de-puertas-diametro-de-corte-12851",
+    "brand": "WEELDONE",
+    "sku": "12851",
+    "description": "Fresa en conjunto reversible especial para ensamble de puertas, diámetro de corte 1 3/8\". Te sirve pa trabajar el ensamble de puertas en madera con una ruteadora compatible. La ficha no indica el vástago; revisá que coincida con tu máquina antes de comprar.",
     "technical_specs": {},
-    "price": 19000,
-    "discount_price": 17000,
-    "wholesale_price": 15300,
-    "category": "prensas-fijacion",
+    "price": 130000,
+    "wholesale_price": 117000,
+    "category": "fresas-madera",
     "stock": 1000,
     "stock_warehouse": 400,
     "stock_store": 200,
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -5328,7 +5327,7 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -5337,273 +5336,24 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-11-22T02:20:53.695282+00:00"
   },
   {
-    "id": "6e7708ba-784c-44a0-a34b-92bc07184814",
-    "name": "Fresa para biselar a 45 grados - diámetro de corte 2\"",
-    "slug": "fresa-para-biselar-a-45-grados-diametro-de-corte-2-12773",
-    "brand": "WEELDONE",
-    "sku": "12773",
-    "description": "Fresa para biselar a 45 grados, diámetro de corte 2\". Te sirve pa hacer biseles de 45 grados en madera con una ruteadora compatible. La ficha no indica el vástago; revisá que coincida con tu máquina antes de comprar.",
-    "technical_specs": {},
-    "price": 99900,
-    "wholesale_price": 89910,
-    "category": "fresas-madera",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:53.695282+00:00"
-  },
-  {
-    "id": "ed4946a8-e801-421d-bb82-0add9c92bd5c",
-    "name": "Fresa para ranurar con tres puntas - alto de corte 3.0 mm",
-    "slug": "fresa-para-ranurar-con-tres-puntas-alto-de-corte-3-0-mm-12661",
-    "brand": "WEELDONE",
-    "sku": "12661",
-    "description": "Fresa para ranurar con tres puntas, alto de corte 3.0 mm. Te sirve pa abrir ranuras con tres puntas en madera con una ruteadora compatible. La ficha no indica el vástago; revisá que coincida con tu máquina antes de comprar.",
-    "technical_specs": {},
-    "price": 56900,
-    "wholesale_price": 51210,
-    "category": "fresas-madera",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:53.695282+00:00"
-  },
-  {
-    "id": "06f2d68a-801b-467f-9d1b-2b35f138ec8e",
-    "name": "Fresa en conjunto reversible especial para ensamble de puertas - diámetro de corte 1.3/8\"",
-    "slug": "fresa-en-conjunto-reversible-especial-para-ensamble-de-puertas-diametro-de-corte-12851",
-    "brand": "WEELDONE",
-    "sku": "12851",
-    "description": "Fresa en conjunto reversible especial para ensamble de puertas, diámetro de corte 1 3/8\". Te sirve pa trabajar el ensamble de puertas en madera con una ruteadora compatible. La ficha no indica el vástago; revisá que coincida con tu máquina antes de comprar.",
-    "technical_specs": {},
-    "price": 130000,
-    "wholesale_price": 117000,
-    "category": "fresas-madera",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:53.695282+00:00"
-  },
-  {
-    "id": "831f7c45-d27d-486a-8f89-356db552c91a",
-    "name": "Fresa para encajar con rodamiento - corte de 1/2\"",
-    "slug": "fresa-para-encajar-con-rodamiento-corte-de-1-2-12758",
-    "brand": "WEELDONE",
-    "sku": "12758",
-    "description": "Fresa para encajar con rodamiento, corte de 1/2\". Te sirve pa hacer encajes en madera con una ruteadora compatible. La ficha no indica el vástago; revisá que coincida con tu máquina antes de comprar.",
-    "technical_specs": {},
-    "price": 45300,
-    "wholesale_price": 40770,
-    "category": "fresas-madera",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:53.695282+00:00"
-  },
-  {
-    "id": "1fbd47df-da61-4311-87f1-137f591f19c8",
-    "name": "Fresa para ranurar con tres puntas - alto de corte 2.0 mm",
-    "slug": "fresa-para-ranurar-con-tres-puntas-alto-de-corte-2-0-mm-12660",
-    "brand": "WEELDONE",
-    "sku": "12660",
-    "description": "Fresa para ranurar con tres puntas, alto de corte 2.0 mm. Te sirve pa abrir ranuras con tres puntas en madera con una ruteadora compatible. La ficha no indica el vástago; revisá que coincida con tu máquina antes de comprar.",
-    "technical_specs": {},
-    "price": 56900,
-    "wholesale_price": 51210,
-    "category": "fresas-madera",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:53.695282+00:00"
-  },
-  {
-    "id": "89d43e58-650c-4c5f-b64d-a801681c9565",
-    "name": "Fresa para ranurar con tres puntas - alto de corte 1.5 mm",
-    "slug": "fresa-para-ranurar-con-tres-puntas-alto-de-corte-1-5-mm-12668",
-    "brand": "WEELDONE",
-    "sku": "12668",
-    "description": "Fresa para ranurar con tres puntas, alto de corte 1.5 mm. Te sirve pa abrir ranuras con tres puntas en madera con una ruteadora compatible. La ficha no indica el vástago; revisá que coincida con tu máquina antes de comprar.",
-    "technical_specs": {},
-    "price": 51700,
-    "wholesale_price": 46530,
-    "category": "fresas-madera",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:53.695282+00:00"
-  },
-  {
-    "id": "630b3bbe-248c-4b94-bd76-0be50d57109b",
-    "name": "Fresa para encajar con rodamiento - corte de 3/8\"",
-    "slug": "fresa-para-encajar-con-rodamiento-corte-de-3-8-12757",
-    "brand": "WEELDONE",
-    "sku": "12757",
-    "description": "Fresa para encajar con rodamiento, corte de 3/8\". Te sirve pa hacer encajes en madera con una ruteadora compatible. La ficha no indica el vástago; revisá que coincida con tu máquina antes de comprar.",
-    "technical_specs": {},
-    "price": 49600,
-    "wholesale_price": 44640,
-    "category": "fresas-madera",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:53.695282+00:00"
-  },
-  {
-    "id": "fcdc94cf-6b97-4bd8-ae09-9bba62db81d5",
-    "name": "Fresa para redondear esquina - diámetro de corte 1.1/2\"",
-    "slug": "fresa-para-redondear-esquina-diametro-de-corte-1-1-2-12772",
-    "brand": "WEELDONE",
-    "sku": "12772",
-    "description": "Fresa para redondear esquinas, diámetro de corte 1 1/2\". Te sirve pa redondear esquinas en madera con una ruteadora compatible. La ficha no indica el vástago; revisá que coincida con tu máquina antes de comprar.",
-    "technical_specs": {},
-    "price": 73900,
-    "wholesale_price": 66510,
-    "category": "fresas-madera",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:53.695282+00:00"
-  },
-  {
-    "id": "2641eb35-2c14-4c1e-bd61-b15095190cdd",
-    "name": "DISCO WELLDONE 12\" 120 DIENTES",
-    "slug": "disco-welldone-12-120-dientes-cws-12120",
-    "brand": "WELLDONE",
-    "sku": "CWS-12120",
-    "description": "Disco para sierra circular Welldone, de 12 pulgadas y 120 dientes. Te sirve pa cortar con una sierra que admita esas medidas; revisá el diámetro y el eje de tu equipo antes de montarlo.",
-    "technical_specs": {},
-    "price": 185900,
-    "wholesale_price": 167310,
-    "category": "discos-corte",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:53.695282+00:00"
-  },
-  {
-    "id": "941ad480-e5ea-49ed-aeb8-a83dda4d522c",
-    "name": "DISCO IRWIN 12\"X80",
-    "slug": "disco-irwin-12-x80-15187",
-    "brand": "IRWIN",
-    "sku": "15187",
-    "description": "Disco para sierra circular Irwin, de 12 pulgadas y 80 dientes. Te sirve pa cortar con una sierra que admita esas medidas; revisá el diámetro y el eje de tu equipo antes de montarlo.",
-    "technical_specs": {},
-    "price": 260000,
-    "wholesale_price": 234000,
-    "category": "discos-corte",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:53.695282+00:00"
-  },
-  {
-    "id": "c3d61f01-90f8-4383-958e-ba8ebcabf24c",
-    "name": "DISCO IMPORTADO 7 1/4 80 DIENTES",
-    "slug": "disco-importado-7-1-4-80-dientes-ip0054-4",
+    "id": "075e293b-1e02-41ea-84bc-fb4ee7ed1147",
+    "name": "PRENSA EN C 4°",
+    "slug": "prensa-en-c-4-64125",
     "brand": "IMPORTADO",
-    "sku": "IP0054-4",
-    "description": "Disco para sierra circular, de 7 1/4 pulgadas y 80 dientes. Te sirve pa cortar con una sierra que admita esas medidas; revisá el diámetro y el eje de tu equipo antes de montarlo.",
+    "sku": "64125",
+    "description": "Prensa en C, referencia 64125, para sujetar piezas en trabajos de carpintería o montaje. Te sirve pa mantener la pieza firme mientras trabajás; confirmá la apertura que necesitás antes de comprarla.",
     "technical_specs": {},
-    "price": 10000,
-    "wholesale_price": 9000,
-    "category": "discos-corte",
+    "price": 19000,
+    "discount_price": 17000,
+    "wholesale_price": 15300,
+    "category": "prensas-fijacion",
     "stock": 1000,
     "stock_warehouse": 400,
     "stock_store": 200,
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -5612,123 +5362,23 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-11-22T02:20:53.695282+00:00"
   },
   {
-    "id": "77d73fb0-719f-4c63-917a-3fd9f7fec216",
-    "name": "DISCO IMPORTADO 7 1/4 60 DIENTES",
-    "slug": "disco-importado-7-1-4-60-dientes-ip0054-3",
-    "brand": "IMPORTADO",
-    "sku": "IP0054-3",
-    "description": "Disco para sierra circular, de 7 1/4 pulgadas y 60 dientes. Te sirve pa cortar con una sierra que admita esas medidas; revisá el diámetro y el eje de tu equipo antes de montarlo.",
+    "id": "444bfd37-75bd-484a-9ec7-c097e37bbe9a",
+    "name": "FLEXOMETRO 8M LUFKIN",
+    "slug": "flexometro-8m-lufkin-l525",
+    "brand": "LUFKIN",
+    "sku": "L525",
+    "description": "Flexómetro Lufkin de 8 m. Te sirve pa tomar medidas en trabajos de instalación, carpintería o construcción; escogé el largo que necesitás.",
     "technical_specs": {},
-    "price": 10000,
-    "wholesale_price": 9000,
-    "category": "discos-corte",
+    "price": 24500,
+    "wholesale_price": 22050,
+    "category": "medicion-nivelacion",
     "stock": 1000,
     "stock_warehouse": 400,
     "stock_store": 200,
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:53.695282+00:00"
-  },
-  {
-    "id": "a3081221-8c84-464a-a5b6-4163d555fd53",
-    "name": "DISCO IMPORTADO 7 1/4 40 DIENTES",
-    "slug": "disco-importado-7-1-4-40-dientes-ip0054-2",
-    "brand": "IMPORTADO",
-    "sku": "IP0054-2",
-    "description": "Disco para sierra circular, de 7 1/4 pulgadas y 40 dientes. Te sirve pa cortar con una sierra que admita esas medidas; revisá el diámetro y el eje de tu equipo antes de montarlo.",
-    "technical_specs": {},
-    "price": 10000,
-    "wholesale_price": 9000,
-    "category": "discos-corte",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:53.695282+00:00"
-  },
-  {
-    "id": "24ac7eca-d707-4e3f-8675-199db4fe3571",
-    "name": "DISCO IMPORTADO 7 1/4 24 DIENTES",
-    "slug": "disco-importado-7-1-4-24-dientes-ip0054-1",
-    "brand": "IMPORTADO",
-    "sku": "IP0054-1",
-    "description": "Disco para sierra circular, de 7 1/4 pulgadas y 24 dientes. Te sirve pa cortar con una sierra que admita esas medidas; revisá el diámetro y el eje de tu equipo antes de montarlo.",
-    "technical_specs": {},
-    "price": 10000,
-    "wholesale_price": 9000,
-    "category": "discos-corte",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:53.695282+00:00"
-  },
-  {
-    "id": "026a5175-eaa1-4954-bc20-e7dd51444256",
-    "name": "DISCO PARA SIERRA CIRCULAR 71/4X60 DIENTES",
-    "slug": "disco-para-sierra-circular-71-4x60-dientes-60307",
-    "brand": "BARRACUDA",
-    "sku": "60307",
-    "description": "Disco para sierra circular, de 7 1/4 pulgadas y 60 dientes. Te sirve pa cortar con una sierra que admita esas medidas; revisá el diámetro y el eje de tu equipo antes de montarlo.",
-    "technical_specs": {},
-    "price": 48000,
-    "wholesale_price": 43200,
-    "category": "discos-corte",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-11-22T02:20:53.695282+00:00"
-  },
-  {
-    "id": "b47374f6-3b70-49aa-8148-f36780c51d9e",
-    "name": "DISCO PARA SIERRA CIRCULAR 71/4 X80 DIENTES",
-    "slug": "disco-para-sierra-circular-71-4-x80-dientes-80307",
-    "brand": "BARRACUDA",
-    "sku": "80307",
-    "description": "Disco para sierra circular, de 7 1/4 pulgadas y 80 dientes. Te sirve pa cortar con una sierra que admita esas medidas; revisá el diámetro y el eje de tu equipo antes de montarlo.",
-    "technical_specs": {},
-    "price": 52000,
-    "wholesale_price": 46800,
-    "category": "discos-corte",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80"
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -5753,7 +5403,357 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "/truper-flexometro.png"
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:53.695282+00:00"
+  },
+  {
+    "id": "f1f5cd45-34d3-44d0-9280-0d65281a8661",
+    "name": "FLEXOMETRO 3M LUFKIN",
+    "slug": "flexometro-3m-lufkin-l510",
+    "brand": "LUFKIN",
+    "sku": "L510",
+    "description": "Flexómetro Lufkin de 3 m. Te sirve pa tomar medidas en trabajos de instalación, carpintería o construcción; escogé el largo que necesitás.",
+    "technical_specs": {},
+    "price": 9500,
+    "wholesale_price": 8550,
+    "category": "medicion-nivelacion",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:53.695282+00:00"
+  },
+  {
+    "id": "3f5871df-c4de-4931-954a-68f683cf2928",
+    "name": "PISTOLA  TOTAL AEROGRAFO 400CC",
+    "slug": "pistola-total-aerografo-400cc-pq2501",
+    "brand": "TOTAL",
+    "sku": "PQ2501",
+    "description": "Pistola tipo aerógrafo Total, con presentación indicada de 400 cc. Te sirve pa aplicar pintura con la configuración compatible. La ficha no detalla conexión ni accesorios incluidos; confirmá esos datos antes de ofrecerla.",
+    "technical_specs": {},
+    "price": 62000,
+    "wholesale_price": 55800,
+    "category": "herramientas-manuales",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:53.695282+00:00"
+  },
+  {
+    "id": "190e2786-8a92-43d4-b203-27ddb99daab9",
+    "name": "PULIDORA TOTAL 710W",
+    "slug": "pulidora-total-710w-11576",
+    "brand": "TOTAL",
+    "sku": "11576",
+    "description": "Pulidora Total de 710 W. Te sirve pa pulir o desbastar con un disco compatible. La ficha no indica el diámetro del disco; revisá ese dato antes de montarlo.",
+    "technical_specs": {},
+    "price": 149900,
+    "wholesale_price": 134910,
+    "category": "herramientas-electricas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:53.695282+00:00"
+  },
+  {
+    "id": "1f458d20-1832-4bed-ba32-e9661dcb55eb",
+    "name": "TALADRO TOTAL PERCUTOR 20V",
+    "slug": "taladro-total-percutor-20v-20668",
+    "brand": "TOTAL",
+    "sku": "20668",
+    "description": "Taladro percutor Total de 20 V. Te sirve pa perforar con brocas compatibles y usar la función percutora en materiales adecuados. La ficha no dice si incluye batería o cargador; confirmá esos accesorios antes de comprarlo.",
+    "technical_specs": {},
+    "price": 450000,
+    "wholesale_price": 405000,
+    "category": "herramientas-electricas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:53.695282+00:00"
+  },
+  {
+    "id": "941ad480-e5ea-49ed-aeb8-a83dda4d522c",
+    "name": "DISCO IRWIN 12\"X80",
+    "slug": "disco-irwin-12-x80-15187",
+    "brand": "IRWIN",
+    "sku": "15187",
+    "description": "Disco para sierra circular Irwin, de 12 pulgadas y 80 dientes. Te sirve pa cortar con una sierra que admita esas medidas; revisá el diámetro y el eje de tu equipo antes de montarlo.",
+    "technical_specs": {},
+    "price": 260000,
+    "wholesale_price": 234000,
+    "category": "discos-corte",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:53.695282+00:00"
+  },
+  {
+    "id": "c3d61f01-90f8-4383-958e-ba8ebcabf24c",
+    "name": "DISCO IMPORTADO 7 1/4 80 DIENTES",
+    "slug": "disco-importado-7-1-4-80-dientes-ip0054-4",
+    "brand": "IMPORTADO",
+    "sku": "IP0054-4",
+    "description": "Disco para sierra circular, de 7 1/4 pulgadas y 80 dientes. Te sirve pa cortar con una sierra que admita esas medidas; revisá el diámetro y el eje de tu equipo antes de montarlo.",
+    "technical_specs": {},
+    "price": 10000,
+    "wholesale_price": 9000,
+    "category": "discos-corte",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:53.695282+00:00"
+  },
+  {
+    "id": "77d73fb0-719f-4c63-917a-3fd9f7fec216",
+    "name": "DISCO IMPORTADO 7 1/4 60 DIENTES",
+    "slug": "disco-importado-7-1-4-60-dientes-ip0054-3",
+    "brand": "IMPORTADO",
+    "sku": "IP0054-3",
+    "description": "Disco para sierra circular, de 7 1/4 pulgadas y 60 dientes. Te sirve pa cortar con una sierra que admita esas medidas; revisá el diámetro y el eje de tu equipo antes de montarlo.",
+    "technical_specs": {},
+    "price": 10000,
+    "wholesale_price": 9000,
+    "category": "discos-corte",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:53.695282+00:00"
+  },
+  {
+    "id": "a3081221-8c84-464a-a5b6-4163d555fd53",
+    "name": "DISCO IMPORTADO 7 1/4 40 DIENTES",
+    "slug": "disco-importado-7-1-4-40-dientes-ip0054-2",
+    "brand": "IMPORTADO",
+    "sku": "IP0054-2",
+    "description": "Disco para sierra circular, de 7 1/4 pulgadas y 40 dientes. Te sirve pa cortar con una sierra que admita esas medidas; revisá el diámetro y el eje de tu equipo antes de montarlo.",
+    "technical_specs": {},
+    "price": 10000,
+    "wholesale_price": 9000,
+    "category": "discos-corte",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:53.695282+00:00"
+  },
+  {
+    "id": "24ac7eca-d707-4e3f-8675-199db4fe3571",
+    "name": "DISCO IMPORTADO 7 1/4 24 DIENTES",
+    "slug": "disco-importado-7-1-4-24-dientes-ip0054-1",
+    "brand": "IMPORTADO",
+    "sku": "IP0054-1",
+    "description": "Disco para sierra circular, de 7 1/4 pulgadas y 24 dientes. Te sirve pa cortar con una sierra que admita esas medidas; revisá el diámetro y el eje de tu equipo antes de montarlo.",
+    "technical_specs": {},
+    "price": 10000,
+    "wholesale_price": 9000,
+    "category": "discos-corte",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:53.695282+00:00"
+  },
+  {
+    "id": "026a5175-eaa1-4954-bc20-e7dd51444256",
+    "name": "DISCO PARA SIERRA CIRCULAR 71/4X60 DIENTES",
+    "slug": "disco-para-sierra-circular-71-4x60-dientes-60307",
+    "brand": "BARRACUDA",
+    "sku": "60307",
+    "description": "Disco para sierra circular, de 7 1/4 pulgadas y 60 dientes. Te sirve pa cortar con una sierra que admita esas medidas; revisá el diámetro y el eje de tu equipo antes de montarlo.",
+    "technical_specs": {},
+    "price": 48000,
+    "wholesale_price": 43200,
+    "category": "discos-corte",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:53.695282+00:00"
+  },
+  {
+    "id": "b47374f6-3b70-49aa-8148-f36780c51d9e",
+    "name": "DISCO PARA SIERRA CIRCULAR 71/4 X80 DIENTES",
+    "slug": "disco-para-sierra-circular-71-4-x80-dientes-80307",
+    "brand": "BARRACUDA",
+    "sku": "80307",
+    "description": "Disco para sierra circular, de 7 1/4 pulgadas y 80 dientes. Te sirve pa cortar con una sierra que admita esas medidas; revisá el diámetro y el eje de tu equipo antes de montarlo.",
+    "technical_specs": {},
+    "price": 52000,
+    "wholesale_price": 46800,
+    "category": "discos-corte",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:53.695282+00:00"
+  },
+  {
+    "id": "2641eb35-2c14-4c1e-bd61-b15095190cdd",
+    "name": "DISCO WELLDONE 12\" 120 DIENTES",
+    "slug": "disco-welldone-12-120-dientes-cws-12120",
+    "brand": "WELLDONE",
+    "sku": "CWS-12120",
+    "description": "Disco para sierra circular Welldone, de 12 pulgadas y 120 dientes. Te sirve pa cortar con una sierra que admita esas medidas; revisá el diámetro y el eje de tu equipo antes de montarlo.",
+    "technical_specs": {},
+    "price": 185900,
+    "wholesale_price": 167310,
+    "category": "discos-corte",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:53.695282+00:00"
+  },
+  {
+    "id": "db3ea8b9-e459-4887-a9dd-fa2afec63c84",
+    "name": "TALADRO ATORNILLADOR 20V DE IMPACTO",
+    "slug": "taladro-atornillador-20v-de-impacto-250784",
+    "brand": "TOTAL",
+    "sku": "250784",
+    "description": "Taladro atornillador Total de 20 V con función de impacto. Te sirve pa perforar o atornillar con accesorios compatibles. Revisá si trae batería y cargador, porque esa información no aparece en la ficha.",
+    "technical_specs": {},
+    "price": 450000,
+    "wholesale_price": 405000,
+    "category": "herramientas-electricas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-11-22T02:20:53.695282+00:00"
+  },
+  {
+    "id": "fcdc94cf-6b97-4bd8-ae09-9bba62db81d5",
+    "name": "Fresa para redondear esquina - diámetro de corte 1.1/2\"",
+    "slug": "fresa-para-redondear-esquina-diametro-de-corte-1-1-2-12772",
+    "brand": "WEELDONE",
+    "sku": "12772",
+    "description": "Fresa para redondear esquinas, diámetro de corte 1 1/2\". Te sirve pa redondear esquinas en madera con una ruteadora compatible. La ficha no indica el vástago; revisá que coincida con tu máquina antes de comprar.",
+    "technical_specs": {},
+    "price": 73900,
+    "wholesale_price": 66510,
+    "category": "fresas-madera",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "/placeholder-producto.png"
     ],
     "is_featured": false,
     "is_active": true,
@@ -5790,28 +5790,29 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-10-08T02:52:19.844891+00:00"
   },
   {
-    "id": "019dcce4-58ea-466b-8cbd-10bf1329838c",
-    "name": "Bisagra Superacodada Sencilla",
-    "slug": "bisagra-superacodada-sencilla-fgv-2",
+    "id": "2a1e346a-d01b-4f16-bd66-94afde69c7f2",
+    "name": "Bisagra Omega 4X3 Inoxidable",
+    "slug": "bisagra-omega-4x3-inoxidable-fk00058",
     "brand": "FERREINTER",
-    "sku": "FGV-2",
-    "description": "Bisagra tipo superacodada. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su configuración permite seleccionar el herraje según la disposición de la puerta, facilitando su apertura y cierre en el uso cotidiano.",
+    "sku": "FK00058",
+    "description": "Bisagra tipo omega, referencia 4 × 3, fabricada en acero inoxidable. Diseñada para la articulación de puertas y trabajos de carpintería compatibles con este tipo de herraje. Permite unir la hoja con su soporte y facilitar el movimiento de apertura y cierre.",
     "technical_specs": {},
-    "price": 1750,
-    "wholesale_price": 1800,
+    "price": 10500,
+    "wholesale_price": 9200,
     "category": "bisagras",
-    "stock": 1010,
-    "stock_warehouse": 410,
+    "stock": 1000,
+    "stock_warehouse": 400,
     "stock_store": 200,
     "stock_online": 400,
     "warranty": "1 AÑO",
-    "dimensions": "35MM",
+    "dimensions": "4 PULGADAS",
+    "materials": "ACERO INOX",
     "inventory_status": "PRIVADO",
     "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791904215183_superacodada_jfif.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791904224247_superacodada_360_jfi.jfif"
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791469134677_BISAGRA_4X3_OMEGA_NE.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791469117542_BISAGRA_4X3_OMEGA_NE.jfif"
     ],
-    "is_featured": true,
+    "is_featured": false,
     "is_active": true,
     "rating": 5,
     "reviews_count": 0,
@@ -5847,345 +5848,40 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-10-08T02:52:19.844891+00:00"
   },
   {
-    "id": "2a1e346a-d01b-4f16-bd66-94afde69c7f2",
-    "name": "Bisagra Omega 4X3 Inoxidable",
-    "slug": "bisagra-omega-4x3-inoxidable-fk00058",
+    "id": "019dcce4-58ea-466b-8cbd-10bf1329838c",
+    "name": "Bisagra Superacodada Sencilla",
+    "slug": "bisagra-superacodada-sencilla-fgv-2",
     "brand": "FERREINTER",
-    "sku": "FK00058",
-    "description": "Bisagra tipo omega, referencia 4 × 3, fabricada en acero inoxidable. Diseñada para la articulación de puertas y trabajos de carpintería compatibles con este tipo de herraje. Permite unir la hoja con su soporte y facilitar el movimiento de apertura y cierre.",
+    "sku": "FGV-2",
+    "description": "Bisagra tipo superacodada. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su configuración permite seleccionar el herraje según la disposición de la puerta, facilitando su apertura y cierre en el uso cotidiano.",
     "technical_specs": {},
-    "price": 10500,
-    "wholesale_price": 9200,
+    "price": 1750,
+    "wholesale_price": 1800,
     "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 400,
+    "stock": 1010,
+    "stock_warehouse": 410,
     "stock_store": 200,
     "stock_online": 400,
     "warranty": "1 AÑO",
-    "dimensions": "4 PULGADAS",
-    "materials": "ACERO INOX",
+    "dimensions": "35MM",
     "inventory_status": "PRIVADO",
     "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791469134677_BISAGRA_4X3_OMEGA_NE.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791469117542_BISAGRA_4X3_OMEGA_NE.jfif"
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791904215183_superacodada_jfif.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791904224247_superacodada_360_jfi.jfif"
     ],
-    "is_featured": false,
+    "is_featured": true,
     "is_active": true,
     "rating": 5,
     "reviews_count": 0,
     "created_at": "2026-10-08T02:52:19.844891+00:00"
   },
   {
-    "id": "691a021d-4feb-4828-b11a-729cff9cac70",
-    "name": "Bisagra Nudo Inoxidable 3 Pulgadas",
-    "slug": "bisagra-nudo-inoxidable-3-pulgadas-1b3",
-    "brand": "FERREINTER",
-    "sku": "1B3",
-    "description": "Bisagra de nudo de 3 pulgadas, fabricada en acero inoxidable. Diseñada para la articulación de puertas y trabajos de carpintería compatibles con este tipo de herraje. Permite unir la hoja con su soporte y facilitar el movimiento de apertura y cierre.",
-    "technical_specs": {},
-    "price": 3000,
-    "wholesale_price": 2650,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "dimensions": "3 PULGADAS",
-    "materials": "ACERO INOX",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791655707688_bisagra_3_pulgadas_a.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791478831841_BISAGRA_3_PULGADAS_A.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "07b69e99-e395-4855-b334-378664017af0",
-    "name": "Bisagra Nudo Inoxidable 2 Pulgadas",
-    "slug": "bisagra-nudo-inoxidable-2-pulgadas-1b2",
-    "brand": "FERREINTER",
-    "sku": "1B2",
-    "description": "Bisagra de nudo de 2 pulgadas, fabricada en acero inoxidable. Diseñada para la articulación de puertas y trabajos de carpintería compatibles con este tipo de herraje. Permite unir la hoja con su soporte y facilitar el movimiento de apertura y cierre.",
-    "technical_specs": {},
-    "price": 2800,
-    "wholesale_price": 2450,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "dimensions": "2 PULGADAS",
-    "materials": "ACERO INOX",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791478237640_BISAGRA_2_PULGADAS_A.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791478230236_BISAGRA_2_PULGADAS_A.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "c2c9db0a-266b-4471-a52b-ec93841ea53c",
-    "name": "Bisagra Parche Cierre Lento",
-    "slug": "bisagra-parche-cierre-lento-mt317",
-    "brand": "FERREINTER",
-    "sku": "MT317",
-    "description": "Bisagra tipo parche de 35 mm, fabricada en acero zincado. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su sistema de cierre lento permite un movimiento suave al cerrar la puerta y su configuración facilita la elección del herraje según la disposición del mueble.",
-    "technical_specs": {},
-    "price": 2700,
-    "wholesale_price": 2450,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "dimensions": "35MM",
-    "materials": "ACERO ZINCADO",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791470030167_BISAGRA_PARCHE_CIERR.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791470018322_BISAGRA_PARCHE_CIERR.jfif"
-    ],
-    "is_featured": true,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "e942f1da-ea77-4273-8b8c-00e0af2ea908",
-    "name": "Bisagra Omega 3X3 Zinc",
-    "slug": "bisagra-omega-3x3-zinc-hy833",
-    "brand": "FERREINTER",
-    "sku": "HY833",
-    "description": "Bisagra tipo omega, referencia 3 × 3. Diseñada para la articulación de puertas y trabajos de carpintería compatibles con este tipo de herraje. Permite unir la hoja con su soporte y facilitar el movimiento de apertura y cierre.",
-    "technical_specs": {},
-    "price": 1800,
-    "wholesale_price": 1650,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "dimensions": "3 PULGADAS",
-    "materials": "ACERO INOX",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791656244325_3x3_omega_jfif.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791477682743_BISAGRA_3X3_OMEGA_36.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "eededa1d-f8a3-4142-8117-0d1a473bf0a4",
-    "name": "Bisagra Parche Sencilla",
-    "slug": "bisagra-parche-sencilla-mtr",
-    "brand": "FERREINTER",
-    "sku": "MTR",
-    "description": "Bisagra tipo parche. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su configuración permite seleccionar el herraje según la disposición de la puerta, facilitando su apertura y cierre en el uso cotidiano.",
-    "technical_specs": {},
-    "price": 1750,
-    "wholesale_price": 1600,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791655518412_parche_sencilla_jfif.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791478889531_bisagra_parche_senci.jfif"
-    ],
-    "is_featured": true,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "365c3fc3-a06d-407a-bcf9-40e853502ab5",
-    "name": "Bisagra Semiparche Cierre Lento 304 Negra",
-    "slug": "bisagra-semiparche-cierre-lento-304-negra-hbm550-02",
-    "brand": "FERREINTER",
-    "sku": "HBM550-02",
-    "description": "Bisagra tipo semiparche de 35 mm, con acabado negro. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su sistema de cierre lento permite un movimiento suave al cerrar la puerta y su configuración facilita la elección del herraje según la disposición del mueble.",
-    "technical_specs": {},
-    "price": 7800,
-    "wholesale_price": 6700,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "10 AÑOS",
-    "dimensions": "35MM",
-    "materials": "ACERO ZINCADO",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791470220335_BISAGRA_SEMI_PARCHE_.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791470209528_BISAGRA_SEMI_PARCHE_.jfif"
-    ],
-    "is_featured": true,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "46c745db-d7b3-4cb7-9e3f-5ad493467e0f",
-    "name": "Bisagra Superacodada Cierre Lento",
-    "slug": "bisagra-superacodada-cierre-lento-fgv-cl",
-    "brand": "FERREINTER",
-    "sku": "FGV-CL",
-    "description": "Bisagra tipo superacodada. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su sistema de cierre lento permite un movimiento suave al cerrar la puerta y su configuración facilita la elección del herraje según la disposición del mueble.",
-    "technical_specs": {},
-    "price": 2700,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 0,
-    "stock_store": 0,
-    "stock_online": 0,
-    "dimensions": "35MM",
-    "inventory_status": "Disponible",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791671822065_superacodada_jfif.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791672614706_superacodada_360_jfi.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "834df747-7557-4ac7-b5a1-a80d4753a393",
-    "name": "Bisagra Superacodada Sencilla",
-    "slug": "bisagra-superacodada-sencilla-fgv-s",
-    "brand": "FERREINTER",
-    "sku": "FGV-S",
-    "description": "Bisagra tipo superacodada. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su configuración permite seleccionar el herraje según la disposición de la puerta, facilitando su apertura y cierre en el uso cotidiano.",
-    "technical_specs": {},
-    "price": 1750,
-    "category": "bisagras",
-    "stock": 999,
-    "stock_warehouse": 0,
-    "stock_store": 0,
-    "stock_online": 0,
-    "dimensions": "35MM",
-    "inventory_status": "Disponible",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791654026066_super_acodada_cierre.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791485607941_SUPERACODADA_CIERRE_.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "84141d90-4a37-48dd-b8cd-df3712a8993a",
-    "name": "Disco Corte Aluminio Madera 10\" X 80 Dientes",
-    "slug": "disco-corte-aluminio-madera-10-pulgadas-x-80-dientes-709-36",
-    "brand": "FERREINTER",
-    "sku": "709-36",
-    "description": "Disco para corte de aluminio y madera de la marca Forza, de 10 pulgadas y 80 dientes. Diseñado para realizar cortes en estos materiales con equipos compatibles con el disco. Su configuración dentada permite incorporarlo a trabajos de carpintería y fabricación, seleccionando el equipo y la aplicación según las especificaciones de esta referencia.",
-    "technical_specs": {},
-    "price": 145000,
-    "wholesale_price": 130500,
-    "category": "discos-corte",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791660315502_80_DIENTES_jfif.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791660319639_80_DIENTES_360_jfif.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "c914874b-8d50-4d5f-988b-c22a60fa87bd",
-    "name": "Combo Grecia Negro",
-    "slug": "combo-grecia-negro-728907",
-    "brand": "FERREINTER",
-    "sku": "728907",
-    "description": "Combo de cerradura Grecia de la marca Gato, con acabado negro. Diseñado para aplicaciones de cierre en puertas, ofrece una opción para complementar el sistema de acceso y combinar con otros herrajes del espacio. Su presentación en combo reúne los elementos de esta referencia para una solución de cierre integrada.",
-    "technical_specs": {},
-    "price": 126600,
-    "wholesale_price": 117738,
-    "category": "chapas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791646238131_gfecia_negra_jfif.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791646202076_CHAPA_CRECIA_DE_GATO.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "3b7fa29a-2a9c-4ec2-8091-f5d24c1ee454",
-    "name": "Chapa Manija Cilindrica Negra Entrada P",
-    "slug": "chapa-manija-cilindrica-negra-entrada-p-s139",
-    "brand": "PANTHERS",
-    "sku": "S139",
-    "description": "Cerradura con manija cilíndrica, con acabado negro, de la marca PANTHERS. Diseñada para puertas de entrada. Su manija permite accionar la cerradura y facilita la apertura y el cierre de la puerta, integrando una solución funcional con un acabado que complementa el espacio.",
-    "technical_specs": {},
-    "price": 27000,
-    "wholesale_price": 24000,
-    "category": "chapas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791647789125_entrada_principal_jf.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791647797230_360_jfif.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "0b054948-8f77-42bf-a557-f4c0620bafdc",
-    "name": "Chapa Manija Cilindrica Cromada Baño",
-    "slug": "chapa-manija-cilindrica-cromada-bao-lp005",
+    "id": "5bf3c8d1-3577-48be-9325-eda3f1d01a6a",
+    "name": "Chapa Manija Cilindrica Negra Baño",
+    "slug": "chapa-manija-cilindrica-negra-bao-lp006",
     "brand": "LOCK PRIME",
-    "sku": "LP005",
-    "description": "Cerradura con manija cilíndrica, con acabado cromado, de la marca LOCK PRIME. Diseñada para puertas de baño. Su manija permite accionar la cerradura y facilita la apertura y el cierre de la puerta, integrando una solución funcional con un acabado que complementa el espacio.",
+    "sku": "LP006",
+    "description": "Cerradura con manija cilíndrica, con acabado negro, de la marca LOCK PRIME. Diseñada para puertas de baño. Su manija permite accionar la cerradura y facilita la apertura y el cierre de la puerta, integrando una solución funcional con un acabado que complementa el espacio.",
     "technical_specs": {},
     "price": 27000,
     "wholesale_price": 24000,
@@ -6197,143 +5893,8 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "warranty": "1 AÑO",
     "inventory_status": "PRIVADO",
     "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791479269886_CHAPA_MANIJA_CILINDR.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791479258628_CHAPA_MANIJA_CROMADA.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "ebdd94e7-8509-44dc-9b3f-23ad17a7a500",
-    "name": "Bisagra Cierra Puerta 4X3 Omega",
-    "slug": "bisagra-cierra-puerta-4x3-omega-ip0034",
-    "brand": "FERREINTER",
-    "sku": "IP0034",
-    "description": "Bisagra cierrapuertas tipo omega, referencia 4 × 3. Diseñada para puertas que requieren una bisagra con función de cierre. Combina el movimiento de apertura con la función cierrapuertas en un mismo herraje.",
-    "technical_specs": {},
-    "price": 33000,
-    "wholesale_price": 28000,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791905980178_BISAGRA_4X3_OMEGA_CI.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791905991185_BISAGRA_4X3_OMEGA_CI.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "94dcea83-e4be-47da-89bc-ed05e51cc369",
-    "name": "Escuadra 7\" Profesional Carpintero",
-    "slug": "escuadra-7-pulgadas-profesional-carpintero-ip0025",
-    "brand": "FERREINTER",
-    "sku": "IP0025",
-    "description": "Escuadra profesional de carpintero de 7 pulgadas de la marca Forza. Diseñada para comprobar ángulos rectos y realizar trazos en trabajos de carpintería y montaje. Facilita la alineación de piezas y el marcado de referencias antes de cortar o ensamblar.",
-    "technical_specs": {},
-    "price": 19900,
-    "wholesale_price": 17910,
-    "category": "escuadras-medicion",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791660850885_ESCUADRA_7_jfif.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791660859415_ESCUADRA_7_360_jfif.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "a70dd0c6-3d71-437c-96b8-d053a5854748",
-    "name": "Bisagra Omega 3X1 Negra Acero Inox",
-    "slug": "bisagra-omega-3x1-negra-acero-inox-hys-00056n",
-    "brand": "FERREINTER",
-    "sku": "HYS-00056N",
-    "description": "Bisagra tipo omega, referencia 3 × 1, fabricada en acero inoxidable y con acabado negro. Diseñada para la articulación de puertas y trabajos de carpintería compatibles con este tipo de herraje. Permite unir la hoja con su soporte y facilitar el movimiento de apertura y cierre.",
-    "technical_specs": {},
-    "price": 5500,
-    "wholesale_price": 4400,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "dimensions": "3X1",
-    "materials": "ACERO INOXIDABLE",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791478985020_BISAGRA_3X1_OMEGA_NE.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791478974279_BISAGRA_OMEGA_3X1_NE.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "40f93c38-46c2-41d0-8cbc-466ca25f2954",
-    "name": "Broca Multiproposito 1/4",
-    "slug": "broca-multiproposito-14-709-45",
-    "brand": "FERREINTER",
-    "sku": "709-45",
-    "description": "Broca multipropósito de la marca Forza, referencia 1/4. Diseñada para trabajos de perforación en aplicaciones compatibles con este tipo de broca. Su formato permite incorporarla a tareas de instalación, montaje y mantenimiento, seleccionando la referencia según la perforación requerida.",
-    "technical_specs": {},
-    "price": 9500,
-    "wholesale_price": 8550,
-    "category": "brocas-accesorios",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791668652556_broca_1_4_multipropo.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791668661714_broca_1_4_multipropo.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "a7aad685-f3c5-4a7e-9206-a2887da4e7ae",
-    "name": "Bisagra Robocop Cierre Lento",
-    "slug": "bisagra-robocop-cierre-lento-4366",
-    "brand": "FERREINTER",
-    "sku": "4366",
-    "description": "Bisagra tipo Robocop con cierre lento. Diseñada para puertas de muebles y trabajos de carpintería. Su sistema de cierre lento suaviza el movimiento al cerrar y ofrece una operación práctica en el uso cotidiano.",
-    "technical_specs": {},
-    "price": 18000,
-    "wholesale_price": 16500,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791655893341_bisagra_robocop_cier.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791480903643_BISAGRA_ROBOCOP_CIER.jfif"
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791645729177_pomo_chapa_alcoba_ne.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791581294806_CHAPA_MANIJA_NEGRA_B.jfif"
     ],
     "is_featured": false,
     "is_active": true,
@@ -6369,94 +5930,15 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-10-08T00:15:19.521204+00:00"
   },
   {
-    "id": "5bf3c8d1-3577-48be-9325-eda3f1d01a6a",
-    "name": "Chapa Manija Cilindrica Negra Baño",
-    "slug": "chapa-manija-cilindrica-negra-bao-lp006",
-    "brand": "LOCK PRIME",
-    "sku": "LP006",
-    "description": "Cerradura con manija cilíndrica, con acabado negro, de la marca LOCK PRIME. Diseñada para puertas de baño. Su manija permite accionar la cerradura y facilita la apertura y el cierre de la puerta, integrando una solución funcional con un acabado que complementa el espacio.",
-    "technical_specs": {},
-    "price": 27000,
-    "wholesale_price": 24000,
-    "category": "chapas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791645729177_pomo_chapa_alcoba_ne.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791581294806_CHAPA_MANIJA_NEGRA_B.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "849bc173-0640-4788-b8b1-4bcd78219016",
-    "name": "Prensa Resorte 9\"",
-    "slug": "prensa-resorte-9-pulgadas-av013",
+    "id": "a7aad685-f3c5-4a7e-9206-a2887da4e7ae",
+    "name": "Bisagra Robocop Cierre Lento",
+    "slug": "bisagra-robocop-cierre-lento-4366",
     "brand": "FERREINTER",
-    "sku": "AV013",
-    "description": "Prensa de resorte de 9 pulgadas de la marca Forza. Diseñada para sujetar piezas durante trabajos de carpintería, montaje y manualidades. Su mecanismo de resorte permite colocarla y retirarla de forma práctica, manteniendo las piezas en posición mientras se realiza el trabajo.",
+    "sku": "4366",
+    "description": "Bisagra tipo Robocop con cierre lento. Diseñada para puertas de muebles y trabajos de carpintería. Su sistema de cierre lento suaviza el movimiento al cerrar y ofrece una operación práctica en el uso cotidiano.",
     "technical_specs": {},
-    "price": 21000,
-    "wholesale_price": 18900,
-    "category": "prensas-fijacion",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791668091117_prensa_9_jfif.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791668101565_prensa_9_360_jfif.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "7edffcec-87fc-4da0-be83-28c39191eab6",
-    "name": "Bisagra Omega 4X3 Inoxidable",
-    "slug": "bisagra-omega-4x3-inoxidable-fk00058-inox",
-    "brand": "FERREINTER",
-    "sku": "FK00058-INOX",
-    "description": "Bisagra tipo omega, referencia 4 × 3, fabricada en acero inoxidable. Diseñada para la articulación de puertas y trabajos de carpintería compatibles con este tipo de herraje. Permite unir la hoja con su soporte y facilitar el movimiento de apertura y cierre.",
-    "technical_specs": {},
-    "price": 7800,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 0,
-    "stock_store": 0,
-    "stock_online": 0,
-    "dimensions": "4X3\"",
-    "inventory_status": "Disponible",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791900094661_BISAGRA_4X3_OMEGA_IN.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791900113880_BISAGRA_4X3_OMEGA_IN.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "528bd1b1-aee4-40c9-bef4-e776d3e24296",
-    "name": "Bisagra Doble Accion Oeste",
-    "slug": "bisagra-doble-accion-oeste-114457",
-    "brand": "FERREINTER",
-    "sku": "114457",
-    "description": "Bisagra de doble acción tipo oeste. Diseñada para puertas batientes que requieren apertura en ambos sentidos. Su doble acción permite el movimiento de la puerta hacia uno u otro lado, facilitando el paso entre espacios.",
-    "technical_specs": {},
-    "price": 21800,
-    "wholesale_price": 17000,
+    "price": 18000,
+    "wholesale_price": 16500,
     "category": "bisagras",
     "stock": 1000,
     "stock_warehouse": 400,
@@ -6465,8 +5947,8 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "warranty": "1 AÑO",
     "inventory_status": "PRIVADO",
     "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791469624307_BISAGRA_OESTE_NEGRA_.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791469611751_BISAGRA_OESTE_NEGRA_.jfif"
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791655893341_bisagra_robocop_cier.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791480903643_BISAGRA_ROBOCOP_CIER.jfif"
     ],
     "is_featured": false,
     "is_active": true,
@@ -6475,410 +5957,50 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-10-08T00:15:19.521204+00:00"
   },
   {
-    "id": "9f9cac01-0453-4796-ba3a-6fafd5eb9da3",
-    "name": "Bisagra Omega 4X3 Negro Inoxidable",
-    "slug": "bisagra-omega-4x3-negro-inoxidable-fk00058-neg",
+    "id": "834df747-7557-4ac7-b5a1-a80d4753a393",
+    "name": "Bisagra Superacodada Sencilla",
+    "slug": "bisagra-superacodada-sencilla-fgv-s",
     "brand": "FERREINTER",
-    "sku": "FK00058-NEG",
-    "description": "Bisagra tipo omega, referencia 4 × 3, fabricada en acero inoxidable y con acabado negro. Diseñada para la articulación de puertas y trabajos de carpintería compatibles con este tipo de herraje. Permite unir la hoja con su soporte y facilitar el movimiento de apertura y cierre.",
-    "technical_specs": {},
-    "price": 7791,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 0,
-    "stock_store": 0,
-    "stock_online": 0,
-    "inventory_status": "Disponible",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791469271447_BISAGRA_4X3_OMEGA_NE.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791469257392_BISAGRA_4X3_OMEGA_NE.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "34f84c56-6240-402c-8b30-40c3bde053ad",
-    "name": "Cerradura Reja Automatica",
-    "slug": "cerradura-reja-automatica-865",
-    "brand": "GATO",
-    "sku": "865",
-    "description": "Cerradura automática para reja de la marca Gato. Diseñada para el cierre de rejas. Su funcionamiento automático facilita el aseguramiento de la reja al cerrar y ofrece una solución práctica para el control de acceso.",
-    "technical_specs": {},
-    "price": 64000,
-    "wholesale_price": 59520,
-    "category": "chapas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791651414412_reja_automatica_jfif.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791651421682_reja_automatica_360_.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "43a4f6d8-4a0f-4a1d-b226-12493188da5b",
-    "name": "Bisagra Omega 3X3 Negra",
-    "slug": "bisagra-omega-3x3-negra-hy833n",
-    "brand": "FERREINTER",
-    "sku": "HY833N",
-    "description": "Bisagra tipo omega, referencia 3 × 3, con acabado negro. Diseñada para la articulación de puertas y trabajos de carpintería compatibles con este tipo de herraje. Permite unir la hoja con su soporte y facilitar el movimiento de apertura y cierre.",
-    "technical_specs": {},
-    "price": 1900,
-    "wholesale_price": 1800,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791478351036_BISAGRA_3X3_OMEGA_NE.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791478315797_BISAGRA_OMEGA_3X3_NE.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "71ee4d12-de26-476c-aaa5-724d3b529d6c",
-    "name": "Bisagra Parche Cierre Lento 304 Negra",
-    "slug": "bisagra-parche-cierre-lento-304-negra-hbm550-01",
-    "brand": "FERREINTER",
-    "sku": "HBM550-01",
-    "description": "Bisagra tipo parche de 35 mm, con acabado negro. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su sistema de cierre lento permite un movimiento suave al cerrar la puerta y su configuración facilita la elección del herraje según la disposición del mueble.",
-    "technical_specs": {},
-    "price": 7800,
-    "wholesale_price": 6700,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "10 AÑOS",
-    "dimensions": "35MM",
-    "materials": "ACERO ZINCADO",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791470153592_BISAGRA_PARCHE_NEGRA.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791470141411_BISAGRA_PARCHE_NEGRA.jfif"
-    ],
-    "is_featured": true,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "1056f99f-50b2-4dd9-9249-b09246704c69",
-    "name": "Prensas Frente Cajon",
-    "slug": "prensas-frente-cajon-s110",
-    "brand": "FERREINTER",
-    "sku": "S110",
-    "description": "Prensas para frente de cajón de la marca Forza. Diseñadas para sujetar el frente durante trabajos de montaje y ajuste de cajones. Permiten mantener las piezas en posición mientras se comprueba su alineación y se realiza la fijación, facilitando el ensamblaje del mueble.",
-    "technical_specs": {},
-    "price": 79900,
-    "wholesale_price": 71910,
-    "category": "prensas-fijacion",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1792012803437_PRENSA_FRENTE_CAJON_.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1792012812963_PRENSA_FRENTE_CAJON_.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1792014644121_PRENSA_INSTALADA__NU.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "061da55e-3907-4f21-8e9f-e7ffc623215b",
-    "name": "Bisagra Parche Inoxidable 304",
-    "slug": "bisagra-parche-inoxidable-304-kd4",
-    "brand": "FERREINTER",
-    "sku": "KD4",
-    "description": "Bisagra tipo parche de 35 mm, fabricada en acero inoxidable 304. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su configuración permite seleccionar el herraje según la disposición de la puerta, facilitando su apertura y cierre en el uso cotidiano.",
-    "technical_specs": {},
-    "price": 7800,
-    "wholesale_price": 6700,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "10 AÑOS",
-    "dimensions": "35MM",
-    "materials": "ACERO INOX 304",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791469896430_BISAGRA_PARCHE_ACERO.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791469876205_BISAGRA_PARCHE_ACERO.jfif"
-    ],
-    "is_featured": true,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "eacf8676-4123-4fec-bcd4-eb787a35312d",
-    "name": "Bisagra Superacodada Inoxidable 304",
-    "slug": "bisagra-superacodada-inoxidable-304-kd6",
-    "brand": "FERREINTER",
-    "sku": "KD6",
-    "description": "Bisagra tipo superacodada de 35 mm, fabricada en acero inoxidable 304. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su configuración permite seleccionar el herraje según la disposición de la puerta, facilitando su apertura y cierre en el uso cotidiano.",
-    "technical_specs": {},
-    "price": 7800,
-    "wholesale_price": 6700,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "10 AÑOS",
-    "dimensions": "35MM",
-    "materials": "ACERO INOX 304",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791672903790_superacodada_jfif.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791672912523_superacodada_360_jfi.jfif"
-    ],
-    "is_featured": true,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "5e8d8b1f-11f2-4b3f-a38a-b769086c78ef",
-    "name": "Cerradura Master 65",
-    "slug": "cerradura-master-65-m65",
-    "brand": "GATO",
-    "sku": "M65",
-    "description": "Cerradura Master 65 de la marca Gato. Diseñada para asegurar puertas en aplicaciones compatibles con su configuración. Permite controlar la apertura y el cierre, ofreciendo una solución funcional para el uso cotidiano.",
-    "technical_specs": {},
-    "price": 41900,
-    "wholesale_price": 38967,
-    "category": "chapas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791649684725_master_65_jfif.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791649698456_master_65_360_jfif.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "b06123bf-e213-4813-af42-0b62e37ae74f",
-    "name": "Bisagra De Golpe",
-    "slug": "bisagra-de-golpe-hc3627",
-    "brand": "FERREINTER",
-    "sku": "HC3627",
-    "description": "Bisagra de golpe. Diseñada para la articulación de puertas y trabajos de carpintería compatibles con este tipo de herraje. Permite unir la hoja con su soporte y facilitar el movimiento de apertura y cierre.",
-    "technical_specs": {},
-    "price": 1800,
-    "wholesale_price": 1650,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791477947336_BISAGRA_GOLPE_jfif.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791477937859_BISAGRA_GOLPE_360_jf.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "443e1b0e-c630-449c-89a3-35b431a41069",
-    "name": "Bisagra Semiparche Inoxidable 304",
-    "slug": "bisagra-semiparche-inoxidable-304-kd5",
-    "brand": "FERREINTER",
-    "sku": "KD5",
-    "description": "Bisagra tipo semiparche de 35 mm, fabricada en acero inoxidable 304. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su configuración permite seleccionar el herraje según la disposición de la puerta, facilitando su apertura y cierre en el uso cotidiano.",
-    "technical_specs": {},
-    "price": 7800,
-    "wholesale_price": 6700,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 400,
-    "stock_online": 200,
-    "warranty": "10 AÑOS",
-    "dimensions": "35MM",
-    "materials": "ACERO INOX 304",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791653570646_semi_parche_acero_in.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791472802284_SEMI_PARCHE_ACERO_IN.jfif"
-    ],
-    "is_featured": true,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "5d200939-082a-4d89-87c6-ea5933a0616a",
-    "name": "Combo Grecia Cromo",
-    "slug": "combo-grecia-cromo-728901",
-    "brand": "FERREINTER",
-    "sku": "728901",
-    "description": "Combo de cerradura Grecia de la marca Gato, con acabado cromo. Diseñado para aplicaciones de cierre en puertas, ofrece una opción para complementar el sistema de acceso y combinar con otros herrajes del espacio. Su presentación en combo reúne los elementos de esta referencia para una solución de cierre integrada.",
-    "technical_specs": {},
-    "price": 126600,
-    "wholesale_price": 117738,
-    "category": "chapas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791646824171_grecia_cromada_jfif.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791646828897_grecia_cromada_360_j.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "f877d146-81b2-4b09-91d8-4fff00ad637c",
-    "name": "Chapa Manija Clindrica Cromada Entrada P",
-    "slug": "chapa-manija-clindrica-cromada-entrada-p-s138",
-    "brand": "PANTHERS",
-    "sku": "S138",
-    "description": "Cerradura con manija cilíndrica, con acabado cromado, de la marca PANTHERS. Diseñada para puertas de entrada. Su manija permite accionar la cerradura y facilita la apertura y el cierre de la puerta, integrando una solución funcional con un acabado que complementa el espacio.",
-    "technical_specs": {},
-    "price": 27000,
-    "wholesale_price": 24000,
-    "category": "chapas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791647374665_chapa_entrada_princi.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791647379120_chapa_entrada_princi.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "7a59aa2a-eadd-4cbb-a380-81b25b02e721",
-    "name": "Bisagra Cierra Puerta 4X3 Nudo",
-    "slug": "bisagra-cierra-puerta-4x3-nudo-ip0035",
-    "brand": "FERREINTER",
-    "sku": "IP0035",
-    "description": "Bisagra cierrapuertas de nudo, referencia 4 × 3. Diseñada para puertas que requieren una bisagra con función de cierre. Combina el movimiento de apertura con la función cierrapuertas en un mismo herraje.",
-    "technical_specs": {},
-    "price": 58000,
-    "wholesale_price": 49000,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791901032190_BISAGRA_CIERRA_PUERT.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791901040549_BISAGRA_CIERRA_PUERT.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "c599b022-945b-4a2c-9c84-54949ed5700f",
-    "name": "Bisagra Semiparche Cierre Lento",
-    "slug": "bisagra-semiparche-cierre-lento-mt318",
-    "brand": "FERREINTER",
-    "sku": "MT318",
-    "description": "Bisagra tipo semiparche de 35 mm, fabricada en acero zincado. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su sistema de cierre lento permite un movimiento suave al cerrar la puerta y su configuración facilita la elección del herraje según la disposición del mueble.",
-    "technical_specs": {},
-    "price": 2700,
-    "wholesale_price": 2450,
-    "category": "bisagras",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "dimensions": "35MM",
-    "materials": "ACERO ZINCADO",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791653852191_semi_parche_cierre_l.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791471934028_SEMI_PARCHE_CIERRE_L.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "ce771c0b-b379-49b1-a7ad-1bc83d682054",
-    "name": "Bisagra Semiparche Sencilla",
-    "slug": "bisagra-semiparche-sencilla-mta",
-    "brand": "FERREINTER",
-    "sku": "MTA",
-    "description": "Bisagra tipo semiparche. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su configuración permite seleccionar el herraje según la disposición de la puerta, facilitando su apertura y cierre en el uso cotidiano.",
+    "sku": "FGV-S",
+    "description": "Bisagra tipo superacodada. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su configuración permite seleccionar el herraje según la disposición de la puerta, facilitando su apertura y cierre en el uso cotidiano.",
     "technical_specs": {},
     "price": 1750,
-    "wholesale_price": 1600,
+    "category": "bisagras",
+    "stock": 999,
+    "stock_warehouse": 0,
+    "stock_store": 0,
+    "stock_online": 0,
+    "dimensions": "35MM",
+    "inventory_status": "Disponible",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791654026066_super_acodada_cierre.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791485607941_SUPERACODADA_CIERRE_.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "46c745db-d7b3-4cb7-9e3f-5ad493467e0f",
+    "name": "Bisagra Superacodada Cierre Lento",
+    "slug": "bisagra-superacodada-cierre-lento-fgv-cl",
+    "brand": "FERREINTER",
+    "sku": "FGV-CL",
+    "description": "Bisagra tipo superacodada. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su sistema de cierre lento permite un movimiento suave al cerrar la puerta y su configuración facilita la elección del herraje según la disposición del mueble.",
+    "technical_specs": {},
+    "price": 2700,
     "category": "bisagras",
     "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "inventory_status": "PRIVADO",
+    "stock_warehouse": 0,
+    "stock_store": 0,
+    "stock_online": 0,
+    "dimensions": "35MM",
+    "inventory_status": "Disponible",
     "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791655254109_semi_parche_sencilla.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791480188044_BISAGRA_SEMIPARCHE_S.jfif"
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791671822065_superacodada_jfif.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791672614706_superacodada_360_jfi.jfif"
     ],
     "is_featured": false,
     "is_active": true,
@@ -6887,68 +6009,15 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-10-08T00:15:19.521204+00:00"
   },
   {
-    "id": "4ad2fc41-6057-418a-895b-62c7e13bb926",
-    "name": "Broca Multiproposito 5/32",
-    "slug": "broca-multiproposito-532-709-43",
+    "id": "e3b930fe-f142-46cb-9bdb-7e0e7b90ab60",
+    "name": "Disco Corte Madera Multiproposito 41/2 O Pulidora",
+    "slug": "disco-corte-madera-multiproposito-4-12-o-pulidora-ip0053",
     "brand": "FERREINTER",
-    "sku": "709-43",
-    "description": "Broca multipropósito de la marca Forza, referencia 5/32. Diseñada para trabajos de perforación en aplicaciones compatibles con este tipo de broca. Su formato permite incorporarla a tareas de instalación, montaje y mantenimiento, seleccionando la referencia según la perforación requerida.",
+    "sku": "IP0053",
+    "description": "Disco multipropósito para corte de madera de la marca Forza, referencia 4 1/2 para pulidora. Diseñado para trabajos de corte de madera en aplicaciones compatibles con el disco y el equipo. Ofrece una opción para labores de carpintería y preparación de piezas que requieren este tipo de accesorio.",
     "technical_specs": {},
-    "price": 8900,
-    "wholesale_price": 8010,
-    "category": "brocas-accesorios",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791669185158_broca_5_32_jfif.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791669201669_broca_5_32_360_jfif.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "99cd3c94-32ac-4081-8fe6-d5ad1ad3e1a5",
-    "name": "Chapa Manija Cilindrica Negra Alcoba",
-    "slug": "chapa-manija-cilindrica-negra-alcoba-lp004",
-    "brand": "LOCK PRIME",
-    "sku": "LP004",
-    "description": "Cerradura con manija cilíndrica, con acabado negro, de la marca LOCK PRIME. Diseñada para puertas de baño. Su manija permite accionar la cerradura y facilita la apertura y el cierre de la puerta, integrando una solución funcional con un acabado que complementa el espacio.",
-    "technical_specs": {},
-    "price": 27000,
-    "wholesale_price": 24000,
-    "category": "chapas",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "warranty": "1 AÑO",
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791645700799_pomo_chapa_alcoba_ne.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791485930223_CHAPA_MANIJA_CILINDR.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "87a0d0ed-50dc-47cb-97fa-b2ea186aba42",
-    "name": "Disco Corte Madera Multiproposito 7 1/4 O Radial",
-    "slug": "disco-corte-madera-multiproposito-7-14-o-radial-ip0053-1",
-    "brand": "FERREINTER",
-    "sku": "IP0053-1",
-    "description": "Disco multipropósito para corte de madera de la marca Forza, referencia 7 1/4 para radial. Diseñado para trabajos de corte de madera en aplicaciones compatibles con el disco y el equipo. Ofrece una opción para labores de carpintería y preparación de piezas que requieren este tipo de accesorio.",
-    "technical_specs": {},
-    "price": 39900,
-    "wholesale_price": 35910,
+    "price": 13900,
+    "wholesale_price": 12510,
     "category": "discos-corte",
     "stock": 1000,
     "stock_warehouse": 400,
@@ -6956,8 +6025,8 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791656492063_multiproposito_7_1_4.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791656479644_bisagra_3_pulgadas_a.jfif"
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791660000160_multiproposito_PEQUE.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791660006247_MULTIPROPOSITO_PEQUE.jfif"
     ],
     "is_featured": false,
     "is_active": true,
@@ -6966,25 +6035,23 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-10-08T00:15:19.521204+00:00"
   },
   {
-    "id": "6549c93a-9deb-4654-b983-8f051eb6f1e7",
-    "name": "Chapa Pomo Cromada Baño",
-    "slug": "chapa-pomo-cromada-bao-bk587",
-    "brand": "LOCK PRIME",
-    "sku": "BK587",
-    "description": "Cerradura tipo pomo, con acabado cromado, de la marca LOCK PRIME. Diseñada para puertas de baño. Su pomo permite accionar la cerradura y facilita la apertura y el cierre de la puerta, integrando una solución funcional con un acabado que complementa el espacio.",
+    "id": "b9d15d3a-fbaa-4511-81c9-e79b7f1bbcbc",
+    "name": "Disco Corte Aluminio Madera 10\" X 120 Dientes",
+    "slug": "disco-corte-aluminio-madera-10-pulgadas-x-120-dientes-709-38",
+    "brand": "FERREINTER",
+    "sku": "709-38",
+    "description": "",
     "technical_specs": {},
-    "price": 13500,
-    "wholesale_price": 12000,
-    "category": "chapas",
+    "price": 165000,
+    "wholesale_price": 148500,
+    "category": "discos-corte",
     "stock": 1000,
     "stock_warehouse": 400,
     "stock_store": 200,
     "stock_online": 400,
-    "warranty": "1 AÑO",
     "inventory_status": "PRIVADO",
     "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791556081375_CHAPA_POMO_CROMADA_B.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791556151183_CHAPA_POMO_ECONOMICA.jfif"
+      "/dewalt-chopsaw.jpg"
     ],
     "is_featured": false,
     "is_active": true,
@@ -7020,23 +6087,25 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-10-08T00:15:19.521204+00:00"
   },
   {
-    "id": "b9d15d3a-fbaa-4511-81c9-e79b7f1bbcbc",
-    "name": "Disco Corte Aluminio Madera 10\" X 120 Dientes",
-    "slug": "disco-corte-aluminio-madera-10-pulgadas-x-120-dientes-709-38",
-    "brand": "FERREINTER",
-    "sku": "709-38",
-    "description": "",
+    "id": "6549c93a-9deb-4654-b983-8f051eb6f1e7",
+    "name": "Chapa Pomo Cromada Baño",
+    "slug": "chapa-pomo-cromada-bao-bk587",
+    "brand": "LOCK PRIME",
+    "sku": "BK587",
+    "description": "Cerradura tipo pomo, con acabado cromado, de la marca LOCK PRIME. Diseñada para puertas de baño. Su pomo permite accionar la cerradura y facilita la apertura y el cierre de la puerta, integrando una solución funcional con un acabado que complementa el espacio.",
     "technical_specs": {},
-    "price": 165000,
-    "wholesale_price": 148500,
-    "category": "discos-corte",
+    "price": 13500,
+    "wholesale_price": 12000,
+    "category": "chapas",
     "stock": 1000,
     "stock_warehouse": 400,
     "stock_store": 200,
     "stock_online": 400,
+    "warranty": "1 AÑO",
     "inventory_status": "PRIVADO",
     "images": [
-      "/dewalt-chopsaw.jpg"
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791556081375_CHAPA_POMO_CROMADA_B.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791556151183_CHAPA_POMO_ECONOMICA.jfif"
     ],
     "is_featured": false,
     "is_active": true,
@@ -7045,15 +6114,15 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-10-08T00:15:19.521204+00:00"
   },
   {
-    "id": "e3b930fe-f142-46cb-9bdb-7e0e7b90ab60",
-    "name": "Disco Corte Madera Multiproposito 41/2 O Pulidora",
-    "slug": "disco-corte-madera-multiproposito-4-12-o-pulidora-ip0053",
+    "id": "87a0d0ed-50dc-47cb-97fa-b2ea186aba42",
+    "name": "Disco Corte Madera Multiproposito 7 1/4 O Radial",
+    "slug": "disco-corte-madera-multiproposito-7-14-o-radial-ip0053-1",
     "brand": "FERREINTER",
-    "sku": "IP0053",
-    "description": "Disco multipropósito para corte de madera de la marca Forza, referencia 4 1/2 para pulidora. Diseñado para trabajos de corte de madera en aplicaciones compatibles con el disco y el equipo. Ofrece una opción para labores de carpintería y preparación de piezas que requieren este tipo de accesorio.",
+    "sku": "IP0053-1",
+    "description": "Disco multipropósito para corte de madera de la marca Forza, referencia 7 1/4 para radial. Diseñado para trabajos de corte de madera en aplicaciones compatibles con el disco y el equipo. Ofrece una opción para labores de carpintería y preparación de piezas que requieren este tipo de accesorio.",
     "technical_specs": {},
-    "price": 13900,
-    "wholesale_price": 12510,
+    "price": 39900,
+    "wholesale_price": 35910,
     "category": "discos-corte",
     "stock": 1000,
     "stock_warehouse": 400,
@@ -7061,8 +6130,34 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "stock_online": 400,
     "inventory_status": "PRIVADO",
     "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791660000160_multiproposito_PEQUE.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791660006247_MULTIPROPOSITO_PEQUE.jfif"
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791656492063_multiproposito_7_1_4.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791656479644_bisagra_3_pulgadas_a.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "94dcea83-e4be-47da-89bc-ed05e51cc369",
+    "name": "Escuadra 7\" Profesional Carpintero",
+    "slug": "escuadra-7-pulgadas-profesional-carpintero-ip0025",
+    "brand": "FERREINTER",
+    "sku": "IP0025",
+    "description": "Escuadra profesional de carpintero de 7 pulgadas de la marca Forza. Diseñada para comprobar ángulos rectos y realizar trazos en trabajos de carpintería y montaje. Facilita la alineación de piezas y el marcado de referencias antes de cortar o ensamblar.",
+    "technical_specs": {},
+    "price": 19900,
+    "wholesale_price": 17910,
+    "category": "escuadras-medicion",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791660850885_ESCUADRA_7_jfif.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791660859415_ESCUADRA_7_360_jfif.jfif"
     ],
     "is_featured": false,
     "is_active": true,
@@ -7550,6 +6645,32 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "created_at": "2026-10-08T00:15:19.521204+00:00"
   },
   {
+    "id": "82c43517-ccd3-42ac-84ff-8e86a265d44f",
+    "name": "Disco Corte Aluminio Madera 10\" X 100 Dientes",
+    "slug": "disco-corte-aluminio-madera-10-pulgadas-x-100-dientes-709-37",
+    "brand": "FERREINTER",
+    "sku": "709-37",
+    "description": "Disco para corte de aluminio y madera de la marca Forza, de 10 pulgadas y 100 dientes. Diseñado para realizar cortes en estos materiales con equipos compatibles con el disco. Su configuración dentada permite incorporarlo a trabajos de carpintería y fabricación, seleccionando el equipo y la aplicación según las especificaciones de esta referencia.",
+    "technical_specs": {},
+    "price": 155000,
+    "wholesale_price": 139500,
+    "category": "discos-corte",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791900567674_DISCO_CORTE_100_DIEN.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791900576363_DISCO_CORTE_100_DIEN.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
     "id": "db3c592e-88ae-4a44-8a3d-8ed5494a683f",
     "name": "Bisagra Maquina",
     "slug": "bisagra-maquina-fr5521",
@@ -7569,32 +6690,6 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "images": [
       "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791905792850_BISAGRA_MAQUINA_jfif.jfif",
       "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791905800952_BISAGRA_MAQUINA_360_.jfif"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "rating": 5,
-    "reviews_count": 0,
-    "created_at": "2026-10-08T00:15:19.521204+00:00"
-  },
-  {
-    "id": "82c43517-ccd3-42ac-84ff-8e86a265d44f",
-    "name": "Disco Corte Aluminio Madera 10\" X 100 Dientes",
-    "slug": "disco-corte-aluminio-madera-10-pulgadas-x-100-dientes-709-37",
-    "brand": "FERREINTER",
-    "sku": "709-37",
-    "description": "Disco para corte de aluminio y madera de la marca Forza, de 10 pulgadas y 100 dientes. Diseñado para realizar cortes en estos materiales con equipos compatibles con el disco. Su configuración dentada permite incorporarlo a trabajos de carpintería y fabricación, seleccionando el equipo y la aplicación según las especificaciones de esta referencia.",
-    "technical_specs": {},
-    "price": 155000,
-    "wholesale_price": 139500,
-    "category": "discos-corte",
-    "stock": 1000,
-    "stock_warehouse": 400,
-    "stock_store": 200,
-    "stock_online": 400,
-    "inventory_status": "PRIVADO",
-    "images": [
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791900567674_DISCO_CORTE_100_DIEN.jfif",
-      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791900576363_DISCO_CORTE_100_DIEN.jfif"
     ],
     "is_featured": false,
     "is_active": true,
@@ -7679,6 +6774,911 @@ export const INITIAL_REAL_PRODUCTS: Product[] = [
     "images": [
       "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791479836392_BISAGRA_4X3_ACERO_jf.jfif",
       "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791479827274_BISAGRA_4X3_ACERO_36.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "691a021d-4feb-4828-b11a-729cff9cac70",
+    "name": "Bisagra Nudo Inoxidable 3 Pulgadas",
+    "slug": "bisagra-nudo-inoxidable-3-pulgadas-1b3",
+    "brand": "FERREINTER",
+    "sku": "1B3",
+    "description": "Bisagra de nudo de 3 pulgadas, fabricada en acero inoxidable. Diseñada para la articulación de puertas y trabajos de carpintería compatibles con este tipo de herraje. Permite unir la hoja con su soporte y facilitar el movimiento de apertura y cierre.",
+    "technical_specs": {},
+    "price": 3000,
+    "wholesale_price": 2650,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "dimensions": "3 PULGADAS",
+    "materials": "ACERO INOX",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791655707688_bisagra_3_pulgadas_a.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791478831841_BISAGRA_3_PULGADAS_A.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "07b69e99-e395-4855-b334-378664017af0",
+    "name": "Bisagra Nudo Inoxidable 2 Pulgadas",
+    "slug": "bisagra-nudo-inoxidable-2-pulgadas-1b2",
+    "brand": "FERREINTER",
+    "sku": "1B2",
+    "description": "Bisagra de nudo de 2 pulgadas, fabricada en acero inoxidable. Diseñada para la articulación de puertas y trabajos de carpintería compatibles con este tipo de herraje. Permite unir la hoja con su soporte y facilitar el movimiento de apertura y cierre.",
+    "technical_specs": {},
+    "price": 2800,
+    "wholesale_price": 2450,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "dimensions": "2 PULGADAS",
+    "materials": "ACERO INOX",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791478237640_BISAGRA_2_PULGADAS_A.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791478230236_BISAGRA_2_PULGADAS_A.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "c2c9db0a-266b-4471-a52b-ec93841ea53c",
+    "name": "Bisagra Parche Cierre Lento",
+    "slug": "bisagra-parche-cierre-lento-mt317",
+    "brand": "FERREINTER",
+    "sku": "MT317",
+    "description": "Bisagra tipo parche de 35 mm, fabricada en acero zincado. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su sistema de cierre lento permite un movimiento suave al cerrar la puerta y su configuración facilita la elección del herraje según la disposición del mueble.",
+    "technical_specs": {},
+    "price": 2700,
+    "wholesale_price": 2450,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "dimensions": "35MM",
+    "materials": "ACERO ZINCADO",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791470030167_BISAGRA_PARCHE_CIERR.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791470018322_BISAGRA_PARCHE_CIERR.jfif"
+    ],
+    "is_featured": true,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "e942f1da-ea77-4273-8b8c-00e0af2ea908",
+    "name": "Bisagra Omega 3X3 Zinc",
+    "slug": "bisagra-omega-3x3-zinc-hy833",
+    "brand": "FERREINTER",
+    "sku": "HY833",
+    "description": "Bisagra tipo omega, referencia 3 × 3. Diseñada para la articulación de puertas y trabajos de carpintería compatibles con este tipo de herraje. Permite unir la hoja con su soporte y facilitar el movimiento de apertura y cierre.",
+    "technical_specs": {},
+    "price": 1800,
+    "wholesale_price": 1650,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "dimensions": "3 PULGADAS",
+    "materials": "ACERO INOX",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791656244325_3x3_omega_jfif.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791477682743_BISAGRA_3X3_OMEGA_36.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "eededa1d-f8a3-4142-8117-0d1a473bf0a4",
+    "name": "Bisagra Parche Sencilla",
+    "slug": "bisagra-parche-sencilla-mtr",
+    "brand": "FERREINTER",
+    "sku": "MTR",
+    "description": "Bisagra tipo parche. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su configuración permite seleccionar el herraje según la disposición de la puerta, facilitando su apertura y cierre en el uso cotidiano.",
+    "technical_specs": {},
+    "price": 1750,
+    "wholesale_price": 1600,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791655518412_parche_sencilla_jfif.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791478889531_bisagra_parche_senci.jfif"
+    ],
+    "is_featured": true,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "365c3fc3-a06d-407a-bcf9-40e853502ab5",
+    "name": "Bisagra Semiparche Cierre Lento 304 Negra",
+    "slug": "bisagra-semiparche-cierre-lento-304-negra-hbm550-02",
+    "brand": "FERREINTER",
+    "sku": "HBM550-02",
+    "description": "Bisagra tipo semiparche de 35 mm, con acabado negro. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su sistema de cierre lento permite un movimiento suave al cerrar la puerta y su configuración facilita la elección del herraje según la disposición del mueble.",
+    "technical_specs": {},
+    "price": 7800,
+    "wholesale_price": 6700,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "10 AÑOS",
+    "dimensions": "35MM",
+    "materials": "ACERO ZINCADO",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791470220335_BISAGRA_SEMI_PARCHE_.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791470209528_BISAGRA_SEMI_PARCHE_.jfif"
+    ],
+    "is_featured": true,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "84141d90-4a37-48dd-b8cd-df3712a8993a",
+    "name": "Disco Corte Aluminio Madera 10\" X 80 Dientes",
+    "slug": "disco-corte-aluminio-madera-10-pulgadas-x-80-dientes-709-36",
+    "brand": "FERREINTER",
+    "sku": "709-36",
+    "description": "Disco para corte de aluminio y madera de la marca Forza, de 10 pulgadas y 80 dientes. Diseñado para realizar cortes en estos materiales con equipos compatibles con el disco. Su configuración dentada permite incorporarlo a trabajos de carpintería y fabricación, seleccionando el equipo y la aplicación según las especificaciones de esta referencia.",
+    "technical_specs": {},
+    "price": 145000,
+    "wholesale_price": 130500,
+    "category": "discos-corte",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791660315502_80_DIENTES_jfif.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791660319639_80_DIENTES_360_jfif.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "c914874b-8d50-4d5f-988b-c22a60fa87bd",
+    "name": "Combo Grecia Negro",
+    "slug": "combo-grecia-negro-728907",
+    "brand": "FERREINTER",
+    "sku": "728907",
+    "description": "Combo de cerradura Grecia de la marca Gato, con acabado negro. Diseñado para aplicaciones de cierre en puertas, ofrece una opción para complementar el sistema de acceso y combinar con otros herrajes del espacio. Su presentación en combo reúne los elementos de esta referencia para una solución de cierre integrada.",
+    "technical_specs": {},
+    "price": 126600,
+    "wholesale_price": 117738,
+    "category": "chapas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791646238131_gfecia_negra_jfif.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791646202076_CHAPA_CRECIA_DE_GATO.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "3b7fa29a-2a9c-4ec2-8091-f5d24c1ee454",
+    "name": "Chapa Manija Cilindrica Negra Entrada P",
+    "slug": "chapa-manija-cilindrica-negra-entrada-p-s139",
+    "brand": "PANTHERS",
+    "sku": "S139",
+    "description": "Cerradura con manija cilíndrica, con acabado negro, de la marca PANTHERS. Diseñada para puertas de entrada. Su manija permite accionar la cerradura y facilita la apertura y el cierre de la puerta, integrando una solución funcional con un acabado que complementa el espacio.",
+    "technical_specs": {},
+    "price": 27000,
+    "wholesale_price": 24000,
+    "category": "chapas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791647789125_entrada_principal_jf.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791647797230_360_jfif.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "0b054948-8f77-42bf-a557-f4c0620bafdc",
+    "name": "Chapa Manija Cilindrica Cromada Baño",
+    "slug": "chapa-manija-cilindrica-cromada-bao-lp005",
+    "brand": "LOCK PRIME",
+    "sku": "LP005",
+    "description": "Cerradura con manija cilíndrica, con acabado cromado, de la marca LOCK PRIME. Diseñada para puertas de baño. Su manija permite accionar la cerradura y facilita la apertura y el cierre de la puerta, integrando una solución funcional con un acabado que complementa el espacio.",
+    "technical_specs": {},
+    "price": 27000,
+    "wholesale_price": 24000,
+    "category": "chapas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791479269886_CHAPA_MANIJA_CILINDR.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791479258628_CHAPA_MANIJA_CROMADA.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "ebdd94e7-8509-44dc-9b3f-23ad17a7a500",
+    "name": "Bisagra Cierra Puerta 4X3 Omega",
+    "slug": "bisagra-cierra-puerta-4x3-omega-ip0034",
+    "brand": "FERREINTER",
+    "sku": "IP0034",
+    "description": "Bisagra cierrapuertas tipo omega, referencia 4 × 3. Diseñada para puertas que requieren una bisagra con función de cierre. Combina el movimiento de apertura con la función cierrapuertas en un mismo herraje.",
+    "technical_specs": {},
+    "price": 33000,
+    "wholesale_price": 28000,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791905980178_BISAGRA_4X3_OMEGA_CI.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791905991185_BISAGRA_4X3_OMEGA_CI.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "a70dd0c6-3d71-437c-96b8-d053a5854748",
+    "name": "Bisagra Omega 3X1 Negra Acero Inox",
+    "slug": "bisagra-omega-3x1-negra-acero-inox-hys-00056n",
+    "brand": "FERREINTER",
+    "sku": "HYS-00056N",
+    "description": "Bisagra tipo omega, referencia 3 × 1, fabricada en acero inoxidable y con acabado negro. Diseñada para la articulación de puertas y trabajos de carpintería compatibles con este tipo de herraje. Permite unir la hoja con su soporte y facilitar el movimiento de apertura y cierre.",
+    "technical_specs": {},
+    "price": 5500,
+    "wholesale_price": 4400,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "dimensions": "3X1",
+    "materials": "ACERO INOXIDABLE",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791478985020_BISAGRA_3X1_OMEGA_NE.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791478974279_BISAGRA_OMEGA_3X1_NE.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "40f93c38-46c2-41d0-8cbc-466ca25f2954",
+    "name": "Broca Multiproposito 1/4",
+    "slug": "broca-multiproposito-14-709-45",
+    "brand": "FERREINTER",
+    "sku": "709-45",
+    "description": "Broca multipropósito de la marca Forza, referencia 1/4. Diseñada para trabajos de perforación en aplicaciones compatibles con este tipo de broca. Su formato permite incorporarla a tareas de instalación, montaje y mantenimiento, seleccionando la referencia según la perforación requerida.",
+    "technical_specs": {},
+    "price": 9500,
+    "wholesale_price": 8550,
+    "category": "brocas-accesorios",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791668652556_broca_1_4_multipropo.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791668661714_broca_1_4_multipropo.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "34f84c56-6240-402c-8b30-40c3bde053ad",
+    "name": "Cerradura Reja Automatica",
+    "slug": "cerradura-reja-automatica-865",
+    "brand": "GATO",
+    "sku": "865",
+    "description": "Cerradura automática para reja de la marca Gato. Diseñada para el cierre de rejas. Su funcionamiento automático facilita el aseguramiento de la reja al cerrar y ofrece una solución práctica para el control de acceso.",
+    "technical_specs": {},
+    "price": 64000,
+    "wholesale_price": 59520,
+    "category": "chapas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791651414412_reja_automatica_jfif.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791651421682_reja_automatica_360_.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "43a4f6d8-4a0f-4a1d-b226-12493188da5b",
+    "name": "Bisagra Omega 3X3 Negra",
+    "slug": "bisagra-omega-3x3-negra-hy833n",
+    "brand": "FERREINTER",
+    "sku": "HY833N",
+    "description": "Bisagra tipo omega, referencia 3 × 3, con acabado negro. Diseñada para la articulación de puertas y trabajos de carpintería compatibles con este tipo de herraje. Permite unir la hoja con su soporte y facilitar el movimiento de apertura y cierre.",
+    "technical_specs": {},
+    "price": 1900,
+    "wholesale_price": 1800,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791478351036_BISAGRA_3X3_OMEGA_NE.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791478315797_BISAGRA_OMEGA_3X3_NE.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "71ee4d12-de26-476c-aaa5-724d3b529d6c",
+    "name": "Bisagra Parche Cierre Lento 304 Negra",
+    "slug": "bisagra-parche-cierre-lento-304-negra-hbm550-01",
+    "brand": "FERREINTER",
+    "sku": "HBM550-01",
+    "description": "Bisagra tipo parche de 35 mm, con acabado negro. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su sistema de cierre lento permite un movimiento suave al cerrar la puerta y su configuración facilita la elección del herraje según la disposición del mueble.",
+    "technical_specs": {},
+    "price": 7800,
+    "wholesale_price": 6700,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "10 AÑOS",
+    "dimensions": "35MM",
+    "materials": "ACERO ZINCADO",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791470153592_BISAGRA_PARCHE_NEGRA.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791470141411_BISAGRA_PARCHE_NEGRA.jfif"
+    ],
+    "is_featured": true,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "1056f99f-50b2-4dd9-9249-b09246704c69",
+    "name": "Prensas Frente Cajon",
+    "slug": "prensas-frente-cajon-s110",
+    "brand": "FERREINTER",
+    "sku": "S110",
+    "description": "Prensas para frente de cajón de la marca Forza. Diseñadas para sujetar el frente durante trabajos de montaje y ajuste de cajones. Permiten mantener las piezas en posición mientras se comprueba su alineación y se realiza la fijación, facilitando el ensamblaje del mueble.",
+    "technical_specs": {},
+    "price": 79900,
+    "wholesale_price": 71910,
+    "category": "prensas-fijacion",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1792012803437_PRENSA_FRENTE_CAJON_.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1792012812963_PRENSA_FRENTE_CAJON_.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1792014644121_PRENSA_INSTALADA__NU.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "061da55e-3907-4f21-8e9f-e7ffc623215b",
+    "name": "Bisagra Parche Inoxidable 304",
+    "slug": "bisagra-parche-inoxidable-304-kd4",
+    "brand": "FERREINTER",
+    "sku": "KD4",
+    "description": "Bisagra tipo parche de 35 mm, fabricada en acero inoxidable 304. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su configuración permite seleccionar el herraje según la disposición de la puerta, facilitando su apertura y cierre en el uso cotidiano.",
+    "technical_specs": {},
+    "price": 7800,
+    "wholesale_price": 6700,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "10 AÑOS",
+    "dimensions": "35MM",
+    "materials": "ACERO INOX 304",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791469896430_BISAGRA_PARCHE_ACERO.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791469876205_BISAGRA_PARCHE_ACERO.jfif"
+    ],
+    "is_featured": true,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "eacf8676-4123-4fec-bcd4-eb787a35312d",
+    "name": "Bisagra Superacodada Inoxidable 304",
+    "slug": "bisagra-superacodada-inoxidable-304-kd6",
+    "brand": "FERREINTER",
+    "sku": "KD6",
+    "description": "Bisagra tipo superacodada de 35 mm, fabricada en acero inoxidable 304. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su configuración permite seleccionar el herraje según la disposición de la puerta, facilitando su apertura y cierre en el uso cotidiano.",
+    "technical_specs": {},
+    "price": 7800,
+    "wholesale_price": 6700,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "10 AÑOS",
+    "dimensions": "35MM",
+    "materials": "ACERO INOX 304",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791672903790_superacodada_jfif.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791672912523_superacodada_360_jfi.jfif"
+    ],
+    "is_featured": true,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "5e8d8b1f-11f2-4b3f-a38a-b769086c78ef",
+    "name": "Cerradura Master 65",
+    "slug": "cerradura-master-65-m65",
+    "brand": "GATO",
+    "sku": "M65",
+    "description": "Cerradura Master 65 de la marca Gato. Diseñada para asegurar puertas en aplicaciones compatibles con su configuración. Permite controlar la apertura y el cierre, ofreciendo una solución funcional para el uso cotidiano.",
+    "technical_specs": {},
+    "price": 41900,
+    "wholesale_price": 38967,
+    "category": "chapas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791649684725_master_65_jfif.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791649698456_master_65_360_jfif.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "b06123bf-e213-4813-af42-0b62e37ae74f",
+    "name": "Bisagra De Golpe",
+    "slug": "bisagra-de-golpe-hc3627",
+    "brand": "FERREINTER",
+    "sku": "HC3627",
+    "description": "Bisagra de golpe. Diseñada para la articulación de puertas y trabajos de carpintería compatibles con este tipo de herraje. Permite unir la hoja con su soporte y facilitar el movimiento de apertura y cierre.",
+    "technical_specs": {},
+    "price": 1800,
+    "wholesale_price": 1650,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791477947336_BISAGRA_GOLPE_jfif.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791477937859_BISAGRA_GOLPE_360_jf.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "443e1b0e-c630-449c-89a3-35b431a41069",
+    "name": "Bisagra Semiparche Inoxidable 304",
+    "slug": "bisagra-semiparche-inoxidable-304-kd5",
+    "brand": "FERREINTER",
+    "sku": "KD5",
+    "description": "Bisagra tipo semiparche de 35 mm, fabricada en acero inoxidable 304. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su configuración permite seleccionar el herraje según la disposición de la puerta, facilitando su apertura y cierre en el uso cotidiano.",
+    "technical_specs": {},
+    "price": 7800,
+    "wholesale_price": 6700,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 400,
+    "stock_online": 200,
+    "warranty": "10 AÑOS",
+    "dimensions": "35MM",
+    "materials": "ACERO INOX 304",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791653570646_semi_parche_acero_in.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791472802284_SEMI_PARCHE_ACERO_IN.jfif"
+    ],
+    "is_featured": true,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "5d200939-082a-4d89-87c6-ea5933a0616a",
+    "name": "Combo Grecia Cromo",
+    "slug": "combo-grecia-cromo-728901",
+    "brand": "FERREINTER",
+    "sku": "728901",
+    "description": "Combo de cerradura Grecia de la marca Gato, con acabado cromo. Diseñado para aplicaciones de cierre en puertas, ofrece una opción para complementar el sistema de acceso y combinar con otros herrajes del espacio. Su presentación en combo reúne los elementos de esta referencia para una solución de cierre integrada.",
+    "technical_specs": {},
+    "price": 126600,
+    "wholesale_price": 117738,
+    "category": "chapas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791646824171_grecia_cromada_jfif.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791646828897_grecia_cromada_360_j.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "f877d146-81b2-4b09-91d8-4fff00ad637c",
+    "name": "Chapa Manija Clindrica Cromada Entrada P",
+    "slug": "chapa-manija-clindrica-cromada-entrada-p-s138",
+    "brand": "PANTHERS",
+    "sku": "S138",
+    "description": "Cerradura con manija cilíndrica, con acabado cromado, de la marca PANTHERS. Diseñada para puertas de entrada. Su manija permite accionar la cerradura y facilita la apertura y el cierre de la puerta, integrando una solución funcional con un acabado que complementa el espacio.",
+    "technical_specs": {},
+    "price": 27000,
+    "wholesale_price": 24000,
+    "category": "chapas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791647374665_chapa_entrada_princi.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791647379120_chapa_entrada_princi.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "7a59aa2a-eadd-4cbb-a380-81b25b02e721",
+    "name": "Bisagra Cierra Puerta 4X3 Nudo",
+    "slug": "bisagra-cierra-puerta-4x3-nudo-ip0035",
+    "brand": "FERREINTER",
+    "sku": "IP0035",
+    "description": "Bisagra cierrapuertas de nudo, referencia 4 × 3. Diseñada para puertas que requieren una bisagra con función de cierre. Combina el movimiento de apertura con la función cierrapuertas en un mismo herraje.",
+    "technical_specs": {},
+    "price": 58000,
+    "wholesale_price": 49000,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791901032190_BISAGRA_CIERRA_PUERT.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791901040549_BISAGRA_CIERRA_PUERT.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "c599b022-945b-4a2c-9c84-54949ed5700f",
+    "name": "Bisagra Semiparche Cierre Lento",
+    "slug": "bisagra-semiparche-cierre-lento-mt318",
+    "brand": "FERREINTER",
+    "sku": "MT318",
+    "description": "Bisagra tipo semiparche de 35 mm, fabricada en acero zincado. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su sistema de cierre lento permite un movimiento suave al cerrar la puerta y su configuración facilita la elección del herraje según la disposición del mueble.",
+    "technical_specs": {},
+    "price": 2700,
+    "wholesale_price": 2450,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "dimensions": "35MM",
+    "materials": "ACERO ZINCADO",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791653852191_semi_parche_cierre_l.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791471934028_SEMI_PARCHE_CIERRE_L.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "99cd3c94-32ac-4081-8fe6-d5ad1ad3e1a5",
+    "name": "Chapa Manija Cilindrica Negra Alcoba",
+    "slug": "chapa-manija-cilindrica-negra-alcoba-lp004",
+    "brand": "LOCK PRIME",
+    "sku": "LP004",
+    "description": "Cerradura con manija cilíndrica, con acabado negro, de la marca LOCK PRIME. Diseñada para puertas de baño. Su manija permite accionar la cerradura y facilita la apertura y el cierre de la puerta, integrando una solución funcional con un acabado que complementa el espacio.",
+    "technical_specs": {},
+    "price": 27000,
+    "wholesale_price": 24000,
+    "category": "chapas",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791645700799_pomo_chapa_alcoba_ne.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791485930223_CHAPA_MANIJA_CILINDR.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "ce771c0b-b379-49b1-a7ad-1bc83d682054",
+    "name": "Bisagra Semiparche Sencilla",
+    "slug": "bisagra-semiparche-sencilla-mta",
+    "brand": "FERREINTER",
+    "sku": "MTA",
+    "description": "Bisagra tipo semiparche. Diseñada para puertas de muebles, gabinetes, clósets y trabajos de carpintería. Su configuración permite seleccionar el herraje según la disposición de la puerta, facilitando su apertura y cierre en el uso cotidiano.",
+    "technical_specs": {},
+    "price": 1750,
+    "wholesale_price": 1600,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791655254109_semi_parche_sencilla.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791480188044_BISAGRA_SEMIPARCHE_S.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "4ad2fc41-6057-418a-895b-62c7e13bb926",
+    "name": "Broca Multiproposito 5/32",
+    "slug": "broca-multiproposito-532-709-43",
+    "brand": "FERREINTER",
+    "sku": "709-43",
+    "description": "Broca multipropósito de la marca Forza, referencia 5/32. Diseñada para trabajos de perforación en aplicaciones compatibles con este tipo de broca. Su formato permite incorporarla a tareas de instalación, montaje y mantenimiento, seleccionando la referencia según la perforación requerida.",
+    "technical_specs": {},
+    "price": 8900,
+    "wholesale_price": 8010,
+    "category": "brocas-accesorios",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791669185158_broca_5_32_jfif.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791669201669_broca_5_32_360_jfif.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "9f9cac01-0453-4796-ba3a-6fafd5eb9da3",
+    "name": "Bisagra Omega 4X3 Negro Inoxidable",
+    "slug": "bisagra-omega-4x3-negro-inoxidable-fk00058-neg",
+    "brand": "FERREINTER",
+    "sku": "FK00058-NEG",
+    "description": "Bisagra tipo omega, referencia 4 × 3, fabricada en acero inoxidable y con acabado negro. Diseñada para la articulación de puertas y trabajos de carpintería compatibles con este tipo de herraje. Permite unir la hoja con su soporte y facilitar el movimiento de apertura y cierre.",
+    "technical_specs": {},
+    "price": 7791,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 0,
+    "stock_store": 0,
+    "stock_online": 0,
+    "inventory_status": "Disponible",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791469271447_BISAGRA_4X3_OMEGA_NE.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791469257392_BISAGRA_4X3_OMEGA_NE.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "528bd1b1-aee4-40c9-bef4-e776d3e24296",
+    "name": "Bisagra Doble Accion Oeste",
+    "slug": "bisagra-doble-accion-oeste-114457",
+    "brand": "FERREINTER",
+    "sku": "114457",
+    "description": "Bisagra de doble acción tipo oeste. Diseñada para puertas batientes que requieren apertura en ambos sentidos. Su doble acción permite el movimiento de la puerta hacia uno u otro lado, facilitando el paso entre espacios.",
+    "technical_specs": {},
+    "price": 21800,
+    "wholesale_price": 17000,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "warranty": "1 AÑO",
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791469624307_BISAGRA_OESTE_NEGRA_.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791469611751_BISAGRA_OESTE_NEGRA_.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "7edffcec-87fc-4da0-be83-28c39191eab6",
+    "name": "Bisagra Omega 4X3 Inoxidable",
+    "slug": "bisagra-omega-4x3-inoxidable-fk00058-inox",
+    "brand": "FERREINTER",
+    "sku": "FK00058-INOX",
+    "description": "Bisagra tipo omega, referencia 4 × 3, fabricada en acero inoxidable. Diseñada para la articulación de puertas y trabajos de carpintería compatibles con este tipo de herraje. Permite unir la hoja con su soporte y facilitar el movimiento de apertura y cierre.",
+    "technical_specs": {},
+    "price": 7800,
+    "category": "bisagras",
+    "stock": 1000,
+    "stock_warehouse": 0,
+    "stock_store": 0,
+    "stock_online": 0,
+    "dimensions": "4X3\"",
+    "inventory_status": "Disponible",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791900094661_BISAGRA_4X3_OMEGA_IN.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791900113880_BISAGRA_4X3_OMEGA_IN.jfif"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "rating": 5,
+    "reviews_count": 0,
+    "created_at": "2026-10-08T00:15:19.521204+00:00"
+  },
+  {
+    "id": "849bc173-0640-4788-b8b1-4bcd78219016",
+    "name": "Prensa Resorte 9\"",
+    "slug": "prensa-resorte-9-pulgadas-av013",
+    "brand": "FERREINTER",
+    "sku": "AV013",
+    "description": "Prensa de resorte de 9 pulgadas de la marca Forza. Diseñada para sujetar piezas durante trabajos de carpintería, montaje y manualidades. Su mecanismo de resorte permite colocarla y retirarla de forma práctica, manteniendo las piezas en posición mientras se realiza el trabajo.",
+    "technical_specs": {},
+    "price": 21000,
+    "wholesale_price": 18900,
+    "category": "prensas-fijacion",
+    "stock": 1000,
+    "stock_warehouse": 400,
+    "stock_store": 200,
+    "stock_online": 400,
+    "inventory_status": "PRIVADO",
+    "images": [
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791668091117_prensa_9_jfif.jfif",
+      "https://clufybkujyzhzffpymti.supabase.co/storage/v1/object/public/products/catalog/1791668101565_prensa_9_360_jfif.jfif"
     ],
     "is_featured": false,
     "is_active": true,
