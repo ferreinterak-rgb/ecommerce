@@ -30,6 +30,14 @@ interface CategoryConfig {
 
 const CATEGORY_METADATA: CategoryConfig[] = [
   {
+    id: 'fresas-madera',
+    name: 'Fresas para Madera',
+    description: 'Fresas para ruteadora, ranurar, perfilar, redondear esquinas y molduras profesionales',
+    fallbackImage: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80',
+    badgeTag: '58 Modelos',
+    accentBg: 'from-amber-600/10 to-orange-600/10',
+  },
+  {
     id: 'bisagras',
     name: 'Bisagras Especializadas',
     description: 'Acero inoxidable 304, cierre lento, parche, semiparche y superacodadas',
@@ -46,6 +54,30 @@ const CATEGORY_METADATA: CategoryConfig[] = [
     accentBg: 'from-slate-700/10 to-zinc-800/10',
   },
   {
+    id: 'rieles-correderas',
+    name: 'Rieles & Correderas',
+    description: 'Correderas de extensión, cierre lento y rieles pesados para cajones y clósets',
+    fallbackImage: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80',
+    badgeTag: '34 Opciones',
+    accentBg: 'from-slate-600/10 to-zinc-700/10',
+  },
+  {
+    id: 'adhesivos-pegantes',
+    name: 'Pegantes & Adhesivos',
+    description: 'Pegantes de contacto, cola blanca para madera, cianoacrilato y activadores',
+    fallbackImage: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80',
+    badgeTag: 'Química Pro',
+    accentBg: 'from-emerald-600/10 to-teal-700/10',
+  },
+  {
+    id: 'organizacion-cocina',
+    name: 'Loceros & Cocina',
+    description: 'Plateros, loceros en acero inoxidable y organizadores para muebles de cocina',
+    fallbackImage: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80',
+    badgeTag: 'Cocina & Hogar',
+    accentBg: 'from-cyan-600/10 to-blue-700/10',
+  },
+  {
     id: 'discos-corte',
     name: 'Discos de Corte & Pulido',
     description: 'Discos para madera y aluminio de 10" con dientes de carburo de tungsteno',
@@ -54,12 +86,36 @@ const CATEGORY_METADATA: CategoryConfig[] = [
     accentBg: 'from-red-500/10 to-orange-600/10',
   },
   {
+    id: 'patas-niveladores',
+    name: 'Patas & Niveladores',
+    description: 'Patas metálicas, niveladores roscados y soportes de carga para mobiliario',
+    fallbackImage: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80',
+    badgeTag: 'Resistencia',
+    accentBg: 'from-zinc-700/10 to-neutral-800/10',
+  },
+  {
     id: 'prensas-fijacion',
     name: 'Prensas de Sujeción',
     description: 'Prensas rápidas de resorte de 3" a 9" y prensas angulares para armado',
     fallbackImage: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80',
     badgeTag: 'Taller',
     accentBg: 'from-amber-600/10 to-yellow-600/10',
+  },
+  {
+    id: 'fijaciones-clavos',
+    name: 'Clavos & Fijaciones',
+    description: 'Clavos para carpintería, clavillos para neumática y anclajes resistentes',
+    fallbackImage: 'https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=80',
+    badgeTag: 'Fijación Firme',
+    accentBg: 'from-orange-700/10 to-red-800/10',
+  },
+  {
+    id: 'herramientas-manuales',
+    name: 'Herramientas Manuales',
+    description: 'Llaves, martillos, pinzas y juegos de taller para ensambles de precisión',
+    fallbackImage: '/truper-toolbox.png',
+    badgeTag: 'Taller Pro',
+    accentBg: 'from-blue-700/10 to-indigo-800/10',
   },
   {
     id: 'brocas-accesorios',

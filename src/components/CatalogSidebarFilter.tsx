@@ -33,14 +33,28 @@ interface CatalogSidebarFilterProps {
 
 const CATEGORIES = [
   { id: 'all', name: 'Todos los Productos' },
-  { id: 'bisagras', name: 'Bisagras Especializadas' },
+  { id: 'fresas-madera', name: 'Fresas para Madera' },
   { id: 'chapas', name: 'Chapas & Cerraduras' },
+  { id: 'bisagras', name: 'Bisagras Especializadas' },
+  { id: 'rieles-correderas', name: 'Rieles & Correderas' },
+  { id: 'adhesivos-pegantes', name: 'Pegantes & Adhesivos' },
+  { id: 'organizacion-cocina', name: 'Loceros & Cocina' },
   { id: 'discos-corte', name: 'Discos de Corte' },
+  { id: 'patas-niveladores', name: 'Patas & Niveladores' },
+  { id: 'fijaciones-clavos', name: 'Clavos & Fijaciones' },
   { id: 'prensas-fijacion', name: 'Prensas de Sujeción' },
-  { id: 'brocas-accesorios', name: 'Brocas & Perforación' },
+  { id: 'herramientas-manuales', name: 'Herramientas Manuales' },
+  { id: 'herramientas-electricas', name: 'Herramientas Eléctricas' },
+  { id: 'brocas-accesorios', name: 'Brocas & Accesorios' },
+  { id: 'medicion-nivelacion', name: 'Herramientas de Medición' },
   { id: 'escuadras-medicion', name: 'Escuadras de Medición' },
+  { id: 'masillas-acabados', name: 'Masilla para Madera' },
   { id: 'placas-reparacion', name: 'Placas de Reparación' },
-  { id: 'herrajes-carpinteria', name: 'Herrajes de Carpintería' },
+  { id: 'topes-puerta', name: 'Topes de Puerta' },
+  { id: 'accesorios-banos', name: 'Accesorios de Baño' },
+  { id: 'lubricantes-quimicos', name: 'Lubricantes & Químicos' },
+  { id: 'herrajes-carpinteria', name: 'Herrajes Especiales' },
+  { id: 'gas-sopletes', name: 'Gas & Sopletes' },
 ];
 
 export const CatalogSidebarFilter: React.FC<CatalogSidebarFilterProps> = ({

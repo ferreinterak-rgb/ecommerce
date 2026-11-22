@@ -5,6 +5,18 @@ import { ArrowUpRight, ArrowRight } from 'lucide-react';
 export const CategoryGrid: React.FC = () => {
   const categories = [
     {
+      id: 'fresas-madera',
+      title: 'FRESAS PARA MADERA',
+      subtitle: '58 referencias: corte recto, ranurar, perfilar, molduras y chaflán',
+      image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80',
+      theme: {
+        bg: 'bg-gradient-to-r from-[#172554] via-[#1e3a8a] to-[#0f172a]',
+        titleColor: 'text-white',
+        subtitleColor: 'text-blue-100',
+        btnBg: 'bg-[#ff5500] hover:bg-[#e04800] text-black font-extrabold',
+      },
+    },
+    {
       id: 'bisagras',
       title: 'BISAGRAS ESPECIALIZADAS',
       subtitle: 'Acero inoxidable 304, cierre lento & nudo para carpintería',
@@ -13,6 +25,42 @@ export const CategoryGrid: React.FC = () => {
         bg: 'bg-gradient-to-r from-[#0f172a] via-[#1e293b] to-[#0f172a]',
         titleColor: 'text-white',
         subtitleColor: 'text-gray-300',
+        btnBg: 'bg-[#ff5500] hover:bg-[#e04800] text-black font-extrabold',
+      },
+    },
+    {
+      id: 'rieles-correderas',
+      title: 'RIELES & CORREDERAS',
+      subtitle: 'Correderas telescópicas, extensión total y cierre suave para cajones',
+      image: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80',
+      theme: {
+        bg: 'bg-gradient-to-r from-[#042f2e] via-[#115e59] to-[#0f172a]',
+        titleColor: 'text-white',
+        subtitleColor: 'text-teal-100',
+        btnBg: 'bg-[#ff5500] hover:bg-[#e04800] text-black font-extrabold',
+      },
+    },
+    {
+      id: 'adhesivos-pegantes',
+      title: 'PEGANTES & QUÍMICOS',
+      subtitle: 'Pegantes de contacto, colas profesionales, cianoacrilato y masillas',
+      image: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=800&q=80',
+      theme: {
+        bg: 'bg-gradient-to-r from-[#2e1065] via-[#581c87] to-[#0f172a]',
+        titleColor: 'text-white',
+        subtitleColor: 'text-purple-100',
+        btnBg: 'bg-[#ff5500] hover:bg-[#e04800] text-black font-extrabold',
+      },
+    },
+    {
+      id: 'organizacion-cocina',
+      title: 'ORGANIZACIÓN DE COCINA',
+      subtitle: 'Loceros, plateros y canastillas en acero inoxidable para muebles',
+      image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80',
+      theme: {
+        bg: 'bg-gradient-to-r from-stone-800 via-stone-900 to-black',
+        titleColor: 'text-white',
+        subtitleColor: 'text-stone-300',
         btnBg: 'bg-[#ff5500] hover:bg-[#e04800] text-black font-extrabold',
       },
     },
