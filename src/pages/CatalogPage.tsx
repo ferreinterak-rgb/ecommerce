@@ -255,7 +255,7 @@ export const CatalogPage: React.FC = () => {
               CATÁLOGO FERREINTER
             </span>
             <h1 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mt-1">
-              Ferretería & Soluciones Industriales
+              Ferretería & Soluciones Carpinteras
             </h1>
           </div>
 
