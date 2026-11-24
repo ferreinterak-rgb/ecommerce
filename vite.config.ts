@@ -6,6 +6,7 @@ import path from 'path';
 export default defineConfig({
   plugins: [react()],
   base: '/',
+  envPrefix: ['VITE_', 'Ferreinter_', 'FERREINTER_'],
   build: {
     outDir: 'dist',
     emptyOutDir: true,

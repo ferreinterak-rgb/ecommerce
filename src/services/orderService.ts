@@ -152,5 +152,45 @@ export const orderService = {
       return true;
     }
     return false;
+  },
+
+  async updateOrderPaymentByNumber(
+    orderNumber: string,
+    mpStatus: 'approved' | 'pending' | 'rejected',
+    paymentId?: string | null
+  ): Promise<boolean> {
+    const orderStatus: OrderStatus =
+      mpStatus === 'approved' ? 'processing' : mpStatus === 'rejected' ? 'cancelled' : 'pending';
+    const paymentStatus =
+      mpStatus === 'approved' ? 'paid' : mpStatus === 'rejected' ? 'failed' : 'pending';
+
+    if (isSupabaseConfigured()) {
+      try {
+        const updatePayload: Record<string, any> = {
+          status: orderStatus,
+          payment_status: paymentStatus,
+          updated_at: new Date().toISOString()
+        };
+        if (paymentId) {
+          updatePayload.payment_reference = paymentId;
+        }
+        await supabase.from('orders').update(updatePayload).eq('order_number', orderNumber);
+      } catch (e) {
+        console.warn('Supabase update payment status error', e);
+      }
+    }
+
+    const order = localOrdersStore.find(o => o.order_number === orderNumber);
+    if (order) {
+      order.status = orderStatus;
+      order.updated_at = new Date().toISOString();
+      if (typeof window !== 'undefined') {
+        try {
+          localStorage.setItem('ferre_orders_cache_v1', JSON.stringify(localOrdersStore));
+        } catch (_) {}
+      }
+      return true;
+    }
+    return false;
   }
 };

@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate, Link, useSearchParams } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { useCurrency } from '../context/CurrencyContext';
 import { useAuth } from '../context/AuthContext';
 import { orderService } from '../services/orderService';
 import { activityLogService } from '../services/activityLogService';
 import { PaymentMethod, ShippingAddress } from '../types';
-import { mercadopagoService } from '../services/mercadopagoService';
-import { ShieldCheck, Lock, CreditCard, Landmark, Truck, CheckCircle2, ArrowRight, Tag, ExternalLink } from 'lucide-react';
+import { mercadopagoService, MercadoPagoPreferenceItem } from '../services/mercadopagoService';
+import { ShieldCheck, Lock, CreditCard, Landmark, Truck, CheckCircle2, ArrowRight, Tag, ExternalLink, Clock, AlertTriangle } from 'lucide-react';
 
 export const CheckoutPage: React.FC = () => {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const { user } = useAuth();
   const {
     cart,
@@ -49,6 +50,40 @@ export const CheckoutPage: React.FC = () => {
   const [completedOrderNumber, setCompletedOrderNumber] = useState<string | null>(null);
   const [paymentRedirectUrl, setPaymentRedirectUrl] = useState<string | null>(null);
   const [checkoutError, setCheckoutError] = useState<string | null>(null);
+  const [returnPaymentStatus, setReturnPaymentStatus] = useState<'approved' | 'pending' | 'rejected' | null>(null);
+  const [returnPaymentId, setReturnPaymentId] = useState<string | null>(null);
+
+  // Detectar retorno desde la pasarela de Mercado Pago (?status=approved&order=FI-...&payment_id=...)
+  useEffect(() => {
+    const urlStatus = searchParams.get('status') || searchParams.get('collection_status');
+    const urlOrder = searchParams.get('order') || searchParams.get('external_reference');
+    const urlPaymentId = searchParams.get('payment_id') || searchParams.get('collection_id');
+
+    if (urlOrder && urlStatus) {
+      const normalizedStatus: 'approved' | 'pending' | 'rejected' =
+        urlStatus === 'approved'
+          ? 'approved'
+          : urlStatus === 'rejected' || urlStatus === 'failure' || urlStatus === 'null'
+          ? 'rejected'
+          : 'pending';
+
+      setCompletedOrderNumber(urlOrder);
+      setReturnPaymentStatus(normalizedStatus);
+      setReturnPaymentId(urlPaymentId);
+
+      // Si viene payment_id real, verificar con la API de Mercado Pago y actualizar la orden en Supabase
+      (async () => {
+        let verifiedStatus = normalizedStatus;
+        if (urlPaymentId && urlPaymentId !== 'null') {
+          const info = await mercadopagoService.getPaymentInfo(urlPaymentId);
+          if (info?.status === 'approved') verifiedStatus = 'approved';
+          else if (info?.status === 'rejected' || info?.status === 'cancelled') verifiedStatus = 'rejected';
+          setReturnPaymentStatus(verifiedStatus);
+        }
+        await orderService.updateOrderPaymentByNumber(urlOrder, verifiedStatus, urlPaymentId);
+      })();
+    }
+  }, [searchParams]);
 
   if (cart.length === 0 && !completedOrderNumber) {
     return (
@@ -119,21 +154,49 @@ export const CheckoutPage: React.FC = () => {
         customerName
       );
 
-      // 2. Preparar la preferencia de Mercado Pago
+      // 2. Preparar los ítems exactos (incluyendo descuento proporcional si aplica, IVA 19% y costo de envío)
+      const discountFactor = subtotal > 0 ? Math.max(0, (subtotal - discountAmount) / subtotal) : 1;
+      const mpItems: MercadoPagoPreferenceItem[] = cart.map(item => ({
+        id: item.product.id,
+        title: item.product.name,
+        quantity: item.quantity,
+        unit_price: Math.max(1, Math.round((item.product.discount_price ?? item.product.price) * discountFactor)),
+        currency_id: 'COP',
+        picture_url: item.product.images?.[0]
+      }));
+
+      if (taxAmount > 0) {
+        mpItems.push({
+          id: 'IMP-IVA-19',
+          title: 'IVA (19%)',
+          quantity: 1,
+          unit_price: Math.round(taxAmount),
+          currency_id: 'COP'
+        });
+      }
+
+      if (shippingCost > 0) {
+        mpItems.push({
+          id: 'ENVIO-ESTANDAR',
+          title: 'Costo de Despacho y Envío',
+          quantity: 1,
+          unit_price: Math.round(shippingCost),
+          currency_id: 'COP'
+        });
+      }
+
+      // 3. Crear la preferencia oficial en Mercado Pago Checkout Pro
       const preference = await mercadopagoService.createPaymentPreference({
         order_number: created.order_number,
-        items: cart.map(item => ({
-          id: item.product.id,
-          title: item.product.name,
-          quantity: item.quantity,
-          unit_price: item.product.discount_price ?? item.product.price,
-          currency_id: 'COP',
-          picture_url: item.product.images?.[0]
-        })),
+        items: mpItems,
         payer: {
           name: customerName,
           email: customerEmail,
           phone: { number: customerPhone },
+          identification: {
+            type: documentType,
+            number: documentId
+          },
           address: { street_name: shippingAddress.address }
         },
         back_urls: {
@@ -144,10 +207,12 @@ export const CheckoutPage: React.FC = () => {
       });
 
       setCompletedOrderNumber(created.order_number);
+      clearCart();
       if (preference?.init_point) {
         setPaymentRedirectUrl(preference.init_point);
+        // Redirigir automáticamente a la pasarela segura de Mercado Pago
+        window.location.href = preference.init_point;
       }
-      clearCart();
     } catch (err: any) {
       console.error('Error placing order', err);
       setCheckoutError(
@@ -159,23 +224,69 @@ export const CheckoutPage: React.FC = () => {
   };
 
   if (completedOrderNumber) {
+    const isRejected = returnPaymentStatus === 'rejected';
+    const isPending = returnPaymentStatus === 'pending';
+
     return (
       <div className="max-w-3xl mx-auto px-4 py-16 text-center space-y-6">
-        <div className="w-20 h-20 mx-auto rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center animate-bounce">
-          <CheckCircle2 className="w-10 h-10 stroke-[2.5]" />
+        <div
+          className={`w-20 h-20 mx-auto rounded-full flex items-center justify-center ${
+            isRejected
+              ? 'bg-red-100 text-red-600'
+              : isPending
+              ? 'bg-amber-100 text-amber-600'
+              : 'bg-emerald-100 text-emerald-600 animate-bounce'
+          }`}
+        >
+          {isRejected ? (
+            <AlertTriangle className="w-10 h-10 stroke-[2.5]" />
+          ) : isPending ? (
+            <Clock className="w-10 h-10 stroke-[2.5]" />
+          ) : (
+            <CheckCircle2 className="w-10 h-10 stroke-[2.5]" />
+          )}
         </div>
 
-        <h1 className="text-3xl font-black text-slate-900">¡Pedido Registrado con Éxito!</h1>
+        <h1 className="text-3xl font-black text-slate-900">
+          {returnPaymentStatus === 'approved'
+            ? '¡Pago Aprobado con Éxito!'
+            : isRejected
+            ? 'El Pago no pudo completarse'
+            : isPending
+            ? 'Pago en Proceso de Confirmación'
+            : '¡Pedido Registrado! Redirigiendo a Mercado Pago...'}
+        </h1>
         <p className="text-sm text-gray-600 max-w-md mx-auto">
-          Gracias por confiar en <strong>FERRE INTER</strong>. Hemos registrado tu pedido con el correo <strong>{customerEmail}</strong>.
+          {returnPaymentStatus === 'approved' ? (
+            <>
+              Tu pago en <strong>Mercado Pago</strong> fue confirmado exitosamente. Tu pedido ya se encuentra en preparación por el equipo de <strong>FERRE INTER</strong>.
+            </>
+          ) : isRejected ? (
+            <>
+              La transacción fue rechazada o cancelada en Mercado Pago. Puedes intentar nuevamente o comunicarte con nuestro equipo de atención.
+            </>
+          ) : isPending ? (
+            <>
+              Tu pago por PSE o Efectivo está pendiente de acreditación por Mercado Pago. Te notificaremos tan pronto se confirme.
+            </>
+          ) : (
+            <>
+              Gracias por confiar en <strong>FERRE INTER</strong>. Hemos registrado tu pedido{customerEmail ? <> con el correo <strong>{customerEmail}</strong></> : null}.
+            </>
+          )}
         </p>
 
         <div className="p-6 rounded-2xl bg-[#031834] text-white space-y-3 max-w-md mx-auto border border-[#ff5500]/30">
           <span className="text-xs text-gray-400 font-mono">NÚMERO DE ORDEN</span>
           <div className="text-2xl font-mono font-black text-[#ff5500]">{completedOrderNumber}</div>
+          {returnPaymentId && returnPaymentId !== 'null' && (
+            <div className="text-xs font-mono text-gray-300">
+              ID Transacción MP: <span className="text-white font-bold">{returnPaymentId}</span>
+            </div>
+          )}
           <div className="flex items-center justify-center gap-2 pt-2 border-t border-white/10 text-xs text-emerald-400">
             <ShieldCheck className="w-4 h-4 text-emerald-400" />
-            <span>Pasarela oficial configurada: Mercado Pago</span>
+            <span>Pasarela oficial: Mercado Pago Colombia</span>
           </div>
         </div>
 
@@ -188,17 +299,15 @@ export const CheckoutPage: React.FC = () => {
               <div className="flex-1">
                 <h4 className="font-bold text-xs text-slate-900">Pasarela Mercado Pago Lista</h4>
                 <p className="text-[11px] text-gray-500">
-                  El link seguro de pago para esta orden está preparado.
+                  Si tu navegador no te redirigió automáticamente, haz clic abajo para completar el pago seguro:
                 </p>
               </div>
             </div>
             <a
               href={paymentRedirectUrl}
-              target="_blank"
-              rel="noopener noreferrer"
               className="w-full py-3 px-4 rounded-xl bg-[#009ee3] hover:bg-[#0081ba] text-white font-extrabold text-xs flex items-center justify-center gap-2 transition-all shadow-md"
             >
-              <span>Ir a Pagar en Mercado Pago</span>
+              <span>Continuar a Mercado Pago</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
           </div>
