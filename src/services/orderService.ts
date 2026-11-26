@@ -1,10 +1,12 @@
-import { Order, OrderStatus } from '../types';
+import { Order, OrderItem, OrderStatus, ShippingAddress } from '../types';
 import { supabase, isSupabaseConfigured } from './supabaseClient';
+
+const ORDERS_CACHE_KEY = 'ferre_orders_cache_v1';
 
 const getInitialOrders = (): Order[] => {
   if (typeof window !== 'undefined') {
     try {
-      const saved = localStorage.getItem('ferre_orders_cache_v1');
+      const saved = localStorage.getItem(ORDERS_CACHE_KEY);
       if (saved) return JSON.parse(saved);
     } catch (_) {}
   }
@@ -13,12 +15,105 @@ const getInitialOrders = (): Order[] => {
 
 let localOrdersStore: Order[] = getInitialOrders();
 
+const saveLocalOrders = (orders: Order[]) => {
+  localOrdersStore = orders;
+  if (typeof window !== 'undefined') {
+    try {
+      localStorage.setItem(ORDERS_CACHE_KEY, JSON.stringify(localOrdersStore));
+    } catch (_) {}
+  }
+};
+
+/**
+ * Normaliza una fila de public.orders + public.order_items de Supabase a la interfaz Order del frontend
+ */
+const normalizeSupabaseOrder = (row: any): Order => {
+  const addrObj: Record<string, any> =
+    row.shipping_address && typeof row.shipping_address === 'object'
+      ? row.shipping_address
+      : { address: String(row.shipping_address || '') };
+
+  const shippingAddress: ShippingAddress = {
+    fullName: addrObj.fullName || addrObj.customer_name || row.customer_name || 'Cliente FERREINTER',
+    address: addrObj.address || '',
+    city: addrObj.city || 'Colombia',
+    state: addrObj.state || '',
+    zipCode: addrObj.zipCode || '',
+    phone: addrObj.phone || addrObj.customer_phone || row.customer_phone || '',
+    notes: addrObj.notes || row.customer_notes || '',
+    documentType: addrObj.documentType || row.customer_document_type || 'CC',
+    documentId: addrObj.documentId || row.customer_document_id || ''
+  };
+
+  const rawItems = Array.isArray(row.items) ? row.items : [];
+  const normalizedItems: OrderItem[] = rawItems.map((it: any, idx: number) => ({
+    id: String(it.id || `oi-${row.id}-${idx}`),
+    order_id: String(it.order_id || row.id),
+    product_id: String(it.product_id || ''),
+    product_name: String(it.product_name || 'Producto FERREINTER'),
+    product_sku: String(it.product_sku || ''),
+    price: Number(it.unit_price ?? it.price ?? 0),
+    quantity: Number(it.quantity ?? 1),
+    subtotal: Number(it.total_price ?? it.subtotal ?? 0)
+  }));
+
+  const subtotal = Number(row.subtotal ?? 0);
+  const discount = Number(row.discount_applied ?? row.discount ?? 0);
+  const tax = Number(addrObj.tax ?? row.tax ?? Math.round(Math.max(0, subtotal - discount) * 0.19));
+  const shippingCost = Number(addrObj.shipping_cost ?? row.shipping_cost ?? 0);
+  const total = Number(
+    addrObj.total_with_tax_and_shipping ??
+      row.total ??
+      row.total_amount ??
+      Math.max(0, subtotal - discount) + tax + shippingCost
+  );
+
+  return {
+    id: String(row.id),
+    order_number: String(row.order_number || row.order_ref || `FI-${String(row.id).slice(0, 6)}`),
+    user_id: row.profile_id || row.user_id || undefined,
+    customer_name: String(
+      row.customer_name || addrObj.customer_name || addrObj.fullName || 'Cliente FERREINTER'
+    ),
+    customer_email: String(row.customer_email || addrObj.customer_email || ''),
+    customer_phone: String(row.customer_phone || addrObj.customer_phone || addrObj.phone || ''),
+    customer_document_type: addrObj.documentType || row.customer_document_type || 'CC',
+    customer_document_id: addrObj.documentId || row.customer_document_id || '',
+    shipping_address: shippingAddress,
+    payment_method: addrObj.payment_method || row.payment_method || 'mercadopago',
+    status: (row.status as OrderStatus) || 'pending',
+    subtotal,
+    discount,
+    tax,
+    shipping_cost: shippingCost,
+    total,
+    items: normalizedItems,
+    notes: row.customer_notes || row.notes || shippingAddress.notes,
+    created_at: String(row.created_at || new Date().toISOString()),
+    updated_at: row.updated_at ? String(row.updated_at) : undefined
+  };
+};
+
 export const orderService = {
   async getOrders(): Promise<Order[]> {
     if (isSupabaseConfigured()) {
       try {
-        const { data, error } = await supabase.from('orders').select('*, items:order_items(*)').order('created_at', { ascending: false });
-        if (!error && data && data.length > 0) return data as Order[];
+        const { data, error } = await supabase
+          .from('orders')
+          .select('*, items:order_items(*)')
+          .order('created_at', { ascending: false });
+
+        if (!error && data && data.length > 0) {
+          const normalized = data.map(normalizeSupabaseOrder);
+          // Combinar con pedidos en cache local que aún no estén en la lista (por ejemplo si se consulta sin sesión admin)
+          const dbOrderNumbers = new Set(normalized.map(o => o.order_number));
+          const merged = [
+            ...normalized,
+            ...localOrdersStore.filter(o => !dbOrderNumbers.has(o.order_number))
+          ];
+          saveLocalOrders(merged);
+          return merged;
+        }
       } catch (e) {
         console.warn('Supabase fetch orders failed, using local orders store.', e);
       }
@@ -37,9 +132,26 @@ export const orderService = {
       created_at: new Date().toISOString()
     };
 
+    const enrichedShippingAddress = {
+      ...(typeof newOrder.shipping_address === 'object'
+        ? newOrder.shipping_address
+        : { address: String(newOrder.shipping_address) }),
+      fullName: newOrder.customer_name,
+      customer_name: newOrder.customer_name,
+      customer_email: newOrder.customer_email,
+      customer_phone: newOrder.customer_phone,
+      documentType: newOrder.customer_document_type || newOrder.shipping_address?.documentType || 'CC',
+      documentId: newOrder.customer_document_id || newOrder.shipping_address?.documentId || '',
+      payment_method: newOrder.payment_method || 'mercadopago',
+      payment_gateway: 'mercadopago',
+      tax: newOrder.tax,
+      shipping_cost: newOrder.shipping_cost,
+      total_with_tax_and_shipping: newOrder.total
+    };
+
     if (isSupabaseConfigured()) {
       try {
-        // 1. Intentar Checkout Atómico con RPC process_checkout (PostgreSQL)
+        // 1. Checkout Transaccional Atómico con RPC process_checkout (PostgreSQL SECURITY DEFINER)
         const cartPayload = newOrder.items.map(item => ({
           product_id: item.product_id,
           quantity: item.quantity
@@ -49,23 +161,20 @@ export const orderService = {
           p_profile_id: newOrder.user_id || null,
           p_items: cartPayload,
           p_coupon_code: couponCode || null,
-          p_shipping_address: newOrder.shipping_address,
-          p_customer_notes: newOrder.notes || null
+          p_shipping_address: enrichedShippingAddress,
+          p_customer_notes:
+            newOrder.notes ||
+            `Cliente: ${newOrder.customer_name} (${enrichedShippingAddress.documentType} ${enrichedShippingAddress.documentId}) - Tel: ${newOrder.customer_phone} - Email: ${newOrder.customer_email}`
         });
 
         if (!rpcError && rpcData?.success) {
-          const finalOrder = {
+          const finalOrder: Order = {
             ...newOrder,
             id: rpcData.order_id || newOrder.id,
             order_number: rpcData.order_number || newOrder.order_number,
-            total: rpcData.total_amount !== undefined ? Number(rpcData.total_amount) : newOrder.total
+            total: newOrder.total
           };
-          localOrdersStore.unshift(finalOrder);
-          if (typeof window !== 'undefined') {
-            try {
-              localStorage.setItem('ferre_orders_cache_v1', JSON.stringify(localOrdersStore));
-            } catch (_) {}
-          }
+          saveLocalOrders([finalOrder, ...localOrdersStore.filter(o => o.order_number !== finalOrder.order_number)]);
           return finalOrder;
         }
 
@@ -74,73 +183,63 @@ export const orderService = {
           throw new Error(rpcError.message);
         }
 
-        // 2. Inserción directa compatible con arquitectura JSON inmutable
-        const { data, error } = await supabase.from('orders').insert({
-          order_ref: newOrder.order_number,
-          order_number: newOrder.order_number,
-          user_id: newOrder.user_id || null,
-          customer_name: newOrder.customer_name,
-          customer_email: newOrder.customer_email,
-          customer_phone: newOrder.customer_phone,
-          customer_document_type: newOrder.customer_document_type || newOrder.shipping_address?.documentType || 'CC',
-          customer_document_id: newOrder.customer_document_id || newOrder.shipping_address?.documentId || null,
-          shipping_address: typeof newOrder.shipping_address === 'string' ? newOrder.shipping_address : newOrder.shipping_address.address,
-          city: newOrder.shipping_address?.city || 'Colombia',
-          payment_gateway: 'mercadopago',
-          payment_method: newOrder.payment_method,
-          payment_status: 'pending',
-          status: newOrder.status,
-          subtotal: newOrder.subtotal,
-          discount: newOrder.discount,
-          tax: newOrder.tax,
-          shipping_cost: newOrder.shipping_cost,
-          total: newOrder.total,
-          items_count: newOrder.items.reduce((acc, it) => acc + it.quantity, 0),
-          items: newOrder.items, // Snapshot inmutable
-          notes: newOrder.notes,
-          effi_invoice_status: 'pending'
-        }).select().single();
+        // 2. Fallback: Inserción directa con las columnas exactas de public.orders en Supabase
+        const { data, error } = await supabase
+          .from('orders')
+          .insert({
+            order_number: newOrder.order_number,
+            profile_id: newOrder.user_id || null,
+            status: newOrder.status || 'pending',
+            subtotal: newOrder.subtotal,
+            discount_applied: newOrder.discount || 0,
+            total_amount: newOrder.total,
+            invoice_status: 'pending',
+            payment_status: 'pending',
+            shipping_address: enrichedShippingAddress,
+            customer_notes:
+              newOrder.notes ||
+              `Cliente: ${newOrder.customer_name} (${enrichedShippingAddress.documentType} ${enrichedShippingAddress.documentId})`
+          })
+          .select()
+          .single();
 
         if (!error && data) {
-          // Intentar insertar en order_items si la tabla relacional existe como backup
           try {
             const orderItemsToInsert = newOrder.items.map(item => ({
               order_id: data.id,
               product_id: item.product_id,
               product_name: item.product_name,
               product_sku: item.product_sku,
-              price: item.price,
+              unit_price: item.price,
               quantity: item.quantity,
-              subtotal: item.subtotal
+              total_price: item.subtotal
             }));
             await supabase.from('order_items').insert(orderItemsToInsert);
           } catch (_) {}
 
-          const finalOrder = { ...newOrder, id: data.id };
-          localOrdersStore.unshift(finalOrder);
+          const finalOrder: Order = { ...newOrder, id: data.id };
+          saveLocalOrders([finalOrder, ...localOrdersStore.filter(o => o.order_number !== finalOrder.order_number)]);
           return finalOrder;
         }
       } catch (e: any) {
         if (e.message && (e.message.includes('Stock') || e.message.includes('cupón'))) {
-          throw e; // Propagar error de negocio al usuario
+          throw e;
         }
         console.warn('Supabase checkout fallback a almacenamiento local:', e);
       }
     }
 
-    localOrdersStore.unshift(newOrder);
-    if (typeof window !== 'undefined') {
-      try {
-        localStorage.setItem('ferre_orders_cache_v1', JSON.stringify(localOrdersStore));
-      } catch (_) {}
-    }
+    saveLocalOrders([newOrder, ...localOrdersStore]);
     return newOrder;
   },
 
   async updateOrderStatus(orderId: string, status: OrderStatus): Promise<boolean> {
     if (isSupabaseConfigured()) {
       try {
-        await supabase.from('orders').update({ status, updated_at: new Date().toISOString() }).eq('id', orderId);
+        await supabase
+          .from('orders')
+          .update({ status, updated_at: new Date().toISOString() })
+          .eq('id', orderId);
       } catch (e) {
         console.warn('Supabase update order status error', e);
       }
@@ -149,6 +248,7 @@ export const orderService = {
     if (order) {
       order.status = status;
       order.updated_at = new Date().toISOString();
+      saveLocalOrders([...localOrdersStore]);
       return true;
     }
     return false;
@@ -161,8 +261,8 @@ export const orderService = {
   ): Promise<boolean> {
     const orderStatus: OrderStatus =
       mpStatus === 'approved' ? 'processing' : mpStatus === 'rejected' ? 'cancelled' : 'pending';
-    const paymentStatus =
-      mpStatus === 'approved' ? 'paid' : mpStatus === 'rejected' ? 'failed' : 'pending';
+    // Columna payment_status en public.orders tiene CHECK ('pending', 'partial_payment', 'paid_in_full')
+    const paymentStatus = mpStatus === 'approved' ? 'paid_in_full' : 'pending';
 
     if (isSupabaseConfigured()) {
       try {
@@ -171,8 +271,8 @@ export const orderService = {
           payment_status: paymentStatus,
           updated_at: new Date().toISOString()
         };
-        if (paymentId) {
-          updatePayload.payment_reference = paymentId;
+        if (paymentId && paymentId !== 'null') {
+          updatePayload.invoice_external_id = `MP-${paymentId}`;
         }
         await supabase.from('orders').update(updatePayload).eq('order_number', orderNumber);
       } catch (e) {
@@ -184,11 +284,7 @@ export const orderService = {
     if (order) {
       order.status = orderStatus;
       order.updated_at = new Date().toISOString();
-      if (typeof window !== 'undefined') {
-        try {
-          localStorage.setItem('ferre_orders_cache_v1', JSON.stringify(localOrdersStore));
-        } catch (_) {}
-      }
+      saveLocalOrders([...localOrdersStore]);
       return true;
     }
     return false;
